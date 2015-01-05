@@ -1,0 +1,5 @@
+c:\users\lyudmil\documents\visual studio 2013\Projects\Intro-Programming-Homework\06. PrintNumbers\bin\Debug\_06.PrintNumbers.exe.config
+c:\users\lyudmil\documents\visual studio 2013\Projects\Intro-Programming-Homework\06. PrintNumbers\bin\Debug\_06.PrintNumbers.exe
+c:\users\lyudmil\documents\visual studio 2013\Projects\Intro-Programming-Homework\06. PrintNumbers\bin\Debug\_06.PrintNumbers.pdb
+c:\users\lyudmil\documents\visual studio 2013\Projects\Intro-Programming-Homework\06. PrintNumbers\obj\Debug\_06.PrintNumbers.exe
+c:\users\lyudmil\documents\visual studio 2013\Projects\Intro-Programming-Homework\06. PrintNumbers\obj\Debug\_06.PrintNumbers.pdb

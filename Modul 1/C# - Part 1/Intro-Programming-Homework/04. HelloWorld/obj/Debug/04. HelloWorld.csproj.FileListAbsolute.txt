@@ -1,0 +1,6 @@
+c:\users\lyudmil\documents\visual studio 2013\Projects\Intro-Programming-Homework\04. HelloWorld\bin\Debug\_04.HelloWorld.exe.config
+c:\users\lyudmil\documents\visual studio 2013\Projects\Intro-Programming-Homework\04. HelloWorld\bin\Debug\_04.HelloWorld.exe
+c:\users\lyudmil\documents\visual studio 2013\Projects\Intro-Programming-Homework\04. HelloWorld\bin\Debug\_04.HelloWorld.pdb
+c:\users\lyudmil\documents\visual studio 2013\Projects\Intro-Programming-Homework\04. HelloWorld\obj\Debug\04. HelloWorld.csprojResolveAssemblyReference.cache
+c:\users\lyudmil\documents\visual studio 2013\Projects\Intro-Programming-Homework\04. HelloWorld\obj\Debug\_04.HelloWorld.exe
+c:\users\lyudmil\documents\visual studio 2013\Projects\Intro-Programming-Homework\04. HelloWorld\obj\Debug\_04.HelloWorld.pdb

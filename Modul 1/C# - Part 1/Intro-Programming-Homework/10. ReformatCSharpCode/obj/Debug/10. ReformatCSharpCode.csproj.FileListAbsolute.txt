@@ -1,0 +1,5 @@
+c:\users\lyudmil\documents\visual studio 2013\Projects\Intro-Programming-Homework\10. ReformatCSharpCode\bin\Debug\_10.ReformatCSharpCode.exe.config
+c:\users\lyudmil\documents\visual studio 2013\Projects\Intro-Programming-Homework\10. ReformatCSharpCode\bin\Debug\_10.ReformatCSharpCode.exe
+c:\users\lyudmil\documents\visual studio 2013\Projects\Intro-Programming-Homework\10. ReformatCSharpCode\bin\Debug\_10.ReformatCSharpCode.pdb
+c:\users\lyudmil\documents\visual studio 2013\Projects\Intro-Programming-Homework\10. ReformatCSharpCode\obj\Debug\_10.ReformatCSharpCode.exe
+c:\users\lyudmil\documents\visual studio 2013\Projects\Intro-Programming-Homework\10. ReformatCSharpCode\obj\Debug\_10.ReformatCSharpCode.pdb
