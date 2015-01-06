@@ -1,0 +1,5 @@
+c:\users\lyudmil\documents\visual studio 2013\Projects\Operators-Expressions-Statements\12. ExtractBitFromInt\bin\Debug\_12.ExtractBitFromInt.exe.config
+c:\users\lyudmil\documents\visual studio 2013\Projects\Operators-Expressions-Statements\12. ExtractBitFromInt\bin\Debug\_12.ExtractBitFromInt.exe
+c:\users\lyudmil\documents\visual studio 2013\Projects\Operators-Expressions-Statements\12. ExtractBitFromInt\bin\Debug\_12.ExtractBitFromInt.pdb
+c:\users\lyudmil\documents\visual studio 2013\Projects\Operators-Expressions-Statements\12. ExtractBitFromInt\obj\Debug\_12.ExtractBitFromInt.exe
+c:\users\lyudmil\documents\visual studio 2013\Projects\Operators-Expressions-Statements\12. ExtractBitFromInt\obj\Debug\_12.ExtractBitFromInt.pdb

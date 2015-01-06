@@ -1,0 +1,5 @@
+c:\users\lyudmil\documents\visual studio 2013\Projects\Operators-Expressions-Statements\04. Rectangles\bin\Debug\_04.Rectangles.exe.config
+c:\users\lyudmil\documents\visual studio 2013\Projects\Operators-Expressions-Statements\04. Rectangles\bin\Debug\_04.Rectangles.exe
+c:\users\lyudmil\documents\visual studio 2013\Projects\Operators-Expressions-Statements\04. Rectangles\bin\Debug\_04.Rectangles.pdb
+c:\users\lyudmil\documents\visual studio 2013\Projects\Operators-Expressions-Statements\04. Rectangles\obj\Debug\_04.Rectangles.exe
+c:\users\lyudmil\documents\visual studio 2013\Projects\Operators-Expressions-Statements\04. Rectangles\obj\Debug\_04.Rectangles.pdb

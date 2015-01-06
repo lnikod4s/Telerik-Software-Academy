@@ -1,0 +1,5 @@
+c:\users\lyudmil\documents\visual studio 2013\Projects\Operators-Expressions-Statements\15. BitsExchange\bin\Debug\_15.BitsExchange.exe.config
+c:\users\lyudmil\documents\visual studio 2013\Projects\Operators-Expressions-Statements\15. BitsExchange\bin\Debug\_15.BitsExchange.exe
+c:\users\lyudmil\documents\visual studio 2013\Projects\Operators-Expressions-Statements\15. BitsExchange\bin\Debug\_15.BitsExchange.pdb
+c:\users\lyudmil\documents\visual studio 2013\Projects\Operators-Expressions-Statements\15. BitsExchange\obj\Debug\_15.BitsExchange.exe
+c:\users\lyudmil\documents\visual studio 2013\Projects\Operators-Expressions-Statements\15. BitsExchange\obj\Debug\_15.BitsExchange.pdb

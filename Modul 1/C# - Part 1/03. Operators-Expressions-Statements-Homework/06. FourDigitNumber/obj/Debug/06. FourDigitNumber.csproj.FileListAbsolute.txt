@@ -1,0 +1,5 @@
+c:\users\lyudmil\documents\visual studio 2013\Projects\Operators-Expressions-Statements\06. FourDigitNumber\bin\Debug\_06.FourDigitNumber.exe.config
+c:\users\lyudmil\documents\visual studio 2013\Projects\Operators-Expressions-Statements\06. FourDigitNumber\bin\Debug\_06.FourDigitNumber.exe
+c:\users\lyudmil\documents\visual studio 2013\Projects\Operators-Expressions-Statements\06. FourDigitNumber\bin\Debug\_06.FourDigitNumber.pdb
+c:\users\lyudmil\documents\visual studio 2013\Projects\Operators-Expressions-Statements\06. FourDigitNumber\obj\Debug\_06.FourDigitNumber.exe
+c:\users\lyudmil\documents\visual studio 2013\Projects\Operators-Expressions-Statements\06. FourDigitNumber\obj\Debug\_06.FourDigitNumber.pdb

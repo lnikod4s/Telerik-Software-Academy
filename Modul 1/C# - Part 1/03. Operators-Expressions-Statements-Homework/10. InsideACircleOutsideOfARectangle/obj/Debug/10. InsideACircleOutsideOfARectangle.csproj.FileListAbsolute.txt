@@ -1,0 +1,6 @@
+c:\users\lyudmil\documents\visual studio 2013\Projects\Operators-Expressions-Statements\10. InsideACircleOutsideOfARectangle\bin\Debug\_10.InsideACircleOutsideOfARectangle.exe.config
+c:\users\lyudmil\documents\visual studio 2013\Projects\Operators-Expressions-Statements\10. InsideACircleOutsideOfARectangle\bin\Debug\_10.InsideACircleOutsideOfARectangle.exe
+c:\users\lyudmil\documents\visual studio 2013\Projects\Operators-Expressions-Statements\10. InsideACircleOutsideOfARectangle\bin\Debug\_10.InsideACircleOutsideOfARectangle.pdb
+c:\users\lyudmil\documents\visual studio 2013\Projects\Operators-Expressions-Statements\10. InsideACircleOutsideOfARectangle\obj\Debug\10. InsideACircleOutsideOfARectangle.csprojResolveAssemblyReference.cache
+c:\users\lyudmil\documents\visual studio 2013\Projects\Operators-Expressions-Statements\10. InsideACircleOutsideOfARectangle\obj\Debug\_10.InsideACircleOutsideOfARectangle.exe
+c:\users\lyudmil\documents\visual studio 2013\Projects\Operators-Expressions-Statements\10. InsideACircleOutsideOfARectangle\obj\Debug\_10.InsideACircleOutsideOfARectangle.pdb

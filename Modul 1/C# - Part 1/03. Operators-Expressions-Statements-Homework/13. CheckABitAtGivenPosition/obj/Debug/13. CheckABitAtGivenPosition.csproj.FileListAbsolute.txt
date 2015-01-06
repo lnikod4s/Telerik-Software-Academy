@@ -1,0 +1,5 @@
+c:\users\lyudmil\documents\visual studio 2013\Projects\Operators-Expressions-Statements\13. CheckABitAtGivenPosition\bin\Debug\_13.CheckABitAtGivenPosition.exe.config
+c:\users\lyudmil\documents\visual studio 2013\Projects\Operators-Expressions-Statements\13. CheckABitAtGivenPosition\bin\Debug\_13.CheckABitAtGivenPosition.exe
+c:\users\lyudmil\documents\visual studio 2013\Projects\Operators-Expressions-Statements\13. CheckABitAtGivenPosition\bin\Debug\_13.CheckABitAtGivenPosition.pdb
+c:\users\lyudmil\documents\visual studio 2013\Projects\Operators-Expressions-Statements\13. CheckABitAtGivenPosition\obj\Debug\_13.CheckABitAtGivenPosition.exe
+c:\users\lyudmil\documents\visual studio 2013\Projects\Operators-Expressions-Statements\13. CheckABitAtGivenPosition\obj\Debug\_13.CheckABitAtGivenPosition.pdb

@@ -1,0 +1,5 @@
+c:\users\lyudmil\documents\visual studio 2013\Projects\Operators-Expressions-Statements\07. PointInACircle\bin\Debug\_07.PointInACircle.exe.config
+c:\users\lyudmil\documents\visual studio 2013\Projects\Operators-Expressions-Statements\07. PointInACircle\bin\Debug\_07.PointInACircle.exe
+c:\users\lyudmil\documents\visual studio 2013\Projects\Operators-Expressions-Statements\07. PointInACircle\bin\Debug\_07.PointInACircle.pdb
+c:\users\lyudmil\documents\visual studio 2013\Projects\Operators-Expressions-Statements\07. PointInACircle\obj\Debug\_07.PointInACircle.exe
+c:\users\lyudmil\documents\visual studio 2013\Projects\Operators-Expressions-Statements\07. PointInACircle\obj\Debug\_07.PointInACircle.pdb
