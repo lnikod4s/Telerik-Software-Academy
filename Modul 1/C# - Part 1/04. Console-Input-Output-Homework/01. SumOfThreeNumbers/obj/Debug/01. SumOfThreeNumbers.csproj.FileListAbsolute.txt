@@ -1,0 +1,6 @@
+c:\users\lyudmil\documents\visual studio 2013\Projects\Console-Input-Output-Homework\01. SumOfThreeNumbers\bin\Debug\_01.SumOfThreeNumbers.exe.config
+c:\users\lyudmil\documents\visual studio 2013\Projects\Console-Input-Output-Homework\01. SumOfThreeNumbers\bin\Debug\_01.SumOfThreeNumbers.exe
+c:\users\lyudmil\documents\visual studio 2013\Projects\Console-Input-Output-Homework\01. SumOfThreeNumbers\bin\Debug\_01.SumOfThreeNumbers.pdb
+c:\users\lyudmil\documents\visual studio 2013\Projects\Console-Input-Output-Homework\01. SumOfThreeNumbers\obj\Debug\01. SumOfThreeNumbers.csprojResolveAssemblyReference.cache
+c:\users\lyudmil\documents\visual studio 2013\Projects\Console-Input-Output-Homework\01. SumOfThreeNumbers\obj\Debug\_01.SumOfThreeNumbers.exe
+c:\users\lyudmil\documents\visual studio 2013\Projects\Console-Input-Output-Homework\01. SumOfThreeNumbers\obj\Debug\_01.SumOfThreeNumbers.pdb

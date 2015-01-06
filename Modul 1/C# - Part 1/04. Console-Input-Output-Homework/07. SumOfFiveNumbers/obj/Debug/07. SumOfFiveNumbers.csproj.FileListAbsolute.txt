@@ -1,0 +1,5 @@
+c:\users\lyudmil\documents\visual studio 2013\Projects\Console-Input-Output-Homework\07. SumOfFiveNumbers\bin\Debug\_07.SumOfFiveNumbers.exe.config
+c:\users\lyudmil\documents\visual studio 2013\Projects\Console-Input-Output-Homework\07. SumOfFiveNumbers\bin\Debug\_07.SumOfFiveNumbers.exe
+c:\users\lyudmil\documents\visual studio 2013\Projects\Console-Input-Output-Homework\07. SumOfFiveNumbers\bin\Debug\_07.SumOfFiveNumbers.pdb
+c:\users\lyudmil\documents\visual studio 2013\Projects\Console-Input-Output-Homework\07. SumOfFiveNumbers\obj\Debug\_07.SumOfFiveNumbers.exe
+c:\users\lyudmil\documents\visual studio 2013\Projects\Console-Input-Output-Homework\07. SumOfFiveNumbers\obj\Debug\_07.SumOfFiveNumbers.pdb

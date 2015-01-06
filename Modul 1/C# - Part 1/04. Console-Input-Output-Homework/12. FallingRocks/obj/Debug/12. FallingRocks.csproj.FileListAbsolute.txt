@@ -1,0 +1,5 @@
+c:\users\lyudmil\documents\visual studio 2013\Projects\Console-Input-Output-Homework\12. FallingRocks\bin\Debug\_12.FallingRocks.exe.config
+c:\users\lyudmil\documents\visual studio 2013\Projects\Console-Input-Output-Homework\12. FallingRocks\bin\Debug\_12.FallingRocks.exe
+c:\users\lyudmil\documents\visual studio 2013\Projects\Console-Input-Output-Homework\12. FallingRocks\bin\Debug\_12.FallingRocks.pdb
+c:\users\lyudmil\documents\visual studio 2013\Projects\Console-Input-Output-Homework\12. FallingRocks\obj\Debug\_12.FallingRocks.exe
+c:\users\lyudmil\documents\visual studio 2013\Projects\Console-Input-Output-Homework\12. FallingRocks\obj\Debug\_12.FallingRocks.pdb

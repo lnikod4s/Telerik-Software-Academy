@@ -1,0 +1,5 @@
+c:\users\lyudmil\documents\visual studio 2013\Projects\Console-Input-Output-Homework\08. NumbersFromOneToN\bin\Debug\_08.NumbersFromOneToN.exe.config
+c:\users\lyudmil\documents\visual studio 2013\Projects\Console-Input-Output-Homework\08. NumbersFromOneToN\bin\Debug\_08.NumbersFromOneToN.exe
+c:\users\lyudmil\documents\visual studio 2013\Projects\Console-Input-Output-Homework\08. NumbersFromOneToN\bin\Debug\_08.NumbersFromOneToN.pdb
+c:\users\lyudmil\documents\visual studio 2013\Projects\Console-Input-Output-Homework\08. NumbersFromOneToN\obj\Debug\_08.NumbersFromOneToN.exe
+c:\users\lyudmil\documents\visual studio 2013\Projects\Console-Input-Output-Homework\08. NumbersFromOneToN\obj\Debug\_08.NumbersFromOneToN.pdb
