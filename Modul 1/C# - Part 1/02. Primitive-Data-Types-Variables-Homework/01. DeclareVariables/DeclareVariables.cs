@@ -9,7 +9,7 @@ class DeclareVariables
 {
 	static void Main()
 	{
-		const uint variable1 = 52130;
+		const ushort variable1 = 52130;
 		const sbyte variable2 = -115;
 		const int variable3 = 4825932;
 		const byte variable4 = 97;
