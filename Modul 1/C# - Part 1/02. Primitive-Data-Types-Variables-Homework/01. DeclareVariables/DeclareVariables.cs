@@ -9,7 +9,7 @@ class DeclareVariables
 {
 	static void Main()
 	{
-		const uint variable1 = 52130;
+		const uint variable1 = 52130; //uint from 0 to 4,294,967,295; ushort: 0 to 65,635. Isn't ushort a better choice?'
 		const sbyte variable2 = -115;
 		const int variable3 = 4825932;
 		const byte variable4 = 97;
