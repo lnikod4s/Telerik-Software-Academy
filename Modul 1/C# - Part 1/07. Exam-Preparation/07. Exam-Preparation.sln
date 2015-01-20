@@ -75,6 +75,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Warhead", "Warhead\Warhead.
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XExpression", "XExpression\XExpression.csproj", "{FA81EE8E-8E28-4764-9031-2380CDC2EAA4}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tribonacci", "Tribonacci\Tribonacci.csproj", "{290C6D8B-1397-4A9F-AFB4-1FE532E4EAEF}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -225,6 +227,10 @@ Global
 		{FA81EE8E-8E28-4764-9031-2380CDC2EAA4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FA81EE8E-8E28-4764-9031-2380CDC2EAA4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FA81EE8E-8E28-4764-9031-2380CDC2EAA4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{290C6D8B-1397-4A9F-AFB4-1FE532E4EAEF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{290C6D8B-1397-4A9F-AFB4-1FE532E4EAEF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{290C6D8B-1397-4A9F-AFB4-1FE532E4EAEF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{290C6D8B-1397-4A9F-AFB4-1FE532E4EAEF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
