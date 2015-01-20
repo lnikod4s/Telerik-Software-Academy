@@ -1,4 +1,7 @@
-﻿using System;
+﻿// Telerik Academy Exam 1 @ 6 Dec 2011 Morning
+// Problem 2. Tribonacci
+
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Numerics;
