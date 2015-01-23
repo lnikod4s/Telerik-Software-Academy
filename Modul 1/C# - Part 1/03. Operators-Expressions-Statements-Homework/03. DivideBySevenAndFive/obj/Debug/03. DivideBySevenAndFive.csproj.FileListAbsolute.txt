@@ -1,5 +1,0 @@
-c:\users\lyudmil\documents\visual studio 2013\Projects\Operators-Expressions-Statements\03. DivideBySevenAndFive\bin\Debug\_03.DivideBySevenAndFive.exe.config
-c:\users\lyudmil\documents\visual studio 2013\Projects\Operators-Expressions-Statements\03. DivideBySevenAndFive\bin\Debug\_03.DivideBySevenAndFive.exe
-c:\users\lyudmil\documents\visual studio 2013\Projects\Operators-Expressions-Statements\03. DivideBySevenAndFive\bin\Debug\_03.DivideBySevenAndFive.pdb
-c:\users\lyudmil\documents\visual studio 2013\Projects\Operators-Expressions-Statements\03. DivideBySevenAndFive\obj\Debug\_03.DivideBySevenAndFive.exe
-c:\users\lyudmil\documents\visual studio 2013\Projects\Operators-Expressions-Statements\03. DivideBySevenAndFive\obj\Debug\_03.DivideBySevenAndFive.pdb

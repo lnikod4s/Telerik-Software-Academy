@@ -1,1 +1,0 @@
-c:\users\lyudmil\documents\visual studio 2013\Projects\Intro-Programming-Homework\05. PrintMyName\bin\Debug\_05.PrintMyName.exe.config

@@ -1,1 +1,0 @@
-C:\Users\Lyudmil\documents\visual studio 2013\Projects\Primitive-Data-Types-Variables-Homework\03. VariableInHexFormat\bin\Debug\_03.VariableInHexFormat.exe.config

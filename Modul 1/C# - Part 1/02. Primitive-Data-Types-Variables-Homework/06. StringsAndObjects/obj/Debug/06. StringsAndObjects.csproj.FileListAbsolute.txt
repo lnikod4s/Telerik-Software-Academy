@@ -1,5 +1,0 @@
-C:\Users\Lyudmil\documents\visual studio 2013\Projects\Primitive-Data-Types-Variables-Homework\06. StringsAndObjects\bin\Debug\_06.StringsAndObjects.exe.config
-C:\Users\Lyudmil\documents\visual studio 2013\Projects\Primitive-Data-Types-Variables-Homework\06. StringsAndObjects\bin\Debug\_06.StringsAndObjects.exe
-C:\Users\Lyudmil\documents\visual studio 2013\Projects\Primitive-Data-Types-Variables-Homework\06. StringsAndObjects\bin\Debug\_06.StringsAndObjects.pdb
-C:\Users\Lyudmil\documents\visual studio 2013\Projects\Primitive-Data-Types-Variables-Homework\06. StringsAndObjects\obj\Debug\_06.StringsAndObjects.exe
-C:\Users\Lyudmil\documents\visual studio 2013\Projects\Primitive-Data-Types-Variables-Homework\06. StringsAndObjects\obj\Debug\_06.StringsAndObjects.pdb

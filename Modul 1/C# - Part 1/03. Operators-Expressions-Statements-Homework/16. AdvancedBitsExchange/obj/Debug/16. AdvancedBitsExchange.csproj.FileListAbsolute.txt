@@ -1,1 +1,0 @@
-c:\users\lyudmil\documents\visual studio 2013\Projects\Operators-Expressions-Statements\16. AdvancedBitsExchange\bin\Debug\_16.AdvancedBitsExchange.exe.config

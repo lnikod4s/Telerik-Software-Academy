@@ -1,5 +1,0 @@
-c:\users\lyudmil\documents\visual studio 2013\Projects\Console-Input-Output-Homework\11. NumbersInInterval\bin\Debug\_11.NumbersInInterval.exe.config
-c:\users\lyudmil\documents\visual studio 2013\Projects\Console-Input-Output-Homework\11. NumbersInInterval\bin\Debug\_11.NumbersInInterval.exe
-c:\users\lyudmil\documents\visual studio 2013\Projects\Console-Input-Output-Homework\11. NumbersInInterval\bin\Debug\_11.NumbersInInterval.pdb
-c:\users\lyudmil\documents\visual studio 2013\Projects\Console-Input-Output-Homework\11. NumbersInInterval\obj\Debug\_11.NumbersInInterval.exe
-c:\users\lyudmil\documents\visual studio 2013\Projects\Console-Input-Output-Homework\11. NumbersInInterval\obj\Debug\_11.NumbersInInterval.pdb

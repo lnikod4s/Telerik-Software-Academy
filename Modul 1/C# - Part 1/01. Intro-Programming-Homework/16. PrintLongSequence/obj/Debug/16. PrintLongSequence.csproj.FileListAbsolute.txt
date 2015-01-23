@@ -1,5 +1,0 @@
-c:\users\lyudmil\documents\visual studio 2013\Projects\Intro-Programming-Homework\16. PrintLongSequence\bin\Debug\_16.PrintLongSequence.exe.config
-c:\users\lyudmil\documents\visual studio 2013\Projects\Intro-Programming-Homework\16. PrintLongSequence\bin\Debug\_16.PrintLongSequence.exe
-c:\users\lyudmil\documents\visual studio 2013\Projects\Intro-Programming-Homework\16. PrintLongSequence\bin\Debug\_16.PrintLongSequence.pdb
-c:\users\lyudmil\documents\visual studio 2013\Projects\Intro-Programming-Homework\16. PrintLongSequence\obj\Debug\_16.PrintLongSequence.exe
-c:\users\lyudmil\documents\visual studio 2013\Projects\Intro-Programming-Homework\16. PrintLongSequence\obj\Debug\_16.PrintLongSequence.pdb

@@ -1,6 +1,0 @@
-c:\users\lyudmil\documents\visual studio 2013\Projects\Operators-Expressions-Statements\11. ExtractBitFromInt\bin\Debug\_11.ExtractBitFromInt.exe.config
-c:\users\lyudmil\documents\visual studio 2013\Projects\Operators-Expressions-Statements\11. ExtractBitFromInt\bin\Debug\_11.ExtractBitFromInt.exe
-c:\users\lyudmil\documents\visual studio 2013\Projects\Operators-Expressions-Statements\11. ExtractBitFromInt\bin\Debug\_11.ExtractBitFromInt.pdb
-c:\users\lyudmil\documents\visual studio 2013\Projects\Operators-Expressions-Statements\11. ExtractBitFromInt\obj\Debug\11. ExtractBitFromInt.csprojResolveAssemblyReference.cache
-c:\users\lyudmil\documents\visual studio 2013\Projects\Operators-Expressions-Statements\11. ExtractBitFromInt\obj\Debug\_11.ExtractBitFromInt.exe
-c:\users\lyudmil\documents\visual studio 2013\Projects\Operators-Expressions-Statements\11. ExtractBitFromInt\obj\Debug\_11.ExtractBitFromInt.pdb

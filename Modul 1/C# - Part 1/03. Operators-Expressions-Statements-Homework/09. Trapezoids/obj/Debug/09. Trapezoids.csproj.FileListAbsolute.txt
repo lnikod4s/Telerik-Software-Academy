@@ -1,5 +1,0 @@
-c:\users\lyudmil\documents\visual studio 2013\Projects\Operators-Expressions-Statements\09. Trapezoids\bin\Debug\_09.Trapezoids.exe.config
-c:\users\lyudmil\documents\visual studio 2013\Projects\Operators-Expressions-Statements\09. Trapezoids\bin\Debug\_09.Trapezoids.exe
-c:\users\lyudmil\documents\visual studio 2013\Projects\Operators-Expressions-Statements\09. Trapezoids\bin\Debug\_09.Trapezoids.pdb
-c:\users\lyudmil\documents\visual studio 2013\Projects\Operators-Expressions-Statements\09. Trapezoids\obj\Debug\_09.Trapezoids.exe
-c:\users\lyudmil\documents\visual studio 2013\Projects\Operators-Expressions-Statements\09. Trapezoids\obj\Debug\_09.Trapezoids.pdb

@@ -1,5 +1,0 @@
-C:\Users\Lyudmil\documents\visual studio 2013\Projects\Primitive-Data-Types-Variables-Homework\02. FloatOrDouble\bin\Debug\_02.FloatOrDouble.exe.config
-C:\Users\Lyudmil\documents\visual studio 2013\Projects\Primitive-Data-Types-Variables-Homework\02. FloatOrDouble\bin\Debug\_02.FloatOrDouble.exe
-C:\Users\Lyudmil\documents\visual studio 2013\Projects\Primitive-Data-Types-Variables-Homework\02. FloatOrDouble\bin\Debug\_02.FloatOrDouble.pdb
-C:\Users\Lyudmil\documents\visual studio 2013\Projects\Primitive-Data-Types-Variables-Homework\02. FloatOrDouble\obj\Debug\_02.FloatOrDouble.exe
-C:\Users\Lyudmil\documents\visual studio 2013\Projects\Primitive-Data-Types-Variables-Homework\02. FloatOrDouble\obj\Debug\_02.FloatOrDouble.pdb
