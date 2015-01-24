@@ -99,6 +99,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Eclipse", "Eclipse\Eclipse.
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HayvanNumbers", "HayvanNumbers\HayvanNumbers.csproj", "{FF5BB68B-3ED2-4AA0-AA0D-D7D67F3233AF}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BitsUp", "BitsUp\BitsUp.csproj", "{BCBE50A5-73D9-4765-A9F4-093CE547AE56}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -297,6 +299,10 @@ Global
 		{FF5BB68B-3ED2-4AA0-AA0D-D7D67F3233AF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FF5BB68B-3ED2-4AA0-AA0D-D7D67F3233AF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FF5BB68B-3ED2-4AA0-AA0D-D7D67F3233AF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BCBE50A5-73D9-4765-A9F4-093CE547AE56}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BCBE50A5-73D9-4765-A9F4-093CE547AE56}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BCBE50A5-73D9-4765-A9F4-093CE547AE56}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BCBE50A5-73D9-4765-A9F4-093CE547AE56}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
