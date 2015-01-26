@@ -11,9 +11,7 @@ class CodeStreet
 
 		int position = 0;
 		int counter = 0;
-
 		int result = 0;
-
 		foreach (char c in text)
 		{
 			if (position % 2 == 1)
