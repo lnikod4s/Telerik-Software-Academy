@@ -1,7 +1,5 @@
 ﻿using System;
-using System.Linq;
-
-/*Problem 11.
+/*Problem 11. Binary search
 ------------------------------------------------------------------------------------------------------------------------
 Write a program that finds the index of given element in a sorted array of integers by using the binary search algorithm (find it in Wikipedia).
 */

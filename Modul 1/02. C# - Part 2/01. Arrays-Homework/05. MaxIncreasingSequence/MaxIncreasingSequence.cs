@@ -1,6 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
-/*Problem 5.
+/*Problem 5. Maximal increasing sequence
 -----------------------------------------------------------------------
 Write a program that finds the maximal increasing sequence in an array.
 Example:

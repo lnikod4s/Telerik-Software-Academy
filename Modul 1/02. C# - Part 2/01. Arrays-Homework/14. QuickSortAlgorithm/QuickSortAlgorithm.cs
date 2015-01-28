@@ -1,5 +1,5 @@
 ﻿using System;
-/*Problem 14.
+/*Problem 14. Quick sort
 -----------------------------------------------------------------------------------------------------
 Write a program that sorts an array of strings using the Quick sort algorithm (find it in Wikipedia).
 */
