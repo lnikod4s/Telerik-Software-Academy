@@ -63,9 +63,6 @@ class MaxIncreasingSequence
 		{
 			return new List<int>(){nums[0]};
 		}
-		else
-		{
-			return bestSequence;
-		}
+		return bestSequence;
 	}
 }

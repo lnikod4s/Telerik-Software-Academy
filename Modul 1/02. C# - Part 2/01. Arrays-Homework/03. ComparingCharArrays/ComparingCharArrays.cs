@@ -13,7 +13,7 @@ class ComparingCharArrays
 		char[] firstArray = new char[N];
 		Initialize(firstArray);
 
-		Console.WriteLine("Enter a length for the first array:");
+		Console.WriteLine("Enter a length for the second array:");
 		int M = int.Parse(Console.ReadLine());
 		char[] secondArray = new char[M];
 		Initialize(secondArray);
@@ -41,9 +41,6 @@ class ComparingCharArrays
 		}
 		else
 		{
-			Array.Sort(firstArray);
-			Array.Sort(secondArray);
-
 			Console.WriteLine("Result:");
 			Console.WriteLine("The two arrays have equal length...");
 
