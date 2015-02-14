@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.Linq;
 /*Problem 3. Correct brackets
 -------------------------------------------------------------------------------------
@@ -7,8 +8,8 @@ Example of correct expression: ((a+b)/5-d). Example of incorrect expression: )(a
 */
 class CorrectBrackets
 {
-	const string OPENING_BRACKET = "(";
-	const string CLOSING_BRACKET = ")";
+	private static readonly char[] OpenParentheses = { '(', '[', '{' };
+	private static readonly char[] CloseParentheses = { ')', ']', '}' };
 	static void Main()
 	{
 		Console.Write("Enter an expression with brackets: ");
@@ -20,18 +21,29 @@ class CorrectBrackets
 			: "The brackets in your expression are put incorrectly or are missing.");
 	}
 
-	private static bool CheckExpression(string expression)
+	private static bool CheckExpression(string input)
 	{
-		bool isValid = false;
-		if (expression.Contains(OPENING_BRACKET) && expression.Contains(CLOSING_BRACKET))
+		// Indices of the currently open parentheses:
+		Stack<int> parentheses = new Stack<int>();
+
+		foreach (char chr in input)
 		{
-			if (OPENING_BRACKET.Count() == CLOSING_BRACKET.Count()
-			&& expression.LastIndexOf(OPENING_BRACKET, StringComparison.Ordinal) < expression.IndexOf(CLOSING_BRACKET, StringComparison.Ordinal))
+			int index;
+
+			// Check if the 'chr' is an open parenthesis, and get its index:
+			if ((index = Array.IndexOf(OpenParentheses, chr)) != -1)
 			{
-				isValid = true;
+				parentheses.Push(index);  // Add index to stach
+			}
+			// Check if the 'chr' is a close parenthesis, and get its index:
+			else if ((index = Array.IndexOf(CloseParentheses, chr)) != -1)
+			{
+				// Return 'false' if the stack is empty or if the currently
+				// open parenthesis is not paired with the 'chr':
+				if (parentheses.Count == 0 || parentheses.Pop() != index) return false;
 			}
 		}
-
-		return isValid;
+		// Return 'true' if there is no open parentheses, and 'false' - otherwise:
+		return parentheses.Count == 0;
 	}
 }
