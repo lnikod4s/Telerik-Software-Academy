@@ -33,6 +33,16 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FTML", "FTML\FTML.csproj", 
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ThreeInOne", "ThreeInOne\ThreeInOne.csproj", "{0D1315D1-9C17-4B74-B480-6B1E8E3083E6}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StrangeLandNumbers", "StrangeLandNumbers\StrangeLandNumbers.csproj", "{9B3D483C-66B6-4FE6-BEDE-FFAF9748380A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TwoGirlsOnePath", "TwoGirlsOnePath\TwoGirlsOnePath.csproj", "{79C43E85-9819-47D4-9444-2B4B19D2D4CF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Digits", "Digits\Digits.csproj", "{B493194E-1B46-4BF7-AF2D-38F38AD3FC44}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RelevanceIndex", "RelevanceIndex\RelevanceIndex.csproj", "{19F912E8-D951-4C63-926E-B46637CDE07E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DogeCoins", "DogeCoins\DogeCoins.csproj", "{EFEBF88A-F972-4F4A-91FB-3B1258E13E35}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -99,6 +109,26 @@ Global
 		{0D1315D1-9C17-4B74-B480-6B1E8E3083E6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0D1315D1-9C17-4B74-B480-6B1E8E3083E6}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0D1315D1-9C17-4B74-B480-6B1E8E3083E6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9B3D483C-66B6-4FE6-BEDE-FFAF9748380A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9B3D483C-66B6-4FE6-BEDE-FFAF9748380A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9B3D483C-66B6-4FE6-BEDE-FFAF9748380A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9B3D483C-66B6-4FE6-BEDE-FFAF9748380A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{79C43E85-9819-47D4-9444-2B4B19D2D4CF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{79C43E85-9819-47D4-9444-2B4B19D2D4CF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{79C43E85-9819-47D4-9444-2B4B19D2D4CF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{79C43E85-9819-47D4-9444-2B4B19D2D4CF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B493194E-1B46-4BF7-AF2D-38F38AD3FC44}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B493194E-1B46-4BF7-AF2D-38F38AD3FC44}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B493194E-1B46-4BF7-AF2D-38F38AD3FC44}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B493194E-1B46-4BF7-AF2D-38F38AD3FC44}.Release|Any CPU.Build.0 = Release|Any CPU
+		{19F912E8-D951-4C63-926E-B46637CDE07E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{19F912E8-D951-4C63-926E-B46637CDE07E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{19F912E8-D951-4C63-926E-B46637CDE07E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{19F912E8-D951-4C63-926E-B46637CDE07E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EFEBF88A-F972-4F4A-91FB-3B1258E13E35}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EFEBF88A-F972-4F4A-91FB-3B1258E13E35}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EFEBF88A-F972-4F4A-91FB-3B1258E13E35}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EFEBF88A-F972-4F4A-91FB-3B1258E13E35}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
