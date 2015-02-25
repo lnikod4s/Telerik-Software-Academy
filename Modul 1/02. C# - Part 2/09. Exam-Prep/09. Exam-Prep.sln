@@ -63,6 +63,16 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EncodeAndEncrypt", "EncodeA
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TheyAreGreen", "TheyAreGreen\TheyAreGreen.csproj", "{DFE6BB28-6C21-4D66-A1FA-619E2EDF3B25}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DurankulakNumbers", "DurankulakNumbers\DurankulakNumbers.csproj", "{2070EBBB-C35C-472F-A3F7-62F3CAF3FE69}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JoroTheRabbit", "JoroTheRabbit\JoroTheRabbit.csproj", "{F909C0E7-81A3-46C4-8C3C-04B69E7CF457}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Laser", "Laser\Laser.csproj", "{8019A1FC-DBB6-426B-BFE3-145B44A490BE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CSharpBrackets", "CSharpBrackets\CSharpBrackets.csproj", "{BC9080AF-C496-4FB5-B7E2-A572182125B2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TwoIsBetterThanOne", "TwoIsBetterThanOne\TwoIsBetterThanOne.csproj", "{4821C235-AD08-4474-9351-E4B20331C4E6}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -189,6 +199,26 @@ Global
 		{DFE6BB28-6C21-4D66-A1FA-619E2EDF3B25}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DFE6BB28-6C21-4D66-A1FA-619E2EDF3B25}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DFE6BB28-6C21-4D66-A1FA-619E2EDF3B25}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2070EBBB-C35C-472F-A3F7-62F3CAF3FE69}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2070EBBB-C35C-472F-A3F7-62F3CAF3FE69}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2070EBBB-C35C-472F-A3F7-62F3CAF3FE69}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2070EBBB-C35C-472F-A3F7-62F3CAF3FE69}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F909C0E7-81A3-46C4-8C3C-04B69E7CF457}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F909C0E7-81A3-46C4-8C3C-04B69E7CF457}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F909C0E7-81A3-46C4-8C3C-04B69E7CF457}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F909C0E7-81A3-46C4-8C3C-04B69E7CF457}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8019A1FC-DBB6-426B-BFE3-145B44A490BE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8019A1FC-DBB6-426B-BFE3-145B44A490BE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8019A1FC-DBB6-426B-BFE3-145B44A490BE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8019A1FC-DBB6-426B-BFE3-145B44A490BE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BC9080AF-C496-4FB5-B7E2-A572182125B2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BC9080AF-C496-4FB5-B7E2-A572182125B2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BC9080AF-C496-4FB5-B7E2-A572182125B2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BC9080AF-C496-4FB5-B7E2-A572182125B2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4821C235-AD08-4474-9351-E4B20331C4E6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4821C235-AD08-4474-9351-E4B20331C4E6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4821C235-AD08-4474-9351-E4B20331C4E6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4821C235-AD08-4474-9351-E4B20331C4E6}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
