@@ -33,7 +33,7 @@ class GreedyDwarf
 			{
 				valleyIndex += patterns[i][patternIndex];
 				patternIndex = (patternIndex + 1) % patterns[i].Length;
-				
+
 				if (valleyIndex < 0 || valleyIndex >= valley.Length)
 				{
 					break;
