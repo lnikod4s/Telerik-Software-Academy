@@ -68,7 +68,6 @@ class Digits
 								  field[row + 1, col + 1] == 2 &&
 								  field[row + 2, col + 1] == 2 &&
 								  field[row + 3, col] == 2 &&
-								  field[row + 3, col] == 2 &&
 								  field[row + 4, col - 1] == 2 &&
 								  field[row + 4, col] == 2 &&
 								  field[row + 4, col + 1] == 2;
