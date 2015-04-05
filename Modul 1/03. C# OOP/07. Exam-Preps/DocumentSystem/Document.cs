@@ -11,13 +11,14 @@ namespace DocumentSystem
 
 		public virtual void LoadProperty(string key, string value)
 		{
-			if (key == "name")
+			switch (key)
 			{
-				this.Name = value;
-			}
-			else if (key == "content")
-			{
-				this.Content = value;
+				case "name":
+					this.Name = value;
+					break;
+				case "content":
+					this.Content = value;
+					break;
 			}
 		}
 
