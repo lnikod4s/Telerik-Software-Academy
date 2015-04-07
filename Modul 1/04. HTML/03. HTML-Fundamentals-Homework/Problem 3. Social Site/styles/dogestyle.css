@@ -1,0 +1,16 @@
+body
+{
+	background-color: #add8e6;
+}
+
+ul
+{
+	list-style-type: none;
+}
+
+#doge-pic
+{
+	width: 200px;
+	height: 200px;
+	border: solid;
+}
