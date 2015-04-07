@@ -1,0 +1,166 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="Cosmetics.Category" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="7.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QAAAAgAAAAAAAAAAAAAAAASAAAAEACCAAAAAAAAEAAQ=</HashCode>
+      <FileName>Category.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Cosmetics.CosmeticsProgram" Collapsed="true">
+    <Position X="9.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAA=</HashCode>
+      <FileName>CosmeticsProgram.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Cosmetics.Product" Collapsed="true">
+    <Position X="4.25" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAEBAgAAAQQAAACAAgAAgAQAAEAEAACAABAAAAAFAAA=</HashCode>
+      <FileName>Products\Product.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Cosmetics.Shampoo" Collapsed="true">
+    <Position X="3" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>CAAAAAAAAAAAAAAAAAQAAAAEgAAAAAAAAAAAAAAEAAA=</HashCode>
+      <FileName>Products\Shampoo.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Cosmetics.Toothpaste" Collapsed="true">
+    <Position X="5.25" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAgAAAAAAAAAAIAAAACAAAAQAAACAAAAAAAAEAAA=</HashCode>
+      <FileName>Products\Toothpaste.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Cosmetics.ShoppingCart" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="9.5" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AIAAAAAAAAAAAAAAAAAIQAAAAAAAQAAAAAAAhAAAAAQ=</HashCode>
+      <FileName>ShoppingCart.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Cosmetics.Common.GlobalErrorMessages" Collapsed="true">
+    <Position X="7.75" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAABAAA=</HashCode>
+      <FileName>Common\GlobalErrorMessages.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Cosmetics.Common.Validator" Collapsed="true">
+    <Position X="11.25" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>CAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAQAA=</HashCode>
+      <FileName>Common\Validator.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Cosmetics.Engine.Command" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="9.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EAAgAAAAAAAAEAAAAAAAAAQAAAAEAAAAAIAAAACAAAA=</HashCode>
+      <FileName>Engine\Command.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Cosmetics.Engine.CosmeticsEngine" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="11.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AoEBCABAgCAqDwQAAAQgAgAQAAIAADJAZgABFAwAIAA=</HashCode>
+      <FileName>Engine\CosmeticsEngine.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Cosmetics.Engine.CosmeticsFactory" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="7.75" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAKAAAAAAQAAAAAAgAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Engine\CosmeticsFactory.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Cosmetics.Products.DoNotDeleteMe" Collapsed="true">
+    <Position X="11.25" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Products\DoNotDeleteMe!!!.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Interface Name="Cosmetics.Contracts.ICategory" Collapsed="true">
+    <Position X="7.75" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QAAAAAAAAAAAAAAAAAAAAAQAAAAAACAAAAAAAAAEAAA=</HashCode>
+      <FileName>Contracts\ICategory.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="Cosmetics.Contracts.ICommand" Collapsed="true">
+    <Position X="9.5" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAIAAAAAAAAA=</HashCode>
+      <FileName>Contracts\ICommand.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="Cosmetics.Contracts.ICosmeticsFactory" Collapsed="true">
+    <Position X="11.25" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAKAAAAAAQAAAAAAgAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Contracts\ICosmeticsFactory.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="Cosmetics.Contracts.IEngine" Collapsed="true">
+    <Position X="7.75" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Contracts\IEngine.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="Cosmetics.Contracts.IProduct" Collapsed="true">
+    <Position X="4.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAQAAAACAAAAAAAQAAAAAAAAAAAAAAAAFAAA=</HashCode>
+      <FileName>Contracts\IProduct.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="Cosmetics.Contracts.IShampoo" Collapsed="true">
+    <Position X="3" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAEgAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Contracts\IShampoo.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="Cosmetics.Contracts.IShoppingCart" Collapsed="true">
+    <Position X="9.5" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAIQAAAAAAAQAAAAAAAgAAAAAA=</HashCode>
+      <FileName>Contracts\IShoppingCart.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="Cosmetics.Contracts.IToothpaste" Collapsed="true">
+    <Position X="5.25" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAACAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Contracts\IToothpaste.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Enum Name="Cosmetics.Common.GenderType" Collapsed="true">
+    <Position X="7.75" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAgABAAAAAAAAAAAAAAAAAAgAAAAAAAA=</HashCode>
+      <FileName>Common\GenderType.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="Cosmetics.Common.UsageType" Collapsed="true">
+    <Position X="9.5" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAABAAAAAAAAAAAABAAAAA=</HashCode>
+      <FileName>Common\UsageType.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
