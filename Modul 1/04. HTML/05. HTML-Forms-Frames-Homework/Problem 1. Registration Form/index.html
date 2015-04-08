@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+	<head lang="en">
+        <meta charset="UTF-8">
+        <title>Simple Web Form</title>
+		<link rel="stylesheet"
+		      href="styles/style.css"/>
+	</head>
+	<body>
+		<table>
+			<tfoot>
+				<tr>
+					<td id="footer" colspan="4">
+						<input type="submit" value="Submit"/>
+						<input type="reset" value="Clear This Form"/>
+					</td>
+				</tr>
+			</tfoot>
+			<tbody>
+				<tr>
+					<td class="first-column">Last Name</td>
+					<td colspan="3">
+						<input type="text" name="last-name" placeholder="Nakov" size="50"/>
+					</td>
+				</tr>
+				<tr>
+					<td class="first-column">First Name</td>
+					<td colspan="3">
+						<input type="text" name="first-name" placeholder="Svetlin" size="50"/>
+					</td>
+				</tr>
+				<tr>
+					<td class="first-column">Address</td>
+					<td colspan="3">
+						<textarea name="address"
+						          id="address"
+						          cols="44"
+						          rows="3">17 Hristo Botev Str.						                   floor 3, apt. 12
+						</textarea>
+					</td>
+				</tr>
+				<tr>
+					<td class="first-column">City</td>
+					<td>
+						<input type="text" name="city" placeholder="Kaspichan"/>
+					</td>
+					<td class="first-column">State</td>
+					<td>
+						<input type="text" name="state"/>
+					</td>
+				</tr>
+				<tr>
+					<td class="first-column">Zip/Postal Code</td>
+					<td colspan="3">
+						<input type="text" name="zip" placeholder="9325" size="50"/>
+					</td>
+				</tr>
+				<tr>
+					<td class="first-column">Country</td>
+					<td colspan="3">
+						<select name="country"
+					            id="country">
+							<option value="Bulgaria">Bulgaria</option>
+						</select>
+					</td>
+				</tr>
+				<tr>
+					<td class="first-column">Phone (country code, area code, number)</td>
+					<td colspan="3">
+						(+<input type="text" name="phone-code" placeholder="359" size="5"/>)
+						<input type="text" name="phone-area" placeholder="88" size="5"/>
+						- <input type="text" name="phone-number" placeholder="8334343" size="20"/>
+					</td>
+				</tr>
+				<tr>
+					<td class="first-column">Email</td>
+					<td colspan="3">
+						<input type="text" placeholder="nakov@kaspichan.org" size="50"/>
+					</td>
+				</tr>
+				<tr>
+					<td class="first-column">Birth date</td>
+					<td colspan="3">
+						Month <input type="text" placeholder="06" size="1"/>
+						Day <input type="text" placeholder="14" size="1"/>
+						Year (4 digit) <input type="text" placeholder="1980" size="3"/>
+					</td>
+				</tr>
+				<tr>
+					<td class="first-column">Gender</td>
+					<td colspan="3">
+						<select name="gender"
+						        id="gender">
+							<option value="Male">Male</option>
+						</select>
+					</td>
+				</tr>
+				<tr>
+					<td class="first-column">Starting date</td>
+					<td colspan="3">
+						<input type="radio" value="Spring 2006" checked/>Spring 2006
+						<input type="radio" value="Summer 2006"/>Summer 2006
+					</td>
+				</tr>
+				<tr>
+					<td class="first-column">Comments/Questions</td>
+					<td colspan="3">
+						<textarea name="comments"
+						          id="comments"
+						          cols="44"
+						          rows="5">Please send me more information about the lodging.
+						</textarea>
+					</td>
+				</tr>
+			</tbody>
+		</table>
+	</body>
+</html>

@@ -1,0 +1,23 @@
+table {
+	border-collapse: collapse;
+	table-layout: fixed;
+}
+
+table td {
+	border: 1px solid black;
+	width: 150px;
+	word-wrap: break-word;
+}
+
+tfoot {
+	background-color: #d1ede1;
+}
+
+.first-column {
+	text-align: right;
+	font-weight: bold;
+}
+
+#footer {
+	padding-left: 200px;
+}

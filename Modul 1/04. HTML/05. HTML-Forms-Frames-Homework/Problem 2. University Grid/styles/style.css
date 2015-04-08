@@ -1,0 +1,11 @@
+table, th, td {
+	border: 1px inset;
+}
+
+th, td {
+	padding: 5px;
+}
+
+.total-col {
+	font-weight: bold;
+}
