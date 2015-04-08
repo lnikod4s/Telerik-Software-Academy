@@ -1,0 +1,42 @@
+table, tr, td
+{
+	border: 1px inset;
+}
+
+#a
+{
+	padding: 2px 10px 2px 10px;
+}
+
+#b
+{
+	padding-left: 15px;
+}
+
+#d, #e, #f, #h, #i, #k, #l, #m, #o
+{
+	text-align: center;
+}
+
+#c
+{
+	text-align: center;
+	text-align: left;
+}
+
+#g
+{
+	text-align: right;
+}
+
+#j
+{
+	padding-top: 25px;
+	text-align: end;
+	text-align: right;
+}
+
+#n
+{
+	text-align: right;
+}

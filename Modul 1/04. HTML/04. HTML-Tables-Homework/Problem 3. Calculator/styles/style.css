@@ -1,0 +1,16 @@
+#result
+{
+	text-align: right;
+	padding: 9px;
+	font-size: larger;
+}
+
+#button_zero
+{
+	padding: 0 19.5px;
+}
+
+#button_minus, #button_divide, #button_decimal_point, #button_times
+{
+	width: 23px;
+}
