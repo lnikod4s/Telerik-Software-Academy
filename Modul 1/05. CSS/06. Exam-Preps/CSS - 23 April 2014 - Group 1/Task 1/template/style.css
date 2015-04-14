@@ -1,0 +1,45 @@
+html, body {
+	font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+#wrapper {
+	width: 960px;
+	margin: 0 auto;
+}
+
+header {
+	margin: 0;
+	background-color: #F5F4E8;
+}
+
+.clear {
+	clear: both;
+}
+
+#nav {
+	display: inline;
+	text-align: right;
+	vertical-align: middle;
+}
+
+ #nav ul li {
+	 display: inline;
+	 text-align: right;
+	 color: #575E5B;
+ }
+
+ h1 {
+	 display: inline;
+	 vertical-align: middle;
+ }
+
+ h1.title {
+	 font-size: 16px;
+	 color: #575E5B;
+	 text-transform: uppercase;
+ }
+
+ #searchBar {
+	 margin: 0;
+	 background-color: #000;
+ }
