@@ -1,0 +1,47 @@
+#title {
+	font-family: Helvetica, Arial, sans-serif;
+	font-weight: 100;
+	font-size: 1.2em;
+	color: #BBBBBB;
+}
+
+#main-content {
+	background-color: #595959;
+	width: 400px;
+	height: 350px;
+	margin: 0 auto;
+}
+
+.attributes {
+	color: #FFFFFF;
+}
+
+.yellow-color {
+	color: #FFF2B2;
+}
+
+#red-color {
+	color: #FF0014;
+}
+
+.gray-color {
+	color: #BBBBBB;
+}
+
+#orange-color {
+	color: #E06B1E;
+}
+
+#green-circle {
+	width:0.8em;
+	height:0.9em;
+}
+
+dt {
+	font-style: italic;
+}
+
+dd {
+	margin-left: 130px;
+	margin-bottom: 10px;
+}

@@ -1,0 +1,49 @@
+body {
+	background-color: #A9A9A9;
+}
+
+#top-header, #bottom-footer {
+	text-align: center;
+}
+
+#top-header h1 {
+	font-size: 40px;
+}
+
+.no-decoration-anchor {
+	text-decoration: none;
+	color: #000000;
+}
+
+.article-title {
+	font-size: 25px;
+}
+
+nav li {
+	list-style-type: none;
+}
+
+nav li {
+	color: #D3D3D3;
+}
+
+nav li:not(:last-child) a {
+	text-decoration: none;
+	font-size: 1.2em;
+	font-weight: 900;
+	color: #FFFFFF;
+}
+
+nav li:last-child a {
+	font-size: 1.2em;
+	font-weight: 900;
+	color: #FFFFFF;
+}
+
+nav li a:hover {
+	background-color: #D3D3D3;
+}
+
+header {
+	color: #FAFAD2;
+}
