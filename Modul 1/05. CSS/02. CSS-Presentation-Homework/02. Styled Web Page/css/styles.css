@@ -1,0 +1,43 @@
+html {
+	background: rgb(213, 147, 255) linear-gradient(to bottom, rgb(213, 147, 255) 0%, rgb(146, 21, 242) 50%, rgb(146, 21, 242) 100%) fixed;
+}
+
+#logo-container {
+	display: inline-block;
+	float: left;
+}
+
+#reg-form-container {
+	display: inline-block;
+	float: right;
+}
+
+#main-nav-list li {
+	display: inline;
+	float: left;
+}
+
+#tb-username, #tb-password, #btn-register {
+	background-color: rgb(179, 94, 243);
+}
+
+#btn-register {
+	color: rgb(255, 255, 252);
+	background: bottom;
+	font-weight: 900;
+	box-shadow: 1px 1px 1px rgba(0, 0, 0, .75);
+}
+
+.anchors {
+	color: rgb(212, 163, 248);
+}
+
+#widget li:before {
+	content: url("../img/li-dot.png");
+	margin: 0;
+	padding: 0;
+}
+
+header nav, section article {
+	border-radius: 15px;
+}

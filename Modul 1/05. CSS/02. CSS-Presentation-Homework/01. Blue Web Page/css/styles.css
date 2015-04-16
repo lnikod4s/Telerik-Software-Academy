@@ -1,0 +1,20 @@
+@font-face {
+	font-family: "Edwardian Script ITC";
+	src: url("../fonts/itcedscr.ttf");
+	font-family: "Consolas";
+	src: url("../fonts/Consolas.ttf");
+}
+
+article {
+	color: rgb(0, 148, 255);
+	font-family: Consolas;
+}
+
+article p::first-letter {
+	font-family: "Edwardian Script ITC";
+	font-size: 40px;
+}
+
+article p::first-line {
+	font-weight: 900;
+}
