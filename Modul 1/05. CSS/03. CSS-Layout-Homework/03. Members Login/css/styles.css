@@ -1,0 +1,63 @@
+html {
+	background: radial-gradient(rgb(0, 191, 255), rgb(255, 255, 255));
+}
+
+body {
+	width: 60%;
+	height: 50%;
+	border: 1px solid rgb(128, 104, 80);
+	border-radius: 10px;
+	margin: 20px auto;
+}
+
+body > header {
+	background: linear-gradient(to bottom, #3b3b3b, #2b2b2b);
+	font-family: Helvetica;
+	font-size: 1.3em;
+	font-weight: 700;
+	color: rgb(255, 255, 255);
+}
+
+body > header form {
+	float: right;
+	margin-top: 10px;
+	margin-right: 20px;
+}
+
+#go-button {
+	background: red;
+	padding: 2px 15px;
+	color: rgb(255, 255, 255);
+	border: 1px solid rgb(255, 255, 255);
+	border-radius: 7px;
+}
+
+body > article {
+	background: rgb(59, 59, 59);
+	padding-top: 0;
+	padding-bottom: 0;
+	color: rgb(128, 128, 128);
+}
+
+body > article h1, body > article p {
+	margin: 0;
+	padding-left: 10px;
+	padding-right: 100px;
+}
+
+body > article h1 {
+	color: rgb(255, 233, 33);
+
+}
+
+body > article p:first-of-type {
+	padding-top: 10px;
+}
+
+body > article p:last-of-type {
+	padding-bottom: 10px;
+}
+
+body > article p q {
+	color: rgb(255, 255, 255);
+}

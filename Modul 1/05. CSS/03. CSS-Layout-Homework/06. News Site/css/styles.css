@@ -1,0 +1,119 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	padding: 20px;
+	font: 12px/1.2 Tahoma, sans-serif;
+	background: radial-gradient(rgba(30, 55, 65, 1), rgba(30, 55, 65, .8));
+}
+
+#main-container {
+	display: block;
+	width: 688px;
+	max-width: 688px;
+	padding: 20px 20px 10px 0;
+	border: 1px solid rgb(51, 125, 143);
+	border-radius: 7px;
+}
+
+#main-container nav {
+	padding-left: 5px;
+	height: 40px;
+}
+
+#main-container nav ul {
+	list-style-type: none;
+}
+
+#main-container nav ul li {
+	margin-right: -2px;
+	display: inline-block;
+}
+
+#main-container nav ul li a {
+	padding: 8px 10px 8px 10px;
+	font-weight: bold;
+	text-decoration: none;
+	color: rgb(139, 165, 177);
+	background-color: rgb(75, 95, 103);
+}
+
+#main-container nav ul li a:hover {
+	text-decoration: underline;
+	color: rgb(240, 248, 243);
+	background-color: rgb(30, 55, 65);
+	-webkit-transition: background-color 0.2s;
+	-moz-transition: background-color 0.2s;
+	-o-transition: background-color 0.2s;
+	transition: background-color 0.2s;
+}
+
+#main-container nav ul li a.current {
+	color: rgb(240, 248, 243);
+	background-color: rgb(30, 55, 65);
+}
+
+#main-container section article:first-of-type img {
+	opacity: 1;
+}
+
+#main-container article:not(:last-child) header {
+	border-bottom: 1px solid rgb(51, 73, 82);
+}
+
+#main-container article.current-article header {
+	color: rgb(240, 248, 243);
+	background-color: rgb(0, 150, 140);
+}
+
+#main-container article .article-content {
+	position: absolute;
+	top: 80px;
+	left: 330px;
+	float: right;
+	zoom: 1;
+	background: url("../img/play.png") no-repeat center;
+}
+
+#main-container article .article-content:after {
+	display: block;
+	content: "";
+	height: 0;
+	clear: both;
+}
+
+#main-container article .article-content img {
+	max-width: 390px;
+	opacity: 0;
+}
+
+#main-container article header {
+	display: inline-block;
+	width: 250px;
+	padding-right: 55px;
+	color: rgb(139, 165, 177);
+}
+
+#main-container article header:hover {
+	color: rgb(240, 248, 243);
+	background-color: rgb(0, 150, 140);
+	-webkit-transition: background-color 0.3s;
+	-moz-transition: background-color 0.3s;
+	-o-transition: background-color 0.3s;
+	transition: background-color 0.3s;
+}
+
+#main-container article header:hover ~ div > img {
+	opacity: 1;
+}
+
+#main-container article h1 {
+	width: 250px;
+	display: block;
+	margin: 12px 40px 12px 10px;
+	font: 12px/1.2 Tahoma, sans-serif;
+	font-weight: bold;
+	cursor: pointer;
+}

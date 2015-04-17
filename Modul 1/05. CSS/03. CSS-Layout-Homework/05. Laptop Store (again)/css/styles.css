@@ -1,0 +1,78 @@
+html {
+	height: 950px;
+	background: linear-gradient(rgba(119, 136, 153, .1), rgba(119, 136, 153, .3));
+}
+
+#page-wrapper {
+	width: 1200px;
+	height: 720px;
+	border: 2px solid rgb(0, 0, 0);
+	margin: 20px auto;
+	background: rgb(255, 255, 255);
+}
+
+header {
+	border-bottom: 2px solid rgb(0, 0, 0);
+	text-align: center;
+	font-size: 30px;
+	font-weight: 600;
+	padding: 10px;
+}
+
+header a {
+	color: rgb(0, 171, 239);
+}
+
+#main-content {
+	width: 70%;
+	height: 88%;
+	float: left;
+	border: 2px solid rgb(0, 0, 0);
+	margin: 10px;
+}
+
+#sort-area {
+	font-size: 30px;
+	margin-top: 15%;
+}
+
+#sort-area label, #sort-area input {
+	padding: 10px;
+	margin: 15px;
+	vertical-align: middle;
+}
+
+#sort-area input {
+	width: 250px;
+}
+
+#main-content .components {
+	font-size: 26px;
+	display: inline-block;
+	float: left;
+	margin: 10px;
+}
+
+#main-content .components:first-of-type {
+	margin-top: 40px;
+}
+
+#main-content .components:nth-of-type(3), #main-content .components:nth-of-type(4) {
+	margin-left: 56px;
+}
+
+#main-content img {
+	display: inline-block;
+	float: left;
+}
+
+#main-content .macbook-air {
+	display: inline-block;
+	width: 45%;
+	height: 30%;
+}
+
+#main-content .macbook-air legend {
+	text-align: center;
+	font-size: 26px;
+}

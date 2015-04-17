@@ -1,0 +1,39 @@
+html {
+	background: linear-gradient(rgba(255, 0, 0, .5), rgba(255, 0, 0, 0));
+}
+
+main {
+	width: 800px;
+	height: 900px;
+	margin: 0 auto;
+	border: 1px solid rgb(128, 128, 128);
+	background: rgb(238, 238, 238);
+}
+
+main > header h1 {
+	padding-left: 40px;
+}
+
+section {
+	width: 90%;
+	height: 20%;
+	border: 1px solid rgb(128, 128, 128);
+	margin: 50px auto;
+	background: rgb(255, 255, 255);
+	font-family: Helvetica;
+	font-size: 0.8em;
+}
+
+.img {
+	float: left;
+	margin: 30px;
+}
+
+.text {
+	margin: 30px;
+}
+
+.buttons {
+	float: right;
+	margin: 50px;
+}
