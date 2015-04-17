@@ -1,0 +1,340 @@
+/* RESET STYLES */
+body, header, section, footer, article, h1, h2, h3, h4, h5, h6, input, button, label, p, fieldset, nav, ul, li, a, span, strong, em, img {
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+
+div, h1, h3, h4, h5, h6, header, footer, body, section, nav, article, aside {
+	display: block;
+}
+
+body {
+	font: 14px normal Arial;
+	color: #ffffff;
+}
+
+body header {
+	padding: 25px 15px 5px 15px;
+}
+
+body header div#header-container {
+	zoom: 1;
+}
+
+body header div#header-container:after {
+	content: "\0020";
+	display: block;
+	height: 0;
+	overflow: hidden;
+	clear: both;
+}
+
+body header div#header-container:before {
+	content: "\0020";
+	display: block;
+	height: 0;
+	overflow: hidden;
+	clear: both;
+}
+
+body header div#header-container div#logo-container {
+	float: left;
+	position: relative;
+}
+
+body header div#header-container div#reg-form-container {
+	float: right;
+	position: relative;
+	right: 5%;
+	top: 50%;
+}
+
+body header div#header-container div#reg-form-container div {
+	text-align: right;
+}
+
+body header div#header-container div#reg-form-container div label {
+	width: 50px;
+	margin: 5px;
+}
+
+body header div#header-container div#reg-form-container div input {
+	width: 130px;
+	border: 1px solid #603382;
+	border-radius: 10px;
+	padding: 2px 5px;
+	margin: 5px;
+}
+
+body header div#header-container div#reg-form-container button {
+	margin-left: auto;
+	margin-right: auto;
+	font-weight: bold;
+	border: 1px solid #603382;
+	border-style: outset;
+	border-radius: 10px;
+	padding: 5px 8px;
+}
+
+body header div#header-container div#reg-form-container button:hover {
+	background-color: #8949b9;
+	border-style: inset;
+}
+
+body header nav {
+	display: inline-block;
+	width: 75%;
+	margin: 20px 20px 20px 20px;
+	padding: 12px;
+	border: 2px solid #000;
+	zoom: 1;
+}
+
+body header nav:after {
+	content: "\0020";
+	display: block;
+	height: 0;
+	overflow: hidden;
+	clear: both;
+}
+
+body header nav:before {
+	content: "\0020";
+	display: block;
+	height: 0;
+	overflow: hidden;
+	clear: both;
+}
+
+body header nav ul {
+	zoom: 1;
+}
+
+body header nav ul:after {
+	content: "\0020";
+	display: block;
+	height: 0;
+	overflow: hidden;
+	clear: both;
+}
+
+body header nav ul:before {
+	content: "\0020";
+	display: block;
+	height: 0;
+	overflow: hidden;
+	clear: both;
+}
+
+body header nav ul.nav-list {
+	list-style-type: none;
+}
+
+body header nav ul li {
+	float: left;
+	margin: 0;
+}
+
+body header nav ul li a {
+	text-decoration: none;
+	padding: 0 10px 0 10px;
+	color: #ffffff;
+	font: 1.4em normal Arial;
+}
+
+body header nav ul li a.selected {
+	font-weight: bold;
+}
+
+body header nav ul li:hover > a {
+	text-decoration: underline;
+	color: #a8a8a8;
+}
+
+body header nav ul li:hover > a + ul {
+	display: block;
+}
+
+body header nav ul li ul.sub-nav-list {
+	position: absolute;
+	display: none;
+	background-color: rgba(179, 94, 243, 0.9);
+	border-radius: 5px;
+	zoom: 1;
+}
+
+body header nav ul li ul.sub-nav-list:after {
+	content: "\0020";
+	display: block;
+	height: 0;
+	overflow: hidden;
+	clear: both;
+}
+
+body header nav ul li ul.sub-nav-list:before {
+	content: "\0020";
+	display: block;
+	height: 0;
+	overflow: hidden;
+	clear: both;
+}
+
+body header nav ul li ul li {
+	float: none;
+	margin: 0 15px;
+	padding: 10px 0;
+	border-bottom: 1px solid black;
+}
+
+body header nav ul li ul li:last-of-type {
+	border-bottom: none;
+}
+
+body header nav ul li ul li > a {
+	font-size: 1.2em;
+	color: #ffffff;
+}
+
+body section {
+	width: 75%;
+	float: left;
+	color: #000000;
+	zoom: 1;
+}
+
+body section:after {
+	content: "\0020";
+	display: block;
+	height: 0;
+	overflow: hidden;
+	clear: both;
+}
+
+body section:before {
+	content: "\0020";
+	display: block;
+	height: 0;
+	overflow: hidden;
+	clear: both;
+}
+
+body section article {
+	margin: 20px;
+	padding: 20px;
+	border: 1px solid #000000;
+}
+
+body section article header {
+	background: none;
+	padding: 5px;
+}
+
+body section article header h1 {
+	font-size: 1.4em;
+	padding: 0;
+}
+
+body section article footer {
+	padding: 5px;
+}
+
+body section article footer p {
+	font-size: 16px;
+	text-align: right;
+	font-weight: normal;
+}
+
+body section article footer p time {
+	font-family: Consolas, 'Lucida Console', 'DejaVu Sans Mono', monospace;
+}
+
+body section article footer p a {
+	text-decoration: none;
+}
+
+body section article footer p a:hover {
+	text-decoration: underline;
+}
+
+body aside {
+	float: left;
+	width: 20%;
+	margin: 20px;
+	zoom: 1;
+}
+
+body aside:after {
+	content: "\0020";
+	display: block;
+	height: 0;
+	overflow: hidden;
+	clear: both;
+}
+
+body aside:before {
+	content: "\0020";
+	display: block;
+	height: 0;
+	overflow: hidden;
+	clear: both;
+}
+
+body aside > ul {
+	list-style-type: none;
+}
+
+body aside > ul > li {
+	margin: 15px 0;
+	padding: 15px;
+	border: 1px solid #000000;
+	border-radius: 5px;
+}
+
+body aside > ul > li h2 {
+	font-size: 1.1em;
+	font-weight: bold;
+}
+
+body aside > ul > li p {
+	margin: 10px 5px 10px 5px;
+	font-size: 14px;
+}
+
+body aside > ul > li p a {
+	color: #aaaaaa;
+	text-decoration: none;
+}
+
+body aside > ul > li p strong {
+	color: #cccccc;
+	font-weight: bold;
+	font-style: normal;
+}
+
+body aside > ul > li p em {
+	color: #cccccc;
+	font-weight: normal;
+	font-style: italic;
+}
+
+body aside > ul > li ul {
+	list-style-type: none;
+	margin: 10px 0;
+}
+
+body aside > ul > li ul li {
+	margin: 5px 0 0 10px;
+	background: url(../img/li-dot.png) no-repeat 0 50%;
+	padding-left: 25px;
+}
+
+body footer {
+	clear: both;
+	padding: 15px 0 25px 0;
+}
+
+body footer p {
+	font-size: 1.2em;
+	font-weight: bold;
+}
