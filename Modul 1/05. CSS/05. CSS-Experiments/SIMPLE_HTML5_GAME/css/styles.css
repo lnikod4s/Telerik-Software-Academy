@@ -1,0 +1,26 @@
+body {
+	background: #ffffff;
+	text-align: center;
+	padding: 20px;
+	color: #575757;
+	font: 14px/21px Arial,Helvetica,sans-serif;
+}
+
+a {
+	color: #B93F14;
+}
+
+a:hover {
+	text-decoration: none;
+}
+
+ol {
+	width: 600px;
+	text-align: left;
+	margin: 15px auto
+}
+
+canvas {
+	border: 1px solid black;
+	cursor: url("../img/almosttransparent.png"), none;
+}
