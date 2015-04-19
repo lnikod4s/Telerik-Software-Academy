@@ -5,41 +5,59 @@ html, body {
 #wrapper {
 	width: 960px;
 	margin: 0 auto;
-}
-
-header {
-	margin: 0;
-	background-color: #F5F4E8;
+	padding: 0 5px;
+	color: #575e5b;
 }
 
 .clear {
 	clear: both;
 }
 
-#nav {
-	display: inline;
-	text-align: right;
-	vertical-align: middle;
+#wrapper header {
+	background: repeating-linear-gradient(to right, #f6f5e9, white 8px);
 }
 
- #nav ul li {
-	 display: inline;
-	 text-align: right;
-	 color: #575E5B;
- }
+#wrapper header > h1 {
+	text-transform: uppercase;
+	font-size: 16px;
+	margin: 0;
+	float: left;
+	padding: 25px;
+}
 
- h1 {
-	 display: inline;
-	 vertical-align: middle;
- }
+#nav {
+	float: right;
+}
 
- h1.title {
-	 font-size: 16px;
-	 color: #575E5B;
-	 text-transform: uppercase;
- }
+#nav ul li {
+	display: inline-block;
+	padding: 10px;
+}
 
- #searchBar {
-	 margin: 0;
-	 background-color: #000;
- }
+#searchBar {
+	background: black;
+	padding: 10px;
+	color: #f6f5e9;
+	font-size: 14px;
+}
+
+#archives {
+	float: left;
+}
+
+#search {
+	float: right;
+}
+
+#archives a, #search a {
+	text-decoration: none;
+	color: #f6f5e9;
+}
+
+#content {
+	font-size: 14px;
+}
+
+#content > h1 {
+	font-size: 24px;
+}
