@@ -1,0 +1,12 @@
+html, body {
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+#wrapper {
+	width: 960px;
+	margin: 0 auto;
+}
+
+.clear {
+	clear: both;
+}
