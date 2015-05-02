@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+	<head lang="en">
+		<title>12. Create a list by given template</title>
+		<meta charset="UTF-8">
+		<style>
+			section {
+				border: 2px solid black;
+				margin: 1%;
+				display: inline-block;
+				width: 30%;
+				padding: 5px;
+			}
+
+			#btnGenerate {
+				display: block;
+				margin-top: 2%;
+				margin-left: 1%;
+				width: 64%;
+				height: 40px;
+			}
+
+			#btnTemp {
+				display: inline-block;
+			}
+
+			h1 {
+				text-align: center;
+			}
+
+			section div {
+				display: inline-block;
+			}
+		</style>
+		<script src="script.js"></script>
+		<script>
+			function getPeopleList(people, template) {
+				var ul = document.createElement('ul');
+				for (var i = 0; i < people.length; i++) {
+					var currLi = document.createElement('li');
+					var currLiContent = template.replace("-{name}-", people[i].name).replace("-{age}-", people[i].age);
+					currLi.innerHTML = currLiContent;
+					ul.appendChild(currLi);
+				}
+				return ul;
+			}
+			function onGenerateUl() {
+				onGenerateTemplate();
+				var template = document.getElementById('list-item').innerHTML;
+				var people = generatePersonsArray(500);
+				var ul = getPeopleList(people, template);
+				document.getElementById('result').innerHTML = "";
+				document.getElementById('result').appendChild(ul);
+			}
+			function onGenerateTemplate() {
+				var nameStyle = document.getElementById('nameStyle').value;
+				var ageStyle = document.getElementById('ageStyle').value;
+				var openName = "<" + nameStyle + ">";
+				var closeName = "</";
+				var indexSpaceNameStyle = nameStyle.indexOf(' ');
+				if (indexSpaceNameStyle > -1) {
+					closeName += nameStyle.substring(0, indexSpaceNameStyle);
+				}
+				else {
+					closeName += nameStyle;
+				}
+				closeName += ">";
+				var openAge = "<" + ageStyle + ">";
+				var closeAge = "</";
+				var indexSpaceAgeStyle = ageStyle.indexOf(' ');
+				if (indexSpaceAgeStyle > -1) {
+					closeAge += nameStyle.substring(0, indexSpaceAgeStyle);
+				}
+				else {
+					closeAge += ageStyle;
+				}
+				closeAge += ">";
+				var newStyle = openName + "-{name}-" + closeName + " " + openAge + "-{age}-" + closeAge;
+				document.getElementById('list-item').innerHTML = newStyle;
+			}
+		</script>
+	</head>
+	<body>
+		<section>
+			<h1>Current style :</h1>
+
+			<div id="list-item" data-type="template"><strong>-{name}-</strong> <span>-{age}-</span></div>
+			<div id="styleShow"></div>
+		</section>
+		<section>
+			<h1>Change style : (enter tag content only)</h1>
+
+			<div>
+				<span>Style for -{name}-</span><input id="nameStyle" type="text" value="strong"/> <br/>
+				<span>Style for -{age}-</span><input id="ageStyle" type="text" value="span"/><br/>
+			</div>
+			<button onclick="onGenerateTemplate()" id="btnTemp">Change Style</button>
+		</section>
+		<button onclick="onGenerateUl()" id="btnGenerate">Generate UL</button>
+		<div id="result"></div>
+	</body>
+</html>
