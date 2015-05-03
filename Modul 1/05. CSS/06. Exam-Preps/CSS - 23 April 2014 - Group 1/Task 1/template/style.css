@@ -1,12 +1,14 @@
 html, body {
 	font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	color: #575e5b;
+	margin: 0 0 0 2px;
 }
 
 #wrapper {
 	width: 960px;
-	margin: 0 auto;
-	padding: 0 5px;
-	color: #575e5b;
+	margin: 0;
+	padding: 0;
+	font-size: 14px;
 }
 
 .clear {
@@ -14,50 +16,56 @@ html, body {
 }
 
 #wrapper header {
-	background: repeating-linear-gradient(to right, #f6f5e9, white 8px);
+	background: url("images/header-bg.png") repeat;
 }
 
-#wrapper header > h1 {
+#wrapper header h1 {
+	display: inline;
+	float: left;
 	text-transform: uppercase;
 	font-size: 16px;
-	margin: 0;
-	float: left;
-	padding: 25px;
+	vertical-align: middle;
+	padding: 8px 8px 8px 15px;
 }
 
-#nav {
+#wrapper #nav ul {
+	display: inline;
 	float: right;
+	margin-right: 10px;
+	padding-top: 5px;
 }
 
-#nav ul li {
-	display: inline-block;
-	padding: 10px;
+#wrapper #nav ul li {
+	display: inline;
+	margin: 10px;
 }
 
-#searchBar {
+#wrapper #searchBar {
 	background: black;
-	padding: 10px;
-	color: #f6f5e9;
+	padding: 8px;
+	color: lightgray;
 	font-size: 14px;
 }
 
-#archives {
+#wrapper #searchBar a {
+	text-decoration: none;
+	color: lightgray;
+}
+
+#wrapper #searchBar #archives {
+	display: inline;
 	float: left;
 }
 
-#search {
+#wrapper #searchBar #search {
+	display: inline;
 	float: right;
 }
 
-#archives a, #search a {
-	text-decoration: none;
-	color: #f6f5e9;
-}
-
-#content {
+#wrapper #content {
 	font-size: 14px;
 }
 
-#content > h1 {
+#wrapper #content h1 {
 	font-size: 24px;
 }
