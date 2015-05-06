@@ -1,0 +1,273 @@
+body {
+	background: url("Wood_3648x2736.jpg") no-repeat;
+}
+
+#footer {
+	position: fixed;
+	bottom: 0;
+	margin: 0;
+	padding: 0;
+	left: 0;
+	right: 0;
+	width: 100%;
+	height: 40px;
+	font-family: Arial, serif;
+	text-shadow: 1px 1px 1px black;
+	border-top: 1px solid rgba(0, 0, 0, .3);
+	background: rgba(0, 0, 0, .25);
+	box-shadow: inset 0 1px rgba(255, 255, 255, .3),
+	inset 0 10px rgba(255, 255, 255, .2),
+	inset 0 10px 20px rgba(255, 255, 255, .25),
+	inset 0 -15px 30px rgba(0, 0, 0, .3);
+}
+
+#footer h2 {
+	font-weight: normal;
+	font-size: 14px;
+	text-decoration: underline;
+	color: #CC0000;
+	margin: 10px 0 5px 10px;
+}
+
+#footer p {
+	color: white;
+	font-size: 12px;
+	float: left;
+	padding: 0 10px;
+	margin: 10px 0;
+}
+
+#footer img {
+	border: none;
+}
+
+#footer li ul {
+	list-style: none;
+	padding: 0;
+	margin-bottom: 12px;
+}
+
+#footer .whiteBorder {
+	border: 1px solid white;
+}
+
+#footer .img_left {
+	float: left;
+	margin-right: 10px;
+	width: 40px;
+}
+
+#footer .black_box {
+	background: rgba(0, 0, 0, .4);
+	padding: 5px;
+	margin-bottom: 5px;
+	border-radius: 5px;
+}
+
+#footer #notifications {
+	float: right;
+	width: auto;
+	margin: 5px 15px 0;
+	padding: 0;
+	overflow: hidden;
+}
+
+#footer #notifications li {
+	margin-right: 12px;
+	float: left;
+	width: 24px;
+	padding: 0;
+	height: 32px;
+	list-style: none;
+
+}
+
+#footer #notifications li:hover {
+	margin-top: -1px;
+}
+
+a.notificationIcons span {
+	display: none;
+	font-size: 12px;
+	color: white;
+	bottom: 45px;
+	width: 150px;
+	position: absolute;
+	border: 1px solid #333333;
+	border-radius: 3px;
+	padding: 5px;
+	margin-left: -75px;
+	background: rgba(0, 0, 0, .4);
+}
+
+a.notificationIcons:hover span {
+	display: block;
+}
+
+#footer_menu {
+	margin: 0;
+	padding: 0;
+	width: auto;
+}
+
+#footer_menu li {
+	list-style: none;
+	float: left;
+	padding: 12px 14px 14px 14px;
+	border-right: 1px solid rgba(0, 0, 0, .4);
+	background: rgba(0, 0, 0, .1);
+}
+
+#footer_menu li:hover {
+	background: rgba(0, 0, 0, .3);
+}
+
+#footer_menu li a {
+	display: block;
+	color: #CCCCCC;
+	text-decoration: none;
+}
+
+#footer_menu li a:hover {
+	color: white;
+}
+
+#footer_menu .homeButton {
+	padding: 5px 8px 0 14px;
+	border: none;
+	background: none;
+}
+
+#footer_menu .homeButton:hover {
+	background: none;
+}
+
+#footer_menu .homeButton a {
+	background: url("home.png") top left no-repeat;
+	width: 36px;
+	height: 30px;
+}
+
+.clear {
+	clear: both;
+	display: block;
+	overflow: hidden;
+	visibility: hidden;
+	width: 0;
+	height: 0;
+}
+
+/* Program Menu Drop-Up */
+
+#footer_menu li ul.dropup {
+	display: none;
+}
+
+#footer_menu li:hover ul.dropup {
+	display: block;
+	position: absolute;
+	margin: 0 0 0 -15px;
+	bottom: 40px;
+	border: 1px solid #111111 border-bottom : none;
+	background: rgba(0, 0, 0, .5);
+	border-radius: 7px 7px 0 0;
+}
+
+#footer_menu li:hover li {
+	float: none;
+	background: none;
+	border: none;
+	border-bottom: 1px solid #111111;
+	padding: 12px 10px;
+}
+
+/* Drop-Up default links */
+
+#footer_menu li:hover {
+	color: #AAAAAA;
+}
+
+#footer_menu li:hover a:hover {
+	color: white;
+}
+
+/* Header Link (Stream, Messages, etc.) */
+
+#footer_menu li:hover a.headerLinks {
+	font-size: 14px;
+	text-decoration: underline;
+	color: #CC0000;
+	margin: 10px 0 0 10px;
+}
+
+#footer_menu li:hover a.headerLinks:hover {
+	color: white;
+	cursor: pointer;
+}
+
+#footer_menu .right {
+	float: right;
+	right: 0;
+	margin-right: 2px;
+	border-right: none;
+	border-left: 1px solid rgba(0, 0, 0, .3);
+}
+
+/* Layouts */
+
+#footer .one_column_layout,
+#footer .two_column_layout,
+#footer .three_column_layout {
+	margin: 4px;
+	position: absolute;
+	padding-bottom: 15px;
+	display: none;
+	text-align: left;
+}
+
+#footer .one_column_layout {
+	width: 140px;
+}
+
+#footer .two_column_layout {
+	width: 280px;
+}
+
+#footer .three_column_layout {
+	width: 420px;
+}
+
+/* Display Drop-Up menus on hover */
+
+#footer_menu li:hover .one_column_layout,
+#footer_menu li:hover .two_column_layout,
+#footer_menu li:hover .three_column_layout {
+	display: block;
+	position: absolute;
+	margin: 0 0 0 -15px;
+	bottom: 40px;
+	background: rgba(0, 0, 0, .5);
+	border-radius: 7px 7px 0 0;
+}
+
+#footer .col_1,
+#footer .col_2,
+#footer .col_3 {
+	display: inline;
+	float: left;
+	position: relative;
+	margin-left: 5px;
+	margin-right: 5px;
+}
+
+#footer .col_1 {
+	width: 130px;
+}
+
+#footer .col_2 {
+	width: 270px;
+}
+
+#footer .col_3 {
+	width: 410px;
+}
