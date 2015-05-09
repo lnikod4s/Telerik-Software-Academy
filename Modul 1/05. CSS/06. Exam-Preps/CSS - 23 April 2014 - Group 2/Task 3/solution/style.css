@@ -1,13 +1,15 @@
 body {
-	font: 14px Corbel, Arial;
-	color: black;
+	font-size: 14px;
+	font-family: Corbel;
+	color: #000;
 }
 
 body #root {
 	width: 350px;
-	padding: 0 0 25px 25px;
-	border-top: 3px solid black;
-	border-left: 3px solid black;
+	padding-left: 25px;
+	padding-bottom: 25px;
+	border-left: 3px solid #000;
+	border-top: 3px solid #000;
 	border-radius: 15px 0 0 0;
 }
 
@@ -16,28 +18,34 @@ body #root h1 {
 	padding-left: 45px;
 }
 
-#root .widget .box {
+body div.widget .box {
 	width: 260px;
-	border: 1px solid black;
+	border: 1px solid #000;
 	border-radius: 5px;
-	background: linear-gradient(to bottom, #cbf7be 15%, #e5d96e 60%);
+	background: #cbf7be;
+	background: -moz-linear-gradient(top, #cbf7be 15%, #e5d96e 60%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(15%, #cbf7be), color-stop(60%, #e5d96e));
+	background: -webkit-linear-gradient(top, #cbf7be 15%, #e5d96e 60%);
+	background: -o-linear-gradient(top, #cbf7be 15%, #e5d96e 60%);
+	background: -ms-linear-gradient(top, #cbf7be 15%, #e5d96e 60%);
+	background: linear-gradient(top bottom, #cbf7be 15%, #e5d96e 60%);
 }
 
-#root .widget .add-employee {
+body div.widget .add-employee {
 	margin: 0;
 	padding: 15px;
 	text-align: right;
 }
 
-#root .widget .add-employee > * {
+body div.widget .add-employee > * {
 	padding: 5px;
 }
 
-#root .widget .add-employee label {
+body div.widget .add-employee label {
 	font-weight: bold;
 }
 
-#root .widget .add-employee label:first-of-type {
+body div.widget .add-employee label:first-of-type {
 	border: none;
 }
 
@@ -88,6 +96,7 @@ body div.widget .add-employee button:hover {
 	background: -o-linear-gradient(top, #cbf7be 10%, #e5d96e 70%);
 	background: -ms-linear-gradient(top, #cbf7be 10%, #e5d96e 70%);
 	background: linear-gradient(to bottom, #cbf7be 10%, #e5d96e 70%);
+	cursor: pointer;
 	cursor: hand;
 }
 
@@ -100,7 +109,8 @@ body div.widget .add-employee .dropdown {
 
 body div.widget .add-employee .dropdown .chosen {
 	padding-left: 20px;
-	background: url("images/down-arrow.png") no-repeat;
+	background-image: url("images/down-arrow.png");
+	background-repeat: no-repeat;
 	z-index: 0;
 }
 
@@ -119,6 +129,7 @@ body div.widget .add-employee .dropdown ul {
 	z-index: 1;
 	margin: 0;
 	padding: 0 5px;
+	display: block;
 	list-style-type: none;
 	display: none;
 	position: absolute;
@@ -145,6 +156,7 @@ body div.widget .add-employee .dropdown ul li:last-of-type {
 }
 
 body div.widget .add-employee .dropdown ul li:hover {
+	cursor: pointer;
 	cursor: hand;
 	background: rgba(0, 0, 0, 0.1);
 }

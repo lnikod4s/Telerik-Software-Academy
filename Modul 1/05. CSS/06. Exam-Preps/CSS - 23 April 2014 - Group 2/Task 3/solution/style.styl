@@ -1,0 +1,110 @@
+horizontal-linear-gradient(from-color, from-pos, to-color, to-pos)
+	background from-color
+	background -moz-linear-gradient(top, from-color from-pos, to-color to-pos)
+	background -webkit-gradient(linear, left top, left bottom, color-stop(from-pos,from-color), color-stop(to-pos,to-color))
+	background -webkit-linear-gradient(top, from-color from-pos,to-color to-pos)
+	background -o-linear-gradient(top, from-color from-pos,to-color to-pos)
+	background -ms-linear-gradient(top, from-color from-pos,to-color to-pos)
+	background linear-gradient(top bottom, from-color from-pos,to-color to-pos)
+placeholder-color(c)
+	&::-webkit-input-placeholder
+		color c
+	&:-moz-placeholder
+		color c
+	&::-moz-placeholder
+		color c
+	&:-ms-input-placeholder
+		color c
+default-border = 1px solid black
+body
+	font-size 14px
+	font-family Corbel
+	color black
+	#root
+		width 350px
+		padding-left 25px
+		padding-bottom 25px		
+		border-left 3px solid black
+		border-top 3px solid black
+		border-radius 15px 0 0 0
+		h1
+			font-size 1.9em
+			padding-left 45px
+	div.widget
+		.box
+			width 260px
+			border default-border
+			border-radius 5px
+			horizontal-linear-gradient(#cbf7be, 15%, #e5d96e, 60%)
+		.add-employee
+			margin 0
+			padding 15px	
+			text-align right
+			> *
+				padding 5px
+			label
+				font-weight bold
+				&:first-of-type
+					border none
+			input
+			button
+				border 3px inset #cbf7be
+				border-radius 5px
+				margin 0
+				padding 5px 15px
+			input
+				margin-bottom 5px
+				background rgba(0,0,0,0)	
+				width 130px
+				font-style italic
+				placeholder-color(black)
+			button
+				margin-top 5px
+				display block
+				font-size 1.1em
+				width 100%
+				background rgba(0, 0, 0, 0)
+				&:hover
+					horizontal-linear-gradient(#cbf7be, 10%, #e5d96e,70%)
+					cursor pointer
+					cursor hand
+			.dropdown
+				position relative
+				display inline-block
+				width 150px
+				text-align left
+				.chosen
+					padding-left 20px
+					background-image url('images/down-arrow.png')
+					background-repeat no-repeat
+					z-index 0
+					&.expanded						
+						background-image url('images/left-arrow.png')
+				ul
+					horizontal-linear-gradient(#e5d96e, 10%, #cbf7be, 70%)
+					z-index 1
+					margin 0
+					padding  0 5px
+					display block
+					list-style-type none
+					display none
+					position absolute
+					top 5px
+					left 130px
+					border 1px solid black
+					border-radius 5px
+					&.expanded
+						display block
+					li
+						width 150px
+						padding-bottom 5px
+						padding-top 5px
+						border-bottom default-border
+						text-align center
+
+						&:last-of-type
+							border none
+						&:hover
+							cursor pointer
+							cursor hand
+							background rgba(0, 0, 0, 0.1)

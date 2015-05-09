@@ -1,0 +1,39 @@
+doctype html
+head
+	link(href='style.css', rel="stylesheet")
+	script(src='jquery.min.js')
+	script(src='main.js')
+body
+	#root
+		h1 Add employees
+		div.widget
+			div.box.add-employee
+				label(for='tb-fname')
+					| First name: 
+				input#tb-fname(placeholder='type your first name')
+				br
+				label(for='tb-lname')
+					| Last name: 
+				input#tb-lname(placeholder='type your last name')
+				br
+				label(for='dd-rank')
+					| Rank: 
+				div#dd-rank.dropdown
+					span.chosen
+						| Senior
+					ul
+						each val,index in ['Junior', 'Mid-level', 'Senior']
+							li
+								= val
+				br
+				label(for='dd-title')
+					| Title: 
+				div#dd-title.dropdown
+					span.chosen
+						| Software Developer
+					ul
+						each val,index in ['Software Developer', 'QA Engineer', 'Front-end Developer', 'UX Designer']
+								li
+									= val
+				br
+				button Add
