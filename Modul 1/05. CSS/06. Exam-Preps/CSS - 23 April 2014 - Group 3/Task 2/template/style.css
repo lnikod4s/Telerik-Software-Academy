@@ -1,0 +1,76 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font: 16px Constantina, Georgia, 'Nimbus Roman No9 L', serif;
+}
+
+#wrapper {
+	width: 960px;
+	margin: 0 auto;
+}
+
+.menu li {
+	list-style-type: none;
+	margin: 10px;
+}
+
+.menu > li {
+	width: 170px;
+	padding: 10px;
+	background-color: #B6FF00;
+	border-radius: 15px;
+	position: relative;
+	text-align: center;
+}
+
+.menu li a {
+	text-decoration: none;
+	color: black;
+}
+
+.menu li:hover > a {
+	text-decoration: underline;
+}
+
+.menu li .content {
+	position: absolute;
+	display: none;
+	top: -10px;
+	left: 160px;
+}
+
+.menu li .content ul {
+	list-style-type: none;
+}
+
+.menu li:hover .content {
+	display: block;
+}
+
+.menu li .content .sub-menu li {
+	width: 540px;
+	background-color: green;
+	text-align: left;
+	margin-top: 10px;
+	border-radius: 10px;
+	padding: 20px;
+}
+
+.menu li .content .sub-menu li a {
+	color: white;
+}
+
+.menu li .content .sub-menu li img {
+	display: none;
+	width: 500px;
+	margin-top: 10px;
+	border-radius: 10px;
+}
+
+.menu li .content .sub-menu li a:hover + img {
+	display: block;
+}

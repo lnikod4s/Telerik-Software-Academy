@@ -1,0 +1,31 @@
+doctype html
+head
+	link(href='style.css', rel="stylesheet")
+	script(src='jquery.min.js')
+	script(src='main.js')
+body
+	#root
+		#previewer
+			#large
+				h1
+					| QA Academy Graduation
+				img(src='images/slider/qa-graduation-2013.jpg', width='450')
+			#list
+				strong.title
+					| Click on image
+				button#btn-prev
+					| prev
+				button#btn-next
+					| next
+				ul
+					each val,index in [{src:'images/slider/qa-graduation-2013.jpg', title: 'QA Academy Graduation'}, {src:'images/slider/joro-in-the-state.jpg', title: 'Joro in the State'},{src:'images/slider/wordcamp-sofia-2013.jpg', title: 'WordCamp Sofia 2013'}, {src:'images/slider/software-academy-graduation-2013.jpg', title: 'Software Academy Graduation 2013'}]
+						if index == 0
+							li.current(data-src=val.src, data-title=val.title, data-index=index)
+								strong
+									= val.title
+								img(width='100',src=val.src)
+						else 
+							li(data-src=val.src, data-title=val.title, data-index=index)
+								strong
+									= val.title
+								img(width='100',src=val.src)

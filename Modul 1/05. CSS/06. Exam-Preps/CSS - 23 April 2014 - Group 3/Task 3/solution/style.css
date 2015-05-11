@@ -1,0 +1,95 @@
+body {
+  font-size: 14px;
+  font-family: 'Times New Roman';
+}
+#root {
+  width: 700px;
+}
+#previewer {
+  zoom: 1;
+}
+#previewer:after {
+  display: block;
+  clear: both;
+  content: '';
+  height: 0;
+}
+#previewer #large {
+  float: left;
+  width: 460px;
+  padding: 0 15px 15px 15px;
+  border: 2px solid #999;
+}
+#previewer #large h1 {
+  text-align: center;
+  font-size: 2em;
+}
+#previewer #large img {
+  border: 2px solid #999;
+  border-radius: 5px;
+}
+#list {
+  float: left;
+  width: 200px;
+  border: 2px solid #999;
+}
+#list .title {
+  display: block;
+  text-align: center;
+  font-size: 1.5em;
+  padding: 5px 0;
+}
+#list ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 5px;
+  height: 300px;
+  overflow-y: scroll;
+}
+#list ul li {
+  padding: 5px;
+  border-bottom: 2px solid #999;
+  text-align: center;
+}
+#list ul li:last-of-type {
+  border: none;
+}
+#list ul li:hover {
+  text-decoration: underline;
+  cursor: pointer;
+  cursor: hand;
+}
+#list ul li.current {
+  background: #ccc;
+  border-radius: 5px;
+}
+#list ul li.current img {
+  width: 65px;
+}
+#list ul li.current:hover {
+  text-decoration: none;
+  cursor: arrow;
+}
+#list ul li strong {
+  display: block;
+  margin-bottom: 10px;
+}
+#list ul li img {
+  display: inline-block;
+  border-radius: 5px;
+}
+#btn-prev,
+#btn-next {
+  display: inline-block;
+  width: 49%;
+  margin: 0;
+  padding: 15px 5px;
+  border: 2px solid #999;
+  border-radius: 5px;
+  font-size: 1.1em;
+  background: #ccc;
+}
+#btn-prev:hover,
+#btn-next:hover {
+  background: #e6e6e6;
+}

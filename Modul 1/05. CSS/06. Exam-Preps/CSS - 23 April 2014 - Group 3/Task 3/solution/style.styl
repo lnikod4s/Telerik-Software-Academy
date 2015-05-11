@@ -1,0 +1,80 @@
+default-border = 2px solid #999
+
+clearfix()
+	zoom 1
+	&:after
+		display block
+		clear both
+		content ''
+		height 0
+body	
+	font-size 14px
+	font-family 'Times New Roman'
+
+#root
+	width 700px
+
+#previewer
+	clearfix()
+	#large
+		float left
+		width 460px
+		padding 0 15px 15px 15px			
+		border default-border
+		h1
+			text-align center
+			font-size 2em
+		img
+			border default-border
+			border-radius 5px
+#list
+	float left
+	width 200px
+	border default-border
+	.title
+		display block
+		text-align center
+		font-size 1.5em
+		padding 5px 0
+	ul
+		list-style-type none
+		margin 0
+		padding 5px
+		height 300px
+		overflow-y scroll
+		li
+			padding 5px 
+			border-bottom default-border 
+			text-align center
+			&:last-of-type
+				border none
+			&:hover
+				text-decoration underline
+				cursor pointer
+				cursor hand
+			&.current
+				background #ccc
+				border-radius 5px
+				img
+					width 65px
+				&:hover
+					text-decoration none
+					cursor arrow
+			strong
+				display block
+				margin-bottom 10px
+			img
+				display inline-block
+				border-radius 5px
+#btn-prev, #btn-next
+	display inline-block
+	width 49%
+	margin 0
+	padding 15px 5px
+	border default-border
+	border-radius 5px
+	font-size 1.1em
+	background: #ccc
+	&:hover
+		background lighten(#ccc, 10)
+		
