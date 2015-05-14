@@ -1,0 +1,80 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html, body {
+	font: 16px "Times New Roman";
+	color: #000000;
+}
+
+.preview {
+	display: none;
+}
+
+.avengers {
+	margin-top: 13px;
+}
+
+.avengers > li {
+	display: inline;
+	border-top: 3px solid #000000;
+	border-left: 3px solid #000000;
+	border-bottom: 3px solid #000000;
+	border-top-left-radius: 15px;
+	padding: 10px 13px;
+	font-weight: bold;
+	text-align: center;
+}
+
+.avengers > li:last-of-type {
+	border-right: 3px solid #000000;
+	padding-right: 15px;
+}
+
+.avengers li:hover {
+	background-color: #cccccc;
+	border-bottom: 3px solid #FFFFFF;
+}
+
+.avengers li:hover .preview {
+	display: block;
+	position: absolute;
+	margin-left: 2px;
+	margin-top: 12px;
+	border-left: 3px solid #000000;
+	border-bottom: 3px solid #000000;
+	border-right: 3px solid #000000;
+	background-color: #cccccc;
+	padding: 15px;
+	width: 630px;
+	height: 270px;
+}
+
+.avengers li:hover .preview img {
+	border: 5px solid #FFFFFF;
+	border-radius: 5px;
+	float: left;
+	width: 410px;
+	height: 235px;
+}
+
+.avengers li:hover .preview .skills {
+	float: left;
+	list-style-type: none;
+	margin-top: 40px;
+	margin-left: 33px;
+}
+
+.avengers li:hover .preview .skills li {
+	text-transform: capitalize;
+	font-weight: normal;
+	font-size: 21px;
+	margin-bottom: 40px;
+	text-align: center;
+}
+
+.avengers li:hover .preview .skills:last-of-type {
+	margin-left: 63px;
+}
