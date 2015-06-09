@@ -1,3 +1,3 @@
-function s(i){return [1,1,2,5,14,42,132,429,1430,4862,16796,58786,208012][i[0]]/2}
+function s(n){n = +n;r=0.5;for(i = 2;i <= n;i++){r*= i+n;r/=i}return r}
 
-console.log(s([3]));
+console.log(s([7]));

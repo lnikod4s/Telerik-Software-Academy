@@ -1,14 +1,10 @@
 function solve(params) {
-	var N = Number(params[0]),
-		count = 1,
-		last = Number(params[1]),
-		current,
-		i;
+	params = params.map(Number);
 
-	for (i = 2; i <= N; i++) {
-		current = Number(params[i]);
-		if (current < last) count++;
-		last = current;
+	for (var i = 2, count = 1; i < params.length; i++) {
+		if (params[i] < params[i - 1]) {
+			count++;
+		}
 	}
 
 	return count;
@@ -23,4 +19,27 @@ console.log(solve([
 	'4',
 	'0',
 	'1'
+]));
+
+console.log(solve([
+	'6',
+	'1',
+	'3',
+	'-5',
+	'8',
+	'7',
+	'-6'
+]));
+
+console.log(solve([
+	'9',
+	'1',
+	'8',
+	'8',
+	'7',
+	'6',
+	'5',
+	'7',
+	'7',
+	'6'
 ]));
