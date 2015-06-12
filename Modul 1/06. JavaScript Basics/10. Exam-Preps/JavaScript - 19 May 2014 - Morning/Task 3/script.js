@@ -1,313 +1,222 @@
-function solve(params) {
+function solve(args) {
+	var modelsCount = Number(args[0]);
 
-	var model = populateModel();
-	var result = parse();
+	var models = parseModels();
+	var output = parseShaver();
 
-	function populateModel() {
-		var model = [];
+	function parseModels() {
+		var models = {};
 
-		for (var i = 1; i <= parseInt(params[0]); i++) {
-			var currentKeyValuePair = params[i].split(':');
-			var value;
+		for (var i = 1; i <= modelsCount; i += 1) {
+			var line = args[i].split(':');
+			var key = line[0];
+			var value = line[1];
 
-			if (currentKeyValuePair[1] === 'true') {
-				value = true;
+			if (value.indexOf(',') > -1) {
+				value = value.split(',').map(function (item) {
+					if (isNumber(item)) {
+						item = Number(item);
+					}
+
+					return item;
+				});
+			} else if (value === 'true' || value === 'false') {
+				value = value === 'true';
 			}
-			else if (currentKeyValuePair[1] === 'false') {
-				value = false;
-			}
-			else if (currentKeyValuePair[1].indexOf(',') > -1) {
-				value = currentKeyValuePair[1].split(',');
-			}
-			else {
-				value = currentKeyValuePair[1];
-			}
 
-			model[currentKeyValuePair[0]] = value;
+			models[key] = value;
 		}
 
-		return model;
+		return models;
 	}
 
-	function parse() {
-		var startRow = parseInt(params[0]) + 2;
+	function parseShaver() {
+		var output = args.slice(modelsCount + 2).join('\n');
 
-		var result = [];
-		var sections = [];
+		// -------------------------- EXTRACT SECTIONS --------------------------
+		var sections = {};
+		output = output.replace(/(?:@section (\w+) \{\n([^]+?)\n}\n)/g, function (match, name, content) {
+			sections[name] = content;
+			return '';
+		});
 
-		var inShaver = false;
-		var inSection = false;
-		var inCondition = false;
-		var inForeach = false;
-		var inModel = false;
-		var render = true;
+		// -------------------------- MASK ESCAPING --------------------------
+		output = output.replace(/@@/g, '@@$');
 
-		var currentSection;
-		var currentCollection;
-		var currentIndexatorName;
-		var currentIndex = 0;
-		var currentForeachTemplate = '';
-		var currentModelKey = '';
-
-		var deleteLeadingWhiteSpace = 0;
-
-		for (var i = startRow; i < params.length; i++) {
-			var currentRow = params[i];
-			var newLine = true;
-
-			if (inCondition && currentRow.indexOf('}') > -1) {
-				deleteLeadingWhiteSpace = 0;
-				inCondition = false;
-				render = true;
-				continue;
+		// -------------------------- RENDER MODELS --------------------------
+		output = output.replace(/@(\w+)/g, function (match, name) {
+			if (models[name]) {
+				return models[name];
+			} else {
+				return match;
 			}
+		});
 
-			if (inForeach && currentRow.indexOf('}') > -1) {
-				var currentForeachTemplateWithIndexator = currentForeachTemplate.split('@' +
-					currentIndexatorName).join(currentCollection[currentIndex++]);
-				var templateWhiteSpace = getLeadingWhiteSpace(currentRow);
-				result.push(currentForeachTemplateWithIndexator.substr(templateWhiteSpace).trim() + '\n');
-				for (var k = 1; k < currentCollection.length; k++) {
-					currentForeachTemplateWithIndexator = currentForeachTemplate.split('@' +
-						currentIndexatorName).join(currentCollection[currentIndex++]);
-					result.push(templateWhiteSpace + currentForeachTemplateWithIndexator.trim() + '\n');
-				}
-				currentCollection = undefined;
-				currentIndexatorName = undefined;
-				currentForeachTemplate = '';
-				currentIndex = 0;
-				inForeach = false;
-				continue;
-			}
-
-			if (inCondition || inForeach) {
-				deleteLeadingWhiteSpace += 4;
-			}
-
-			if (!render) {
-				continue;
-			}
-
-			if (deleteLeadingWhiteSpace > 0) {
-				currentRow = currentRow.substr(deleteLeadingWhiteSpace);
-				deleteLeadingWhiteSpace = 0;
-			}
-
-			if (inShaver && inSection && currentRow.indexOf('}') < 0) {
-				sections[currentSection].push(currentRow + '\n');
-				continue;
-			}
-
-			if (inShaver && inSection && currentRow.indexOf('}') > -1) {
-				inShaver = false;
-				inSection = false;
-				continue;
-			}
-
-			for (var j = 0; j < currentRow.length; j++) {
-				var symbol = currentRow[j];
-
-				if (symbol == '@') {
-					if (j + 1 < currentRow.length && currentRow[j + 1] != '@') {
-						inShaver = true;
-					}
-					else {
-						result.push('@');
-						j++;
-					}
-					continue;
-				}
-
-				if (inShaver && currentRow.substr(j, 7) == 'section' && !inModel) {
-					inSection = true;
-					newLine = false;
-					initializeSection(currentRow);
-					break;
-				}
-
-				if (inShaver && currentRow.substr(j, 15) == 'renderSection("' && !inModel) {
-					var sectionToRender = getSection(currentRow);
-					result.push(sectionToRender);
-					newLine = false;
-					inShaver = false;
-					break;
-				}
-
-				if (inShaver && currentRow.substr(j, 2) == 'if' && currentRow.indexOf('{') > -1 && !inModel) {
-					var parameter = getConditionalParameter(currentRow);
-					var evaluatedCondition = !!model[parameter];
-					deleteLeadingWhiteSpace = getLeadingWhiteSpace(currentRow).length;
-					if (!evaluatedCondition) {
-						render = false;
-						deleteWhiteSpaceFromResult(deleteLeadingWhiteSpace);
-					}
-					inCondition = true;
-					inShaver = false;
-					newLine = false;
-					break;
-				}
-
-				if (inShaver && currentRow.substr(j, 7) == 'foreach' && currentRow.indexOf('{') > -1 && !inModel) {
-					var parameters = getForeachParameters(currentRow);
-					currentCollection = model[parameters.collection];
-					currentIndexatorName = parameters.indexator;
-					inForeach = true;
-					inShaver = false;
-					newLine = false;
-					break;
-				}
-
-				if (inShaver && inModel && !checkIfLetter(symbol)) {
-					var modelValue = model[currentModelKey];
-					if (inForeach && currentModelKey == currentIndexatorName) {
-						currentForeachTemplate += '@' + currentIndexatorName;
-					}
-					else if (inForeach) {
-						currentForeachTemplate += modelValue;
-					}
-					else {
-						result.push(modelValue);
-					}
-
-					currentModelKey = '';
-					inShaver = false;
-					inModel = false;
-				}
-
-				if (inShaver) {
-					currentModelKey += symbol;
-					inModel = true;
-					continue;
-				}
-
-				if (!inShaver && inForeach) {
-					currentForeachTemplate += symbol;
-					newLine = false;
-					continue;
-				}
-
-				result.push(symbol);
-			}
-
-			if (inForeach) {
-				currentForeachTemplate += '\n';
-			}
-			else if (newLine) {
-				result.push('\n');
-			}
+		if (Object.keys(sections).length !== 0) {
+			// -------------------------- RENDER SECTIONS --------------------------
+			output = output.replace(/(?:( *?)@renderSection\("(\w+)"\))/g, function (match, indent, name) {
+				return sections[name].replace(/^/gm, indent);
+			});
 		}
 
-		return result.join('');
-
-		function initializeSection(currentRow) {
-			var sectionParts = currentRow.split(' ');
-			currentSection = sectionParts[1];
-			sections[currentSection] = [];
-		}
-
-		function getSection(currentRow) {
-			var renderSectionParts = currentRow.split('(');
-			var sectionName = renderSectionParts[1].replace('"', '').replace('"', '').replace(')', '').trim();
-			var leadingWhiteSpace = getLeadingWhiteSpace(currentRow);
-			return sections[sectionName].join(leadingWhiteSpace);
-		}
-
-		function getConditionalParameter(currentRow) {
-			var start = currentRow.indexOf('(') + 1;
-			var end = currentRow.indexOf(')');
-			var param = currentRow.substr(start, end - start).trim();
-			return param;
-		}
-
-		function getForeachParameters(currentRow) {
-			var start = currentRow.indexOf('(') + 1;
-			var end = currentRow.indexOf(')');
-			var params = currentRow.substr(start, end - start).trim().split(' ');
-			return {
-				collection: params[3],
-				indexator: params[1]
-			};
-		}
-
-		function getLeadingWhiteSpace(currentRow) {
-			var whiteSpace = '';
-			for (var i = 0; i < currentRow.length; i++) {
-				if (currentRow[i] == ' ') {
-					whiteSpace += ' ';
-				}
-				else {
-					break;
-				}
+		// -------------------------- RENDER CONDITIONAL STATEMENTS --------------------------
+		output = output.replace(/(?:( *?)@if \((\w+)\) {\n([^]+?)\n +?}\n)/g, function (match, indent, condition, content) {
+			if (models[condition]) {
+				return content.replace(/^ {4}/gm, '').replace(/$/g, '\n');
+			} else {
+				return '';
 			}
+		});
 
-			return whiteSpace;
-		}
+		// -------------------------- RENDER LOOPS --------------------------
+		output = output.replace(/(?: *@foreach \(var (\w+) in (\w+)\) {\n([^]+?)}\n)/g,
+			function (match, iterator, name, content) {
+				var output = '';
+				content = content.replace(/\s*$/, '\n');
+				for (var i = 0; i < models[name].length; i += 1) {
+					output += content
+						.replace(new RegExp('@' + iterator, 'g'), models[name][i])
+						.replace(/^ {4}/gm, '');
+				}
 
-		function checkIfLetter(symbol) {
-			var asciiCode = symbol.charCodeAt(0);
+				return output;
+			});
 
-			return !!((asciiCode > 64 && asciiCode < 91) || (asciiCode > 96 && asciiCode < 123));
-		}
+		// -------------------------- UNMASK ESCAPING --------------------------
+		output = output.replace(/@@\$/g, '@').replace(/@@/g, '@');
 
-		function deleteWhiteSpaceFromResult(count) {
-			for (var i = 0; i < count; i++) {
-				result.pop();
-			}
-		}
+		return output;
 	}
 
-	return result;
+	function isNumber(n) {
+		return !isNaN(parseFloat(n)) && isFinite(n);
+	}
+
+	return output;
 }
 
 console.log(solve([
-	'6',
-	'title:Telerik Academy',
-	'showSubtitle:true',
-	'subTitle:Free training',
-	'showMarks:false',
-	'marks:3,4,5,6',
-	'students:Pesho,Gosho,Ivan',
-	'42',
-	'@section menu {',
-	'<ul id="menu">',
-	'    <li>Home</li>',
-	'    <li>About us</li>',
-	'</ul>',
+	'15',
+	'text:RandomText',
+	'anotherText:RandomTextAgain',
+	'passTheIf:true',
+	'doNotPassTheIf:false',
+	'passTheIf:true',
+	'doNotPassTheIf:false',
+	'pesho:na peshlqka modela',
+	'gosho:i gosho e tuka brato',
+	'someNumbers:1,2,3,4,5',
+	'someTechs:asp.net,mvc,angular,node,c-sharp',
+	'someNumbersHere:1,2,3,4,5',
+	'someTechsHere:asp.net,mvc,angular,node,c-sharp',
+	'kolio:nikolay',
+	'minkov:donchoviq',
+	'unused:just unused model',
+	'106',
+	'@section first {',
+	'	<ul>',
+	'		<li>',
+	'			In section UL',
+	'		</li>',
+	'		<li>',
+	'			Still in section UL',
+	'		</li>',
+	'	</ul>',
 	'}',
-	'@section footer {',
-	'<footer>',
-	'    Copyright Telerik Academy 2014',
-	'</footer>',
+	'@section second {',
+	'	<div>',
+	'		Second section :)',
+	'	</div>',
 	'}',
-	'<!DOCTYPE html>',
-	'<html>',
-	'<head>',
-	'    <title>Telerik Academy</title>',
-	'</head>',
-	'<body>',
-	'    @renderSection("menu")',
-	'',
-	'    <h1>@title</h1>',
-	'    @if (showSubtitle) {',
-	'        <h2>@subTitle</h2>',
-	'        <div>@@JustNormalTextWithDoubleKliomba ;)</div>',
-	'    }',
-	'',
-	'    <ul>',
-	'        @foreach (var student in students) {',
-	'            <li>',
-	'                @student ',
-	'            </li>',
-	'            <li>Multiline @title</li>',
-	'        }',
-	'    </ul>',
-	'    @if (showMarks) {',
-	'        <div>',
-	'            @marks',
-	'        </div>',
-	'    }',
-	'',
-	'    @renderSection("footer")',
-	'</body>',
-	'</html>'
+	'<div>',
+	'	<p>',
+	'		@@if (pesho) {',
+	'		@@escaped dude',
+	'		}',
+	'	</p>',
+	'	<p>',
+	'		@@renderSection("pesho")',
+	'	</p>',
+	'	<p>',
+	'		@@foreach(var pesho in peshos) {',
+	'		@@escaped in comment',
+	'		}',
+	'	</p>',
+	'</div>',
+	'<div>',
+	'@renderSection("first")',
+	'@renderSection("second")',
+	'</div>',
+	'<div>',
+	'	<div>',
+	'		@text',
+	'	</div>',
+	'	<ul>',
+	'		<li>',
+	'			<span>@anotherText</span>',
+	'		</li>',
+	'	</ul>',
+	'</div>',
+	'<div>',
+	'<p>Some bulsh*t text</p>',
+	'<br />',
+	'@if (passTheIf) {',
+	'	<span>Passed</span>',
+	'}',
+	'<br />',
+	'<div>',
+	'<span>More bulsh*t text</span>',
+	'@if (doNotPassTheIf) {',
+	'	<span>if this passes this is error</span>',
+	'}',
+	'<div>',
+	'</div>',
+	'<div>',
+	'<p>Some bulsh*t text + @pesho & @gosho</p>',
+	'<br />',
+	'@if (passTheIf) {',
+	'	<span>Passed @pesho and @gosho</span>',
+	'}',
+	'<br />',
+	'<div>',
+	'<span>More bulsh*t text</span>',
+	'@if (doNotPassTheIf) {',
+	'	<span>if this passes this is error @pesho and @gosho</span>',
+	'}',
+	'<div>',
+	'</div>',
+	'<div>',
+	'<span>Some bulsh*t text</span>',
+	'<br />',
+	'@foreach (var number in someNumbers) {',
+	'	<span>@number da ima</span>',
+	'	<span>only @number</span>',
+	'}',
+	'<br />',
+	'<div>',
+	'<span>More bulsh*t text</span>',
+	'@foreach (var tech in someTechs) {',
+	'	<span>@tech is cool</span>',
+	'	<span>and @tech is mama</span>',
+	'}',
+	'<div>',
+	'</div>',
+	'<div>',
+	'<span>Some bulsh*t text</span>',
+	'<br />',
+	'@foreach (var someNumber in someNumbersHere) {',
+	'	<span>@someNumber da ima</span>',
+	'	<span>only @someNumber</span>',
+	'	<strong>@kolio</strong>',
+	'}',
+	'<br />',
+	'<div>',
+	'<span>More bulsh*t text</span>',
+	'@foreach (var someTech in someTechsHere) {',
+	'	<span>@someTech is cool</span>',
+	'	<span>and @someTech is mama</span>',
+	'	<strong>@minkov</strong>',
+	'}',
+	'<div>',
+	'</div>'
 ]));
