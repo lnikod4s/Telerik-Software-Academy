@@ -1,0 +1,39 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.40418.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Source Items", "Source Items", "{7586008E-4748-4AE5-8819-084FEB783176}"
+	ProjectSection(SolutionItems) = preProject
+		..\..\Users\Lyudmil\AppData\Local\Temp\Rar$DRa1.004\code.js = ..\..\Users\Lyudmil\AppData\Local\Temp\Rar$DRa1.004\code.js
+		..\..\Users\Lyudmil\AppData\Local\Temp\Rar$DRa1.004\events.cs = ..\..\Users\Lyudmil\AppData\Local\Temp\Rar$DRa1.004\events.cs
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "01. Format events.cs", "01. Format events.cs\01. Format events.cs.csproj", "{A96AB11A-B1E6-4325-A472-AB6A73181000}"
+EndProject
+Project("{9092AA53-FB77-4645-B42D-1CCCA6BD08BD}") = "02. Format code.js", "02. Format code.js\02. Format code.js.njsproj", "{C3EC086D-A0D4-4D77-BF54-342CE65357E0}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "External Packages", "External Packages", "{94A3445C-79AD-4E49-B4D4-BC552E68D4EB}"
+	ProjectSection(SolutionItems) = preProject
+		..\..\Users\Lyudmil\AppData\Local\Temp\Rar$DRa0.031\PowerCollections\Binaries\PowerCollections.dll = ..\..\Users\Lyudmil\AppData\Local\Temp\Rar$DRa0.031\PowerCollections\Binaries\PowerCollections.dll
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A96AB11A-B1E6-4325-A472-AB6A73181000}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A96AB11A-B1E6-4325-A472-AB6A73181000}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A96AB11A-B1E6-4325-A472-AB6A73181000}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A96AB11A-B1E6-4325-A472-AB6A73181000}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C3EC086D-A0D4-4D77-BF54-342CE65357E0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C3EC086D-A0D4-4D77-BF54-342CE65357E0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C3EC086D-A0D4-4D77-BF54-342CE65357E0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C3EC086D-A0D4-4D77-BF54-342CE65357E0}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
