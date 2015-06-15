@@ -1,0 +1,6 @@
+::: HOW TO RUN THE TESTS :::
+
+1. Extract the archive file to any directory.
+2. Open cmd.exe.
+3. Navigate on cmd to the chosen directory --> i.e. cd c:\directory
+4. Type mocha and press Enter.
