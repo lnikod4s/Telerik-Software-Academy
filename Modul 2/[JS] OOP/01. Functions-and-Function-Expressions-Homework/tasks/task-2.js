@@ -7,13 +7,16 @@
  */
 
 function solve(start, end) {
+	var result = [],
+		i;
+
 	function isNumber(num) {
 		return !isNaN(parseFloat(num)) && isFinite(num);
 	}
 
 	function isPrime(num) {
 		var i = 2;
-		if (num === 1) {
+		if (num === 1 || num === 0) {
 			return false;
 		}
 
@@ -31,9 +34,6 @@ function solve(start, end) {
 
 		return true;
 	}
-
-	var result = [],
-		i;
 
 	if (arguments.length === 0 || arguments.length === 1) {
 		throw new Error('Invalid range definition.');
