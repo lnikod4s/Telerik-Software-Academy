@@ -22,161 +22,116 @@
 function solve() {
 	var library = (function() {
 		var books = [],
-			newBooks = [],
 			categories = [],
-			filter = '';
+			filtered = [];
 
-		function containsBookTitle(obj, arr) {
-			var i;
-			for (i = 0; i < arr.length; i++) {
-				if (arr[i].title === obj.title) {
-					return true;
-				}
-			}
-
-			return false;
-		}
-
-		function containsBookISBN(obj, arr) {
-			var i;
-			for (i = 0; i < arr.length; i++) {
-				if (arr[i].isbn === obj.isbn) {
-					return true;
-				}
-			}
-
-			return false;
-		}
-
-		function generateID() {
-			var date,
-				components;
-
-			date = new Date();
-			components = [
-				date.getYear(),
-				date.getMonth(),
-				date.getDate(),
-				date.getHours(),
-				date.getMinutes(),
-				date.getSeconds(),
-				date.getMilliseconds()
-			];
-
-			return Number(components.join(""));
+		// Helper functions
+		function isNumber(n) {
+			return !isNaN(parseFloat(n)) && isFinite(n);
 		}
 
 		function listBooks() {
+			var args = arguments[0];
+
 			if (books.length === 0) {
 				return [];
 			}
 
 			if (books.length === 1) {
-				delete books[0].id;
-				return [books[0]];
-			}
-
-			if (arguments !== undefined) {
-				if (arguments[0].category !== undefined) {
-					filter = arguments[0].category;
-
-					for (var i = 0, len = books.length; i < len; i += 1) {
-						if (books[i].category === filter) {
-							newBooks.push(books[i]);
-						}
-					}
-
-					if (newBooks.length === 0) {
-						return [];
-					}
-
-					books = newBooks.slice();
-					newBooks = [];
-					filter = '';
+				if (!args || books[0].category === args.category) {
+					return books;
 				}
 
-				if (arguments[0].author !== undefined) {
-					filter = arguments[0].author;
-
-					for (var j = 0, len2 = books.length; j < len2; j += 1) {
-						if (books[i].author === filter) {
-							newBooks.push(books[j]);
-						}
-					}
-
-					if (newBooks.length === 0) {
-						return [];
-					}
-
-					books = newBooks.slice();
-					newBooks = [];
-					filter = '';
-				}
-			}
-
-			books = books.sort(function(a, b) {
-				return a.id - b.id;
-			});
-
-			return books;
-		}
-
-		function addBook(bookToAdd) {
-			if (bookToAdd.title.length < 2 || bookToAdd.title.length >= 100) {
-				throw new Error('Invalid book title.');
-			}
-
-			if (bookToAdd.category.length < 2 || bookToAdd.category.length >= 100) {
-				throw new Error('Invalid book category.');
-			}
-			
-			if (bookToAdd.author === '' || bookToAdd.author === undefined) {
-				throw new Error('Invalid book author.');
-			}
-
-			if (bookToAdd.isbn.length < 10 || bookToAdd.isbn.length > 13) {
-				throw new Error('Invalid book ISBN.');
-			}
-
-			var newBook = {
-				title: bookToAdd.title,
-				author: bookToAdd.author,
-				isbn: bookToAdd.isbn,
-				category: bookToAdd.category,
-				id: generateID()
-			};
-
-			if (containsBookTitle(newBook, books)) {
-				throw new Error('Books with repeating titles are not allowed.');
-			}
-
-			if (containsBookISBN(newBook, books)) {
-				throw new Error('Books with repeating ISBN are not allowed.');
-			}
-
-			books.push(newBook);
-			categories.push(newBook.category);
-
-			return newBook;
-		}
-
-		function listCategories() {
-			if (categories.length === 0) {
 				return [];
 			}
 
-			categories = categories.sort(function(a, b) {
+			if (args) {
+				filtered = books.filter(function(b) {
+					return b.category === args.category;
+				});
+			}
+			else {
+				filtered = books;
+			}
+
+			return filtered.sort(function(a, b) {
+				return a.id - b.id;
+			})
+
+		}
+
+		function addBook(book) {
+			if (books.some(checkForRepeatingTitle)) {
+				throw  new Error('Adding a book title that already exists is not allowed.');
+			}
+
+			if (books.some(checkForRepeatingISBN)) {
+				throw  new Error('Adding a book ISBN that already exists is not allowed.');
+			}
+
+			if (!book.category) {
+				book.category = '';
+			}
+
+			if (book.title && (book.title.length < 2 || book.title.length > 100)) {
+				throw  new Error('Book title must be between 2 and 100 characters.');
+			}
+
+			if (!book.author) {
+				throw  new Error('Author must be a non-empty string.');
+			}
+
+			if (!(book.isbn.length === 10 || book.isbn.length === 13)) {
+				throw  new Error('Book ISBN must be either 10 or 13 digits.');
+			}
+
+			if (!isNumber(book.isbn)) {
+				throw  new Error('Book ISBN must be a number.');
+			}
+
+			book.id = books.length + Math.floor(Math.random() * 11);
+			books.push(book);
+
+			var newCategory = {
+				category: book.category,
+				ID: categories.length + Math.floor(Math.random() * 11)
+			};
+
+			if (categories.length === 0) {
+				categories.push(newCategory);
+			} else if (categories && !categories.some(function(elem) {
+					return elem.category === newCategory.category;
+				})) {
+				categories.push(newCategory);
+			}
+
+			return book;
+
+			function checkForRepeatingISBN(existingBook) {
+				if (books.length === 0) {
+					return false;
+				}
+
+				return existingBook.isbn === book.isbn;
+			}
+
+			function checkForRepeatingTitle(existingBook) {
+				if (books.length === 0) {
+					return false;
+				}
+
+				return existingBook.title === book.title;
+			}
+		}
+
+		function listCategories() {
+			categories.sort(function(a, b) {
 				return a.id - b.id;
 			});
 
-			categories = categories.reduce(function(a, b) {
-				if (a.indexOf(b) < 0) {
-					a.push(b);
-				}
-				return a;
-			}, []);
-
-			return categories;
+			return categories.map(function(element) {
+				return element.category;
+			})
 		}
 
 		return {
