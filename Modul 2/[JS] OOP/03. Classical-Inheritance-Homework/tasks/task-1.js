@@ -22,10 +22,9 @@ function solve() {
 	}
 
 	function isValidName(str) {
-		return (str.length >= 3 && str.length <= 20)
-		       && /^[A-z\u00C0-\u00ff\s'\.,-\/#!$%\^&\*;:{}=\-_`~()]+$/.test(str);
+		return (str.length >= 3 && str.length <= 20) && /^[A-z\u00C0-\u00ff\s'\.,-\/#!$%\^&\*;:{}=\-_`~()]+$/.test(str);
 	}
-	
+
 	function isValidAge(num) {
 		return num >= 0 && num <= 150;
 	}
@@ -100,7 +99,7 @@ function solve() {
 			},
 			introduce: function() {
 				return 'Hello! My name is ' + this.firstname + ' ' + this.lastname +
-				       ' and I am ' + this.age + '-years-old';
+					' and I am ' + this.age + '-years-old';
 			}
 		};
 
