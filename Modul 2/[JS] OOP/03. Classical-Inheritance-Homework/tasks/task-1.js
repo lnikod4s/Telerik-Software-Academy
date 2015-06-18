@@ -58,18 +58,30 @@ function solve() {
 				return this._firstname;
 			},
 			set firstname(newName) {
+				if (!isString(newName) || !isValidName(newName)) {
+					throw new Error('Invalid first name.');
+				}
+
 				this._firstname = newName;
 			},
 			get lastname() {
 				return this._lastname;
 			},
 			set lastname(newName) {
+				if (!isString(newName) || !isValidName(newName)) {
+					throw new Error('Invalid last name.');
+				}
+
 				this._lastname = newName;
 			},
 			get age() {
 				return this._age;
 			},
 			set age(newAge) {
+				if (!isValidAge(newAge)) {
+					throw new Error('Invalid age.');
+				}
+
 				this._age = newAge;
 			},
 			get fullname() {
