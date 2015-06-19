@@ -1,5 +1,5 @@
 /* Task Description */
-/* 
+/*
  *	Create a module for working with books
  *	The module must provide the following functionalities:
  *	Add a new book to category
@@ -19,20 +19,22 @@
  * Book authors can be repeated
  *	If something is not valid - throw Error
  */
+
 function solve() {
 	var library = (function() {
 		var books = [],
 			categories = [],
-			filtered = [];
+			args;
 
-		// Helper functions
+		// Helper function
 		function isNumber(n) {
 			return !isNaN(parseFloat(n)) && isFinite(n);
 		}
 
 		function listBooks() {
-			var args = arguments[0];
+			args = arguments[0];
 
+			// Validations
 			if (books.length === 0) {
 				return [];
 			}
@@ -46,21 +48,37 @@ function solve() {
 			}
 
 			if (args) {
-				filtered = books.filter(function(b) {
+				books = books.filter(function(b) {
 					return b.category === args.category;
 				});
 			}
-			else {
-				filtered = books;
-			}
 
-			return filtered.sort(function(a, b) {
-				return a.id - b.id;
-			})
+			return books.sort(function(a, b) {
+				return a.ID - b.ID;
+			});
 
 		}
 
 		function addBook(book) {
+
+			// Helper functions
+			function checkForRepeatingISBN(existingBook) {
+				if (books.length === 0) {
+					return false;
+				}
+
+				return existingBook.isbn === book.isbn;
+			}
+
+			function checkForRepeatingTitle(existingBook) {
+				if (books.length === 0) {
+					return false;
+				}
+
+				return existingBook.title === book.title;
+			}
+
+			// Validations
 			if (books.some(checkForRepeatingTitle)) {
 				throw  new Error('Adding a book title that already exists is not allowed.');
 			}
@@ -89,44 +107,28 @@ function solve() {
 				throw  new Error('Book ISBN must be a number.');
 			}
 
-			book.id = books.length + Math.floor(Math.random() * 11);
+			book.ID = books.length + 1;
 			books.push(book);
 
 			var newCategory = {
 				category: book.category,
-				ID: categories.length + Math.floor(Math.random() * 11)
+				ID: categories.length + 1
 			};
 
 			if (categories.length === 0) {
 				categories.push(newCategory);
-			} else if (categories && !categories.some(function(elem) {
-					return elem.category === newCategory.category;
+			} else if (categories && !categories.some(function(element) {
+					return element.category === newCategory.category;
 				})) {
 				categories.push(newCategory);
 			}
 
 			return book;
-
-			function checkForRepeatingISBN(existingBook) {
-				if (books.length === 0) {
-					return false;
-				}
-
-				return existingBook.isbn === book.isbn;
-			}
-
-			function checkForRepeatingTitle(existingBook) {
-				if (books.length === 0) {
-					return false;
-				}
-
-				return existingBook.title === book.title;
-			}
 		}
 
 		function listCategories() {
 			categories.sort(function(a, b) {
-				return a.id - b.id;
+				return a.ID - b.ID;
 			});
 
 			return categories.map(function(element) {
