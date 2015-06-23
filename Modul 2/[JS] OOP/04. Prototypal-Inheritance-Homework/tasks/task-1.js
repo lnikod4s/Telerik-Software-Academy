@@ -132,6 +132,7 @@ function solve() {
 
 		return output;
 	}
+
 	// **********************************************************************
 
 	var domElement = (function() {
@@ -194,6 +195,15 @@ function solve() {
 				}
 
 				this.attributes[name] = value;
+
+				return this;
+			},
+			removeAttribute: function(attribute) {
+				if(!(isValidAttribute(attribute) && this.attributes[attribute])) {
+					throw new Error('Invalid attribute!');
+				}
+
+				delete this.attributes[attribute];
 
 				return this;
 			},
