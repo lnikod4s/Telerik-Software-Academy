@@ -166,7 +166,6 @@ function solve() {
 				return this._parent;
 			},
 			set parent(value) {
-				// TODO
 				this._parent = value;
 			},
 			// Defining methods
