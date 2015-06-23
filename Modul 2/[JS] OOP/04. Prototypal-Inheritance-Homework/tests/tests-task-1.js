@@ -57,7 +57,7 @@ describe('Tests for "Task 1"', function() {
 		});
 		it('expect domElement with valid type not to throw', function() {
 			function test() {
-				Object.create(domElement).init('grO0zen1TagnaMe');
+				Object.create(domElement).init('TagnaMe');
 			}
 
 			expect(test).to.not.throw();
@@ -95,17 +95,17 @@ describe('Tests for "Task 1"', function() {
 	describe('Adding attributes', function() {
 		it('expect empty domElement to generate correct HTML', function() {
 			var type = 'html',
-			    root = Object.create(domElement)
-				    .init(type);
+				root = Object.create(domElement)
+					.init(type);
 			expect(root.innerHTML).to.eql('<' + type + '></' + type + '>');
 		});
 
 		it('expect domElement with a single attribute to generate correct HTML', function() {
 			var root = Object.create(domElement)
 				.init('div')
-				.addAttribute('data-id', 'cuki');
+				.addAttribute('data-id', 'myid');
 
-			expect(root.innerHTML).to.eql('<div data-id="cuki"></div>');
+			expect(root.innerHTML).to.eql('<div data-id="myid"></div>');
 		});
 		it('expect attribute value to be in double quotes when it is a number', function() {
 			var root = Object.create(domElement)
@@ -133,37 +133,69 @@ describe('Tests for "Task 1"', function() {
 
 	});
 
+	describe('Parent control', function() {
+		it('expect children to know their parents (one parent, one child)', function() {
+			var child = Object.create(domElement)
+					.init('child'),
+				parent = Object.create(domElement)
+					.init('parent')
+					.appendChild(child);
+			expect(child.parent).to.equal(parent);
+		});
+		it('expect children to know their parents (one parent, two children)', function() {
+			var child1 = Object.create(domElement).init('child'),
+				child2 = Object.create(domElement).init('child'),
+				parent = Object.create(domElement)
+					.init('parent')
+					.appendChild(child1)
+					.appendChild(child2);
+			expect(child1.parent).to.equal(parent);
+			expect(child2.parent).to.equal(parent);
+		});
+		it('expect children to know their parents (grandparent, parent and child)', function() {
+			var child = Object.create(domElement).init('child'),
+				middle = Object.create(domElement)
+					.init('middleblq')
+					.appendChild(child);
+			parent = Object.create(domElement)
+				.init('parent')
+				.appendChild(middle);
+			expect(child.parent).to.equal(middle);
+			expect(middle.parent).to.equal(parent);
+		});
+	});
+
 	describe('Adding children', function() {
 		it('expect correct HTML when child is a string', function() {
 			var text = 'Some text here, doesn\'t really matter that much what it is.',
-			    root = Object.create(domElement)
-				    .init('p')
-				    .appendChild(text);
+				root = Object.create(domElement)
+					.init('p')
+					.appendChild(text);
 			expect(root.innerHTML).to.eql('<p>' + text + '</p>');
 		});
 
 		it('expect correct HTML with nested domElements (one parent, one child)', function() {
-			var child  = Object.create(domElement)
-				    .init('child'),
-			    parent = Object.create(domElement)
-				    .init('parent')
-				    .appendChild(child);
+			var child = Object.create(domElement)
+					.init('child'),
+				parent = Object.create(domElement)
+					.init('parent')
+					.appendChild(child);
 			expect(parent.innerHTML).to.eql('<parent><child></child></parent>');
 		});
 		it('expect correct HTML with nested domElements (one parent, two children)', function() {
 			var child1 = Object.create(domElement).init('childy'),
-			    child2 = Object.create(domElement).init('childx'),
-			    parent = Object.create(domElement)
-				    .init('parent')
-				    .appendChild(child1)
-				    .appendChild(child2);
+				child2 = Object.create(domElement).init('childx'),
+				parent = Object.create(domElement)
+					.init('parent')
+					.appendChild(child1)
+					.appendChild(child2);
 			expect(parent.innerHTML).to.eql('<parent><childy></childy><childx></childx></parent>');
 		});
 		it('expect correct HTML with nested domElements (grandparent, parent and child)', function() {
-			var child  = Object.create(domElement).init('child'),
-			    middle = Object.create(domElement)
-				    .init('middleBlq')
-				    .appendChild(child);
+			var child = Object.create(domElement).init('child'),
+				middle = Object.create(domElement)
+					.init('middleBlq')
+					.appendChild(child);
 			parent = Object.create(domElement)
 				.init('parent')
 				.appendChild(middle);
@@ -172,34 +204,34 @@ describe('Tests for "Task 1"', function() {
 
 		it('expect correct HTML when adding content', function() {
 			var text = 'Some text here, doesn\'t really matter that much what it is.',
-			    root = Object.create(domElement).init('p');
+				root = Object.create(domElement).init('p');
 			root.content = text;
 			expect(root.innerHTML).to.eql('<p>' + text + '</p>');
 		});
 		it('expect string children to override parent\'s content', function() {
-			var text   = 'see me',
-			    parent = Object.create(domElement)
-				    .init('parent')
-				    .appendChild(text);
+			var text = 'see me',
+				parent = Object.create(domElement)
+					.init('parent')
+					.appendChild(text);
 			parent.content = 'some random content';
 			expect(parent.innerHTML).to.eql('<parent>see me</parent>');
 		});
 		it('expect domElement children to override parent\'s content', function() {
-			var child  = Object.create(domElement)
-				    .init('child'),
-			    parent = Object.create(domElement)
-				    .init('parent')
-				    .appendChild(child);
+			var child = Object.create(domElement)
+					.init('child'),
+				parent = Object.create(domElement)
+					.init('parent')
+					.appendChild(child);
 			parent.content = 'some random content';
 			child.content = 'see me';
 			expect(parent.innerHTML).to.eql('<parent><child>see me</child></parent>');
 		});
 
 		it('expect correct HTML when having both string and domElement children', function() {
-			var text   = 'the text you SEE!',
-			    root   = Object.create(domElement).init('p'),
-			    child1 = Object.create(domElement).init('b'),
-			    child2 = Object.create(domElement).init('s');
+			var text = 'the text you SEE!',
+				root = Object.create(domElement).init('p'),
+				child1 = Object.create(domElement).init('b'),
+				child2 = Object.create(domElement).init('s');
 			root.appendChild(text);
 			root.appendChild(child1);
 			root.appendChild(text);
@@ -209,13 +241,13 @@ describe('Tests for "Task 1"', function() {
 		});
 
 		it('expect correct HTML, when there are attributes with same names, but in different domElements', function() {
-			var child  = Object.create(domElement)
-				    .init('child')
-				    .addAttribute('id', 'cid'),
-			    parent = Object.create(domElement)
-				    .init('parent')
-				    .addAttribute('id', 'pid')
-				    .appendChild(child);
+			var child = Object.create(domElement)
+					.init('child')
+					.addAttribute('id', 'cid'),
+				parent = Object.create(domElement)
+					.init('parent')
+					.addAttribute('id', 'pid')
+					.appendChild(child);
 			expect(parent.innerHTML).to.eql('<parent id="pid"><child id="cid"></child></parent>');
 		});
 	});
@@ -239,7 +271,7 @@ describe('Tests for "Task 1"', function() {
 			var body = Object.create(domElement)
 				.init('body')
 				.appendChild(div)
-				.addAttribute('id', 'cuki')
+				.addAttribute('id', 'myid')
 				.addAttribute('bgcolor', '#012345');
 
 			var root = Object.create(domElement)
@@ -247,79 +279,79 @@ describe('Tests for "Task 1"', function() {
 				.appendChild(head)
 				.appendChild(body);
 
-			expect(root.innerHTML).to.eql('<html><head><meta charset="utf-8"></meta></head><body bgcolor="#012345" id="cuki"><div style="font-size: 42px">Hello, world!</div></body></html>');
+			expect(root.innerHTML).to.eql('<html><head><meta charset="utf-8"></meta></head><body bgcolor="#012345" id="myid"><div style="font-size: 42px">Hello, world!</div></body></html>');
 		});
 
 		it('expect this big test to work', function() {
-			var style   = Object.create(domElement)
-				    .init('style')
-				    .appendChild('#big {\nfont-size: 144pt;\n}'),
-			    link    = Object.create(domElement)
-				    .init('link')
-				    .addAttribute('src', 'css/fancy.css'),
-			    meta    = Object.create(domElement)
-				    .init('meta')
-				    .addAttribute('charset', 'utf-8'),
-			    title   = Object.create(domElement)
-				    .init('title')
-				    .appendChild('Super-Mega awesome S173'),
-			    script  = Object.create(domElement)
-				    .init('script')
-				    .addAttribute('lang', 'javascript')
-				    .appendChild('function init(){}'),
-			    head    = Object.create(domElement)
-				    .init('head')
-				    .appendChild(meta)
-				    .appendChild(title)
-				    .appendChild(link)
-				    .appendChild(style)
-				    .appendChild(script),
-			    heading = Object.create(domElement)
-				    .init('h1'),
-			    luser   = Object.create(domElement)
-				    .init('label')
-				    .addAttribute('for', 'username')
-				    .addAttribute('class', 'big'),
-			    lpass   = Object.create(domElement)
-				    .init('label')
-				    .addAttribute('for', 'password'),
-			    user    = Object.create(domElement)
-				    .init('input')
-				    .addAttribute('name', 'username')
-				    .addAttribute('id', 'username')
-				    .addAttribute('type', 'input')
-				    .addAttribute('tab-index', 1),
-			    pass    = Object.create(domElement)
-				    .init('input')
-				    .addAttribute('name', 'password')
-				    .addAttribute('id', 'password')
-				    .addAttribute('type', 'password')
-				    .addAttribute('tab-index', 2),
-			    submit  = Object.create(domElement)
-				    .init('input')
-				    .addAttribute('type', 'submit')
-				    .addAttribute('value', 'natis'),
-			    form    = Object.create(domElement)
-				    .init('form')
-				    .appendChild(luser)
-				    .appendChild(user)
-				    .addAttribute('action', 'vlez/mi/u/profila')
-				    .appendChild(lpass)
-				    .addAttribute('method', 'post')
-				    .appendChild(pass)
-				    .appendChild(submit),
-			    footer  = Object.create(domElement)
-				    .init('footer'),
-			    body    = Object.create(domElement)
-				    .init('body')
-				    .appendChild(heading)
-				    .appendChild(form)
-				    .appendChild('reklamata')
-				    .appendChild(footer),
-			    html    = Object.create(domElement)
-				    .init('html')
-				    .appendChild(head)
-				    .appendChild(body);
+			var style = Object.create(domElement)
+					.init('style')
+					.appendChild('#big {\nfont-size: 144pt;\n}'),
+				link = Object.create(domElement)
+					.init('link')
+					.addAttribute('src', 'css/fancy.css'),
+				meta = Object.create(domElement)
+					.init('meta')
+					.addAttribute('charset', 'utf-8'),
+				title = Object.create(domElement)
+					.init('title')
+					.appendChild('Super-Mega awesome S173'),
+				script = Object.create(domElement)
+					.init('script')
+					.addAttribute('lang', 'javascript')
+					.appendChild('function init(){}'),
+				head = Object.create(domElement)
+					.init('head')
+					.appendChild(meta)
+					.appendChild(title)
+					.appendChild(link)
+					.appendChild(style)
+					.appendChild(script),
+				heading = Object.create(domElement)
+					.init('h1'),
+				luser = Object.create(domElement)
+					.init('label')
+					.addAttribute('for', 'username')
+					.addAttribute('class', 'big'),
+				lpass = Object.create(domElement)
+					.init('label')
+					.addAttribute('for', 'password'),
+				user = Object.create(domElement)
+					.init('input')
+					.addAttribute('name', 'username')
+					.addAttribute('id', 'username')
+					.addAttribute('type', 'input')
+					.addAttribute('tab-index', 1),
+				pass = Object.create(domElement)
+					.init('input')
+					.addAttribute('name', 'password')
+					.addAttribute('id', 'password')
+					.addAttribute('type', 'password')
+					.addAttribute('tab-index', 2),
+				submit = Object.create(domElement)
+					.init('input')
+					.addAttribute('type', 'submit')
+					.addAttribute('value', 'natis'),
+				form = Object.create(domElement)
+					.init('form')
+					.appendChild(luser)
+					.appendChild(user)
+					.addAttribute('action', 'vlez/mi/u/profila')
+					.appendChild(lpass)
+					.addAttribute('method', 'post')
+					.appendChild(pass)
+					.appendChild(submit),
+				footer = Object.create(domElement)
+					.init('footer'),
+				body = Object.create(domElement)
+					.init('body')
+					.appendChild(heading)
+					.appendChild(form)
+					.appendChild('reklamata')
+					.appendChild(footer),
+				html = Object.create(domElement)
+					.init('html')
+					.appendChild(head)
+					.appendChild(body);
 
 			heading.content = 'tova izliza v golemi bukvi';
 			head.content = 'tova ne trqbva da izliza';

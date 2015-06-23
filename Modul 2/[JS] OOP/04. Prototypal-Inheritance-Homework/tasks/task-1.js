@@ -67,8 +67,8 @@ function solve() {
 	}
 
 	function isEmptyObject(obj) {
-		for(var prop in obj) {
-			if(obj.hasOwnProperty(prop)) {
+		for (var prop in obj) {
+			if (obj.hasOwnProperty(prop)) {
 				return false;
 			}
 		}
@@ -95,16 +95,16 @@ function solve() {
 			key,
 			len;
 
-		if(!isEmptyObject(this.attributes)) {
-			for(key in this.attributes) {
-				if(this.attributes.hasOwnProperty(key)) {
+		if (!isEmptyObject(this.attributes)) {
+			for (key in this.attributes) {
+				if (this.attributes.hasOwnProperty(key)) {
 					keys.push(key);
 				}
 			}
 
 			keys.sort();
 			len = keys.length;
-			for(index = 0; index < len; index++) {
+			for (index = 0; index < len; index++) {
 				output += ' ' +
 				          keys[index] +
 				          '="' +
@@ -115,16 +115,16 @@ function solve() {
 
 		output += '>';
 
-		if(this.children.length > 0) {
+		if (this.children.length > 0) {
 			len = this.children.length;
-			for(index = 0; index < len; index++) {
-				if(isString(this.children[index])) {
+			for (index = 0; index < len; index++) {
+				if (isString(this.children[index])) {
 					output += this.children[index];
 				} else {
 					output += this.children[index].innerHTML;
 				}
 			}
-		} else if(this.content) {
+		} else if (this.content) {
 			output += this.content;
 		}
 
@@ -166,11 +166,12 @@ function solve() {
 				return this._parent;
 			},
 			set parent(value) {
+				// TODO
 				this._parent = value;
 			},
 			// Defining methods
 			init: function(type) {
-				if(!isValidType(type)) {
+				if (!isValidType(type)) {
 					throw new Error('Invalid type!');
 				}
 
@@ -185,12 +186,13 @@ function solve() {
 				return this;
 			},
 			appendChild: function(child) {
+				child.parent = this;
 				this.children.push(child);
 
 				return this;
 			},
 			addAttribute: function(name, value) {
-				if(!isValidAttribute(name)) {
+				if (!isValidAttribute(name)) {
 					throw new Error('Invalid attribute!');
 				}
 
@@ -199,7 +201,7 @@ function solve() {
 				return this;
 			},
 			removeAttribute: function(attribute) {
-				if(!(isValidAttribute(attribute) && this.attributes[attribute])) {
+				if (!(isValidAttribute(attribute) && this.attributes[attribute])) {
 					throw new Error('Invalid attribute!');
 				}
 
