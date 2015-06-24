@@ -1,0 +1,32 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.40418.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Naming-Identifiers-in-C-Sharp", "Naming-Identifiers-in-C-Sharp\Naming-Identifiers-in-C-Sharp.csproj", "{B09BA7E8-C8B8-466E-B0C2-76ACA208E5F0}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "01-02. Task", "01-02. Task", "{C50C089F-F088-4A36-B6CB-14BEAEC36684}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "03. Task", "03. Task", "{A482D0C5-1758-4152-AA1E-5157F2548380}"
+	ProjectSection(SolutionItems) = preProject
+		OnClickButton.js = OnClickButton.js
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B09BA7E8-C8B8-466E-B0C2-76ACA208E5F0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B09BA7E8-C8B8-466E-B0C2-76ACA208E5F0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B09BA7E8-C8B8-466E-B0C2-76ACA208E5F0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B09BA7E8-C8B8-466E-B0C2-76ACA208E5F0}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{B09BA7E8-C8B8-466E-B0C2-76ACA208E5F0} = {C50C089F-F088-4A36-B6CB-14BEAEC36684}
+	EndGlobalSection
+EndGlobal
