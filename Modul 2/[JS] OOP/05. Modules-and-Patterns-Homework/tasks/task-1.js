@@ -60,18 +60,6 @@ function solve() {
 	function isValidID(id) {
 		return id % 1 === 0 && id > 0;
 	}
-
-	function hasValidTitles(array) {
-		var hasValidTitles = true;
-		for (var i = 0; i < array.length; i++) {
-			if (!isValidTitle(array[i])) {
-				hasValidTitles = false;
-			}
-		}
-
-		return hasValidTitles;
-	}
-
 	// **********************************************************************
 	var students = [],
 		studentsID = 1,
@@ -102,7 +90,7 @@ function solve() {
 				throw new Error('Presentations cannot be an empty array!');
 			}
 
-			if (!hasValidTitles(value)) {
+			if (!value.every(isValidTitle)) {
 				throw new Error('Some presentation titles are not valid!');
 			}
 
