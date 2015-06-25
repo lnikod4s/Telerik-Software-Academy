@@ -29,6 +29,7 @@ describe('Test for Modules and Patterns in JavaScript', function() {
 				var jsoop = Object.create(Course);
 				jsoop.init(getValidTitle(), []);
 			}
+
 			expect(test).to.throw();
 		});
 		it('expect to throw when a title is an empty string', function() {
@@ -36,8 +37,9 @@ describe('Test for Modules and Patterns in JavaScript', function() {
 				var jsoop = Object.create(Course);
 				jsoop.init(getValidTitle(), [
 					getValidTitle(),
-				'']);
+					'']);
 			}
+
 			expect(test).to.throw();
 		});
 		it('expect to throw when there are consecutive spaces in a title', function() {
@@ -49,6 +51,7 @@ describe('Test for Modules and Patterns in JavaScript', function() {
 					getValidTitle() + '  ' + getValidTitle(),
 				]);
 			}
+
 			expect(test).to.throw();
 		});
 		it('expect to throw if a title begins with a space', function() {
@@ -60,6 +63,7 @@ describe('Test for Modules and Patterns in JavaScript', function() {
 					getValidTitle(),
 				]);
 			}
+
 			expect(test).to.throw();
 		});
 		it('expect to throw if a title ends with a space', function() {
@@ -71,6 +75,7 @@ describe('Test for Modules and Patterns in JavaScript', function() {
 					getValidTitle(),
 				]);
 			}
+
 			expect(test).to.throw();
 		});
 		it('expect not to throw if titles are legit', function() {
@@ -82,6 +87,7 @@ describe('Test for Modules and Patterns in JavaScript', function() {
 					getValidTitle(),
 				]);
 			}
+
 			expect(test).not.to.throw();
 		});
 		it('expect not to throw if titles are legit and contain all kinds of symbols', function() {
@@ -94,6 +100,7 @@ describe('Test for Modules and Patterns in JavaScript', function() {
 					getValidTitle() + '-----====-----',
 				]);
 			}
+
 			expect(test).not.to.throw();
 		});
 	});
@@ -105,6 +112,7 @@ describe('Test for Modules and Patterns in JavaScript', function() {
 				jsoop.init(getValidTitle(), [getValidTitle()]);
 				jsoop.addStudent(42);
 			}
+
 			expect(test).to.throw();
 		});
 		it('expect to throw when a student has only one name', function() {
@@ -113,6 +121,7 @@ describe('Test for Modules and Patterns in JavaScript', function() {
 				jsoop.init(getValidTitle(), [getValidTitle()]);
 				jsoop.addStudent(getValidName());
 			}
+
 			expect(test).to.throw();
 		});
 		it('expect to throw when a student has more than two names', function() {
@@ -121,6 +130,7 @@ describe('Test for Modules and Patterns in JavaScript', function() {
 				jsoop.init(getValidTitle(), [getValidTitle()]);
 				jsoop.addStudent(getValidName() + ' ' + getValidName() + ' ' + getValidName());
 			}
+
 			expect(test).to.throw();
 		});
 		it('expect to throw when a student name is invalid', function() {
@@ -129,6 +139,7 @@ describe('Test for Modules and Patterns in JavaScript', function() {
 				jsoop.init(getValidTitle(), [getValidTitle()]);
 				jsoop.addStudent('marulq ' + getValidName());
 			}
+
 			expect(test).to.throw();
 		});
 		it('expect to throw when a student name is invalid', function() {
@@ -137,6 +148,7 @@ describe('Test for Modules and Patterns in JavaScript', function() {
 				jsoop.init(getValidTitle(), [getValidTitle()]);
 				jsoop.addStudent(getValidName() + ' marulkova');
 			}
+
 			expect(test).to.throw();
 		});
 		it('expect not to throw when a student name is valid', function() {
@@ -145,6 +157,7 @@ describe('Test for Modules and Patterns in JavaScript', function() {
 				jsoop.init(getValidTitle(), [getValidTitle()]);
 				jsoop.addStudent(getValidName() + ' ' + getValidName());
 			}
+
 			expect(test).to.not.throw();
 		});
 		it('expect not to throw when a student name is valid (a name consists of a single letter)', function() {
@@ -153,6 +166,7 @@ describe('Test for Modules and Patterns in JavaScript', function() {
 				jsoop.init(getValidTitle(), [getValidTitle()]);
 				jsoop.addStudent(getValidName() + ' K');
 			}
+
 			expect(test).to.not.throw();
 		});
 	});
@@ -163,23 +177,29 @@ describe('Test for Modules and Patterns in JavaScript', function() {
 			jsoop = Object.create(Course);
 			jsoop.init(getValidTitle(), [getValidTitle()]);
 			ids = [];
-			for(i = 0; i<100; i+=1)
+			for (i = 0; i < 100; i += 1) {
 				ids.push(jsoop.addStudent(getValidName() + ' ' + getValidName()));
+			}
 			ids.sort();
 			var correctIDs = function() {
-				for(i in ids) {
-					if(ids[i] > 0 && ids[i] === (ids[i] | 0)) {
+				for (i in ids) {
+					if (ids[i] > 0 && ids[i] === (ids[i] | 0)) {
 						/* It's OK */
 					}
-					else return false;
+					else {
+						return false;
+					}
 				}
 				return true;
 			}();
 			var uniqueIDs = function() {
-				for(i in ids) {
-					if(i === 0) continue;
-					if(ids[i-1] === ids[i])
+				for (i in ids) {
+					if (i === 0) {
+						continue;
+					}
+					if (ids[i - 1] === ids[i]) {
 						return false;
+					}
 				}
 				return true;
 			}();
@@ -192,6 +212,7 @@ describe('Test for Modules and Patterns in JavaScript', function() {
 				id = jsoop.addStudent(getValidName() + ' ' + getValidName());
 				jsoop.submitHomework(0, 1);
 			}
+
 			expect(test).to.throw();
 		});
 		it('expect Course.submitHomework to throw if given invalid StudentID', function() {
@@ -201,6 +222,7 @@ describe('Test for Modules and Patterns in JavaScript', function() {
 				id = jsoop.addStudent(getValidName() + ' ' + getValidName());
 				jsoop.submitHomework(4.2, 1);
 			}
+
 			expect(test).to.throw();
 		});
 		it('expect Course.submitHomework to throw if given invalid StudentID', function() {
@@ -210,6 +232,7 @@ describe('Test for Modules and Patterns in JavaScript', function() {
 				id = jsoop.addStudent(getValidName() + ' ' + getValidName());
 				jsoop.submitHomework(id + 5, 1);
 			}
+
 			expect(test).to.throw();
 		});
 		it('expect Course.submitHomework to throw if given invalid HomeworkID', function() {
@@ -219,6 +242,7 @@ describe('Test for Modules and Patterns in JavaScript', function() {
 				id = jsoop.addStudent(getValidName() + ' ' + getValidName());
 				jsoop.submitHomework(id, 0);
 			}
+
 			expect(test).to.throw();
 		});
 		it('expect Course.submitHomework to throw if given invalid HomeworkID', function() {
@@ -228,6 +252,7 @@ describe('Test for Modules and Patterns in JavaScript', function() {
 				id = jsoop.addStudent(getValidName() + ' ' + getValidName());
 				jsoop.submitHomework(id, 1.23456);
 			}
+
 			expect(test).to.throw();
 		});
 		it('expect Course.submitHomework to throw if given invalid HomeworkID', function() {
@@ -237,6 +262,7 @@ describe('Test for Modules and Patterns in JavaScript', function() {
 				id = jsoop.addStudent(getValidName() + ' ' + getValidName());
 				jsoop.submitHomework(id, 2);
 			}
+
 			expect(test).to.throw();
 		});
 		it('expect Course.submitHomework not to throw if given valid IDs', function() {
@@ -246,6 +272,7 @@ describe('Test for Modules and Patterns in JavaScript', function() {
 				id = jsoop.addStudent(getValidName() + ' ' + getValidName());
 				jsoop.submitHomework(id, 1);
 			}
+
 			expect(test).to.not.throw();
 		});
 	});
@@ -262,7 +289,7 @@ describe('Test for Modules and Patterns in JavaScript', function() {
 
 			var student = {
 				firstname: getValidName(),
-				lastname: getValidName(),
+				lastname: getValidName()
 			};
 			student.id = jsoop.addStudent(student.firstname + ' ' + student.lastname);
 
@@ -273,7 +300,7 @@ describe('Test for Modules and Patterns in JavaScript', function() {
 				.init(getValidTitle(), [getValidTitle()]);
 
 			var firstname, lastname, listed = [];
-			for(var i=0; i<100; ++i) {
+			for (var i = 0; i < 100; ++i) {
 				firstname = getValidName();
 				lastname = getValidName();
 				listed.push({
@@ -327,8 +354,9 @@ function getValidName() {
 }
 
 function checkStudentList(list1, list2) {
-	if(list1.length !== list2.length)
+	if (list1.length !== list2.length) {
 		return false;
+	}
 
 	function compare(a, b) {
 		return a.id < b.id;
@@ -337,13 +365,16 @@ function checkStudentList(list1, list2) {
 	list1.sort(compare);
 	list2.sort(compare);
 
-	for(var i in list1) {
-		if(list1[i].id !== list2[i].id)
+	for (var i in list1) {
+		if (list1[i].id !== list2[i].id) {
 			return false;
-		if(list1[i].firstname !== list2[i].firstname)
+		}
+		if (list1[i].firstname !== list2[i].firstname) {
 			return false;
-		if(list1[i].lastname !== list2[i].lastname)
+		}
+		if (list1[i].lastname !== list2[i].lastname) {
 			return false;
+		}
 	}
 	return true;
 }

@@ -49,8 +49,8 @@ function solve() {
 	// TODO Improve regex logic
 	function isValidTitle(title) {
 		return !(/^\s+/.test(title) ||
-		/\s+$/.test(title) ||
-		/\s{2,}/.test(title));
+			/\s+$/.test(title) ||
+			/\s{2,}/.test(title)) && title;
 	}
 
 	function isValidName(name) {
@@ -60,6 +60,7 @@ function solve() {
 	function isValidID(id) {
 		return id % 1 === 0 && id > 0;
 	}
+
 	// **********************************************************************
 	var students = [],
 		studentsID = 1,
