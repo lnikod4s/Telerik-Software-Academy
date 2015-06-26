@@ -61,47 +61,69 @@ function solve() {
 		return id % 1 === 0 && id > 0;
 	}
 
+	function validateTitle(title) {
+		if (!title) {
+			throw new Error('Title cannot be an empty string!');
+		}
+
+		if (!isValidTitle(title)) {
+			throw new Error('Title is not valid!');
+		}
+	}
+
+	function validatePresentations(presentations) {
+		if (!presentations.length) {
+			throw new Error('Presentations cannot be an empty array!');
+		}
+
+		if (!presentations.every(isValidTitle)) {
+			throw new Error('Some presentation titles are not valid!');
+		}
+	}
+
+	function validateFullname(fullname) {
+		if (fullname.length != 2) {
+			throw new Error('Student cannot have more than two names!');
+		}
+	}
+
+	function validateNames(firstname, lastname) {
+		if (!(isValidName(firstname) && isValidName(lastname))) {
+			throw new Error('Invalid name!');
+		}
+	}
+
+	function validateIDs(studentID, homeworkID, studentsCount, presentationsCount) {
+		if (!isValidID(studentID)) {
+			throw new Error('Invalid student ID!');
+		}
+
+		if (!isValidID(homeworkID)) {
+			throw new Error('Invalid homework ID!');
+		}
+
+		if (studentID > studentsCount) {
+			throw new Error('Incorrect student ID!');
+		}
+
+		if (homeworkID > presentationsCount) {
+			throw new Error('Incorrect homework ID!');
+		}
+	}
+
 	// **********************************************************************
-	var students = [],
-		studentsID = 1,
-		Course;
+	var Course;
 
 	Course = {
-		// Defining properties
-		get title() {
-			return this._title;
-		},
-		set title(value) {
-			if (!value) {
-				throw new Error('Title cannot be an empty string!');
-			}
-
-			if (!isValidTitle(value)) {
-				throw new Error('Title is not valid!');
-			}
-
-			this._title = value;
-			return this;
-		},
-		get presentations() {
-			return this._presentations;
-		},
-		set presentations(value) {
-			if (!value.length) {
-				throw new Error('Presentations cannot be an empty array!');
-			}
-
-			if (!value.every(isValidTitle)) {
-				throw new Error('Some presentation titles are not valid!');
-			}
-
-			this._presentations = value;
-			return this;
-		},
-		// Defining methods
 		init: function(title, presentations) {
-			this.title = title;
-			this.presentations = presentations;
+			validateTitle(title);
+			validatePresentations(presentations);
+
+			this._title = title;
+			this._presentations = presentations;
+			this._students = [];
+			this._studentID = 1;
+
 			return this;
 		},
 		addStudent: function(name) {
@@ -110,43 +132,22 @@ function solve() {
 				lastname = fullname[1].trim(),
 				newStudent;
 
-			if (fullname.length != 2) {
-				throw new Error('Student cannot have more than two names!');
-			}
+			validateFullname(fullname);
+			validateNames(firstname, lastname);
 
-			if (!(isValidName(firstname) && isValidName(lastname))) {
-				throw new Error('Invalid name!');
-			}
-
-			newStudent = {
+			this._students.push({
 				firstname: firstname,
 				lastname: lastname,
-				id: studentsID
-			};
-			students.push(newStudent);
+				id: this._studentID
+			});
 
-			return studentsID++;
+			return this._studentID++;
 		},
 		getAllStudents: function() {
-			return students.slice(0);
+			return this._students.slice();
 		},
 		submitHomework: function(studentID, homeworkID) {
-			if (!isValidID(studentID)) {
-				throw new Error('Invalid student ID!');
-			}
-
-			if (!isValidID(homeworkID)) {
-				throw new Error('Invalid homework ID!');
-			}
-
-			if (studentID > students.length) {
-				throw new Error('Incorrect student ID!');
-			}
-
-			if (homeworkID > this.presentations.length) {
-				throw new Error('Incorrect homework ID!');
-			}
-
+			validateIDs(studentID, homeworkID, this._students.length, this._presentations.length);
 		},
 		pushExamResults: function(results) {
 			// TODO Implement method
