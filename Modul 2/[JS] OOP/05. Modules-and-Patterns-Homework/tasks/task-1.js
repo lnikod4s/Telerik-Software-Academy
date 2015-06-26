@@ -61,6 +61,14 @@ function solve() {
 		return id % 1 === 0 && id > 0;
 	}
 
+	function isCorrectID(id, max) {
+		return id > 0 && id < max;
+	}
+
+	function isNumber(number) {
+		return !isNaN(parseFloat(number)) && isFinite(number);
+	}
+
 	function validateTitle(title) {
 		if (!title) {
 			throw new Error('Title cannot be an empty string!');
@@ -111,6 +119,30 @@ function solve() {
 		}
 	}
 
+	function validateResults(results) {
+		var uniqueIDs = [],
+			studentID,
+			score;
+
+		results.forEach(function(result) {
+			studentID = result.StudentID;
+			score = result.Score;
+			uniqueIDs.push(studentID);
+
+			if (!isValidID(studentID)) {
+				throw new Error('Invalid student ID!');
+			}
+
+			if (uniqueIDs[studentID]) {
+				throw new Error('A student cannot participate a course more than once!');
+			}
+
+			if (!isNumber(score)) {
+				throw new Error('Score must be a number!');
+			}
+		})
+	}
+
 	// **********************************************************************
 	var Course;
 
@@ -150,7 +182,18 @@ function solve() {
 			validateIDs(studentID, homeworkID, this._students.length, this._presentations.length);
 		},
 		pushExamResults: function(results) {
-			// TODO Implement method
+			validateResults(results);
+
+			this._results = results.map(function(result) {
+				return isCorrectID(result.StudentID, this._students.length)
+					? result
+					: {
+					StudentID: result.StudentID,
+					Score: 0
+				};
+			});
+
+			return this;
 		},
 		getTopStudents: function() {
 			// TODO Implement method
