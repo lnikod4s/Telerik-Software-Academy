@@ -1,5 +1,5 @@
 /* Task Description */
-/* 
+/*
  * Create a module for a Telerik Academy course
  * The course has a title and presentations
  * Each presentation also has a title
