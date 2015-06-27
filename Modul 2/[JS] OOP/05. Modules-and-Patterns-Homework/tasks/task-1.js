@@ -180,6 +180,13 @@ function solve() {
 		},
 		submitHomework: function(studentID, homeworkID) {
 			validateIDs(studentID, homeworkID, this._students.length, this._presentations.length);
+
+			// this._homeworks is an array of arrays, in which the indexes are student IDs and the elements - array of
+			// homework IDs
+			this._homeworks = [];
+			this._homeworks[studentID] = [].push(homeworkID);
+
+			return this;
 		},
 		pushExamResults: function(results) {
 			validateResults(results);
@@ -196,7 +203,10 @@ function solve() {
 			return this;
 		},
 		getTopStudents: function() {
-			// TODO Implement method
+			var topStudents = this._students.slice();
+
+			// Sorting by descending scores
+
 		}
 	};
 
