@@ -7,6 +7,18 @@
 		this.prototype = Object.create(parent.prototype);
 		this.prototype.constructor = this;
 	};
+	
+	function compare(a, b) {
+		if (a > b) {
+			return +1;
+		}
+
+		if (a < b) {
+			return -1
+		}
+
+		return 0;
+	}
 
 	function isInteger(value) {
 		return typeof value === "number" &&
@@ -355,7 +367,7 @@
 				case 'find-rents-by-location':
 					return executeFindRentsByLocationCommand(cmdArgs[0]);
 				case 'find-rents-by-price':
-					return executeFindRentsByPriceCommand(
+					return executeFindRentsByPriceRangeCommand(
 						Number(cmdArgs[0]), Number(cmdArgs[1]));
 				default:
 					throw new Error('Unknown command: ' + cmdName);
@@ -457,47 +469,51 @@
 		}
 
 		function executeFindSalesByLocationCommand(location) {
-			return executeFindOffersByLocationCommand(location, SaleOffer);
+			return findOffersByLocation(location, SaleOffer);
 		}
 
 		function executeFindRentsByLocationCommand(location) {
-			return executeFindOffersByLocationCommand(location, RentOffer);
+			return findOffersByLocation(location, RentOffer);
 		}
-		
-		function executeFindOffersByLocationCommand(location, offerType) {
-			if (!location) {
-				throw new Error("Location cannot be empty.");
-			}
-			var selectedOffers = _offers
-				.filter(function (offer) {
-					return offer.getEstate().getLocation() === location &&
-						offer instanceof offerType;
-				})
-				.sort(function (a, b) {
-					return a.getEstate().getName().localeCompare(b.getEstate().getName());
-				});
-			return formatQueryResults(selectedOffers);
-		}
-		
-		function executeFindRentsByPriceCommand(minPrice, maxPrice) {
-			if (!(CommonValidator.validatePrice(minPrice) || CommonValidator.validatePrice(maxPrice))) {
-				throw new Error('Invalid price range.');
-			}
 
-			var selectedOffers = _offers.filter(function (offer) {
+		function executeFindRentsByPriceRangeCommand(minPrice, maxPrice) {
+			if (! isInteger(minPrice) || ! isInteger(maxPrice)) {
+				throw new Error("Invalid price range.");
+			}
+			// Select all rent offers within the price range
+			var selectedOffers = _offers.filter(function(offer) {
 				return offer.getPrice() >= minPrice &&
 					offer.getPrice() <= maxPrice &&
 					offer instanceof RentOffer;
-			}).sort(function (a, b) {
-				var result = a.getPrice() - b.getPrice();
-				if (result == 0) {
-					result = a.getEstate().getName().localeCompare(b.getEstate().getName());
-				}
-				return result;
+			});
+
+			// Sort selected offers by name
+			selectedOffers.sort(function(a, b) {
+				return a.getEstate().getName().localeCompare(b.getEstate().getName());
+			});
+
+			// Sort the sorted by name offers by price
+			selectedOffers.sort(function(a, b) {
+				return a.getPrice() - b.getPrice();
+			});
+
+			return formatQueryResults(selectedOffers);
+		}
+
+		function findOffersByLocation(location, offerClass) {
+			if (!location) {
+				throw new Error("Location cannot be empty.");
+			}
+			var selectedOffers = _offers.filter(function(offer) {
+				return offer.getEstate().getLocation() === location &&
+					offer instanceof offerClass;
+			});
+			selectedOffers.sort(function(a, b) {
+				return a.getEstate().getName().localeCompare(b.getEstate().getName());
 			});
 			return formatQueryResults(selectedOffers);
 		}
-		
+
 		function formatQueryResults(offers) {
 			var result = '';
 			if (offers.length == 0) {
@@ -520,6 +536,7 @@
 		};
 	}());
 
+
 	// Process the input commands and return the results
 	var results = '';
 	EstatesEngine.initialize();
@@ -529,30 +546,11 @@
 				var cmdResult = EstatesEngine.executeCommand(cmd);
 				results += cmdResult + '\n';
 			} catch (err) {
-				//console.log(err.toString());
+				//console.log(err);
 				results += 'Invalid command.\n';
 			}
 		}
 	});
 	return results.trim();
+
 }
-
-// ------------------------------------------------------------
-// Read the input from the console as array and process it
-// Remove all below code before submitting to the judge system!
-// ------------------------------------------------------------
-
-(function() {
-	var arr = [];
-	if (typeof (require) == 'function') {
-		// We are in node.js --> read the console input and process it
-		require('readline').createInterface({
-			input: process.stdin,
-			output: process.stdout
-		}).on('line', function(line) {
-			arr.push(line);
-		}).on('close', function() {
-			console.log(processEstatesAgencyCommands(arr));
-		});
-	}
-})();
