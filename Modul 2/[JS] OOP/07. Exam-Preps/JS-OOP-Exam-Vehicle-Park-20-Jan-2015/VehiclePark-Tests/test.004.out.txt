@@ -1,0 +1,8 @@
+Limo created.
+Limo created.
+List Output:
+ -> Limo: brand=GM,age=5.0,terrainCoverage=road,numberOfWheels=8,consumption=[15l/100km diesel]
+ --> Employees, allowed to drive: ---
+ -> Limo: brand=Truck,age=15.0,terrainCoverage=road,numberOfWheels=4,consumption=[25l/100km petrol]
+ --> Employees, allowed to drive: ---
+

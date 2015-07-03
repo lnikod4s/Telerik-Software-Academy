@@ -1,0 +1,25 @@
+Employee created.
+Limo created.
+Limo created.
+Limo created.
+Limo created.
+Invalid command.
+Invalid command.
+Invalid command.
+Invalid command.
+Invalid command.
+Added employee to possible Limos.
+List Output:
+ -> Limo: brand=GM,age=5.0,terrainCoverage=road,numberOfWheels=8,consumption=[15l/100km diesel]
+ --> Employees, allowed to drive:
+ ---> Angel,position=Trainer
+ -> Limo: brand=GM,age=5.0,terrainCoverage=road,numberOfWheels=8,consumption=[10l/100km diesel]
+ --> Employees, allowed to drive:
+ ---> Angel,position=Trainer
+ -> Limo: brand=GM,age=5.0,terrainCoverage=road,numberOfWheels=4,consumption=[15l/100km diesel]
+ --> Employees, allowed to drive:
+ ---> Angel,position=Trainer
+ -> Limo: brand=GM,age=5.0,terrainCoverage=road,numberOfWheels=8,consumption=[15l/100km petrol]
+ --> Employees, allowed to drive:
+ ---> Angel,position=Trainer
+

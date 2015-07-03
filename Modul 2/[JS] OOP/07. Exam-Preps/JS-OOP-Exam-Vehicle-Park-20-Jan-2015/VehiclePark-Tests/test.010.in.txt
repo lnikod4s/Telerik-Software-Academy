@@ -1,0 +1,10 @@
+insert(type=limo;brand=GM;age=5;number-of-wheels=8;consumption=15;type-of-fuel=diesel)
+insert(type=employee;name=Angel;position=Trainer;grade=10)
+insert(type=vehicle;brand=Trabant;age=5;number-of-wheels=8;consumption=15;type-of-fuel=diesel)
+insert(type=automobile;brand=AZLK;age=5;number-of-wheels=8;consumption=15;type-of-fuel=diesel)
+append-employee(name=Angel;brand=Trabant)
+list
+append-employee(name=Ivancho;brand=GM)
+append-employee(name=Angel;brand=GM)
+detach-employee(name=Angel;brand=AZLK)
+list

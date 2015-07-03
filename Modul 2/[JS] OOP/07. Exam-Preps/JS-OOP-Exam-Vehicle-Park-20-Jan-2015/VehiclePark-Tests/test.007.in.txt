@@ -1,0 +1,4 @@
+insert(type=bike;brand=stud;age=2;terrain-coverage=all;frame-size=;number-of-shifts=21)
+insert(type=bike;age=2;terrain-coverage=all;frame-size=19;number-of-shifts=21;brand=)
+insert(type=bike;brand=stud;age=;terrain-coverage=all;frame-size=19;number-of-shifts=21)
+list

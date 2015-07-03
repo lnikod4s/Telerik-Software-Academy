@@ -1,0 +1,8 @@
+insert(type=employee;name=Angel;position=Trainer;grade=10)
+insert(type=employee;name=Vlado;position=Programmer;grade=20)
+insert(type=employee;name=Nakov;position=Boss;grade=30)
+insert(type=employee;name=Hristo;position=Boss;grade=40)
+
+list
+
+list-employees(grade=25)

@@ -1,0 +1,4 @@
+insert(type=bike;brand=RAM;age=2;terrain-coverage=all;frame-size=19;number-of-shifts=21)
+insert(type=bike;brand=Drag;age=2;terrain-coverage=all;frame-size=19;number-of-shifts=28;number-of-wheels=3)
+insert(type=bike;brand=Sprint;age=5;terrain-coverage=road;frame-size=19)
+list

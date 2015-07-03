@@ -1,0 +1,35 @@
+Employee created.
+Bike created.
+Truck created.
+Truck created.
+Limo created.
+List Output:
+ -> Bike: brand=RAM,age=2.0,terrainCoverage=all,numberOfWheels=2,frameSize=19,numberOfShifts=21
+ -> Truck: brand=Opel,age=15.0,terrainCoverage=road,numberOfWheels=4,consumption=[8l/100km gas],numberOfDoors=3
+ -> Truck: brand=Ford,age=8.0,terrainCoverage=all,numberOfWheels=4,consumption=[10l/100km diesel],numberOfDoors=5
+ -> Limo: brand=GM,age=5.0,terrainCoverage=road,numberOfWheels=8,consumption=[15l/100km diesel]
+ --> Employees, allowed to drive: ---
+Truck deleted.
+Bike deleted.
+Added employee to possible Limos.
+List Output:
+ -> Truck: brand=Ford,age=8.0,terrainCoverage=all,numberOfWheels=4,consumption=[10l/100km diesel],numberOfDoors=5
+ -> Limo: brand=GM,age=5.0,terrainCoverage=road,numberOfWheels=8,consumption=[15l/100km diesel]
+ --> Employees, allowed to drive:
+ ---> Angel,position=Trainer
+Truck deleted.
+Limo created.
+Employee created.
+Added employee to possible Limos.
+List Output:
+ -> Limo: brand=GM,age=5.0,terrainCoverage=road,numberOfWheels=8,consumption=[15l/100km diesel]
+ --> Employees, allowed to drive:
+ ---> Angel,position=Trainer
+ ---> Vlado,position=Programmer
+ -> Limo: brand=GM,age=5.0,terrainCoverage=road,numberOfWheels=8,consumption=[15l/100km diesel]
+ --> Employees, allowed to drive:
+ ---> Vlado,position=Programmer
+List Output:
+ ---> Angel,position=Trainer
+ ---> Vlado,position=Programmer
+

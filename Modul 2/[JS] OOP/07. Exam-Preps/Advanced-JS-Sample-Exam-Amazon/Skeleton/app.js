@@ -1,4 +1,4 @@
-(function (amazon) {
+(function(amazon) {
 	amazon.generateData();
 	var categories = amazon.getCategories();
 	var users = amazon.getUsers();
@@ -9,4 +9,4 @@
 	// For testing
 	console.log(categories);
 	console.log(users);
-}(amazon));
+}(amazon));, ,
