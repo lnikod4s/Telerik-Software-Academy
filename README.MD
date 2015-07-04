@@ -1,4 +1,4 @@
-<h1 align="center">Telerik Academy 2015/2016</h1>
+<h1 align="center">Telerik Software Academy 2015/2016</h1>
 
 <p align="center">
 <a href="https://www.youtube.com/watch?v=ni52h1LoL0w">
