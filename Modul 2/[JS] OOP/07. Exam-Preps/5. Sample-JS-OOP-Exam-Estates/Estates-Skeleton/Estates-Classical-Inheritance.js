@@ -22,8 +22,8 @@
 
 	function isInteger(value) {
 		return typeof value === "number" &&
-			isFinite(value) &&
-			Math.floor(value) === value;
+		       isFinite(value) &&
+		       Math.floor(value) === value;
 	}
 
 	var CommonValidator = {
@@ -120,10 +120,10 @@
 			var hasFurniture = this.getIsFurnitured() ? 'Yes' : 'No';
 
 			return this.constructor.name +
-				': Name = ' + this.getName() +
-				', Area = ' + this.getArea() +
-				', Location = ' + this.getLocation() +
-				', Furnitured = ' + hasFurniture;
+			       ': Name = ' + this.getName() +
+			       ', Area = ' + this.getArea() +
+			       ', Location = ' + this.getLocation() +
+			       ', Furnitured = ' + hasFurniture;
 		};
 
 		return Estate;
@@ -170,8 +170,8 @@
 			superToString = Estate.prototype.toString.call(this);
 
 			return superToString +
-				', Rooms: ' + this.getRooms() +
-				', Elevator: ' + hasElevator;
+			       ', Rooms: ' + this.getRooms() +
+			       ', Elevator: ' + hasElevator;
 		};
 
 		return BuildingEstate;
@@ -221,7 +221,7 @@
 			var superToString = Estate.prototype.toString.call(this);
 
 			return superToString +
-				', Floors: ' + this.getFloors();
+			       ', Floors: ' + this.getFloors();
 		};
 
 		return House;
@@ -264,8 +264,8 @@
 			var superToString = Estate.prototype.toString.call(this);
 
 			return superToString +
-				', Width: ' + this.getWidth() +
-				', Height: ' + this.getHeight();
+			       ', Width: ' + this.getWidth() +
+			       ', Height: ' + this.getHeight();
 		};
 
 		return Garage;
@@ -303,8 +303,8 @@
 
 		Offer.prototype.toString = function() {
 			return 'Estate = ' + this.getEstate().getName() +
-				', Location = ' + this.getEstate().getLocation() +
-				', Price = ' + this.getPrice();
+			       ', Location = ' + this.getEstate().getLocation() +
+			       ', Price = ' + this.getPrice();
 		};
 
 		return Offer;
@@ -379,22 +379,22 @@
 			switch (objType) {
 				case 'Apartment':
 					var apartment = new Apartment(cmdArgs[1], Number(cmdArgs[2]), cmdArgs[3],
-						parseBoolean(cmdArgs[4]), Number(cmdArgs[5]), parseBoolean(cmdArgs[6]));
+					                              parseBoolean(cmdArgs[4]), Number(cmdArgs[5]), parseBoolean(cmdArgs[6]));
 					addEstate(apartment);
 					break;
 				case 'Office':
 					var office = new Office(cmdArgs[1], Number(cmdArgs[2]), cmdArgs[3],
-						parseBoolean(cmdArgs[4]), Number(cmdArgs[5]), parseBoolean(cmdArgs[6]));
+					                        parseBoolean(cmdArgs[4]), Number(cmdArgs[5]), parseBoolean(cmdArgs[6]));
 					addEstate(office);
 					break;
 				case 'House':
 					var house = new House(cmdArgs[1], Number(cmdArgs[2]), cmdArgs[3],
-						parseBoolean(cmdArgs[4]), Number(cmdArgs[5]));
+					                      parseBoolean(cmdArgs[4]), Number(cmdArgs[5]));
 					addEstate(house);
 					break;
 				case 'Garage':
 					var garage = new Garage(cmdArgs[1], Number(cmdArgs[2]), cmdArgs[3],
-						parseBoolean(cmdArgs[4]), Number(cmdArgs[5]), Number(cmdArgs[6]));
+					                        parseBoolean(cmdArgs[4]), Number(cmdArgs[5]), Number(cmdArgs[6]));
 					addEstate(garage);
 					break;
 				case 'RentOffer':
@@ -477,14 +477,14 @@
 		}
 
 		function executeFindRentsByPriceRangeCommand(minPrice, maxPrice) {
-			if (! isInteger(minPrice) || ! isInteger(maxPrice)) {
+			if (!isInteger(minPrice) || !isInteger(maxPrice)) {
 				throw new Error("Invalid price range.");
 			}
 			// Select all rent offers within the price range
 			var selectedOffers = _offers.filter(function(offer) {
 				return offer.getPrice() >= minPrice &&
-					offer.getPrice() <= maxPrice &&
-					offer instanceof RentOffer;
+				       offer.getPrice() <= maxPrice &&
+				       offer instanceof RentOffer;
 			});
 
 			// Sort selected offers by name
@@ -506,7 +506,7 @@
 			}
 			var selectedOffers = _offers.filter(function(offer) {
 				return offer.getEstate().getLocation() === location &&
-					offer instanceof offerClass;
+				       offer instanceof offerClass;
 			});
 			selectedOffers.sort(function(a, b) {
 				return a.getEstate().getName().localeCompare(b.getEstate().getName());
@@ -523,8 +523,8 @@
 				for (var i = 0; i < offers.length; i++) {
 					var offer = offers[i];
 					result += '  [Estate: ' + offer.getEstate().getName() +
-					', Location: ' + offer.getEstate().getLocation() +
-					', Price: ' + offer.getPrice() + ']\n';
+					          ', Location: ' + offer.getEstate().getLocation() +
+					          ', Price: ' + offer.getPrice() + ']\n';
 				}
 			}
 			return result.trim();
@@ -536,7 +536,6 @@
 		};
 	}());
 
-
 	// Process the input commands and return the results
 	var results = '';
 	EstatesEngine.initialize();
@@ -545,7 +544,8 @@
 			try {
 				var cmdResult = EstatesEngine.executeCommand(cmd);
 				results += cmdResult + '\n';
-			} catch (err) {
+			}
+			catch (err) {
 				//console.log(err);
 				results += 'Invalid command.\n';
 			}
