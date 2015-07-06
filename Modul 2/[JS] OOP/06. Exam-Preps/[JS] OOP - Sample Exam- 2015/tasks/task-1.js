@@ -1,6 +1,6 @@
 function solve() {
-	var Player = (function() {
-		var Player = {
+	var player = (function() {
+		var player = {
 			get name() {
 				return this._name;
 			},
@@ -14,10 +14,10 @@ function solve() {
 				return this;
 			},
 			getPlayer: function(name) {
-				return Object.create(Player).init(name);
+				return Object.create(player).init(name);
 			},
 			addPlaylist: function(name) {
-				var newPlaylist = Object.create(Playlist).init(name);
+				var newPlaylist = Object.create(playlist).init(name);
 				this.playlists.push(newPlaylist);
 			},
 			getPlaylistById: function(id) {
@@ -50,11 +50,11 @@ function solve() {
 				// TODO: Implement method
 			}
 		};
-		return Player;
+		return player;
 	}());
 
-	var Playlist = (function() {
-		var Playlist = {
+	var playlist = (function() {
+		var playlist = {
 			get id() {
 				return this._id;
 			},
@@ -114,11 +114,11 @@ function solve() {
 			}
 		};
 
-		return Playlist;
+		return playlist;
 	}());
 
-	var Playable = (function() {
-		var Playable = {
+	var playable = (function() {
+		var playable = {
 			get id() {
 				return this._id;
 			},
@@ -151,60 +151,86 @@ function solve() {
 			}
 		};
 
-		return Playable;
+		return playable;
 	}());
 
-	var Audio = (function(parent) {
-		var Audio = Object.create(parent);
-		Audio = {
-			get length() {
-				return this._length;
+	var audio = (function(parent) {
+		var audio = Object.create(parent, {
+			length: {
+				get: function() {
+					return this._length;
+				},
+				set: function(value) {
+					this._length = value;
+				},
+				enumerable: true,
+				configurable: true
 			},
-			set length(value) {
-				this._length = value;
-			},
-			init: function(id, title, author, length) {
-				parent.init.call(this, id, title, author);
-				this.length = length;
+			init: {
+				value: function(id, title, author, length) {
+					parent.init.call(this, id, title, author);
+					this.length = length;
 
-				return this;
+					return this;
+				},
+				enumerable: true,
+				configurable: true,
+				writable: true
 			},
-			play: function() {
-				var baseResult = parent.play.call(this);
-				baseResult += ' - ' + this.length;
+			play: {
+				value: function() {
+					var baseResult = parent.play.call(this);
+					baseResult += ' - ' + this.length;
 
-				return baseResult;
+					return baseResult;
+				},
+				enumerable: true,
+				configurable: true,
+				writable: true
 			}
-		};
+		});
 
-		return Audio;
-	}(Playable));
+		return audio;
+	}(playable));
 
-	var Video = (function(parent) {
-		var Video = Object.create(parent);
-		Video = {
-			get imdbRating() {
-				return this._imdbRating;
+	var video = (function(parent) {
+		var video = Object.create(parent, {
+			imdbRating: {
+				get: function() {
+					return this._imdbRating;
+				},
+				set: function(value) {
+					this._imdbRating = value;
+				},
+				enumerable: true,
+				configurable: true
 			},
-			set imdbRating(value) {
-				this._imdbRating = value;
-			},
-			init: function(id, title, author, imdbRating) {
-				parent.init.call(this, id, title, author);
-				this.imdbRating = imdbRating;
+			init: {
+				value: function(id, title, author, imdbRating) {
+					parent.init.call(this, id, title, author);
+					this.imdbRating = imdbRating;
 
-				return this;
+					return this;
+				},
+				enumerable: true,
+				configurable: true,
+				writable: true
 			},
-			play: function() {
-				var baseResult = parent.play.call(this);
-				baseResult += ' - ' + this.imdbRating;
+			play: {
+				value: function() {
+					var baseResult = parent.play.call(this);
+					baseResult += ' - ' + this.imdbRating;
 
-				return baseResult;
+					return baseResult;
+				},
+				enumerable: true,
+				configurable: true,
+				writable: true
 			}
-		};
+		});
 
-		return Video;
-	}(Playable));
+		return video;
+	}(playable));
 }
 
 module.exports = solve;
