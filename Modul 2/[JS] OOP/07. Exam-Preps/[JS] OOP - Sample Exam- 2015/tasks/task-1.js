@@ -1,6 +1,12 @@
 function solve() {
 	var Player = (function() {
 		var Player = {
+			get name() {
+				return this._name;
+			},
+			set name(value) {
+				this._name = value;
+			},
 			init: function(name) {
 				this.name = name;
 				this.playlists = [];
@@ -37,6 +43,8 @@ function solve() {
 				if (index > -1) {
 					this.playlists.splice(index, 1);
 				}
+
+				return this;
 			},
 			listPlaylists: function(page, size) {
 				// TODO: Implement method
@@ -47,9 +55,21 @@ function solve() {
 
 	var Playlist = (function() {
 		var Playlist = {
+			get id() {
+				return this._id;
+			},
+			set id(value) {
+				this._id = value;
+			},
+			get name() {
+				return this._name;
+			},
+			set name(value) {
+				this._name = value;
+			},
 			init: function(id, name) {
-				this._id = id;
-				this._name = name;
+				this.id = id;
+				this.name = name;
 				this.audios = [];
 				this.videos = [];
 
@@ -78,12 +98,17 @@ function solve() {
 				return result;
 			},
 			removeAudioById: function(id) {
-				this.audios.forEach(function(audio) {
+				var index;
+
+				this.audios.forEach(function(audio, position) {
 					if (audio.id == id) {
-						delete audio;
-						return;
+						index = position;
 					}
 				});
+
+				if (index > -1) {
+					this.audios.splice(index, 1);
+				}
 
 				return this;
 			}
@@ -93,152 +118,90 @@ function solve() {
 	}());
 
 	var Playable = (function() {
-		var Playable = {};
-		
-		Object.defineProperty(Playable, 'init', {
-			configurable: true,
-			enumerable: true,
-			value: function(id, title, author) {
-				// TODO: Abstract class validation
+		var Playable = {
+			get id() {
+				return this._id;
+			},
+			set id(value) {
+				this._id = value;
+			},
+			get title() {
+				return this._title;
+			},
+			set title(value) {
+				this._title = value;
+			},
+			get author() {
+				return this._author;
+			},
+			set author(value) {
+				this._author = value;
+			},
+			init: function(id, title, author) {
 				this.id = id;
 				this.title = title;
 				this.author = author;
 
 				return this;
 			},
-			writable: true
-		});
-
-		Object.defineProperty(Playable, 'play', {
-			configurable: true,
-			enumerable: true,
-			value: function() {
+			play: function() {
 				var result = '' + this.id + '. ' + this.title + ' - ' + this.author;
 
 				return result;
-			},
-			writable: true
-		});
+			}
+		};
 
-		Object.defineProperty(Playable, 'id', {
-			get: function() {
-				return this.id;
-			},
-			set: function(value) {
-				// TODO: Validation
-				this.id = value;
-			},
-			enumerable: true,
-			configurable: true
-		});
-
-		Object.defineProperty(Playable, 'title', {
-			get: function() {
-				return this.title;
-			},
-			set: function(value) {
-				// TODO: Validation
-				this.title = value;
-			},
-			enumerable: true,
-			configurable: true
-		});
-
-		Object.defineProperty(Playable, 'author', {
-			get: function() {
-				return this.author;
-			},
-			set: function(value) {
-				// TODO: Validation
-				this.author = value;
-			},
-			enumerable: true,
-			configurable: true
-		});
-		
 		return Playable;
 	}());
 
 	var Audio = (function(parent) {
 		var Audio = Object.create(parent);
-
-		Object.defineProperty(Audio, 'init', {
-			configurable: true,
-			enumerable: true,
-			value: function(id, title, author, length) {
+		Audio = {
+			get length() {
+				return this._length;
+			},
+			set length(value) {
+				this._length = value;
+			},
+			init: function(id, title, author, length) {
 				parent.init.call(this, id, title, author);
 				this.length = length;
 
 				return this;
 			},
-			writable: true
-		});
-
-		Object.defineProperty(Audio, 'play', {
-			configurable: true,
-			enumerable: true,
-			value: function() {
+			play: function() {
 				var baseResult = parent.play.call(this);
 				baseResult += ' - ' + this.length;
 
 				return baseResult;
-			},
-			writable: true
-		});
-
-		Object.defineProperty(Audio, 'length', {
-			get: function() {
-				return this.length;
-			},
-			set: function(value) {
-				// TODO: Validation
-				this.length = value;
-			},
-			enumerable: true,
-			configurable: true
-		});
+			}
+		};
 
 		return Audio;
 	}(Playable));
 
 	var Video = (function(parent) {
 		var Video = Object.create(parent);
-
-		Object.defineProperty(Video, 'init', {
-			configurable: true,
-			enumerable: true,
-			value: function(id, title, author, imdbRating) {
+		Video = {
+			get imdbRating() {
+				return this._imdbRating;
+			},
+			set imdbRating(value) {
+				this._imdbRating = value;
+			},
+			init: function(id, title, author, imdbRating) {
 				parent.init.call(this, id, title, author);
 				this.imdbRating = imdbRating;
 
 				return this;
 			},
-			writable: true
-		});
-
-		Object.defineProperty(Video, 'play', {
-			configurable: true,
-			enumerable: true,
-			value: function() {
+			play: function() {
 				var baseResult = parent.play.call(this);
 				baseResult += ' - ' + this.imdbRating;
 
 				return baseResult;
-			},
-			writable: true
-		});
-
-		Object.defineProperty(Video, 'imdbRating', {
-			get: function() {
-				return this.imdbRating;
-			},
-			set: function(value) {
-				// TODO: Validation
-				this.imdbRating = value;
-			},
-			enumerable: true,
-			configurable: true
-		});
+			}
+		};
 
 		return Video;
 	}(Playable));
