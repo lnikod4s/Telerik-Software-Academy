@@ -2,7 +2,7 @@
 
 namespace MethodPrintStatisticsInCSharp
 {
-	internal class Statistics
+	public class Statistics
 	{
 		public void PrintStatistics(double[] array, int count)
 		{
@@ -54,7 +54,5 @@ namespace MethodPrintStatisticsInCSharp
 
 			return max;
 		}
-
-		private static void Main() { }
 	}
 }
