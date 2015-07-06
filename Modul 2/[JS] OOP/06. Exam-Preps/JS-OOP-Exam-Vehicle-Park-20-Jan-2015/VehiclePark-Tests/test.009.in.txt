@@ -1,0 +1,12 @@
+insert(type=limo;brand=GM;age=5;number-of-wheels=8;consumption=15;type-of-fuel=diesel)
+insert(type=employee;name=Angel;position=Trainer;grade=10)
+insert(type=employee;name=Vlado;position=Programmer;grade=20)
+insert(type=employee;name=Nakov;position=Boss;grade=30)
+insert(type=employee;name=Hristo;position=Boss;grade=30)
+list-employees(grade=25)
+list-employees(grade=all)
+append-employee(brand=GM;name=Angel)
+append-employee(brand=GM;name=Nakov)
+list
+detach-employee(name=Angel;brand=GM)
+list

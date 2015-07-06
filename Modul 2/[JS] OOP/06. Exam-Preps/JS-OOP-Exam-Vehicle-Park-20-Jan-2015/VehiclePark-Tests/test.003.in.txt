@@ -1,0 +1,4 @@
+insert(type=truck;brand=Opel;age=12;terrain-coverage=road;consumption=10;type-of-fuel=gas;number-of-doors=3)
+insert(type=truck;brand=Ford;age=22;consumption=15;type-of-fuel=petrol;number-of-doors=5)
+insert(type=truck;brand=Ford;age=22;terrain-coverage=all;consumption=15;type-of-fuel=petrol;number-of-doors=5)
+list

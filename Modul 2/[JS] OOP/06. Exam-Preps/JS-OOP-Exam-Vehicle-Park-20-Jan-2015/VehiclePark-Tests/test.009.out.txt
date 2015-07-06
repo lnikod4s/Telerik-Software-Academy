@@ -1,0 +1,26 @@
+Limo created.
+Employee created.
+Employee created.
+Employee created.
+Employee created.
+List Output:
+ ---> Hristo,position=Boss
+ ---> Nakov,position=Boss
+List Output:
+ ---> Angel,position=Trainer
+ ---> Hristo,position=Boss
+ ---> Nakov,position=Boss
+ ---> Vlado,position=Programmer
+Added employee to possible Limos.
+Added employee to possible Limos.
+List Output:
+ -> Limo: brand=GM,age=5.0,terrainCoverage=road,numberOfWheels=8,consumption=[15l/100km diesel]
+ --> Employees, allowed to drive:
+ ---> Angel,position=Trainer
+ ---> Nakov,position=Boss
+Removed employee from possible Limos.
+List Output:
+ -> Limo: brand=GM,age=5.0,terrainCoverage=road,numberOfWheels=8,consumption=[15l/100km diesel]
+ --> Employees, allowed to drive:
+ ---> Nakov,position=Boss
+

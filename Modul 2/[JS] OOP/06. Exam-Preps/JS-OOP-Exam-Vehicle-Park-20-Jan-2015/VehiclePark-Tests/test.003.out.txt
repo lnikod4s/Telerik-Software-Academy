@@ -1,0 +1,8 @@
+Truck created.
+Truck created.
+Truck created.
+List Output:
+ -> Truck: brand=Opel,age=12.0,terrainCoverage=road,numberOfWheels=4,consumption=[10l/100km gas],numberOfDoors=3
+ -> Truck: brand=Ford,age=22.0,terrainCoverage=all,numberOfWheels=4,consumption=[15l/100km petrol],numberOfDoors=5
+ -> Truck: brand=Ford,age=22.0,terrainCoverage=all,numberOfWheels=4,consumption=[15l/100km petrol],numberOfDoors=5
+

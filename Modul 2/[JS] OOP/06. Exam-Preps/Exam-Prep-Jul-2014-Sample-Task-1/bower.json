@@ -1,0 +1,16 @@
+{
+  "name": "preparation-exam-variant-1",
+  "version": "0.0.0",
+  "authors": [
+    "Doncho Minkov <donchominkov@gmail.com>"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "libs",
+    "test",
+    "tests"
+  ]
+}

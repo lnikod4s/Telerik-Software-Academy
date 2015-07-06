@@ -1,0 +1,4 @@
+insert(type=bike;brand=RAM;age=2;terrain-coverage=all;frame-size=19;number-of-shifts=21)
+insert(type=bike;brand=RAM;age=2;terrain-coverage=all;frame-size=19;number-of-shifts=21)
+insert(type=bike;brand=RAM;age=2;terrain-coverage=all;frame-size=19;number-of-shifts=21)
+list

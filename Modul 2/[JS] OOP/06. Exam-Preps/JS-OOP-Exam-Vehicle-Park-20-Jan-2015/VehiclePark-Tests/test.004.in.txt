@@ -1,0 +1,3 @@
+insert(type=limo;brand=GM;age=5;number-of-wheels=8;consumption=15;type-of-fuel=diesel)
+insert(type=limo;brand=Truck;age=15;number-of-wheels=4;consumption=25;type-of-fuel=petrol;terrain-coverage=all)
+list

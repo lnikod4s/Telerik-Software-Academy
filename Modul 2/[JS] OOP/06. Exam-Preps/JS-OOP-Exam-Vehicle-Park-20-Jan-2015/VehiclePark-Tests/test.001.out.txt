@@ -1,0 +1,8 @@
+Bike created.
+Bike created.
+Bike created.
+List Output:
+ -> Bike: brand=RAM,age=2.0,terrainCoverage=all,numberOfWheels=2,frameSize=19,numberOfShifts=21
+ -> Bike: brand=RAM,age=2.0,terrainCoverage=all,numberOfWheels=2,frameSize=19,numberOfShifts=21
+ -> Bike: brand=RAM,age=2.0,terrainCoverage=all,numberOfWheels=2,frameSize=19,numberOfShifts=21
+

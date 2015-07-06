@@ -1,0 +1,9 @@
+Employee created.
+Employee created.
+Employee created.
+Employee created.
+No results.
+List Output:
+ ---> Hristo,position=Boss
+ ---> Nakov,position=Boss
+
