@@ -10,8 +10,14 @@ namespace Methods
 			    b <= 0 ||
 			    c <= 0)
 			{
-				Console.Error.WriteLine("Sides should be positive.");
-				return -1;
+				throw new ArgumentException("Triangle sides should be positive integers.");
+			}
+
+			if (a + b <= c ||
+			    a + c <= b ||
+			    b + c <= a)
+			{
+				throw new ArgumentException("The given sides cannot construct a valid triangle.");
 			}
 
 			var s = (a + b + c) / 2;
@@ -19,9 +25,9 @@ namespace Methods
 			return area;
 		}
 
-		public static string NumberToDigit(int number)
+		public static string NumberToDigit(int digit)
 		{
-			switch (number)
+			switch (digit)
 			{
 				case 0:
 					return "zero";
@@ -43,9 +49,9 @@ namespace Methods
 					return "eight";
 				case 9:
 					return "nine";
+				default:
+					return "Invalid digit!";
 			}
-
-			return "Invalid number!";
 		}
 
 		public static int FindMax(params int[] elements)
@@ -53,18 +59,19 @@ namespace Methods
 			if (elements == null ||
 			    elements.Length == 0)
 			{
-				return -1;
+				throw new ArgumentNullException("Arguments array should be non-empty.");
 			}
 
+			var max = elements[0];
 			for (var i = 1; i < elements.Length; i++)
 			{
-				if (elements[i] > elements[0])
+				if (max < elements[i])
 				{
-					elements[0] = elements[i];
+					max = elements[i];
 				}
 			}
 
-			return elements[0];
+			return max;
 		}
 
 		public static void PrintAsNumber(double number, string format)
