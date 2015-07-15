@@ -11,6 +11,12 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SortAlgorithmsComparison", 
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SolarSystem", "SolarSystem\SolarSystem.csproj", "{2F30E9AF-8256-40AF-B356-EA14E55CE9D7}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{BA5031CE-9FA6-41DC-BB39-9098A2950A4F}"
+	ProjectSection(SolutionItems) = preProject
+		..\..\..\..\..\..\Desktop\AFTER_SNAPSHOT.png = ..\..\..\..\..\..\Desktop\AFTER_SNAPSHOT.png
+		..\..\..\..\..\..\Desktop\BEFORE_SNAPSHOT.png = ..\..\..\..\..\..\Desktop\BEFORE_SNAPSHOT.png
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
