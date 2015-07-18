@@ -20,7 +20,7 @@ $(document).ready(function() {
 		}
 
 		// Adjusting game speed
-		game_loop = setInterval(paint, 20);
+		game_loop = setInterval(paint, 60);
 	}
 
 	init();
