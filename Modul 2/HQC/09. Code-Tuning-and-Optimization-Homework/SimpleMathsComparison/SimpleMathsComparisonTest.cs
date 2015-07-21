@@ -45,7 +45,7 @@ namespace SimpleMathsComparison
 			Console.Write("Add: ");
 			DisplayExecutionTime(() =>
 			                     {
-				                     a = 0;
+				                     a = a + 0;
 				                     for (var i = 0; i < LOOP_COUNT; i++)
 				                     {
 					                     a = a + 1;
@@ -55,7 +55,7 @@ namespace SimpleMathsComparison
 			Console.Write("Subtract: ");
 			DisplayExecutionTime(() =>
 			                     {
-				                     a = 5000000;
+				                     a = a + 5000000;
 				                     for (var i = 0; i < LOOP_COUNT; i++)
 				                     {
 					                     a = a - 1;
@@ -65,7 +65,7 @@ namespace SimpleMathsComparison
 			Console.Write("Increment: ");
 			DisplayExecutionTime(() =>
 			                     {
-				                     a = 0;
+				                     a = a + 0;
 				                     for (var i = 0; i < LOOP_COUNT; i++)
 				                     {
 					                     a++;
@@ -75,7 +75,7 @@ namespace SimpleMathsComparison
 			Console.Write("Multiply: ");
 			DisplayExecutionTime(() =>
 			                     {
-				                     a = 1;
+				                     a = a + 1;
 				                     for (var i = 0; i < LOOP_COUNT; i++)
 				                     {
 					                     a = a * 1;
@@ -85,7 +85,7 @@ namespace SimpleMathsComparison
 			Console.Write("Divide: ");
 			DisplayExecutionTime(() =>
 			                     {
-				                     a = 1;
+				                     a = a + 1;
 				                     for (var i = 0; i < LOOP_COUNT; i++)
 				                     {
 					                     a = a / 1;

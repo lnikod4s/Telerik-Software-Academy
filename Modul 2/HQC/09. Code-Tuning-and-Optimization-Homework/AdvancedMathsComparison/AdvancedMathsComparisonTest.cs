@@ -33,36 +33,34 @@ namespace AdvancedMathsComparison
 		private static void ExecuteMathTests(dynamic a)
 		{
 			const int LOOP_COUNT = 5000000;
+			a = a + 1;
 
 			Console.Write("Square Root: ");
 			DisplayExecutionTime(() =>
-			                     {
-				                     a = 1;
-				                     for (var i = 0; i < LOOP_COUNT; i++)
-				                     {
-					                     a = Math.Sqrt(a);
-				                     }
-			                     });
+								 {
+									 for (var i = 0; i < LOOP_COUNT; i++)
+									 {
+										 Math.Sqrt((double)a);
+									 }
+								 });
 
 			Console.Write("Natural algorithm: ");
 			DisplayExecutionTime(() =>
-			                     {
-				                     a = 1;
-				                     for (var i = 0; i < LOOP_COUNT; i++)
-				                     {
-					                     a = Math.Log(a);
-				                     }
-			                     });
+								 {
+									 for (var i = 0; i < LOOP_COUNT; i++)
+									 {
+										 Math.Log((double)a);
+									 }
+								 });
 
 			Console.Write("Sinus: ");
 			DisplayExecutionTime(() =>
-			                     {
-				                     a = 1;
-				                     for (var i = 0; i < LOOP_COUNT; i++)
-				                     {
-					                     a = Math.Sin(a);
-				                     }
-			                     });
+								 {
+									 for (var i = 0; i < LOOP_COUNT; i++)
+									 {
+										 Math.Sin((double)a);
+									 }
+								 });
 		}
 	}
 }
