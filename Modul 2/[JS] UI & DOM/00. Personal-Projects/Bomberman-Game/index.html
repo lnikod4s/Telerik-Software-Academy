@@ -3,22 +3,22 @@
 	<head>
 		<meta charset="UTF-8">
 		<title>Bomberman</title>
-		<script src="js/jquery-1.11.3.min.js"></script>
-		<script src="js/game.js"></script>
-		<link rel="shortcut icon" type="image/png" href="img/icons/favicon.png"/>
-		<link rel="stylesheet" href="css/style.css">
+		<script src="assets/js/jquery-1.11.3.min.js"></script>
+		<script src="assets/js/game.js"></script>
+		<link rel="shortcut icon" type="image/png" href="assets/img/icons/favicon.png"/>
+		<link rel="stylesheet" href="assets/css/style.css">
 	</head>
 	<body>
 		<div id="gamecontainer">
 			<canvas id="gamecanvas" width="800" height="600" class="gamelayer"></canvas>
 			<div id="scorescreen" class="gamelayer">
-				<img id="togglemusic" src="img/icons/sound.png">
-				<img src="img/icons/prev.png">
+				<img id="togglemusic" src="assets/img/icons/sound.png">
+				<img src="assets/img/icons/prev.png">
 				<span id="score"> Score: 0</span>
 			</div>
 			<div id="gamestartscreen" class="gamelayer">
-				<img src="img/icons/play.png" alt="Play Game" onclick="game.showLevelScreen()"><br>
-				<img src="img/icons/settings.png" alt="Settings">
+				<img src="assets/img/icons/play.png" alt="Play Game" onclick="game.showLevelScreen()"><br>
+				<img src="assets/img/icons/settings.png" alt="Settings">
 			</div>
 			<div id="levelselectscreen" class="gamelayer"></div>
 			<div id="loadingscreen" class="gamelayer">
@@ -28,11 +28,11 @@
 				<div>
 					<p id="endingmessage"> The Level Is Over Message </p>
 
-					<p id="playcurrentlevel"><img src="img/icons/prev.png"> Replay Current Level </p>
+					<p id="playcurrentlevel"><img src="assets/img/icons/prev.png"> Replay Current Level </p>
 
-					<p id="playnextlevel"><img src="img/icons/next.png"> Play Next Level </p>
+					<p id="playnextlevel"><img src="assets/img/icons/next.png"> Play Next Level </p>
 
-					<p id="showLevelScreen"><img src="img/icons/return.png"> Return to Level Screen </p>
+					<p id="showLevelScreen"><img src="assets/img/icons/return.png"> Return to Level Screen </p>
 				</div>
 			</div>
 		</div>
