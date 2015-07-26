@@ -18,23 +18,27 @@
  */
 
 ////////////////////////////////////////////////////////////
-//                  Validator object                      //
+//                      Validator                         //
 ////////////////////////////////////////////////////////////
 
 var validator = {
-	validateString: function(obj) {
-		if (!(typeof obj === 'string' || obj instanceof String)) {
-			throw new Error('The passed parameter is not a string.');
-		}
-	},
 	validateDOMElement: function(obj) {
-		if (!(isNode(obj) || isElement(obj))) {
+		if (!(isString(obj) || isHTMLElement(obj))) {
 			throw new Error('The passed parameter is not a valid DOM Element.');
 		}
 	},
+
 	validateMissingParameters: function(param1, param2) {
 		if (param1 === undefined || param2 === undefined) {
 			throw new Error('Function parameter is missing.');
+		}
+	},
+
+	validateContents: function(contents) {
+		if (contents.some(function(content) {
+				return !isString(content) && !isNumber(content);
+			})) {
+			throw new Error('The array should contains only strings and numbers');
 		}
 	}
 };
@@ -43,24 +47,16 @@ var validator = {
 //                  Helper methods                        //
 ////////////////////////////////////////////////////////////
 
-function isNode(obj) {
-	return (typeof Node === "object" ? obj instanceof Node :
-		obj &&
-		typeof obj === "object" &&
-		typeof obj.nodeType === "number" &&
-		typeof obj.nodeName === "string"
-	);
+function isString(obj) {
+	return typeof obj == 'string' || obj instanceof String;
 }
 
-function isElement(obj) {
-	return (typeof HTMLElement === "object" ?
-		obj instanceof HTMLElement : //DOM2
-		obj &&
-		typeof obj === "object" &&
-		obj !== null &&
-		obj.nodeType === 1 &&
-		typeof obj.nodeName === "string"
-	);
+function isHTMLElement(obj) {
+	return obj instanceof HTMLElement;
+}
+
+function isNumber(obj) {
+	return typeof obj == 'number' || obj instanceof Number;
 }
 
 ////////////////////////////////////////////////////////////
@@ -69,14 +65,44 @@ function isElement(obj) {
 
 module.exports = function() {
 	return function(element, contents) {
-		validator.validateString(element);
-		validator.validateDOMElement(element);
+		var selectedElement,
+			currFirstChild,
+			divElement,
+			documentFragment,
+			currDiv;
+
+		// Validations
 		validator.validateMissingParameters(element, contents);
+		validator.validateDOMElement(element);
 
 		// The first parameter is an id
-		if (!(isNode(element) || isElement(element))) {
-			var selectedElement = document.getElementById(element);
-			selectedElement.innerHTML = '';
+		if (isString(element)) {
+			selectedElement = document.getElementById(element);
+		} else { // The first parameter is a regular DOM element
+			selectedElement = element;
 		}
+
+		// Additional validation
+		validator.validateContents(contents);
+
+		// Removing all children
+		// .innerHTML = '' works only when dealing with HTML elements
+		currFirstChild = selectedElement.firstChild;
+		while (currFirstChild) {
+			selectedElement.removeChild(currFirstChild);
+			currFirstChild = selectedElement.firstChild;
+		}
+
+		// Appends div elements to selectedElement
+		divElement = document.createElement('div');
+		documentFragment = document.createDocumentFragment();
+
+		for (var i = 0, len = contents.length; i < len; i++) {
+			currDiv = divElement.cloneNode(true); // Performs a deep copy
+			currDiv.innerHTML = contents[i];
+			documentFragment.appendChild(currDiv);
+		}
+
+		selectedElement.appendChild(documentFragment);
 	};
 };
