@@ -29,14 +29,14 @@
 ////////////////////////////////////////////////////////////
 
 var validator = {
-	validateDOMElement: function(obj) {
-		if (!isHTMLElement(obj)) {
-			throw new Error('The provided DOM Element does not exists.');
+	validateId: function(id) {
+		if (!isExistingId(id)) {
+			throw new Error('The provided id does not select anything.');
 		}
 	},
 
-	validateExistingId: function(id) {
-		if (!isString(id) || !isExistingId(id)) {
+	validateSelector: function(selector) {
+		if (!isString(selector) && !isHTMLElement(selector)) {
 			throw new Error('The provided id is not a string or does not select any DOM element.');
 		}
 	}
@@ -59,60 +59,54 @@ function isExistingId(id) {
 	return typeof element !== 'undefined' && element !== null;
 }
 
-function hasClass(element, cls) {
-	return (' ' + element.className + ' ').indexOf(' ' + cls + ' ') > -1;
-}
-
-function isHidden(el) {
-	var style = window.getComputedStyle(el);
-	return (style.display === 'none');
-}
-
-function showElement(el) {
-	var style = window.getComputedStyle(el);
-	style.display = 'block';
-}
-
-function hideElement(el) {
-	var style = window.getComputedStyle(el);
-	style.display = 'none';
-}
-
 ////////////////////////////////////////////////////////////
 //                  Solving Function                      //
 ////////////////////////////////////////////////////////////
 function solve() {
 	return function(selector) {
-		var selectedElem,
-			children = [];
-
 		// Validations
-		validator.validateDOMElement(selector);
-		validator.validateExistingId(selector);
+		validator.validateSelector(selector);
+		validator.validateId(selector);
 
-		// ID is provided
-		if (!isHTMLElement(selector)) {
-			selectedElem = document.getElementById(selector);
-		}
+		var buttonElements = document.getElementsByClassName('button');
+		for (var i = 0, len = buttonElements.length; i < len; i++) {
+			var currButton = buttonElements[i];
+			currButton.innerHTML = 'hide';
+			currButton.addEventListener('click', function(ev) {
+				var clickedElement = ev.target;
+				var nextSibling = clickedElement.nextElementSibling;
+				var isValid;
 
-		// Iterate over the children of the selected element
-		// and find the elements with classes '.button' & '.content'
-		children = selectedElem.children;
-		for (var i = 0, len = children.length; i < len; i++) {
-			var currElem = children[i];
-			if (hasClass(currElem, 'button')) {
-				currElem.innerText = 'hide';
-				currElem.onclick = function onClickButton() {
-					var currContentElem = document.querySelector(selector + ' .button + .content');
-					if (!isHidden(currContentElem)) {
-						hideElement(currContentElem);
-						currElem.innerText = 'show';
-					} else {
-						showElement(currContentElem);
-						currElem.innerText = 'hide';
+				while (nextSibling) {
+					// Next sibling has class 'button'
+					if (nextSibling.className == 'button') {
+						nextSibling = nextSibling.nextElementSibling;
+					} else { // Next sibling has class 'content'
+						var topmostContentElement = nextSibling;
+						nextSibling = nextSibling.nextSibling;
+
+						while (nextSibling) {
+							if (nextSibling.className == 'button') {
+								isValid = true;
+							}
+
+							nextSibling = nextSibling.nextElementSibling;
+						}
+
+						break;
 					}
-				};
-			}
+				}
+
+				if (isValid) {
+					if (topmostContentElement.style.display == 'none') {
+						topmostContentElement.style.display = ''; // display: block;
+						clickedElement.innerHTML = 'hide';
+					} else {
+						topmostContentElement.style.display = 'none';
+						clickedElement.innerHTML = 'show';
+					}
+				}
+			});
 		}
 	};
 }
