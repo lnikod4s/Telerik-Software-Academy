@@ -93,7 +93,7 @@ describe('Task #1 Tests', function () {
         }
         container.appendChild(buttonNode);
 
-        possibleTags[(Math.random() * possibleTags.length) | 0];
+        tag = possibleTags[(Math.random() * possibleTags.length) | 0];
         contentNode = document.createElement(tag);
         contentNode.className = 'content';
 

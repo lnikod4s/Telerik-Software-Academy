@@ -29,13 +29,13 @@
 ////////////////////////////////////////////////////////////
 
 var validator = {
-	validateId: function(id) {
+	validateExistingId: function(id) {
 		if (!isExistingId(id)) {
 			throw new Error('The provided id does not select anything.');
 		}
 	},
 
-	validateSelector: function(selector) {
+	validateParams: function(selector) {
 		if (!isString(selector) && !isHTMLElement(selector)) {
 			throw new Error('The provided id is not a string or does not select any DOM element.');
 		}
@@ -47,7 +47,7 @@ var validator = {
 ////////////////////////////////////////////////////////////
 
 function isHTMLElement(obj) {
-	return obj instanceof HTMLElement;
+	return typeof obj === 'object' && obj instanceof Element;
 }
 
 function isString(obj) {
@@ -65,46 +65,33 @@ function isExistingId(id) {
 function solve() {
 	return function(selector) {
 		// Validations
-		validator.validateSelector(selector);
-		validator.validateId(selector);
+		validator.validateParams(selector);
+		validator.validateExistingId(selector);
 
-		var buttonElements = document.getElementsByClassName('button');
-		for (var i = 0, len = buttonElements.length; i < len; i++) {
-			var currButton = buttonElements[i];
-			currButton.innerHTML = 'hide';
+		// Select all buttons and change their content to 'hide'
+		var buttons = document.getElementsByClassName('button');
+		for (var i = 0, len = buttons.length; i < len; i++) {
+			buttons[i].innerHTML = 'hide';
+		}
+
+		// Iterate over all buttons and implement onclick functionality
+		for (i = 0, len = buttons.length; i < len; i++) {
+			var currButton = buttons[i];
+
 			currButton.addEventListener('click', function(ev) {
-				var clickedElement = ev.target;
-				var nextSibling = clickedElement.nextElementSibling;
-				var isValid;
-
-				while (nextSibling) {
-					// Next sibling has class 'button'
-					if (nextSibling.className == 'button') {
-						nextSibling = nextSibling.nextElementSibling;
-					} else { // Next sibling has class 'content'
-						var topmostContentElement = nextSibling;
-						nextSibling = nextSibling.nextSibling;
-
-						while (nextSibling) {
-							if (nextSibling.className == 'button') {
-								isValid = true;
-							}
-
-							nextSibling = nextSibling.nextElementSibling;
-						}
-
-						break;
-					}
+				var clickedButton = ev.target;
+				var nextContent = clickedButton.nextElementSibling;
+				while (nextContent && nextContent.className.indexOf('content') < 0) {
+					nextContent = nextContent.nextElementSibling;
 				}
 
-				if (isValid) {
-					if (topmostContentElement.style.display == 'none') {
-						topmostContentElement.style.display = ''; // display: block;
-						clickedElement.innerHTML = 'hide';
-					} else {
-						topmostContentElement.style.display = 'none';
-						clickedElement.innerHTML = 'show';
-					}
+				var isContentVisible = nextContent.style.display === '';
+				if (isContentVisible) {
+					nextContent.style.display = 'none';
+					clickedButton.innerHTML = 'show';
+				} else {
+					nextContent.style.display = ''; // <=> display: block;
+					clickedButton.innerHTML = 'hide';
 				}
 			});
 		}
