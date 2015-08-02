@@ -1,0 +1,55 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.40629.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SchoolCampus", "SchoolCampus\SchoolCampus.csproj", "{595B1816-BF36-4D06-876D-FFF4D32E7167}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SchoolCampus.Tests", "SchoolCampus.Test\SchoolCampus.Tests.csproj", "{8F6C597A-FA4D-476C-B432-7E2DFB7119CE}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Task 1", "Task 1", "{BD01531E-C98F-498A-BA37-117F300759E7}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Task 2", "Task 2", "{2FB1D551-624C-4807-B889-505439465D6C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Deck.NUnitTests", "SantaseGameEngine.Deck.NUnitTests\Deck.NUnitTests.csproj", "{E74F4F37-5AC4-46D5-BAEA-1A34365E64BA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Santase", "Santanse\Santase.csproj", "{001DA826-3C23-4751-B688-1B97DCF9A40C}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{EDBA374F-5700-4123-B8BA-B69408E13FF8}"
+	ProjectSection(SolutionItems) = preProject
+		.nuget\packages.config = .nuget\packages.config
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{595B1816-BF36-4D06-876D-FFF4D32E7167}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{595B1816-BF36-4D06-876D-FFF4D32E7167}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{595B1816-BF36-4D06-876D-FFF4D32E7167}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{595B1816-BF36-4D06-876D-FFF4D32E7167}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8F6C597A-FA4D-476C-B432-7E2DFB7119CE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8F6C597A-FA4D-476C-B432-7E2DFB7119CE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8F6C597A-FA4D-476C-B432-7E2DFB7119CE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8F6C597A-FA4D-476C-B432-7E2DFB7119CE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E74F4F37-5AC4-46D5-BAEA-1A34365E64BA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E74F4F37-5AC4-46D5-BAEA-1A34365E64BA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E74F4F37-5AC4-46D5-BAEA-1A34365E64BA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E74F4F37-5AC4-46D5-BAEA-1A34365E64BA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{001DA826-3C23-4751-B688-1B97DCF9A40C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{001DA826-3C23-4751-B688-1B97DCF9A40C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{001DA826-3C23-4751-B688-1B97DCF9A40C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{001DA826-3C23-4751-B688-1B97DCF9A40C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{595B1816-BF36-4D06-876D-FFF4D32E7167} = {BD01531E-C98F-498A-BA37-117F300759E7}
+		{8F6C597A-FA4D-476C-B432-7E2DFB7119CE} = {BD01531E-C98F-498A-BA37-117F300759E7}
+		{E74F4F37-5AC4-46D5-BAEA-1A34365E64BA} = {2FB1D551-624C-4807-B889-505439465D6C}
+		{001DA826-3C23-4751-B688-1B97DCF9A40C} = {2FB1D551-624C-4807-B889-505439465D6C}
+	EndGlobalSection
+EndGlobal
