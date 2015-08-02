@@ -1,12 +1,13 @@
 function solve() {
 	return function() {
 		$.fn.listview = function(data) {
-			var compiled = {};
-			var id = this.prop('data-value');
+			var $this = $(this);
+			var id = '#' + $this.attr('data-template');
 			var template = $(id).html();
-
-			compiled[template] = Handlebars.compile(template);
-			this.append(compiled[template](data));
+			var compiledTemplate = handlebars.compile(template);
+			data.forEach(function(item) {
+				$this.append(compiledTemplate(item));
+			});
 		};
 	};
 }
