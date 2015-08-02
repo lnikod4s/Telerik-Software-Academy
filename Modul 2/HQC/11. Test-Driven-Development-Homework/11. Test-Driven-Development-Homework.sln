@@ -1,0 +1,63 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.40629.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Task 1", "Task 1", "{829D2D36-86D7-4F11-BCDF-511AEB43362D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TDD.Card.ToString", "TDD.Card.ToString\TDD.Card.ToString.csproj", "{D9A31C10-A07C-4C81-95EA-B45D4217262A}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Task 2", "Task 2", "{EDD84F32-8AE0-4395-AEBC-4076822908B6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TDD.Hand.ToString", "TDD.Hand.ToString\TDD.Hand.ToString.csproj", "{0239ED64-78CE-493E-B40E-F7182A5826DB}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Task 3", "Task 3", "{1B891772-B6DD-49AB-B975-43DEE573A1F8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TDD.PokerHandsChecker.IsValid", "TDD.PokerHandsChecker.IsValid\TDD.PokerHandsChecker.IsValid.csproj", "{CE574946-9AFF-471D-8FBD-E2B7A769A9F1}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Task 4", "Task 4", "{82E2A15D-4B35-40C3-B406-B636CFEE677F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TDD.PokerHandsChecker.IsFlush", "TDD.PokerHandsChecker.IsFlush\TDD.PokerHandsChecker.IsFlush.csproj", "{E41DFF0B-80A8-4CDD-803B-40ED2A5629A0}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Task 5", "Task 5", "{5B5795EA-2B73-46F3-84DE-6ECF9B63F1F9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TDD.PokerHandsChecker.IsFourOfAKind", "TDD.PokerHandsChecker.IsFourOfAKind\TDD.PokerHandsChecker.IsFourOfAKind.csproj", "{00738CCE-4BCC-4890-B5D0-C18B809AA154}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D9A31C10-A07C-4C81-95EA-B45D4217262A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D9A31C10-A07C-4C81-95EA-B45D4217262A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D9A31C10-A07C-4C81-95EA-B45D4217262A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D9A31C10-A07C-4C81-95EA-B45D4217262A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0239ED64-78CE-493E-B40E-F7182A5826DB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0239ED64-78CE-493E-B40E-F7182A5826DB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0239ED64-78CE-493E-B40E-F7182A5826DB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0239ED64-78CE-493E-B40E-F7182A5826DB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CE574946-9AFF-471D-8FBD-E2B7A769A9F1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CE574946-9AFF-471D-8FBD-E2B7A769A9F1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CE574946-9AFF-471D-8FBD-E2B7A769A9F1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CE574946-9AFF-471D-8FBD-E2B7A769A9F1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E41DFF0B-80A8-4CDD-803B-40ED2A5629A0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E41DFF0B-80A8-4CDD-803B-40ED2A5629A0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E41DFF0B-80A8-4CDD-803B-40ED2A5629A0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E41DFF0B-80A8-4CDD-803B-40ED2A5629A0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{00738CCE-4BCC-4890-B5D0-C18B809AA154}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{00738CCE-4BCC-4890-B5D0-C18B809AA154}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{00738CCE-4BCC-4890-B5D0-C18B809AA154}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{00738CCE-4BCC-4890-B5D0-C18B809AA154}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{D9A31C10-A07C-4C81-95EA-B45D4217262A} = {829D2D36-86D7-4F11-BCDF-511AEB43362D}
+		{0239ED64-78CE-493E-B40E-F7182A5826DB} = {EDD84F32-8AE0-4395-AEBC-4076822908B6}
+		{CE574946-9AFF-471D-8FBD-E2B7A769A9F1} = {1B891772-B6DD-49AB-B975-43DEE573A1F8}
+		{E41DFF0B-80A8-4CDD-803B-40ED2A5629A0} = {82E2A15D-4B35-40C3-B406-B636CFEE677F}
+		{00738CCE-4BCC-4890-B5D0-C18B809AA154} = {5B5795EA-2B73-46F3-84DE-6ECF9B63F1F9}
+	EndGlobalSection
+EndGlobal
