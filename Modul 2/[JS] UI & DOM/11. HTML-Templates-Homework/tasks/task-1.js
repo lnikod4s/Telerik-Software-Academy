@@ -1,5 +1,4 @@
 function solve() {
-
 	return function(selector) {
 		var template = '<table class="items-table">' +
 		               '<thead>' + // opening thead
@@ -17,18 +16,18 @@ function solve() {
 		               '<tbody>' + // opening tbody
 		               '{{#each items}}' +
 		               '<tr>' +
-		               '<td>'+
-		               '{{@index}}'+
-		               '</td>'+
-		               '<td>'+
-		               '{{col1}}'+
-		               '</td>'+
-		               '<td>'+
-		               '{{col2}}'+
-		               '</td>'+
-		               '<td>'+
-		               '{{col3}}'+
-		               '</td>'+
+		               '<td>' +
+		               '{{@index}}' +
+		               '</td>' +
+		               '<td>' +
+		               '{{col1}}' +
+		               '</td>' +
+		               '<td>' +
+		               '{{col2}}' +
+		               '</td>' +
+		               '<td>' +
+		               '{{col3}}' +
+		               '</td>' +
 		               '</tr>' +
 		               '{{/each}}' +
 		               '</tbody>' + // closing tbody

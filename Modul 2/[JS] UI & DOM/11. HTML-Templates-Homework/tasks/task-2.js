@@ -1,7 +1,4 @@
-/* globals $,Handlebars */
-
 function solve() {
-
 	return function(selector) {
 		var template = '<div class="container">' +
 		               '<h1>' + 'Animals' + '</h1>' +
