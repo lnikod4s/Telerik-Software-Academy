@@ -56,6 +56,33 @@ function isExistingId(id) {
 //                  Solving Function                      //
 ////////////////////////////////////////////////////////////
 function solve() {
+	var validator = {
+		validateExistingId: function(id) {
+			if (!isExistingId(id)) {
+				throw new Error('The provided id does not select anything.');
+			}
+		},
+
+		validateParams: function(selector) {
+			if (!isString(selector) && !isHTMLElement(selector)) {
+				throw new Error('The provided id is not a string or does not select any DOM element.');
+			}
+		}
+	};
+
+	function isHTMLElement(obj) {
+		return typeof obj === 'object' && obj instanceof Element;
+	}
+
+	function isString(obj) {
+		return typeof obj == 'string' || obj instanceof String;
+	}
+
+	function isExistingId(id) {
+		var element = $(id);
+		return typeof element !== 'undefined' && element !== null && element.length;
+	}
+
 	return function(selector) {
 		// Validations
 		validator.validateParams(selector);

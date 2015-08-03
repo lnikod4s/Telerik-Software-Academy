@@ -63,7 +63,41 @@ function isNumber(obj) {
 //                      Module                            //
 ////////////////////////////////////////////////////////////
 
-module.exports = function() {
+function solve() {
+	var validator = {
+		validateDOMElement: function(obj) {
+			if (!(isString(obj) || isHTMLElement(obj))) {
+				throw new Error('The passed parameter is not a valid DOM Element.');
+			}
+		},
+
+		validateMissingParameters: function(param1, param2) {
+			if (param1 === undefined || param2 === undefined) {
+				throw new Error('Function parameter is missing.');
+			}
+		},
+
+		validateContents: function(contents) {
+			if (contents.some(function(content) {
+					return !isString(content) && !isNumber(content);
+				})) {
+				throw new Error('The array should contains only strings and numbers');
+			}
+		}
+	};
+
+	function isString(obj) {
+		return typeof obj == 'string' || obj instanceof String;
+	}
+
+	function isHTMLElement(obj) {
+		return obj instanceof HTMLElement;
+	}
+
+	function isNumber(obj) {
+		return typeof obj == 'number' || obj instanceof Number;
+	}
+
 	return function(element, contents) {
 		var selectedElement,
 			currFirstChild,
@@ -105,4 +139,6 @@ module.exports = function() {
 
 		selectedElement.appendChild(documentFragment);
 	};
-};
+}
+
+module.exports = solve;
