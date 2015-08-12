@@ -1,9 +1,10 @@
 /*
- * spa.css
- * Root namespace styles
+* spa.css
+* Root namespace styles
 */
 
 /** Begin reset */
+
 * {
     margin: 0;
     padding: 0;
@@ -23,6 +24,7 @@ ol, ul, dl {
 /** End reset */
 
 /** Begin standard selectors */
+
 body {
     font: 13px 'Trebuchet MS', Verdana, Helvetica, Arial, sans-serif;
     color: #444;
@@ -49,17 +51,16 @@ strong {
 /** End standard selectors */
 
 /** Begin spa namespace selectors */
+
 #spa {
     position: absolute;
     top: 8px;
     left: 8px;
     bottom: 8px;
     right: 8px;
-
     min-height: 500px;
     min-width: 500px;
     overflow: hidden;
-
     background-color: #fff;
     border-radius: 0 8px 0 8px;
 }
@@ -67,6 +68,7 @@ strong {
 /** End spa namespace selectors */
 
 /** Begin utility selectors */
+
 .spa-x-select {
 }
 
