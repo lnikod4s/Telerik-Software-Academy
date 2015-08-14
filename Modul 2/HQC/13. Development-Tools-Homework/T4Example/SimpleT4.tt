@@ -1,0 +1,28 @@
+﻿<#@ template    language="C#"   #>
+<#@ output      extension=".cs" #>
+<#
+   var words = new [] {"Hello", "World"};
+#>
+namespace T4Example
+{
+   internal class HelloWorld
+   {
+<#
+   // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   // +++ Template
+   //
+   // Here we iterate over the model
+   // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   foreach (var word in words)
+   {
+       // The lines inside the loop will be repeated
+#>
+       /// <summary>
+       /// The <#=word#> property
+       /// </summary>
+       public string <#=word#> { get;set; }
+<#
+   }
+#>
+   }
+}
