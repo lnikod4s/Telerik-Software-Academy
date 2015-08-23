@@ -12,27 +12,33 @@
 
 function solve() {
 	return function (books) {
-		_.mixin({
-			'sortKeysBy': function (obj, comparator) {
-				var keys = _.sortBy(_.keys(obj), function (key) {
-					return comparator ? comparator(obj[key], key) : key;
-				});
+		var sortedBooksByDescending =
+			_.chain(books)
+				.map(function (book) {
+					book.author = book.author.firstName + ' ' + book.author.lastName;
+					return book;
+				})
+				.groupBy('author')
+				.sortBy(function (group) {
+					return group.length;
+				})
+				.reverse()
+				.value();
 
-				return _.object(keys, _.map(keys, function (key) {
-					return obj[key];
-				}));
-			}
-		});
+		var maxBooks = _.first(sortedBooksByDescending).length;
 
-		var authors = _.countBy(books, function (book) {
-			return book.author.firstName + ' ' + book.author.lastName;
-		});
-
-		var sortedAuthorsByPopularity = _.sortKeysBy(authors, function (value, key) {
-			return value;
-		});
-
-		return sortedAuthorsByPopularity;
+		_.chain(sortedBooksByDescending)
+			.filter(function (book) {
+				return book.length === maxBooks;
+			})
+			.map(function (book) {
+				return book[0].author;
+			})
+			.sortBy()
+			.each(function (author) {
+				console.log(author);
+			})
+			.value();
 	};
 }
 
