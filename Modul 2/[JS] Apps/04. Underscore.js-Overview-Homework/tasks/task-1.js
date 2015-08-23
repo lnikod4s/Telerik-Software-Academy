@@ -10,18 +10,18 @@
  */
 
 function solve() {
-	return function (students) {
+	return function(students) {
 		_.chain(students)
-			.map(function (student) {
+			.map(function(student) {
 				student.fullName = student.firstName + ' ' + student.lastName;
 				return student;
 			})
-			.filter(function (student) {
+			.filter(function(student) {
 				return student.firstName < student.lastName
 			})
 			.sortBy('fullName')
 			.reverse()
-			.each(function (student) {
+			.each(function(student) {
 				console.log(student.fullName);
 			});
 	};

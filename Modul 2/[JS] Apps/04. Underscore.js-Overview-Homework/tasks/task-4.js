@@ -26,41 +26,39 @@
  */
 
 function solve() {
-	/* ======= Polyfill ======= */
-	if (!String.prototype.repeat) {
-		String.prototype.repeat = function (times) {
-			if (!times) {
-				times = 1;
-			}
-
-			var repeatedString = '';
-			for (var i = 0; i < times; i += 1) {
-				repeatedString += String(this);
-			}
-
-			return repeatedString;
-		};
-	}
-	
 	return function (animals) {
-		var groupedAnimals =
-			_.chain(animals)
-				.sortBy('species')
-				.reverse()
-				.groupBy('species')
-				.value();
+		/* ======= Underscore Mixin ======= */
+		_.mixin({
+			repeat: function (times, str) {
+				if (!times) {
+					times = 1;
+				}
 
-		for (var key in groupedAnimals) {
-			var group = _.sortBy(groupedAnimals[key], 'legsCount');
+				var repeatedString = '';
+				for (var i = 0; i < times; i += 1) {
+					repeatedString += str;
+				}
 
-			console.log('-'.repeat(key.length + 1));
-			console.log(key + ':');
-			console.log('-'.repeat(key.length + 1));
-			for (var animal in group) {
-				console.log(group[animal].name + ' has ' + group[animal].legsCount + ' legs');
+				return repeatedString;
 			}
+		});
 
-		}
+		var groupedAnimals = _.chain(animals)
+			.sortBy('species')
+			.reverse()
+			.groupBy('species')
+			.value();
+
+		_.each(groupedAnimals, function (item, index) {
+			var group = _.sortBy(item, 'legsCount');
+
+			console.log(_.repeat(index.length + 1, '-'));
+			console.log(index + ':');
+			console.log(_.repeat(index.length + 1, '-'));
+			_.each(group, function (item, index) {
+				console.log(item.name + ' has ' + item.legsCount + ' legs');
+			})
+		});
 	};
 }
 
