@@ -26,6 +26,7 @@
  */
 
 function solve() {
+	/* ======= Polyfill ======= */
 	if (!String.prototype.repeat) {
 		String.prototype.repeat = function (times) {
 			if (!times) {
@@ -42,16 +43,15 @@ function solve() {
 	}
 	
 	return function (animals) {
-		var groupedAnimals = _.chain(animals)
-			.sortBy('species')
-			.reverse()
-			.groupBy('species')
-			.value();
+		var groupedAnimals =
+			_.chain(animals)
+				.sortBy('species')
+				.reverse()
+				.groupBy('species')
+				.value();
 
 		for (var key in groupedAnimals) {
-			var group = _.chain(groupedAnimals[key])
-				.sortBy('legsCount')
-				.value();
+			var group = _.sortBy(groupedAnimals[key], 'legsCount');
 
 			console.log('-'.repeat(key.length + 1));
 			console.log(key + ':');

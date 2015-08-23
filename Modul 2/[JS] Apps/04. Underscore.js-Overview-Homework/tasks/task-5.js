@@ -9,11 +9,14 @@
 
 function solve() {
 	return function (animals) {
-		var allLegsCount = _.reduce(animals, function (memo, animal) {
-			return memo + animal.legsCount;
-		}, 0);
-
-		console.log('Total number of legs: ' + allLegsCount);
+		_.chain(animals)
+			.reduce(function (memo, animal) {
+				return memo + animal.legsCount;
+			}, 0)
+			.tap(function (legsCount) {
+				console.log('Total number of legs: ' + legsCount);
+			})
+			.value();
 	};
 }
 

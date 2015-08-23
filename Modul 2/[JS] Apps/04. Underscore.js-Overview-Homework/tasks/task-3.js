@@ -12,7 +12,7 @@
 
 function solve() {
 	return function (students) {
-		var studentWithBestAverageMark = _.chain(students)
+		_.chain(students)
 			.map(function (student) {
 				student.fullName = student.firstName + ' ' + student.lastName;
 
@@ -25,11 +25,10 @@ function solve() {
 			})
 			.sortBy('averageMark')
 			.last()
+			.tap(function (student) {
+				console.log(student.fullName + ' has an average score of ' + student.averageMark);
+			})
 			.value();
-		
-		console.log(studentWithBestAverageMark.fullName +
-			' has an average score of ' +
-			studentWithBestAverageMark.averageMark);
 	};
 }
 
