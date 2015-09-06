@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Simple Forum</title>
+    <link rel="shortcut icon" type="image/ico" href="favicon.ico" />
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css">
+</head>
+
+<body>
+    <div id="root">
+        <nav class="navbar navbar-default">
+            <div class="container-fluid">
+
+                <div class="navbar-header">
+                    <a class="navbar-brand" href="#/" onclick="document.location.reload(true); localStorage.clear();">Simple Forum</a>
+                </div>
+
+                <div class="collapse navbar-collapse" id="auth-form">
+                    <form id="signin" class="navbar-form navbar-right" role="form">
+                        <div class="input-group">
+                            <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+                            <input id="username" type="email" class="form-control" name="email" value="" placeholder="Username">
+                        </div>
+
+                        <div class="input-group">
+                            <span class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></span>
+                            <input id="password" type="password" class="form-control" name="password" value="" placeholder="Password">
+                        </div>
+
+                        <!-- Login/Register form -->
+                        <a href="#/login" id="btn-login" class="btn btn-default active" role="button">Sign In</a>
+                        <a href="#/" id="btn-register" class="btn btn-default active" role="button">Sign Up</a>
+
+                        <!-- Logout button -->
+                        <a href="#/logout" id="btn-logout" class="btn btn-default btn-default active" role="button" style="display: none">Logout</a>
+                    </form>
+                </div>
+            </div>
+        </nav>
+        <div id="content"></div>
+    </div>
+
+    <!-- Third-party javascript files -->
+    <script src="bower_components/jquery/dist/jquery.js"></script>
+    <script src="bower_components/sammy/lib/sammy.js"></script>
+    <script src="bower_components/handlebars/handlebars.js"></script>
+    <script src="bower_components/SHA-1/sha1.js"></script>
+
+    <!-- My javascript files -->
+    <script src="js/templates.js"></script>
+    <script src="js/data.js"></script>
+    <script src="js/app.js"></script>
+</body>
+
+</html>
