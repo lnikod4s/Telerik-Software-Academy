@@ -1,0 +1,17 @@
+<div style="text-align: center; margin-bottom: 10px">
+	<a href="#/threads/add" id="btn-add-thread" class="btn btn-primary btn-lg active" role="button">Add new thread</a>
+</div>
+<div class="container">
+    <div class="row">
+		{{#each this}}
+			<div class="col-sm-12 col-md-12">
+            	<div class="alert alert-info">
+                	<button type="button" id="btn-close" class="close" data-dismiss="alert" aria-hidden="true">×</button>
+                	<span class="glyphicon glyphicon-info-sign"></span> <strong>{{title}}</strong>
+                	<hr class="message-inner-separator">
+                	<p>Created by <b><em>{{user.username}}</em></b> at {{postDate}}</p>
+            	</div>
+        	</div>
+		{{/each}}
+    </div>
+</div>
