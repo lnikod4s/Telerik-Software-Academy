@@ -1,0 +1,27 @@
+{
+  "name": "Forture-Cookies-Sep-2015",
+  "version": "0.1.0",
+  "authors": [],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "public/bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "~3.3.5",
+    "handlebars": "~4.0.2",
+    "jquery": "~2.1.4",
+    "jquery-ui": "~1.11.4",
+    "jquery.validate": "http://ajax.aspnetcdn.com/ajax/jquery.validate/1.14.0/jquery.validate.js",
+    "lodash": "~3.10.1",
+    "moment": "momentjs#~2.10.6",
+    "sammy": "~0.7.6",
+    "sha1": "http://crypto-js.googlecode.com/svn/tags/3.1.2/build/rollups/sha1.js",
+    "tablesorter": "jquery.tablesorter#~2.23.3",
+    "toastr": "~2.1.2"
+  }
+}

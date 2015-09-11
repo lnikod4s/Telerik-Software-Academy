@@ -1,0 +1,65 @@
+<form class="cmxform" id="commentForm" method="get" action="">
+	<fieldset id="cookie-share-form">
+		<legend>New Fortune Cookie</legend>
+		<div class="form-group">
+			<label for="tb-cookie-text">
+				Text:
+			</label>
+			<input type="text" class="form-control" name="tb-cookie-text" id="tb-cookie-text" />
+		</div>
+		<div class="form-group">
+			<label for="tb-cookie-category">Category:</label>
+			<input type="text" name="tb-cookie-category" id="tb-cookie-category" class="form-control" />
+		</div>
+		<div class="form-group">
+			<label for="tb-cookie-img">
+				Image Link:
+			</label>
+			<input type="text" name="tb-cookie-img" class="form-control" id="tb-event-description" />
+		</div>
+		<button class="form-control btn btn-primary" id="btn-cookie-share">Share</button>
+	</fieldset>
+</form>
+
+<script>
+	$(function() {
+		$('#commentForm').validate({
+			// Specify the validation rules
+			rules: {
+				"tb-cookie-text": {
+					required: true,
+					minlength: 6,
+					maxlength: 30
+				},
+				"tb-cookie-category": {
+					required: true,
+					minlength: 6,
+					maxlength: 30
+				},
+				"tb-cookie-img": {
+					required: true,
+      				url: true
+				}
+			},
+
+			// Specify the validation error messages
+			messages: {
+				"tb-cookie-text": {
+					required: "Please enter a cookie text",
+					minlength: "Your cookie text must be at least 6 characters long",
+					maxlength: "Your cookie text must be not longer than 30 characters long"
+				},
+				"tb-cookie-category": {
+					required: "Please enter a cookie category",
+					minlength: "Your cookie category must be at least 6 characters long",
+					maxlength: "Your cookie category must be not longer than 30 characters long"
+				},
+				"tb-cookie-img": "Please enter a valid url address"
+			},
+
+			submitHandler: function(form) {
+            	form.submit();
+        	}
+		});
+	}());
+</script>

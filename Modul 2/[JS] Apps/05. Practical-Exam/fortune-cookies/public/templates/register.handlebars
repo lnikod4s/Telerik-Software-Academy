@@ -1,0 +1,53 @@
+<form class="cmxform" id="registerForm" method="get" action="">
+	<fieldset>
+		<legend>Login or Register User Form</legend>
+		<div class="form-group">
+			<label for="tb-username">Username:</label>
+			<input type="text" id="tb-username" class="form-control">
+		</div>
+		<div class="form-group">
+			<label for="tb-password">Password:</label>
+			<input type="password" id="tb-password" class="form-control">
+		</div>
+		<button id="btn-register" class="btn btn-danger">Register</button>
+		<button id="btn-login" class="btn btn-danger">Login</button>
+	</fieldset>
+</form>
+
+<script>
+	$(function() {
+		$('#registerForm').validate({
+			// Specify the validation rules
+			rules: {
+				"tb-username": {
+					required: true,
+					minlength: 6,
+					maxlength: 30
+				},
+				"tb-password": {
+					required: true,
+					minlength: 6,
+					maxlength: 30
+				}
+			},
+
+			// Specify the validation error messages
+			messages: {
+				"tb-username": {
+					required: "Please enter a valid username",
+					minlength: "Your username must be at least 6 characters long",
+					maxlength: "Your username must be not longer than 30 characters long"
+				},
+				"tb-password": {
+					required: "Please enter a valid password",
+					minlength: "Your password must be at least 6 characters long",
+					maxlength: "Your password must be not longer than 30 characters long"
+				}
+			},
+
+			submitHandler: function(form) {
+            	form.submit();
+        	}
+		});
+	}());
+</script>

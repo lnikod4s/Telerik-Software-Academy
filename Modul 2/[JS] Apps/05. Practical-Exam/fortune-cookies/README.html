@@ -1,0 +1,163 @@
+<h1 id="fortune-cookies">Fortune Cookies</h1>
+<p>JavaScript Applications Exam, 10 September 2015</p>
+<p>Implement a SPA application for fortune cookies.</p>
+<h2 id="application-description">Application description</h2>
+<p>The application must provide the following functionality</p>
+<ul>
+<li><strong>Users</strong> can <strong>Register</strong>, <strong>Login</strong> and <strong>Logout</strong> in the application
+<ul>
+<li><em>Users provide <code>username</code> and <code>password</code></em></li>
+</ul></li>
+<li><strong>Logged-in users</strong> can:
+<ul>
+<li><strong>Share</strong> a new fortune cookie
+<ul>
+<li>Providing <code>text</code> and <code>category</code></li>
+</ul></li>
+<li><strong>Re-share</strong> an existing fortune cookie
+<ul>
+<li>This can be either:
+<ul>
+<li>A fortune cookie, shared by this user</li>
+<li>A fortune cookie, shared by other user</li>
+</ul></li>
+</ul></li>
+<li><strong>Like</strong> or <strong>dislike</strong> a fortune cookie</li>
+<li><strong>Get</strong> their hourly fortune cookie
+<ul>
+<li>A random cookie from all shared cookies</li>
+<li>This cookie is changed every hour
+<ul>
+<li>i.e. if the user asks for their fortune cookie at 11:30 and then again at 11:45, their fortune cookie will be the same</li>
+<li>or if the user asks for their fortune cookie at 11:30 and then again at 12:00, the two fortune cookies may be different
+<ul>
+<li>It depends on the total count of fortune cookies</li>
+</ul></li>
+</ul></li>
+</ul></li>
+</ul></li>
+<li><strong>All users</strong> (even not logged in) can <strong>see</strong> fortune cookies, that are shared by any user</li>
+<li><strong>Cookies</strong> can be:
+<ul>
+<li>Sorted by <code>likes</code> or <code>shareDate</code></li>
+<li>Filtered by a single <code>category</code>
+<ul>
+<li>i.e. show only the fortune cookies in a given <code>category</code></li>
+</ul></li>
+</ul></li>
+</ul>
+<h2 id="application-routes">Application routes</h2>
+<p>Implement at least the following routes in your app:</p>
+<ul>
+<li><code>#/</code></li>
+<li>Redirects to <code>#/home</code></li>
+<li><code>#/home</code></li>
+<li>Shows all fortune cookies
+<ul>
+<li>Available to all users, logged-in or not</li>
+<li>Provides a way to sort the cookies by <code>likes</code> or <code>shareDate</code></li>
+<li>Provides a way to filter fortune cookies by <code>category</code></li>
+</ul></li>
+<li><code>#/home?category=CCCC</code></li>
+<li>Shows only the fortune cookies in category <strong>CCC</strong></li>
+<li><code>#/my-cookie</code></li>
+<li>Shows the current hourly fortune cookie for the logged-in user</li>
+</ul>
+<h2 id="application-requirements">Application requirements</h2>
+<p><strong>Mandatory</strong> provide a good <strong>User Experience(UX)</strong> * No need to be pretty, just usable * Please do not make your colleagues wonder where to click, to share a fortune cookie</p>
+<p><strong>Mandatory</strong> use extensively the following libraries:</p>
+<ul>
+<li>jQuery</li>
+<li>For AJAX</li>
+<li>For DOM manipulation</li>
+<li>Handlebars.js</li>
+<li>For view templates</li>
+</ul>
+<p><strong>Do NOT</strong> use any of the following: * AngularJS * KendoUI framework * Data-binding, routing, ViewModels, etc... * Durandal * Backbone.js * Ember.js * Batman.js</p>
+<p>You can use libraries for: * Notifications * toastr or any other * UI components * jQueryUI, KendoUI UI components, Twitter Bootstrap * Utils frameworks: * Moment, Underscore/Lodash * Libs for encryption * etc... * Routers * Only Sammy.js is allowed * Module loading * System.js, RequireJS or other</p>
+<h2 id="server-routes">Server routes</h2>
+<h3 id="users">Users</h3>
+<ul>
+<li><code>api/users</code></li>
+<li>GET
+<ul>
+<li><strong>Returns</strong> all users</li>
+</ul></li>
+<li>POST
+<ul>
+<li><strong>Registers</strong> a new user</li>
+<li>Needs <strong>username</strong> and <strong>passHash</strong> to be sent in the body of the request</li>
+</ul></li>
+<li><code>api/auth</code></li>
+<li>PUT
+<ul>
+<li><strong>Logs in</strong> an user</li>
+<li>Needs <strong>username</strong> and <strong>passHash</strong> to be sent in the body of the request</li>
+<li>If the request is valid returns <strong>username</strong> and <strong>authKey</strong></li>
+</ul></li>
+</ul>
+<h3 id="fortune-cookies-1">Fortune Cookies</h3>
+<ul>
+<li><code>api/cookies</code></li>
+<li>GET
+<ul>
+<li><strong>Returns</strong> all shared fortune cookies</li>
+</ul></li>
+<li>POST
+<ul>
+<li><strong>Shares</strong> or <strong>re-shares</strong> a new fortune cookie</li>
+<li>User must be <strong>logged-in</strong></li>
+<li>Needs <strong>text</strong>, <strong>category</strong>, <strong>img</strong> to be sent in the body of the request and the current user's <strong>authKey</strong> as a header with name: <code>x-auth-key</code></li>
+<li><code>img</code> is a string to an online image</li>
+<li><code>img</code> is optional and if not sent, a <strong>default batman</strong> image will be provided</li>
+</ul></li>
+<li><code>api/cookies/:id</code></li>
+<li>PUT
+<ul>
+<li><strong>Likes</strong> or <strong>dislikes</strong> a fortune cookie</li>
+<li>Needs <code>type</code> to be sent in the body of the request</li>
+<li><code>type</code> can only have values 'like' or 'dislike'</li>
+</ul></li>
+</ul>
+<h3 id="my-fortune-cookies">My Fortune Cookies</h3>
+<ul>
+<li><code>api/my-cookie</code></li>
+<li>GET
+<ul>
+<li><strong>Returns</strong> the hourly fortune cookie</li>
+</ul></li>
+</ul>
+<h3 id="categories">Categories</h3>
+<ul>
+<li><code>api/categories</code>
+<ul>
+<li>GET
+<ul>
+<li><strong>Returns</strong> an array with all categories</li>
+</ul></li>
+</ul></li>
+</ul>
+<h2 id="deliverables">Deliverables</h2>
+<ul>
+<li><strong>ZIP</strong> all your code, including the server</li>
+<li>Remove only the <code>node_modules</code> folder</li>
+<li>Send the ZIP file on the page, provided in http://telerikacademy.com</li>
+</ul>
+<h2 id="constraints-and-validation">Constraints and validation</h2>
+<ul>
+<li>Username</li>
+<li>A string</li>
+<li>Has length between 6 and 30</li>
+<li>Can contain only Latin letters, digits and the characters '_' and '.'</li>
+<li>Fortune Cookie Text</li>
+<li>A string</li>
+<li>Has length between 6 and 30</li>
+<li>Can contain any characters</li>
+<li>Fortune Cookie Category</li>
+<li>A string</li>
+<li>Has length between 6 and 30</li>
+<li>Can contain any characters</li>
+<li>Fortune Cookie Img</li>
+<li>A string</li>
+<li>Must be a valid url address</li>
+</ul>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Self manager</title>
+	<link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css">
+	<link rel="stylesheet" href="bower_components/toastr/toastr.css">
+	<link rel="stylesheet" href="bower_components/jquery-ui/themes/base/jquery-ui.css">
+</head>
+
+<body>
+	<div id="root" class="container">
+		<header>
+			<div class="row">
+				<h1 class="page-header col-md-9">Fortune Cookies App</h1>
+			</div>
+			<nav class="navbar navbar-default">
+				<div class="container-fluid">
+					<div class="navbar-header">
+						<a class="navbar-brand" href="#/">Home</a>
+						<a class="navbar-brand" href="#/my-cookie">My Cookies</a>
+						<a class="navbar-brand" href="#/categories">Categories</a>
+					</div>
+					<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+						<ul class="nav navbar-nav navbar-right">
+							<li>
+								<a href="#/register" id="btn-login-register" class="btn btn-default active" role="button">Sign In/Up</a>
+								<a href="#/register" id="btn-logout" class="btn btn-default active" role="button" style="display: none">Logout</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</nav>
+		</header>
+		<div id="content"></div>
+	</div>
+
+
+	<!-- Third-party javascript libraries -->
+	<script src="bower_components/jquery/dist/jquery.js"></script>
+	<script src="bower_components/jquery-ui/jquery-ui.js"></script>
+	<script src="bower_components/jquery.validate/index.js"></script>
+	<script src="bower_components/tablesorter/dist/js/jquery.tablesorter.js"></script>
+	<script src="bower_components/sammy/lib/sammy.js"></script>
+	<script src="bower_components/handlebars/handlebars.js"></script>
+	<script src="bower_components/sha1/index.js"></script>
+	<script src="bower_components/toastr/toastr.js"></script>
+	<script src="bower_components/lodash/lodash.js"></script>
+
+	<!-- My javascript files -->
+
+	<!-- App: Controllers -->
+	<script src="controllers/home-controller.js"></script>
+	<script src="controllers/users-controller.js"></script>
+	<script src="controllers/cookies-controller.js"></script>
+	<script src="controllers/categories-controller.js"></script>
+	<script src="controllers/my-cookies-controller.js"></script>
+
+	<!-- App: Setup -->
+	<script src="app/templates.js"></script>
+	<script src="app/data.js"></script>
+	<script src="app/app.js"></script>
+
+</body>
+
+</html>
