@@ -8,6 +8,6 @@
 
 <p align="center">
 <a href="http://academy.telerik.com/academy/curriculum-detailed/">
-<img src="https://github.com/lnikod4s/Telerik-Software-Academy/blob/master/Modul%201/Sources/curriculum.png"/>
+<img src="http://academy.telerik.com/images/default-source/Academy_Curriculum/ta_plan_bg.png?sfvrsn=0"/>
 </a>
 </p>
