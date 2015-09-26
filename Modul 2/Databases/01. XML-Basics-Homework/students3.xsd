@@ -1,0 +1,102 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="urn:http://telerikacademy.com/Users:student/Exams" attributeFormDefault="unqualified" elementFormDefault="qualified" targetNamespace="urn:http://telerikacademy.com/Users:student/Exams" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="csharpPartOne">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="examName" type="xs:string" />
+        <xs:element name="date" type="xs:string" />
+        <xs:element name="tutor" type="xs:string" />
+        <xs:element name="tutorEndorsements" type="xs:integer" />
+        <xs:element name="score" type="xs:decimal" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="csharpPartTwo">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="examName" type="xs:string" />
+        <xs:element name="date" type="xs:string" />
+        <xs:element name="tutor" type="xs:string" />
+        <xs:element name="tutorEndorsements" type="xs:integer" />
+        <xs:element name="score" type="xs:decimal" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="csharpPartOop">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="examName" type="xs:string" />
+        <xs:element name="date" type="xs:string" />
+        <xs:element name="tutor" type="xs:string" />
+        <xs:element name="tutorEndorsements" type="xs:integer" />
+        <xs:element name="score" type="xs:decimal" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="html">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="examName" type="xs:string" />
+        <xs:element name="date" type="xs:string" />
+        <xs:element name="tutor" type="xs:string" />
+        <xs:element name="tutorEndorsements" type="xs:integer" />
+        <xs:element name="score" type="xs:decimal" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="css">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="examName" type="xs:string" />
+        <xs:element name="date" type="xs:string" />
+        <xs:element name="tutor" type="xs:string" />
+        <xs:element name="tutorEndorsements" type="xs:integer" />
+        <xs:element name="score" type="xs:decimal" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="js">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="examName" type="xs:string" />
+        <xs:element name="date" type="xs:string" />
+        <xs:element name="tutor" type="xs:string" />
+        <xs:element name="tutorEndorsements" type="xs:integer" />
+        <xs:element name="score" type="xs:decimal" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="jsOop">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="examName" type="xs:string" />
+        <xs:element name="date" type="xs:string" />
+        <xs:element name="tutor" type="xs:string" />
+        <xs:element name="tutorEndorsements" type="xs:integer" />
+        <xs:element name="score" type="xs:decimal" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="jsUiAndDom">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="examName" type="xs:string" />
+        <xs:element name="date" type="xs:string" />
+        <xs:element name="tutor" type="xs:string" />
+        <xs:element name="tutorEndorsements" type="xs:integer" />
+        <xs:element name="score" type="xs:decimal" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="jsApps">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="examName" type="xs:string" />
+        <xs:element name="date" type="xs:string" />
+        <xs:element name="tutor" type="xs:string" />
+        <xs:element name="tutorEndorsements" type="xs:integer" />
+        <xs:element name="score" type="xs:decimal" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

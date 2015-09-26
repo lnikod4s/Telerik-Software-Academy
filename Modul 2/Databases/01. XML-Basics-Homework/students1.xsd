@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="urn:http://telerikacademy.com/Forum/Home:students" attributeFormDefault="unqualified" elementFormDefault="qualified" targetNamespace="urn:http://telerikacademy.com/Forum/Home:students" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import namespace="urn:http://telerikacademy.com/Users:student" />
+  <xs:element name="student">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q1="urn:http://telerikacademy.com/Users:student" ref="q1:name" />
+        <xs:element xmlns:q2="urn:http://telerikacademy.com/Users:student" ref="q2:sex" />
+        <xs:element xmlns:q3="urn:http://telerikacademy.com/Users:student" ref="q3:birthDate" />
+        <xs:element xmlns:q4="urn:http://telerikacademy.com/Users:student" ref="q4:phone" />
+        <xs:element xmlns:q5="urn:http://telerikacademy.com/Users:student" ref="q5:email" />
+        <xs:element xmlns:q6="urn:http://telerikacademy.com/Users:student" ref="q6:course" />
+        <xs:element xmlns:q7="urn:http://telerikacademy.com/Users:student" ref="q7:specialty" />
+        <xs:element xmlns:q8="urn:http://telerikacademy.com/Users:student" ref="q8:facultyNumber" />
+        <xs:element xmlns:q9="urn:http://telerikacademy.com/Users:student" ref="q9:takenExams" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

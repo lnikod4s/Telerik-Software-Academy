@@ -1,0 +1,58 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.23107.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Task01", "Task01", "{D773FDBE-8941-4CF0-9387-A51098376EB4}"
+	ProjectSection(SolutionItems) = preProject
+		XML-Representation-and-Usages.md = XML-Representation-and-Usages.md
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Task02", "Task02", "{86897CFA-4E00-4485-A54F-FBCDD731B24D}"
+	ProjectSection(SolutionItems) = preProject
+		students.xml = students.xml
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Task03", "Task03", "{953C4E3D-BA32-4883-96EF-5FDE46107986}"
+	ProjectSection(SolutionItems) = preProject
+		XML-Namespace-Representation-and-Usages.md = XML-Namespace-Representation-and-Usages.md
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Task04", "Task04", "{8534CC06-B375-4ECC-887C-F91012402D7C}"
+	ProjectSection(SolutionItems) = preProject
+		Distinction-Between-URI-URN-and-URL.md = Distinction-Between-URI-URN-and-URL.md
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Task05", "Task05", "{1C6A7777-6C38-4B3E-9E18-6B7F7CA3E014}"
+	ProjectSection(SolutionItems) = preProject
+		students.xml = students.xml
+		students.xsd = students.xsd
+		students1.xsd = students1.xsd
+		students2.xsd = students2.xsd
+		students3.xsd = students3.xsd
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Task06", "Task06", "{3124A4E3-1A46-4C98-8F29-A0711FB487EC}"
+	ProjectSection(SolutionItems) = preProject
+		students.xml = students.xml
+		students.xsd = students.xsd
+		students1.xsd = students1.xsd
+		students2.xsd = students2.xsd
+		students3.xsd = students3.xsd
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Task07", "Task07", "{58BCE868-BDDE-4370-AF78-A198D221E12B}"
+	ProjectSection(SolutionItems) = preProject
+		students.xml = students.xml
+		students.xsd = students.xsd
+		students1.xsd = students1.xsd
+		students2.xsd = students2.xsd
+		students3.xsd = students3.xsd
+		xslStylesheet.xml = xslStylesheet.xml
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

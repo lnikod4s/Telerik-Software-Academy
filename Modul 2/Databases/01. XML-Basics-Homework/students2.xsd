@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="urn:http://telerikacademy.com/Users:student" attributeFormDefault="unqualified" elementFormDefault="qualified" targetNamespace="urn:http://telerikacademy.com/Users:student" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import namespace="urn:http://telerikacademy.com/Users:student/Exams" />
+  <xs:element name="name" type="xs:string" />
+  <xs:element name="sex" type="xs:string" />
+  <xs:element name="birthDate" type="xs:string" />
+  <xs:element name="phone" type="xs:long" />
+  <xs:element name="email" type="xs:string" />
+  <xs:element name="course" type="xs:string" />
+  <xs:element name="specialty" type="xs:string" />
+  <xs:element name="facultyNumber" type="xs:unsignedInt" />
+  <xs:element name="takenExams">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q1="urn:http://telerikacademy.com/Users:student/Exams" ref="q1:csharpPartOne" />
+        <xs:element xmlns:q2="urn:http://telerikacademy.com/Users:student/Exams" ref="q2:csharpPartTwo" />
+        <xs:element xmlns:q3="urn:http://telerikacademy.com/Users:student/Exams" ref="q3:csharpPartOop" />
+        <xs:element xmlns:q4="urn:http://telerikacademy.com/Users:student/Exams" ref="q4:html" />
+        <xs:element xmlns:q5="urn:http://telerikacademy.com/Users:student/Exams" ref="q5:css" />
+        <xs:element xmlns:q6="urn:http://telerikacademy.com/Users:student/Exams" ref="q6:js" />
+        <xs:element xmlns:q7="urn:http://telerikacademy.com/Users:student/Exams" ref="q7:jsOop" />
+        <xs:element xmlns:q8="urn:http://telerikacademy.com/Users:student/Exams" ref="q8:jsUiAndDom" />
+        <xs:element xmlns:q9="urn:http://telerikacademy.com/Users:student/Exams" ref="q9:jsApps" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

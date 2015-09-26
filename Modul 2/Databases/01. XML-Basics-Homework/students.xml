@@ -1,0 +1,165 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<students name="Telerik Academy Students"
+      xmlns:students="urn:http://telerikacademy.com/Forum/Home:students"
+      xmlns:student="urn:http://telerikacademy.com/Users:student"
+      xmlns:takenExams="urn:http://telerikacademy.com/Users:student/Exams">
+
+  <students:student>
+    <!-- General Info-->
+    <student:name>Pesho</student:name>
+    <student:sex>Male</student:sex>
+    <student:birthDate>01.01.1900</student:birthDate>
+    <student:phone>+35988888888888</student:phone>
+    <student:email>pesho.peshev@gmail.com</student:email>
+    <student:course>Databases</student:course>
+    <student:specialty>JS Ninja</student:specialty>
+    <student:facultyNumber>8888888</student:facultyNumber>
+
+    <!-- List of Taken Exams-->
+    <student:takenExams>
+      <takenExams:csharpPartOne>
+        <takenExams:examName>C# Part 1</takenExams:examName>
+        <takenExams:date>02.02.2015</takenExams:date>
+        <takenExams:tutor>Nikolay Kostov</takenExams:tutor>
+        <takenExams:tutorEndorsements>10</takenExams:tutorEndorsements>
+        <takenExams:score>5.88</takenExams:score>
+      </takenExams:csharpPartOne>
+      <takenExams:csharpPartTwo>
+        <takenExams:examName>C# Part 2</takenExams:examName>
+        <takenExams:date>05.03.2015</takenExams:date>
+        <takenExams:tutor>Ivaylo Kenov</takenExams:tutor>
+        <takenExams:tutorEndorsements>9</takenExams:tutorEndorsements>
+        <takenExams:score>5.77</takenExams:score>
+      </takenExams:csharpPartTwo>
+      <takenExams:csharpPartOop>
+        <takenExams:examName>C# OOP</takenExams:examName>
+        <takenExams:date>06.04.2015</takenExams:date>
+        <takenExams:tutor>Nikolay Kostov</takenExams:tutor>
+        <takenExams:tutorEndorsements>10</takenExams:tutorEndorsements>
+        <takenExams:score>5.66</takenExams:score>
+      </takenExams:csharpPartOop>
+      <takenExams:html>
+        <takenExams:examName>HTML Basics</takenExams:examName>
+        <takenExams:date>24.04.2015</takenExams:date>
+        <takenExams:tutor>Doncho Minkov</takenExams:tutor>
+        <takenExams:tutorEndorsements>10</takenExams:tutorEndorsements>
+        <takenExams:score>6.00</takenExams:score>
+      </takenExams:html>
+      <takenExams:css>
+        <takenExams:examName>CSS Styling</takenExams:examName>
+        <takenExams:date>13.05.2015</takenExams:date>
+        <takenExams:tutor>Doncho Minkov</takenExams:tutor>
+        <takenExams:tutorEndorsements>10</takenExams:tutorEndorsements>
+        <takenExams:score>6.00</takenExams:score>
+      </takenExams:css>
+      <takenExams:js>
+        <takenExams:examName>JavaScript Fundamentals</takenExams:examName>
+        <takenExams:date>11.06.2015</takenExams:date>
+        <takenExams:tutor>Ivaylo Kenov</takenExams:tutor>
+        <takenExams:tutorEndorsements>9</takenExams:tutorEndorsements>
+        <takenExams:score>5.55</takenExams:score>
+      </takenExams:js>
+      <takenExams:jsOop>
+        <takenExams:examName>JavaScript OOP</takenExams:examName>
+        <takenExams:date>09.07.2015</takenExams:date>
+        <takenExams:tutor>Doncho Minkov</takenExams:tutor>
+        <takenExams:tutorEndorsements>10</takenExams:tutorEndorsements>
+        <takenExams:score>5.99</takenExams:score>
+      </takenExams:jsOop>
+      <takenExams:jsUiAndDom>
+        <takenExams:examName>JS UI&amp;DOM</takenExams:examName>
+        <takenExams:date>06.08.2015</takenExams:date>
+        <takenExams:tutor>Evlogi Hristov</takenExams:tutor>
+        <takenExams:tutorEndorsements>6</takenExams:tutorEndorsements>
+        <takenExams:score>5.44</takenExams:score>
+      </takenExams:jsUiAndDom>
+      <takenExams:jsApps>
+        <takenExams:examName>JavaScript Applications</takenExams:examName>
+        <takenExams:date>10.09.2015</takenExams:date>
+        <takenExams:tutor>Doncho Minkov</takenExams:tutor>
+        <takenExams:tutorEndorsements>10</takenExams:tutorEndorsements>
+        <takenExams:score>5.33</takenExams:score>
+      </takenExams:jsApps>
+    </student:takenExams>
+  </students:student>
+
+  <students:student>
+    <!-- General Info-->
+    <student:name>Gosho</student:name>
+    <student:sex>Male</student:sex>
+    <student:birthDate>01.02.1900</student:birthDate>
+    <student:phone>+35977777777777</student:phone>
+    <student:email>gosho.goshev@gmail.com</student:email>
+    <student:course>Databases</student:course>
+    <student:specialty>.NET Ninja</student:specialty>
+    <student:facultyNumber>7777777</student:facultyNumber>
+
+    <!-- List of Taken Exams-->
+    <student:takenExams>
+      <takenExams:csharpPartOne>
+        <takenExams:examName>C# Part 1</takenExams:examName>
+        <takenExams:date>02.02.2015</takenExams:date>
+        <takenExams:tutor>Nikolay Kostov</takenExams:tutor>
+        <takenExams:tutorEndorsements>10</takenExams:tutorEndorsements>
+        <takenExams:score>4.88</takenExams:score>
+      </takenExams:csharpPartOne>
+      <takenExams:csharpPartTwo>
+        <takenExams:examName>C# Part 2</takenExams:examName>
+        <takenExams:date>05.03.2015</takenExams:date>
+        <takenExams:tutor>Ivaylo Kenov</takenExams:tutor>
+        <takenExams:tutorEndorsements>9</takenExams:tutorEndorsements>
+        <takenExams:score>4.77</takenExams:score>
+      </takenExams:csharpPartTwo>
+      <takenExams:csharpPartOop>
+        <takenExams:examName>C# OOP</takenExams:examName>
+        <takenExams:date>06.04.2015</takenExams:date>
+        <takenExams:tutor>Nikolay Kostov</takenExams:tutor>
+        <takenExams:tutorEndorsements>10</takenExams:tutorEndorsements>
+        <takenExams:score>4.66</takenExams:score>
+      </takenExams:csharpPartOop>
+      <takenExams:html>
+        <takenExams:examName>HTML Basics</takenExams:examName>
+        <takenExams:date>24.04.2015</takenExams:date>
+        <takenExams:tutor>Doncho Minkov</takenExams:tutor>
+        <takenExams:tutorEndorsements>10</takenExams:tutorEndorsements>
+        <takenExams:score>5.00</takenExams:score>
+      </takenExams:html>
+      <takenExams:css>
+        <takenExams:examName>CSS Styling</takenExams:examName>
+        <takenExams:date>13.05.2015</takenExams:date>
+        <takenExams:tutor>Doncho Minkov</takenExams:tutor>
+        <takenExams:tutorEndorsements>10</takenExams:tutorEndorsements>
+        <takenExams:score>5.00</takenExams:score>
+      </takenExams:css>
+      <takenExams:js>
+        <takenExams:examName>JavaScript Fundamentals</takenExams:examName>
+        <takenExams:date>11.06.2015</takenExams:date>
+        <takenExams:tutor>Ivaylo Kenov</takenExams:tutor>
+        <takenExams:tutorEndorsements>9</takenExams:tutorEndorsements>
+        <takenExams:score>4.55</takenExams:score>
+      </takenExams:js>
+      <takenExams:jsOop>
+        <takenExams:examName>JavaScript OOP</takenExams:examName>
+        <takenExams:date>09.07.2015</takenExams:date>
+        <takenExams:tutor>Doncho Minkov</takenExams:tutor>
+        <takenExams:tutorEndorsements>10</takenExams:tutorEndorsements>
+        <takenExams:score>4.99</takenExams:score>
+      </takenExams:jsOop>
+      <takenExams:jsUiAndDom>
+        <takenExams:examName>JS UI&amp;DOM</takenExams:examName>
+        <takenExams:date>06.08.2015</takenExams:date>
+        <takenExams:tutor>Evlogi Hristov</takenExams:tutor>
+        <takenExams:tutorEndorsements>6</takenExams:tutorEndorsements>
+        <takenExams:score>4.44</takenExams:score>
+      </takenExams:jsUiAndDom>
+      <takenExams:jsApps>
+        <takenExams:examName>JavaScript Applications</takenExams:examName>
+        <takenExams:date>10.09.2015</takenExams:date>
+        <takenExams:tutor>Doncho Minkov</takenExams:tutor>
+        <takenExams:tutorEndorsements>10</takenExams:tutorEndorsements>
+        <takenExams:score>4.33</takenExams:score>
+      </takenExams:jsApps>
+    </student:takenExams>
+  </students:student>
+
+</students>
