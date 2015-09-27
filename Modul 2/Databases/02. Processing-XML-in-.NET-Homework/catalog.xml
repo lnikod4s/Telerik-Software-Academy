@@ -1,0 +1,239 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<catalog>
+  <album>
+    <name>Thriller</name>
+    <artist>Michael Jackson</artist>
+    <year>1982</year>
+    <producer>Quincy Jones</producer>
+    <price>21.99</price>
+    <songs>
+      <song>
+        <title>The Girl Is Mine</title>
+        <duration>03:42</duration>
+      </song>
+      <song>
+        <title>Billie Jean</title>
+        <duration>04:53</duration>
+      </song>
+      <song>
+        <title>Beat It</title>
+        <duration>04:18</duration>
+      </song>
+      <song>
+        <title>Wanna Be Startin' Somethin'</title>
+        <duration>06:02</duration>
+      </song>
+      <song>
+        <title>Human Nature</title>
+        <duration>04:06</duration>
+      </song>
+      <song>
+        <title>P.Y.T (Pretty Young Thing)</title>
+        <duration>03:58</duration>
+      </song>
+      <song>
+        <title>Thriller</title>
+        <duration>05:59</duration>
+      </song>
+    </songs>
+  </album>
+  <album>
+    <name>Back in Black</name>
+    <artist>AC/DC</artist>
+    <year>1980</year>
+    <producer>Robert John "Mutt" Lange</producer>
+    <price>12.49</price>
+    <songs>
+      <song>
+        <title>You Shook Me All Night Long</title>
+        <duration>03:32</duration>
+      </song>
+      <song>
+        <title>Hells Bells</title>
+        <duration>05:12</duration>
+      </song>
+      <song>
+        <title>Rock and Roll Ain't Noise Pollution</title>
+        <duration>04:12</duration>
+      </song>
+    </songs>
+  </album>
+  <album>
+    <name>The Dark Side of The Moon</name>
+    <artist>Pink Floyd</artist>
+    <year>1973</year>
+    <producer>Pink Floyd</producer>
+    <price>15.99</price>
+    <songs>
+      <song>
+        <title>Any Colour You Like</title>
+        <duration>03:25</duration>
+      </song>
+      <song>
+        <title>Us and Them</title>
+        <duration>07:51</duration>
+      </song>
+    </songs>
+  </album>
+  <album>
+    <name>Bad Attitude</name>
+    <artist>Meat Loaf</artist>
+    <year>1984</year>
+    <producer>Alan Shacklock</producer>
+    <price>20.39</price>
+    <songs>
+      <song>
+        <title>Bad Attitude</title>
+        <duration>04:48</duration>
+      </song>
+      <song>
+        <title>Modern Girl</title>
+        <duration>04:28</duration>
+      </song>
+      <song>
+        <title>Nowhere Fast</title>
+        <duration>05:13</duration>
+      </song>
+      <song>
+        <title>Surf's Up</title>
+        <duration>04:46</duration>
+      </song>
+      <song>
+        <title>Piece of the Action</title>
+        <duration>04:02</duration>
+      </song>
+      <song>
+        <title>Jumpin' the Gun</title>
+        <duration>03:13</duration>
+      </song>
+      <song>
+        <title>Sailor to a Siren</title>
+        <duration>05:05</duration>
+      </song>
+      <song>
+        <title>Don't Leave Your Mark on Me</title>
+        <duration>04:08</duration>
+      </song>
+      <song>
+        <title>Cheatin' in Your Dreams</title>
+        <duration>04:16</duration>
+      </song>
+    </songs>
+  </album>
+  <album>
+    <name>Bad</name>
+    <artist>Michael Jackson</artist>
+    <year>1987</year>
+    <producer>Quincy Jones</producer>
+    <price>19.69</price>
+    <songs>
+      <song>
+        <title>Bad</title>
+        <duration>04:07</duration>
+      </song>
+      <song>
+        <title>The Way You Make Me Feel</title>
+        <duration>04:58</duration>
+      </song>
+      <song>
+        <title>Speed Demon</title>
+        <duration>04:02</duration>
+      </song>
+      <song>
+        <title>Liberian Girl</title>
+        <duration>03:54</duration>
+      </song>
+      <song>
+        <title>Just Good Friends</title>
+        <duration>04:06</duration>
+      </song>
+      <song>
+        <title>Another Part of Me</title>
+        <duration>03:54</duration>
+      </song>
+      <song>
+        <title>Man in the Mirror</title>
+        <duration>05:19</duration>
+      </song>
+      <song>
+        <title>I Just Can't Stop Loving You</title>
+        <duration>04:25</duration>
+      </song>
+      <song>
+        <title>Dirty Diana</title>
+        <duration>04:52</duration>
+      </song>
+      <song>
+        <title>Smooth Criminal</title>
+        <duration>04:17</duration>
+      </song>
+      <song>
+        <title>Leave Me Alone</title>
+        <duration>04:40</duration>
+      </song>
+    </songs>
+  </album>
+  <album>
+    <name>The Bodyguard</name>
+    <artist>Whitney Houston</artist>
+    <year>1992</year>
+    <producer>Whitney Houston</producer>
+    <price>17.49</price>
+    <songs>
+      <song>
+        <title>I Will Always Love You</title>
+        <duration>04:31</duration>
+      </song>
+      <song>
+        <title>Someday (I'm Coming Back)</title>
+        <duration>04:57</duration>
+      </song>
+      <song>
+        <title>I'm Every Woman</title>
+        <duration>04:47</duration>
+      </song>
+      <song>
+        <title>I Have Nothing</title>
+        <duration>04:49</duration>
+      </song>
+      <song>
+        <title>Run to You</title>
+        <duration>04:24</duration>
+      </song>
+      <song>
+        <title>Queen of the Night</title>
+        <duration>03:06</duration>
+      </song>
+      <song>
+        <title>Lovely Day</title>
+        <duration>04:08</duration>
+      </song>
+    </songs>
+  </album>
+  <album>
+    <name>Bat Out of Hell</name>
+    <artist>Meat Loaf</artist>
+    <year>1977</year>
+    <producer>Todd Rundgren</producer>
+    <price>20.59</price>
+    <songs>
+      <song>
+        <title>You Took the Words Right Out of My Mouth</title>
+        <duration>05:04</duration>
+      </song>
+      <song>
+        <title>Two Out of Three Ain't Bad</title>
+        <duration>05:27</duration>
+      </song>
+      <song>
+        <title>Paradise by the Dashboard Light</title>
+        <duration>08:28</duration>
+      </song>
+      <song>
+        <title>Bat Out of Hell</title>
+        <duration>09:47</duration>
+      </song>
+    </songs>
+  </album>
+</catalog>

@@ -1,0 +1,254 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <dir d2p1:name="" xmlns:d2p1="02. Processing-XML-in-.NET-Homework">
+    <file d3p1:name="" xmlns:d3p1="02. Processing-XML-in-.NET-Homework.sln" />
+    <file d3p1:name="" xmlns:d3p1="catalog.xml" />
+    <file d3p1:name="" xmlns:d3p1="catalog.xsd" />
+    <dir d3p1:name="" xmlns:d3p1=".vs">
+      <dir d2p1:name="">
+        <dir d5p1:name="" xmlns:d5p1="v14">
+          <file d6p1:name="" xmlns:d6p1=".suo" />
+        </dir>
+      </dir>
+    </dir>
+    <dir d3p1:name="" xmlns:d3p1="02. ExtractArtistsFromCatalog">
+      <file d4p1:name="" xmlns:d4p1="02. ExtractArtistsFromCatalogUsingDOMParser.csproj" />
+      <file d4p1:name="" xmlns:d4p1="App.config" />
+      <file d4p1:name="" xmlns:d4p1="Program.cs" />
+      <dir d4p1:name="" xmlns:d4p1="bin">
+        <dir d5p1:name="" xmlns:d5p1="Debug">
+          <file d6p1:name="" xmlns:d6p1="_02.ExtractArtistsFromCatalog.exe" />
+          <file d6p1:name="" xmlns:d6p1="_02.ExtractArtistsFromCatalog.exe.config" />
+          <file d6p1:name="" xmlns:d6p1="_02.ExtractArtistsFromCatalog.pdb" />
+          <file d6p1:name="" xmlns:d6p1="_02.ExtractArtistsFromCatalog.vshost.exe" />
+          <file d6p1:name="" xmlns:d6p1="_02.ExtractArtistsFromCatalog.vshost.exe.config" />
+        </dir>
+      </dir>
+      <dir d4p1:name="" xmlns:d4p1="obj">
+        <dir d5p1:name="" xmlns:d5p1="Debug">
+          <file d6p1:name="" xmlns:d6p1="02. ExtractArtistsFromCatalog.csproj.FileListAbsolute.txt" />
+          <file d6p1:name="" xmlns:d6p1="02. ExtractArtistsFromCatalog.csprojResolveAssemblyReference.cache" />
+          <file d6p1:name="" xmlns:d6p1="02. ExtractArtistsFromCatalogUsingDOMParser.csproj.FileListAbsolute.txt" />
+          <file d6p1:name="" xmlns:d6p1="02. ExtractArtistsFromCatalogUsingDOMParser.csprojResolveAssemblyReference.cache" />
+          <file d6p1:name="" xmlns:d6p1="DesignTimeResolveAssemblyReferencesInput.cache" />
+          <file d6p1:name="" xmlns:d6p1="TemporaryGeneratedFile_036C0B5B-1481-4323-8D20-8F5ADCB23D92.cs" />
+          <file d6p1:name="" xmlns:d6p1="TemporaryGeneratedFile_5937a670-0e60-4077-877b-f7221da3dda1.cs" />
+          <file d6p1:name="" xmlns:d6p1="TemporaryGeneratedFile_E7A71F73-0F8D-4B9B-B56E-8E70B10BC5D3.cs" />
+          <file d6p1:name="" xmlns:d6p1="_02.ExtractArtistsFromCatalog.exe" />
+          <file d6p1:name="" xmlns:d6p1="_02.ExtractArtistsFromCatalog.pdb" />
+        </dir>
+      </dir>
+      <dir d4p1:name="" xmlns:d4p1="Properties">
+        <file d5p1:name="" xmlns:d5p1="AssemblyInfo.cs" />
+      </dir>
+    </dir>
+    <dir d3p1:name="" xmlns:d3p1="03. ExtractArtistsFromCatalogUsingXPath">
+      <file d4p1:name="" xmlns:d4p1="03. ExtractArtistsFromCatalogUsingXPath.csproj" />
+      <file d4p1:name="" xmlns:d4p1="App.config" />
+      <file d4p1:name="" xmlns:d4p1="Program.cs" />
+      <dir d4p1:name="" xmlns:d4p1="bin">
+        <dir d5p1:name="" xmlns:d5p1="Debug">
+          <file d6p1:name="" xmlns:d6p1="_03.ExtractArtistsFromCatalogUsingXPath.exe" />
+          <file d6p1:name="" xmlns:d6p1="_03.ExtractArtistsFromCatalogUsingXPath.exe.config" />
+          <file d6p1:name="" xmlns:d6p1="_03.ExtractArtistsFromCatalogUsingXPath.pdb" />
+          <file d6p1:name="" xmlns:d6p1="_03.ExtractArtistsFromCatalogUsingXPath.vshost.exe" />
+          <file d6p1:name="" xmlns:d6p1="_03.ExtractArtistsFromCatalogUsingXPath.vshost.exe.config" />
+        </dir>
+      </dir>
+      <dir d4p1:name="" xmlns:d4p1="obj">
+        <dir d5p1:name="" xmlns:d5p1="Debug">
+          <file d6p1:name="" xmlns:d6p1="03. ExtractArtistsFromCatalogUsingXPath.csproj.FileListAbsolute.txt" />
+          <file d6p1:name="" xmlns:d6p1="03. ExtractArtistsFromCatalogUsingXPath.csprojResolveAssemblyReference.cache" />
+          <file d6p1:name="" xmlns:d6p1="DesignTimeResolveAssemblyReferencesInput.cache" />
+          <file d6p1:name="" xmlns:d6p1="TemporaryGeneratedFile_036C0B5B-1481-4323-8D20-8F5ADCB23D92.cs" />
+          <file d6p1:name="" xmlns:d6p1="TemporaryGeneratedFile_5937a670-0e60-4077-877b-f7221da3dda1.cs" />
+          <file d6p1:name="" xmlns:d6p1="TemporaryGeneratedFile_E7A71F73-0F8D-4B9B-B56E-8E70B10BC5D3.cs" />
+          <file d6p1:name="" xmlns:d6p1="_03.ExtractArtistsFromCatalogUsingXPath.exe" />
+          <file d6p1:name="" xmlns:d6p1="_03.ExtractArtistsFromCatalogUsingXPath.pdb" />
+        </dir>
+      </dir>
+      <dir d4p1:name="" xmlns:d4p1="Properties">
+        <file d5p1:name="" xmlns:d5p1="AssemblyInfo.cs" />
+      </dir>
+    </dir>
+    <dir d3p1:name="" xmlns:d3p1="04. RemoveAllAlbumsWithPriceGreatherThanTwentyUsingDOMParser">
+      <file d4p1:name="" xmlns:d4p1="04. RemoveAllAlbumsWithPriceGreatherThanTwentyUsingDOMParser.csproj" />
+      <file d4p1:name="" xmlns:d4p1="App.config" />
+      <file d4p1:name="" xmlns:d4p1="new-catalog.xml" />
+      <file d4p1:name="" xmlns:d4p1="Program.cs" />
+      <dir d4p1:name="" xmlns:d4p1="bin">
+        <dir d5p1:name="" xmlns:d5p1="Debug">
+          <file d6p1:name="" xmlns:d6p1="_04.RemoveAllAlbumsWithPriceGreatherThanTwentyUsingDOMParser.exe" />
+          <file d6p1:name="" xmlns:d6p1="_04.RemoveAllAlbumsWithPriceGreatherThanTwentyUsingDOMParser.exe.config" />
+          <file d6p1:name="" xmlns:d6p1="_04.RemoveAllAlbumsWithPriceGreatherThanTwentyUsingDOMParser.pdb" />
+          <file d6p1:name="" xmlns:d6p1="_04.RemoveAllAlbumsWithPriceGreatherThanTwentyUsingDOMParser.vshost.exe" />
+          <file d6p1:name="" xmlns:d6p1="_04.RemoveAllAlbumsWithPriceGreatherThanTwentyUsingDOMParser.vshost.exe.config" />
+        </dir>
+      </dir>
+      <dir d4p1:name="" xmlns:d4p1="obj">
+        <dir d5p1:name="" xmlns:d5p1="Debug">
+          <file d6p1:name="" xmlns:d6p1="04. RemoveAllAlbumsWithPriceGreatherThanTwentyUsingDOMParser.csproj.FileListAbsolute.txt" />
+          <file d6p1:name="" xmlns:d6p1="04. RemoveAllAlbumsWithPriceGreatherThanTwentyUsingDOMParser.csprojResolveAssemblyReference.cache" />
+          <file d6p1:name="" xmlns:d6p1="DesignTimeResolveAssemblyReferencesInput.cache" />
+          <file d6p1:name="" xmlns:d6p1="TemporaryGeneratedFile_036C0B5B-1481-4323-8D20-8F5ADCB23D92.cs" />
+          <file d6p1:name="" xmlns:d6p1="TemporaryGeneratedFile_5937a670-0e60-4077-877b-f7221da3dda1.cs" />
+          <file d6p1:name="" xmlns:d6p1="TemporaryGeneratedFile_E7A71F73-0F8D-4B9B-B56E-8E70B10BC5D3.cs" />
+          <file d6p1:name="" xmlns:d6p1="_04.RemoveAllAlbumsWithPriceGreatherThanTwentyUsingDOMParser.exe" />
+          <file d6p1:name="" xmlns:d6p1="_04.RemoveAllAlbumsWithPriceGreatherThanTwentyUsingDOMParser.pdb" />
+        </dir>
+      </dir>
+      <dir d4p1:name="" xmlns:d4p1="Properties">
+        <file d5p1:name="" xmlns:d5p1="AssemblyInfo.cs" />
+      </dir>
+    </dir>
+    <dir d3p1:name="" xmlns:d3p1="05. ExtractAllSongTitlesFromCatalogUsingXmlReader">
+      <file d4p1:name="" xmlns:d4p1="05. ExtractAllSongTitlesFromCatalogUsingXmlReader.csproj" />
+      <file d4p1:name="" xmlns:d4p1="App.config" />
+      <file d4p1:name="" xmlns:d4p1="Program.cs" />
+      <dir d4p1:name="" xmlns:d4p1="bin">
+        <dir d5p1:name="" xmlns:d5p1="Debug">
+          <file d6p1:name="" xmlns:d6p1="_05.ExtractAllSongTitlesFromCatalogUsingXmlReader.exe" />
+          <file d6p1:name="" xmlns:d6p1="_05.ExtractAllSongTitlesFromCatalogUsingXmlReader.exe.config" />
+          <file d6p1:name="" xmlns:d6p1="_05.ExtractAllSongTitlesFromCatalogUsingXmlReader.pdb" />
+          <file d6p1:name="" xmlns:d6p1="_05.ExtractAllSongTitlesFromCatalogUsingXmlReader.vshost.exe" />
+          <file d6p1:name="" xmlns:d6p1="_05.ExtractAllSongTitlesFromCatalogUsingXmlReader.vshost.exe.config" />
+        </dir>
+      </dir>
+      <dir d4p1:name="" xmlns:d4p1="obj">
+        <dir d5p1:name="" xmlns:d5p1="Debug">
+          <file d6p1:name="" xmlns:d6p1="05. ExtractAllSongTitlesFromCatalogUsingXmlReader.csproj.FileListAbsolute.txt" />
+          <file d6p1:name="" xmlns:d6p1="05. ExtractAllSongTitlesFromCatalogUsingXmlReader.csprojResolveAssemblyReference.cache" />
+          <file d6p1:name="" xmlns:d6p1="DesignTimeResolveAssemblyReferencesInput.cache" />
+          <file d6p1:name="" xmlns:d6p1="TemporaryGeneratedFile_036C0B5B-1481-4323-8D20-8F5ADCB23D92.cs" />
+          <file d6p1:name="" xmlns:d6p1="TemporaryGeneratedFile_5937a670-0e60-4077-877b-f7221da3dda1.cs" />
+          <file d6p1:name="" xmlns:d6p1="TemporaryGeneratedFile_E7A71F73-0F8D-4B9B-B56E-8E70B10BC5D3.cs" />
+          <file d6p1:name="" xmlns:d6p1="_05.ExtractAllSongTitlesFromCatalogUsingXmlReader.exe" />
+          <file d6p1:name="" xmlns:d6p1="_05.ExtractAllSongTitlesFromCatalogUsingXmlReader.pdb" />
+        </dir>
+      </dir>
+      <dir d4p1:name="" xmlns:d4p1="Properties">
+        <file d5p1:name="" xmlns:d5p1="AssemblyInfo.cs" />
+      </dir>
+    </dir>
+    <dir d3p1:name="" xmlns:d3p1="06. ExtractAllSongTitlesFromCatalogUsingLINQ">
+      <file d4p1:name="" xmlns:d4p1="06. ExtractAllSongTitlesFromCatalogUsingLINQ.csproj" />
+      <file d4p1:name="" xmlns:d4p1="App.config" />
+      <file d4p1:name="" xmlns:d4p1="Program.cs" />
+      <dir d4p1:name="" xmlns:d4p1="bin">
+        <dir d5p1:name="" xmlns:d5p1="Debug">
+          <file d6p1:name="" xmlns:d6p1="_06.ExtractAllSongTitlesFromCatalogUsingLINQ.exe" />
+          <file d6p1:name="" xmlns:d6p1="_06.ExtractAllSongTitlesFromCatalogUsingLINQ.exe.config" />
+          <file d6p1:name="" xmlns:d6p1="_06.ExtractAllSongTitlesFromCatalogUsingLINQ.pdb" />
+          <file d6p1:name="" xmlns:d6p1="_06.ExtractAllSongTitlesFromCatalogUsingLINQ.vshost.exe" />
+          <file d6p1:name="" xmlns:d6p1="_06.ExtractAllSongTitlesFromCatalogUsingLINQ.vshost.exe.config" />
+        </dir>
+      </dir>
+      <dir d4p1:name="" xmlns:d4p1="obj">
+        <dir d5p1:name="" xmlns:d5p1="Debug">
+          <file d6p1:name="" xmlns:d6p1="06. ExtractAllSongTitlesFromCatalogUsingLINQ.csproj.FileListAbsolute.txt" />
+          <file d6p1:name="" xmlns:d6p1="06. ExtractAllSongTitlesFromCatalogUsingLINQ.csprojResolveAssemblyReference.cache" />
+          <file d6p1:name="" xmlns:d6p1="DesignTimeResolveAssemblyReferencesInput.cache" />
+          <file d6p1:name="" xmlns:d6p1="TemporaryGeneratedFile_036C0B5B-1481-4323-8D20-8F5ADCB23D92.cs" />
+          <file d6p1:name="" xmlns:d6p1="TemporaryGeneratedFile_5937a670-0e60-4077-877b-f7221da3dda1.cs" />
+          <file d6p1:name="" xmlns:d6p1="TemporaryGeneratedFile_E7A71F73-0F8D-4B9B-B56E-8E70B10BC5D3.cs" />
+          <file d6p1:name="" xmlns:d6p1="_06.ExtractAllSongTitlesFromCatalogUsingLINQ.exe" />
+          <file d6p1:name="" xmlns:d6p1="_06.ExtractAllSongTitlesFromCatalogUsingLINQ.pdb" />
+        </dir>
+      </dir>
+      <dir d4p1:name="" xmlns:d4p1="Properties">
+        <file d5p1:name="" xmlns:d5p1="AssemblyInfo.cs" />
+      </dir>
+    </dir>
+    <dir d3p1:name="" xmlns:d3p1="07. ConvertTextToXml">
+      <file d4p1:name="" xmlns:d4p1="07. ConvertTextToXml.csproj" />
+      <file d4p1:name="" xmlns:d4p1="App.config" />
+      <file d4p1:name="" xmlns:d4p1="Person.cs" />
+      <file d4p1:name="" xmlns:d4p1="phonebook.txt" />
+      <file d4p1:name="" xmlns:d4p1="phonebook.xml" />
+      <file d4p1:name="" xmlns:d4p1="Program.cs" />
+      <dir d4p1:name="" xmlns:d4p1="bin">
+        <dir d5p1:name="" xmlns:d5p1="Debug">
+          <file d6p1:name="" xmlns:d6p1="_07.ConvertTextToXml.exe" />
+          <file d6p1:name="" xmlns:d6p1="_07.ConvertTextToXml.exe.config" />
+          <file d6p1:name="" xmlns:d6p1="_07.ConvertTextToXml.pdb" />
+          <file d6p1:name="" xmlns:d6p1="_07.ConvertTextToXml.vshost.exe" />
+          <file d6p1:name="" xmlns:d6p1="_07.ConvertTextToXml.vshost.exe.config" />
+        </dir>
+      </dir>
+      <dir d4p1:name="" xmlns:d4p1="obj">
+        <dir d5p1:name="" xmlns:d5p1="Debug">
+          <file d6p1:name="" xmlns:d6p1="07. ConvertTextToXml.csproj.FileListAbsolute.txt" />
+          <file d6p1:name="" xmlns:d6p1="DesignTimeResolveAssemblyReferencesInput.cache" />
+          <file d6p1:name="" xmlns:d6p1="TemporaryGeneratedFile_036C0B5B-1481-4323-8D20-8F5ADCB23D92.cs" />
+          <file d6p1:name="" xmlns:d6p1="TemporaryGeneratedFile_5937a670-0e60-4077-877b-f7221da3dda1.cs" />
+          <file d6p1:name="" xmlns:d6p1="TemporaryGeneratedFile_E7A71F73-0F8D-4B9B-B56E-8E70B10BC5D3.cs" />
+          <file d6p1:name="" xmlns:d6p1="_07.ConvertTextToXml.exe" />
+          <file d6p1:name="" xmlns:d6p1="_07.ConvertTextToXml.pdb" />
+        </dir>
+      </dir>
+      <dir d4p1:name="" xmlns:d4p1="Properties">
+        <file d5p1:name="" xmlns:d5p1="AssemblyInfo.cs" />
+      </dir>
+    </dir>
+    <dir d3p1:name="" xmlns:d3p1="08. GenerateXmlFileUsingXmlReaderAndXmlWriter">
+      <file d4p1:name="" xmlns:d4p1="08. GenerateXmlFileUsingXmlReaderAndXmlWriter.csproj" />
+      <file d4p1:name="" xmlns:d4p1="album.xml" />
+      <file d4p1:name="" xmlns:d4p1="App.config" />
+      <file d4p1:name="" xmlns:d4p1="Program.cs" />
+      <dir d4p1:name="" xmlns:d4p1="bin">
+        <dir d5p1:name="" xmlns:d5p1="Debug">
+          <file d6p1:name="" xmlns:d6p1="_08.GenerateXmlFileUsingXmlReaderAndXmlWriter.exe" />
+          <file d6p1:name="" xmlns:d6p1="_08.GenerateXmlFileUsingXmlReaderAndXmlWriter.exe.config" />
+          <file d6p1:name="" xmlns:d6p1="_08.GenerateXmlFileUsingXmlReaderAndXmlWriter.pdb" />
+          <file d6p1:name="" xmlns:d6p1="_08.GenerateXmlFileUsingXmlReaderAndXmlWriter.vshost.exe" />
+          <file d6p1:name="" xmlns:d6p1="_08.GenerateXmlFileUsingXmlReaderAndXmlWriter.vshost.exe.config" />
+        </dir>
+      </dir>
+      <dir d4p1:name="" xmlns:d4p1="obj">
+        <dir d5p1:name="" xmlns:d5p1="Debug">
+          <file d6p1:name="" xmlns:d6p1="08. GenerateXmlFileUsingXmlReaderAndXmlWriter.csproj.FileListAbsolute.txt" />
+          <file d6p1:name="" xmlns:d6p1="08. GenerateXmlFileUsingXmlReaderAndXmlWriter.csprojResolveAssemblyReference.cache" />
+          <file d6p1:name="" xmlns:d6p1="DesignTimeResolveAssemblyReferencesInput.cache" />
+          <file d6p1:name="" xmlns:d6p1="TemporaryGeneratedFile_036C0B5B-1481-4323-8D20-8F5ADCB23D92.cs" />
+          <file d6p1:name="" xmlns:d6p1="TemporaryGeneratedFile_5937a670-0e60-4077-877b-f7221da3dda1.cs" />
+          <file d6p1:name="" xmlns:d6p1="TemporaryGeneratedFile_E7A71F73-0F8D-4B9B-B56E-8E70B10BC5D3.cs" />
+          <file d6p1:name="" xmlns:d6p1="_08.GenerateXmlFileUsingXmlReaderAndXmlWriter.exe" />
+          <file d6p1:name="" xmlns:d6p1="_08.GenerateXmlFileUsingXmlReaderAndXmlWriter.pdb" />
+        </dir>
+      </dir>
+      <dir d4p1:name="" xmlns:d4p1="Properties">
+        <file d5p1:name="" xmlns:d5p1="AssemblyInfo.cs" />
+      </dir>
+    </dir>
+    <dir d3p1:name="" xmlns:d3p1="09. TraverseDirectoryAndWriteContentToXmlFile">
+      <file d4p1:name="" xmlns:d4p1="09. TraverseDirectoryAndWriteContentToXmlFile.csproj" />
+      <file d4p1:name="" xmlns:d4p1="App.config" />
+      <file d4p1:name="" xmlns:d4p1="directory.xml" />
+      <file d4p1:name="" xmlns:d4p1="Program.cs" />
+      <dir d4p1:name="" xmlns:d4p1="bin">
+        <dir d5p1:name="" xmlns:d5p1="Debug">
+          <file d6p1:name="" xmlns:d6p1="_09.TraverseDirectoryAndWriteContentToXmlFile.exe" />
+          <file d6p1:name="" xmlns:d6p1="_09.TraverseDirectoryAndWriteContentToXmlFile.exe.config" />
+          <file d6p1:name="" xmlns:d6p1="_09.TraverseDirectoryAndWriteContentToXmlFile.pdb" />
+          <file d6p1:name="" xmlns:d6p1="_09.TraverseDirectoryAndWriteContentToXmlFile.vshost.exe" />
+          <file d6p1:name="" xmlns:d6p1="_09.TraverseDirectoryAndWriteContentToXmlFile.vshost.exe.config" />
+        </dir>
+      </dir>
+      <dir d4p1:name="" xmlns:d4p1="obj">
+        <dir d5p1:name="" xmlns:d5p1="Debug">
+          <file d6p1:name="" xmlns:d6p1="09. TraverseDirectoryAndWriteContentToXmlFile.csproj.FileListAbsolute.txt" />
+          <file d6p1:name="" xmlns:d6p1="09. TraverseDirectoryAndWriteContentToXmlFile.csprojResolveAssemblyReference.cache" />
+          <file d6p1:name="" xmlns:d6p1="DesignTimeResolveAssemblyReferencesInput.cache" />
+          <file d6p1:name="" xmlns:d6p1="TemporaryGeneratedFile_036C0B5B-1481-4323-8D20-8F5ADCB23D92.cs" />
+          <file d6p1:name="" xmlns:d6p1="TemporaryGeneratedFile_5937a670-0e60-4077-877b-f7221da3dda1.cs" />
+          <file d6p1:name="" xmlns:d6p1="TemporaryGeneratedFile_E7A71F73-0F8D-4B9B-B56E-8E70B10BC5D3.cs" />
+          <file d6p1:name="" xmlns:d6p1="_09.TraverseDirectoryAndWriteContentToXmlFile.exe" />
+          <file d6p1:name="" xmlns:d6p1="_09.TraverseDirectoryAndWriteContentToXmlFile.pdb" />
+        </dir>
+      </dir>
+      <dir d4p1:name="" xmlns:d4p1="Properties">
+        <file d5p1:name="" xmlns:d5p1="AssemblyInfo.cs" />
+      </dir>
+    </dir>
+  </dir>
+</root>

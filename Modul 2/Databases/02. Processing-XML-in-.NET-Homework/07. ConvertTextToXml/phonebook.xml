@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<phonebook>
+  <person>
+    <name>Pesho</name>
+    <city>Varna</city>
+    <phone>052 23 45 67</phone>
+  </person>
+  <person>
+    <name>Gosho</name>
+    <city>Plovdiv</city>
+    <phone>051 25 46 27</phone>
+  </person>
+  <person>
+    <name>Ivancho</name>
+    <city>Plovdiv</city>
+    <phone>0888 12 34 56</phone>
+  </person>
+  <person>
+    <name>Kircho</name>
+    <city>Plovdiv</city>
+    <phone>051 25 46 27</phone>
+  </person>
+  <person>
+    <name>Gancho</name>
+    <city>Karnobat</city>
+    <phone>0899 999 888</phone>
+  </person>
+  <person>
+    <name>Mitko</name>
+    <city>Sofia</city>
+    <phone>02 946 946 946</phone>
+  </person>
+</phonebook>

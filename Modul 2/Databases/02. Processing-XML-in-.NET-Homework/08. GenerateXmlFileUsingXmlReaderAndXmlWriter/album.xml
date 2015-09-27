@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<catalog>
+  <album>
+    <name>Thriller</name>
+    <artist>Michael Jackson</artist>
+  </album>
+  <album>
+    <name>Back in Black</name>
+    <artist>AC/DC</artist>
+  </album>
+  <album>
+    <name>The Dark Side of The Moon</name>
+    <artist>Pink Floyd</artist>
+  </album>
+  <album>
+    <name>Bad Attitude</name>
+    <artist>Meat Loaf</artist>
+  </album>
+  <album>
+    <name>Bad</name>
+    <artist>Michael Jackson</artist>
+  </album>
+  <album>
+    <name>The Bodyguard</name>
+    <artist>Whitney Houston</artist>
+  </album>
+  <album>
+    <name>Bat Out of Hell</name>
+    <artist>Meat Loaf</artist>
+  </album>
+</catalog>

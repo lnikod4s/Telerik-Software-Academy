@@ -1,0 +1,6 @@
+Pesho   | Varna    | 052 23 45 67
+Gosho   | Plovdiv  | 051 25 46 27
+Ivancho | Plovdiv  | 0888 12 34 56
+Kircho  | Plovdiv  | 051 25 46 27
+Gancho  | Karnobat | 0899 999 888
+Mitko   | Sofia    | 02 946 946 946
