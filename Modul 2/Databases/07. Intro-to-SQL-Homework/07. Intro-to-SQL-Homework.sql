@@ -217,4 +217,4 @@ SELECT e.FirstName + ' ' + e.LastName AS [Employee Full Name],
     JOIN [TelerikAcademy].[dbo].[Departments] d
 	  ON e.DepartmentID = d.DepartmentID
   WHERE (d.Name = 'Sales' OR d.Name = 'Finance') AND
-	    (e.HireDate BETWEEN 1995 AND 2005)
+	    (e.HireDate BETWEEN '1995-01-01 00:00:00' AND '2005-01-01 00:00:00')
