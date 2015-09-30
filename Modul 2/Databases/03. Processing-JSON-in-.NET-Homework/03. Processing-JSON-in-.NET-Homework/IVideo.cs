@@ -1,6 +1,6 @@
 ﻿namespace Processing_JSON_in_.NET_Homework
 {
-    public interface IListItem
+    public interface IVideo
     {
         string Title { get; set; }
     }

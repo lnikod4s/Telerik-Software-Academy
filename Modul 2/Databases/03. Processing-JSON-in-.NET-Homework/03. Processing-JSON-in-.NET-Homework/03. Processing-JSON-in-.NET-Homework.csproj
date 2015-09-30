@@ -49,8 +49,8 @@
   <ItemGroup>
     <Compile Include="Utility.cs" />
     <Compile Include="HtmlGenerator.cs" />
-    <Compile Include="IListItem.cs" />
-    <Compile Include="ListItem.cs" />
+    <Compile Include="IVideo.cs" />
+    <Compile Include="Video.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

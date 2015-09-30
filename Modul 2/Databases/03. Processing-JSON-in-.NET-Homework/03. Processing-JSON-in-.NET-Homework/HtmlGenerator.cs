@@ -8,13 +8,13 @@
     {
         private const string ItemTemplateFormat = "<li><a href=\"\"><strong>[{0}]</strong></a></li>";
 
-        public void CreateHtmlPage(string path, IEnumerable<IListItem> listItems)
+        public void CreateHtmlPage(string path, IEnumerable<IVideo> listItems)
         {
             var html = this.GenerateHtml(listItems);
             this.CreateFile(path, html);
         }
 
-        private string GenerateHtml(IEnumerable<IListItem> listItems)
+        private string GenerateHtml(IEnumerable<IVideo> listItems)
         {
             var html = new StringBuilder();
             html.AppendLine("<ul>");

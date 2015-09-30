@@ -31,13 +31,13 @@
             htmlGenerator.CreateHtmlPage("../../rss.html", poco);
         }
 
-        private static IEnumerable<IListItem> ConvertJsonToPoco(string json)
+        private static IEnumerable<IVideo> ConvertJsonToPoco(string json)
         {
             var jObject = JObject.Parse(json);
             var videosSet = jObject["feed"]["entry"];
 
-            return videosSet.Select(video => JsonConvert.DeserializeObject<ListItem>(video.ToString()))
-                .Cast<IListItem>()
+            return videosSet.Select(video => JsonConvert.DeserializeObject<Video>(video.ToString()))
+                .Cast<IVideo>()
                 .ToList();
         }
 

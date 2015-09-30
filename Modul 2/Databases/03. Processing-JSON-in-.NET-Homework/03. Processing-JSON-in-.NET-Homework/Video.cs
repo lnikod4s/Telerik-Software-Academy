@@ -2,7 +2,7 @@
 {
     using Newtonsoft.Json;
 
-    public class ListItem : IListItem
+    public class Video : IVideo
     {
         [JsonProperty("title")]
         public string Title { get; set; }
