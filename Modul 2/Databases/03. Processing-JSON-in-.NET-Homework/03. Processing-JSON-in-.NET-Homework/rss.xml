@@ -1,0 +1,460 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns:yt="http://www.youtube.com/xml/schemas/2015" xmlns:media="http://search.yahoo.com/mrss/" xmlns="http://www.w3.org/2005/Atom">
+ <link rel="self" href="http://www.youtube.com/feeds/videos.xml?channel_id=UCLC-vbm7OWvpbqzXaoAMGGw"/>
+ <id>yt:channel:UCLC-vbm7OWvpbqzXaoAMGGw</id>
+ <yt:channelId>UCLC-vbm7OWvpbqzXaoAMGGw</yt:channelId>
+ <title>TelerikAcademy</title>
+ <link rel="alternate" href="http://www.youtube.com/channel/UCLC-vbm7OWvpbqzXaoAMGGw"/>
+ <author>
+  <name>TelerikAcademy</name>
+  <uri>http://www.youtube.com/channel/UCLC-vbm7OWvpbqzXaoAMGGw</uri>
+ </author>
+ <published>2011-06-24T15:53:13+00:00</published>
+ <entry>
+  <id>yt:video:yLAbc_Bvdj8</id>
+  <yt:videoId>yLAbc_Bvdj8</yt:videoId>
+  <yt:channelId>UCLC-vbm7OWvpbqzXaoAMGGw</yt:channelId>
+  <title>Работа с XML в .NET</title>
+  <link rel="alternate" href="http://www.youtube.com/watch?v=yLAbc_Bvdj8"/>
+  <author>
+   <name>TelerikAcademy</name>
+   <uri>http://www.youtube.com/channel/UCLC-vbm7OWvpbqzXaoAMGGw</uri>
+  </author>
+  <published>2015-09-29T21:45:42+00:00</published>
+  <updated>2015-09-29T21:45:42+00:00</updated>
+  <media:group>
+   <media:title>Работа с XML в .NET</media:title>
+   <media:content url="https://www.youtube.com/v/yLAbc_Bvdj8?version=3" type="application/x-shockwave-flash" width="640" height="390"/>
+   <media:thumbnail url="https://i2.ytimg.com/vi/yLAbc_Bvdj8/hqdefault.jpg" width="480" height="360"/>
+   <media:description>Лекция: Работа с XML в .NET
+Курс: Бази данни 2015
+Лектор: Евлоги Христов
+Дата: 29 септември 2015
+
+Уебсайт на Академията на Телерик: http://academy.telerik.com
+
+Следете за предстоящи безплатни обучения на Академията на Телерик във Facebook: http://www.facebook.com/TelerikAcademy.</media:description>
+   <media:community>
+    <media:starRating count="0" average="0.00" min="1" max="5"/>
+    <media:statistics views="55"/>
+   </media:community>
+  </media:group>
+ </entry>
+ <entry>
+  <id>yt:video:CZUJa61fUQ8</id>
+  <yt:videoId>CZUJa61fUQ8</yt:videoId>
+  <yt:channelId>UCLC-vbm7OWvpbqzXaoAMGGw</yt:channelId>
+  <title>C# Tips and Tricks - част 2 (Ники)</title>
+  <link rel="alternate" href="http://www.youtube.com/watch?v=CZUJa61fUQ8"/>
+  <author>
+   <name>TelerikAcademy</name>
+   <uri>http://www.youtube.com/channel/UCLC-vbm7OWvpbqzXaoAMGGw</uri>
+  </author>
+  <published>2015-09-29T07:03:01+00:00</published>
+  <updated>2015-09-29T21:13:34+00:00</updated>
+  <media:group>
+   <media:title>C# Tips and Tricks - част 2 (Ники)</media:title>
+   <media:content url="https://www.youtube.com/v/CZUJa61fUQ8?version=3" type="application/x-shockwave-flash" width="640" height="390"/>
+   <media:thumbnail url="https://i4.ytimg.com/vi/CZUJa61fUQ8/hqdefault.jpg" width="480" height="360"/>
+   <media:description>Лекция: C# Tips and Tricks - част 2
+Курс: Telerik Academy Plus
+Лектор: Николай Костов
+Дата: 26 септвмври 2015
+
+Уебсайт на Академията на Телерик: http://academy.telerik.com
+
+Следете за предстоящи безплатни обучения на Академията на Телерик във Facebook: http://www.facebook.com/TelerikAcademy.</media:description>
+   <media:community>
+    <media:starRating count="6" average="5.00" min="1" max="5"/>
+    <media:statistics views="112"/>
+   </media:community>
+  </media:group>
+ </entry>
+ <entry>
+  <id>yt:video:40lgchWTyDQ</id>
+  <yt:videoId>40lgchWTyDQ</yt:videoId>
+  <yt:channelId>UCLC-vbm7OWvpbqzXaoAMGGw</yt:channelId>
+  <title>Основи в XML</title>
+  <link rel="alternate" href="http://www.youtube.com/watch?v=40lgchWTyDQ"/>
+  <author>
+   <name>TelerikAcademy</name>
+   <uri>http://www.youtube.com/channel/UCLC-vbm7OWvpbqzXaoAMGGw</uri>
+  </author>
+  <published>2015-09-28T21:12:16+00:00</published>
+  <updated>2015-09-29T09:03:38+00:00</updated>
+  <media:group>
+   <media:title>Основи в XML</media:title>
+   <media:content url="https://www.youtube.com/v/40lgchWTyDQ?version=3" type="application/x-shockwave-flash" width="640" height="390"/>
+   <media:thumbnail url="https://i1.ytimg.com/vi/40lgchWTyDQ/hqdefault.jpg" width="480" height="360"/>
+   <media:description>Лекция: Основи в XML
+Курс: Бази данни 2015
+Лектор: Евлоги Христов
+Дата: 28 септември 2015
+
+Уебсайт на Академията на Телерик: http://academy.telerik.com
+
+Следете за предстоящи безплатни обучения на Академията на Телерик във Facebook: http://www.facebook.com/TelerikAcademy.</media:description>
+   <media:community>
+    <media:starRating count="1" average="5.00" min="1" max="5"/>
+    <media:statistics views="364"/>
+   </media:community>
+  </media:group>
+ </entry>
+ <entry>
+  <id>yt:video:KUSJYQnsuJw</id>
+  <yt:videoId>KUSJYQnsuJw</yt:videoId>
+  <yt:channelId>UCLC-vbm7OWvpbqzXaoAMGGw</yt:channelId>
+  <title>Представяне на курса по Бази данни</title>
+  <link rel="alternate" href="http://www.youtube.com/watch?v=KUSJYQnsuJw"/>
+  <author>
+   <name>TelerikAcademy</name>
+   <uri>http://www.youtube.com/channel/UCLC-vbm7OWvpbqzXaoAMGGw</uri>
+  </author>
+  <published>2015-09-28T18:44:19+00:00</published>
+  <updated>2015-09-30T10:21:51+00:00</updated>
+  <media:group>
+   <media:title>Представяне на курса по Бази данни</media:title>
+   <media:content url="https://www.youtube.com/v/KUSJYQnsuJw?version=3" type="application/x-shockwave-flash" width="640" height="390"/>
+   <media:thumbnail url="https://i4.ytimg.com/vi/KUSJYQnsuJw/hqdefault.jpg" width="480" height="360"/>
+   <media:description>Лекция: Представяне на курса по Бази данни
+Курс: Бази данни 2015
+Лектор: Николай Костов
+Дата: 28 септември 2015
+
+Уебсайт на Академията на Телерик: http://academy.telerik.com
+
+Следете за предстоящи безплатни обучения на Академията на Телерик във Facebook: http://www.facebook.com/TelerikAcademy.</media:description>
+   <media:community>
+    <media:starRating count="3" average="5.00" min="1" max="5"/>
+    <media:statistics views="358"/>
+   </media:community>
+  </media:group>
+ </entry>
+ <entry>
+  <id>yt:video:yoIfXSzgCxo</id>
+  <yt:videoId>yoIfXSzgCxo</yt:videoId>
+  <yt:channelId>UCLC-vbm7OWvpbqzXaoAMGGw</yt:channelId>
+  <title>Основи на софтуерното инженерство</title>
+  <link rel="alternate" href="http://www.youtube.com/watch?v=yoIfXSzgCxo"/>
+  <author>
+   <name>TelerikAcademy</name>
+   <uri>http://www.youtube.com/channel/UCLC-vbm7OWvpbqzXaoAMGGw</uri>
+  </author>
+  <published>2015-09-25T07:50:10+00:00</published>
+  <updated>2015-09-28T20:51:50+00:00</updated>
+  <media:group>
+   <media:title>Основи на софтуерното инженерство</media:title>
+   <media:content url="https://www.youtube.com/v/yoIfXSzgCxo?version=3" type="application/x-shockwave-flash" width="640" height="390"/>
+   <media:thumbnail url="https://i2.ytimg.com/vi/yoIfXSzgCxo/hqdefault.jpg" width="480" height="360"/>
+   <media:description>Лекция: Основи на софтуерното инженерство
+Курс: Качествен програмен код 2015
+Лектор: Ивайло Кенов
+Дата: 24 септември 2015
+
+Уебсайт на Академията на Телерик: http://academy.telerik.com
+
+Следете за предстоящи безплатни обучения на Академията на Телерик във Facebook: http://www.facebook.com/TelerikAcademy.</media:description>
+   <media:community>
+    <media:starRating count="4" average="5.00" min="1" max="5"/>
+    <media:statistics views="237"/>
+   </media:community>
+  </media:group>
+ </entry>
+ <entry>
+  <id>yt:video:P3fhn12PwJM</id>
+  <yt:videoId>P3fhn12PwJM</yt:videoId>
+  <yt:channelId>UCLC-vbm7OWvpbqzXaoAMGGw</yt:channelId>
+  <title>Поведенчески шаблони за дизайн (Behavioural Patterns)</title>
+  <link rel="alternate" href="http://www.youtube.com/watch?v=P3fhn12PwJM"/>
+  <author>
+   <name>TelerikAcademy</name>
+   <uri>http://www.youtube.com/channel/UCLC-vbm7OWvpbqzXaoAMGGw</uri>
+  </author>
+  <published>2015-09-23T09:30:40+00:00</published>
+  <updated>2015-09-28T08:42:39+00:00</updated>
+  <media:group>
+   <media:title>Поведенчески шаблони за дизайн (Behavioural Patterns)</media:title>
+   <media:content url="https://www.youtube.com/v/P3fhn12PwJM?version=3" type="application/x-shockwave-flash" width="640" height="390"/>
+   <media:thumbnail url="https://i1.ytimg.com/vi/P3fhn12PwJM/hqdefault.jpg" width="480" height="360"/>
+   <media:description>Лекция: Поведенчески шаблони за дизайн (Structural Patterns)
+Курс: Качествен програмен код 2015
+Лектор: Ивайло Кенов
+Дата: 12 септември 2015
+
+Уебсайт на Академията на Телерик: http://academy.telerik.com
+
+Следете за предстоящи безплатни обучения на Академията на Телерик във Facebook: http://www.facebook.com/TelerikAcademy.</media:description>
+   <media:community>
+    <media:starRating count="0" average="0.00" min="1" max="5"/>
+    <media:statistics views="427"/>
+   </media:community>
+  </media:group>
+ </entry>
+ <entry>
+  <id>yt:video:NQR-IB3xF1s</id>
+  <yt:videoId>NQR-IB3xF1s</yt:videoId>
+  <yt:channelId>UCLC-vbm7OWvpbqzXaoAMGGw</yt:channelId>
+  <title>Защо е важно децата да учат информатика</title>
+  <link rel="alternate" href="http://www.youtube.com/watch?v=NQR-IB3xF1s"/>
+  <author>
+   <name>TelerikAcademy</name>
+   <uri>http://www.youtube.com/channel/UCLC-vbm7OWvpbqzXaoAMGGw</uri>
+  </author>
+  <published>2015-09-22T09:02:57+00:00</published>
+  <updated>2015-09-29T10:17:18+00:00</updated>
+  <media:group>
+   <media:title>Защо е важно децата да учат информатика</media:title>
+   <media:content url="https://www.youtube.com/v/NQR-IB3xF1s?version=3" type="application/x-shockwave-flash" width="640" height="390"/>
+   <media:thumbnail url="https://i3.ytimg.com/vi/NQR-IB3xF1s/hqdefault.jpg" width="480" height="360"/>
+   <media:description>Гледайте репортажа на ТВ Европа за необходимостта от по-засилено изучаване на информатика в училище с участието на Николай Костов, мениджър &quot;Софтуерно инженерство&quot; в Telerik, и Албена Тачева, родител на ученик от &quot;Алго академията на Телерик&quot;.
+
+Уебсайт на Академията на Телерик: http://academy.telerik.com
+
+Следете за предстоящи безплатни обучения на Академията на Телерик във Facebook: http://www.facebook.com/TelerikAcademy.</media:description>
+   <media:community>
+    <media:starRating count="23" average="5.00" min="1" max="5"/>
+    <media:statistics views="1119"/>
+   </media:community>
+  </media:group>
+ </entry>
+ <entry>
+  <id>yt:video:AtF3KXn4b_Y</id>
+  <yt:videoId>AtF3KXn4b_Y</yt:videoId>
+  <yt:channelId>UCLC-vbm7OWvpbqzXaoAMGGw</yt:channelId>
+  <title>Асинхронно програмиране в C#</title>
+  <link rel="alternate" href="http://www.youtube.com/watch?v=AtF3KXn4b_Y"/>
+  <author>
+   <name>TelerikAcademy</name>
+   <uri>http://www.youtube.com/channel/UCLC-vbm7OWvpbqzXaoAMGGw</uri>
+  </author>
+  <published>2015-09-14T12:24:26+00:00</published>
+  <updated>2015-09-29T08:28:26+00:00</updated>
+  <media:group>
+   <media:title>Асинхронно програмиране в C#</media:title>
+   <media:content url="https://www.youtube.com/v/AtF3KXn4b_Y?version=3" type="application/x-shockwave-flash" width="640" height="390"/>
+   <media:thumbnail url="https://i2.ytimg.com/vi/AtF3KXn4b_Y/hqdefault.jpg" width="480" height="360"/>
+   <media:description>Лекция:  Асинхронно програмиране в C#
+Курс: Telerik Academy Plus
+Лектор: Георги Георгиев
+Дата: 12 септември 2015
+
+Уебсайт на Академията на Телерик: http://academy.telerik.com
+
+Следете за предстоящи безплатни обучения на Академията на Телерик във Facebook: http://www.facebook.com/TelerikAcademy.</media:description>
+   <media:community>
+    <media:starRating count="5" average="5.00" min="1" max="5"/>
+    <media:statistics views="508"/>
+   </media:community>
+  </media:group>
+ </entry>
+ <entry>
+  <id>yt:video:FqghM0Hpfzk</id>
+  <yt:videoId>FqghM0Hpfzk</yt:videoId>
+  <yt:channelId>UCLC-vbm7OWvpbqzXaoAMGGw</yt:channelId>
+  <title>Поведенчески шаблони (Behavioral Patterns) (Ники)</title>
+  <link rel="alternate" href="http://www.youtube.com/watch?v=FqghM0Hpfzk"/>
+  <author>
+   <name>TelerikAcademy</name>
+   <uri>http://www.youtube.com/channel/UCLC-vbm7OWvpbqzXaoAMGGw</uri>
+  </author>
+  <published>2015-09-12T20:17:45+00:00</published>
+  <updated>2015-09-28T12:56:18+00:00</updated>
+  <media:group>
+   <media:title>Поведенчески шаблони (Behavioral Patterns) (Ники)</media:title>
+   <media:content url="https://www.youtube.com/v/FqghM0Hpfzk?version=3" type="application/x-shockwave-flash" width="640" height="390"/>
+   <media:thumbnail url="https://i3.ytimg.com/vi/FqghM0Hpfzk/hqdefault.jpg" width="480" height="360"/>
+   <media:description>Лекция: Поведенчески шаблони (Behavioral Patterns) (Ники)
+Курс: Качествен програмен код 2015
+Лектор: Николай Костов
+Дата: 11 септември 2015
+
+Уебсайт на Академията на Телерик: http://academy.telerik.com
+
+Следете за предстоящи безплатни обучения на Академията на Телерик във Facebook: http://www.facebook.com/TelerikAcademy.</media:description>
+   <media:community>
+    <media:starRating count="3" average="5.00" min="1" max="5"/>
+    <media:statistics views="747"/>
+   </media:community>
+  </media:group>
+ </entry>
+ <entry>
+  <id>yt:video:srtNcldlcZg</id>
+  <yt:videoId>srtNcldlcZg</yt:videoId>
+  <yt:channelId>UCLC-vbm7OWvpbqzXaoAMGGw</yt:channelId>
+  <title>Примерна проверка на изпит: &quot;Fortune Cookies&quot;, JavaScript Apps 2015</title>
+  <link rel="alternate" href="http://www.youtube.com/watch?v=srtNcldlcZg"/>
+  <author>
+   <name>TelerikAcademy</name>
+   <uri>http://www.youtube.com/channel/UCLC-vbm7OWvpbqzXaoAMGGw</uri>
+  </author>
+  <published>2015-09-11T14:32:23+00:00</published>
+  <updated>2015-09-15T14:04:26+00:00</updated>
+  <media:group>
+   <media:title>Примерна проверка на изпит: &quot;Fortune Cookies&quot;, JavaScript Apps 2015</media:title>
+   <media:content url="https://www.youtube.com/v/srtNcldlcZg?version=3" type="application/x-shockwave-flash" width="640" height="390"/>
+   <media:thumbnail url="https://i4.ytimg.com/vi/srtNcldlcZg/hqdefault.jpg" width="480" height="360"/>
+   <media:description>Лекция: Примерна проверка на изпит: &quot;Fortune Cookies&quot;, JavaScript Apps 2015
+Курс: JavaScript приложения 2015
+Лектор: Дончо Минков
+Дата: 11 септември 2015
+
+Уебсайт на Академията на Телерик: http://academy.telerik.com
+
+Следете за предстоящи безплатни обучения на Академията на Телерик във Facebook: http://www.facebook.com/TelerikAcademy.</media:description>
+   <media:community>
+    <media:starRating count="2" average="5.00" min="1" max="5"/>
+    <media:statistics views="562"/>
+   </media:community>
+  </media:group>
+ </entry>
+ <entry>
+  <id>yt:video:T0jtFmFPU-4</id>
+  <yt:videoId>T0jtFmFPU-4</yt:videoId>
+  <yt:channelId>UCLC-vbm7OWvpbqzXaoAMGGw</yt:channelId>
+  <title>Подготовка за изпит - SPA приложения със Sammy.js, jQuery, Handlebars и Bootstrap</title>
+  <link rel="alternate" href="http://www.youtube.com/watch?v=T0jtFmFPU-4"/>
+  <author>
+   <name>TelerikAcademy</name>
+   <uri>http://www.youtube.com/channel/UCLC-vbm7OWvpbqzXaoAMGGw</uri>
+  </author>
+  <published>2015-09-08T13:32:52+00:00</published>
+  <updated>2015-09-09T13:23:17+00:00</updated>
+  <media:group>
+   <media:title>Подготовка за изпит - SPA приложения със Sammy.js, jQuery, Handlebars и Bootstrap</media:title>
+   <media:content url="https://www.youtube.com/v/T0jtFmFPU-4?version=3" type="application/x-shockwave-flash" width="640" height="390"/>
+   <media:thumbnail url="https://i1.ytimg.com/vi/T0jtFmFPU-4/hqdefault.jpg" width="480" height="360"/>
+   <media:description>Лекция: Подготовка за изпит - SPA приложения със Sammy.js, jQuery, Handlebars и Bootstrap
+Курс: JavaScript приложения 2015
+Лектор: Дончо Минков
+Дата: 7 септември 2015
+
+Уебсайт на Академията на Телерик: http://academy.telerik.com
+
+Следете за предстоящи безплатни обучения на Академията на Телерик във Facebook: http://www.facebook.com/TelerikAcademy.</media:description>
+   <media:community>
+    <media:starRating count="7" average="5.00" min="1" max="5"/>
+    <media:statistics views="1218"/>
+   </media:community>
+  </media:group>
+ </entry>
+ <entry>
+  <id>yt:video:xNeHk-zwpm4</id>
+  <yt:videoId>xNeHk-zwpm4</yt:videoId>
+  <yt:channelId>UCLC-vbm7OWvpbqzXaoAMGGw</yt:channelId>
+  <title>Подготовка за изпит - Евлоги</title>
+  <link rel="alternate" href="http://www.youtube.com/watch?v=xNeHk-zwpm4"/>
+  <author>
+   <name>TelerikAcademy</name>
+   <uri>http://www.youtube.com/channel/UCLC-vbm7OWvpbqzXaoAMGGw</uri>
+  </author>
+  <published>2015-09-07T21:34:52+00:00</published>
+  <updated>2015-09-10T08:04:55+00:00</updated>
+  <media:group>
+   <media:title>Подготовка за изпит - Евлоги</media:title>
+   <media:content url="https://www.youtube.com/v/xNeHk-zwpm4?version=3" type="application/x-shockwave-flash" width="640" height="390"/>
+   <media:thumbnail url="https://i1.ytimg.com/vi/xNeHk-zwpm4/hqdefault.jpg" width="480" height="360"/>
+   <media:description>Лекция: Подготовка за изпит
+Курс: JavaScript приложения 2015
+Лектор: Евлоги Христов
+Дата: 7 септември 2015
+
+Уебсайт на Академията на Телерик: http://academy.telerik.com
+
+Следете за предстоящи безплатни обучения на Академията на Телерик във Facebook: http://www.facebook.com/TelerikAcademy.</media:description>
+   <media:community>
+    <media:starRating count="3" average="5.00" min="1" max="5"/>
+    <media:statistics views="706"/>
+   </media:community>
+  </media:group>
+ </entry>
+ <entry>
+  <id>yt:video:iEULzDRhSzs</id>
+  <yt:videoId>iEULzDRhSzs</yt:videoId>
+  <yt:channelId>UCLC-vbm7OWvpbqzXaoAMGGw</yt:channelId>
+  <title>Структурни шаблони за дизайн (Structural Patterns)</title>
+  <link rel="alternate" href="http://www.youtube.com/watch?v=iEULzDRhSzs"/>
+  <author>
+   <name>TelerikAcademy</name>
+   <uri>http://www.youtube.com/channel/UCLC-vbm7OWvpbqzXaoAMGGw</uri>
+  </author>
+  <published>2015-09-07T11:30:03+00:00</published>
+  <updated>2015-09-23T20:28:20+00:00</updated>
+  <media:group>
+   <media:title>Структурни шаблони за дизайн (Structural Patterns)</media:title>
+   <media:content url="https://www.youtube.com/v/iEULzDRhSzs?version=3" type="application/x-shockwave-flash" width="640" height="390"/>
+   <media:thumbnail url="https://i2.ytimg.com/vi/iEULzDRhSzs/hqdefault.jpg" width="480" height="360"/>
+   <media:description>Лекция: Структурни шаблони за дизайн (Structural Patterns)
+Курс: Качествен програмен код 2015
+Лектор: Ивайло Кенов
+Дата: 3 септември 2015
+
+Уебсайт на Академията на Телерик: http://academy.telerik.com
+
+Следете за предстоящи безплатни обучения на Академията на Телерик във Facebook: http://www.facebook.com/TelerikAcademy.</media:description>
+   <media:community>
+    <media:starRating count="3" average="5.00" min="1" max="5"/>
+    <media:statistics views="661"/>
+   </media:community>
+  </media:group>
+ </entry>
+ <entry>
+  <id>yt:video:Nh-p5W1mSbg</id>
+  <yt:videoId>Nh-p5W1mSbg</yt:videoId>
+  <yt:channelId>UCLC-vbm7OWvpbqzXaoAMGGw</yt:channelId>
+  <title>Структурни шаблони за дизайн (Structural Patterns) (Ники)</title>
+  <link rel="alternate" href="http://www.youtube.com/watch?v=Nh-p5W1mSbg"/>
+  <author>
+   <name>TelerikAcademy</name>
+   <uri>http://www.youtube.com/channel/UCLC-vbm7OWvpbqzXaoAMGGw</uri>
+  </author>
+  <published>2015-09-04T21:30:42+00:00</published>
+  <updated>2015-09-24T09:09:27+00:00</updated>
+  <media:group>
+   <media:title>Структурни шаблони за дизайн (Structural Patterns) (Ники)</media:title>
+   <media:content url="https://www.youtube.com/v/Nh-p5W1mSbg?version=3" type="application/x-shockwave-flash" width="640" height="390"/>
+   <media:thumbnail url="https://i3.ytimg.com/vi/Nh-p5W1mSbg/hqdefault.jpg" width="480" height="360"/>
+   <media:description>Лекция: Структурни шаблони за дизайн (Structural Patterns)
+Курс: Качествен програмен код 2015
+Лектор: Николай Костов
+Дата: 2 септември 2015
+
+Уебсайт на Академията на Телерик: http://academy.telerik.com
+
+Следете за предстоящи безплатни обучения на Академията на Телерик във Facebook: http://www.facebook.com/TelerikAcademy.</media:description>
+   <media:community>
+    <media:starRating count="3" average="5.00" min="1" max="5"/>
+    <media:statistics views="568"/>
+   </media:community>
+  </media:group>
+ </entry>
+ <entry>
+  <id>yt:video:R25pTSv2hzA</id>
+  <yt:videoId>R25pTSv2hzA</yt:videoId>
+  <yt:channelId>UCLC-vbm7OWvpbqzXaoAMGGw</yt:channelId>
+  <title>Workshop: Създаване на SPA приложение</title>
+  <link rel="alternate" href="http://www.youtube.com/watch?v=R25pTSv2hzA"/>
+  <author>
+   <name>TelerikAcademy</name>
+   <uri>http://www.youtube.com/channel/UCLC-vbm7OWvpbqzXaoAMGGw</uri>
+  </author>
+  <published>2015-09-03T22:48:40+00:00</published>
+  <updated>2015-09-06T12:37:20+00:00</updated>
+  <media:group>
+   <media:title>Workshop: Създаване на SPA приложение</media:title>
+   <media:content url="https://www.youtube.com/v/R25pTSv2hzA?version=3" type="application/x-shockwave-flash" width="640" height="390"/>
+   <media:thumbnail url="https://i3.ytimg.com/vi/R25pTSv2hzA/hqdefault.jpg" width="480" height="360"/>
+   <media:description>Лекция: Workshop: Създаване на SPA приложение
+Курс: JavaScript Applications 2015
+Лектор: Евлоги Христов
+Дата: 3 септември 2015
+
+Уебсайт на Академията на Телерик: http://academy.telerik.com
+
+Следете за предстоящи безплатни обучения на Академията на Телерик във Facebook: http://www.facebook.com/TelerikAcademy.</media:description>
+   <media:community>
+    <media:starRating count="1" average="5.00" min="1" max="5"/>
+    <media:statistics views="540"/>
+   </media:community>
+  </media:group>
+ </entry>
+</feed>
