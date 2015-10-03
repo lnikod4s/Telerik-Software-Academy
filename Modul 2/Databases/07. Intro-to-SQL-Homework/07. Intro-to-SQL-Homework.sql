@@ -176,8 +176,8 @@ SELECT e.FirstName + ' ' + e.LastName AS [Employee Full Name],
 	   a.AddressText AS [Employee Address],
        m.FirstName + ' ' + m.LastName AS [Manager Full Name]
 FROM [TelerikAcademy].[dbo].[Employees] e 
-JOIN [TelerikAcademy].[dbo].[Employees] m
-    ON e.ManagerID = m.EmployeeID
+JOIN [TelerikAcademy].[dbo].[Employees] m 
+	ON e.ManagerID = m.EmployeeID
 JOIN [TelerikAcademy].[dbo].[Addresses] a
 	ON e.AddressID = a.AddressID
 
@@ -200,13 +200,13 @@ outer join. Rewrite the query to use left outer join.
 
 SELECT e.FirstName + ' ' + e.LastName + ' is managed by ' + m.FirstName + ' ' + m.LastName AS Message
 FROM [TelerikAcademy].[dbo].[Employees] e 
-RIGHT OUTER JOIN [TelerikAcademy].[dbo].[Employees] m
+RIGHT OUTER JOIN [TelerikAcademy].[dbo].[Employees] m 
 	ON e.ManagerID = m.EmployeeID
 
 SELECT e.FirstName + ' ' + e.LastName + ' is managed by ' + m.FirstName + ' ' + m.LastName AS Message
 FROM [TelerikAcademy].[dbo].[Employees] e 
 LEFT OUTER JOIN [TelerikAcademy].[dbo].[Employees] m
-    ON e.ManagerID = m.EmployeeID
+	ON e.ManagerID = m.EmployeeID
 
 ======================================================================== 
 TASK 24: Write a SQL query to find the names of all employees from the 
