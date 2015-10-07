@@ -18,12 +18,12 @@
 1.	Using database cursor write a T-SQL script that scans all employees and their addresses and prints all pairs of employees that live in the same town.
 1.	*Write a T-SQL script that shows for each town a list of all employees that live in it.
 	*	_Sample output_:
-```sql
+```
 Sofia -> Martin Kulov, George Denchev
 Ottawa -> Jose Saraiva
-…
 ```
-10.	Define a .NET aggregate function `StrConcat` that takes as input a sequence of strings and return a single string that consists of the input strings separated by '`,`'.
+
+1.	Define a .NET aggregate function `StrConcat` that takes as input a sequence of strings and return a single string that consists of the input strings separated by '`,`'.
 	*	For example the following SQL statement should return a single string:
 
 ```sql
