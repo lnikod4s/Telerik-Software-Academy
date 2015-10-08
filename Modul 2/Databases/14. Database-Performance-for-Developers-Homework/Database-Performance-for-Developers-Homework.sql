@@ -98,7 +98,7 @@ GO
 -- Elapsed Time: 00:00:07
 
 -----------------------------------------------------------------------------------------
--- TASK 03: Create the same table in MySQL and partition it by date (1990, 2000, 2010). 
+-- TASK 04: Create the same table in MySQL and partition it by date (1990, 2000, 2010). 
 -- Fill 1 000 000 log entries. Compare the searching speed in all partitions (random 
 -- dates) to certain partition (e.g. year 1995).                           
 -----------------------------------------------------------------------------------------
