@@ -25,7 +25,7 @@ namespace Simplechat.Data {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("mongodb://lnikod4s:Niko8603@ds041671.mongolab.com:41671/simplechat")]
+        [global::System.Configuration.DefaultSettingValueAttribute("mongodb://sysadm:qweasdyxc@ds041671.mongolab.com:41671/simplechat")]
         public string MongoLabRemoteServer {
             get {
                 return ((string)(this["MongoLabRemoteServer"]));
