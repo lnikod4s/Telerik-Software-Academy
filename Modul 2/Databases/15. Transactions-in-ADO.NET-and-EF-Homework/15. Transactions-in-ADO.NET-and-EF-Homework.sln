@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.23107.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ATM.UI", "ATM.UI\ATM.UI.csproj", "{BC9DAFD5-0A81-4F07-B70D-1616C206E3F6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ATM.Data", "ATM.Data\ATM.Data.csproj", "{9C769205-FB52-471E-9C6A-49F2422500F0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ATM.Models", "ATM.Models\ATM.Models.csproj", "{14B22B3E-EAB9-4AAD-B17E-4CC6AE06DDCB}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{BC9DAFD5-0A81-4F07-B70D-1616C206E3F6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BC9DAFD5-0A81-4F07-B70D-1616C206E3F6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BC9DAFD5-0A81-4F07-B70D-1616C206E3F6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BC9DAFD5-0A81-4F07-B70D-1616C206E3F6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9C769205-FB52-471E-9C6A-49F2422500F0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9C769205-FB52-471E-9C6A-49F2422500F0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9C769205-FB52-471E-9C6A-49F2422500F0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9C769205-FB52-471E-9C6A-49F2422500F0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{14B22B3E-EAB9-4AAD-B17E-4CC6AE06DDCB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{14B22B3E-EAB9-4AAD-B17E-4CC6AE06DDCB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{14B22B3E-EAB9-4AAD-B17E-4CC6AE06DDCB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{14B22B3E-EAB9-4AAD-B17E-4CC6AE06DDCB}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
