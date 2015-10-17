@@ -1,4 +1,4 @@
-## 12. Entity Framework Code First
+## Entity Framework Code First
 
 ### _Homework_
 

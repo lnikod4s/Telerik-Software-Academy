@@ -1,4 +1,4 @@
-## 11. Entity Framework
+## Entity Framework
 ### _Homework_
 
 1.  Using the Visual Studio Entity Framework designer create a `DbContext` for the `Northwind` database
