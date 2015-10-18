@@ -1,0 +1,41 @@
+Design pattern: Factory Method
+	* ContentActionResult and all its childrenimplement a factory method design pattern.
+	* JsonActionResult and all its children implement a factory method design pattern.
+
+Design pattern: Strategy
+	* ContentActionResult and all its childrenimplement a factory method design pattern.
+	* JsonActionResult and all its children implement a factory method design pattern.
+
+Design pattern: Template Method
+	* 
+	* 
+
+Design pattern: Chain of Responsibility
+	* 
+
+Design pattern: Decorator
+	* 
+
+Found bugs:
+	* Missing exclamation mark in public static class StaticFileHandler.
+	* The variable filePath in public HttpResponse Handle(HttpRq request) (namespace ConsoleWebServer.Framework -> public class StaticFileHandler) points to wrong directory Environment.CurrentDirectory, which is ConsoleWebServer\ConsoleWebServer.Application\bin\Debug.
+	* The constructor of public class JsonActionResultWithoutCaching throws unexpected a Exception by invoking it.
+	* Default parameter value in ActionDescriptor.ctor() should be string.Empty, not "Param"
+
+Found bottleneck:
+	* Unnecessary invoking of .ToList(), .AsEnumerable(), .AsQueryable() and .ToArray() to URI parts separator '/' in ActionDescriptor.ctor()
+
+Single responsibility principle
+	* All extracted classes have a single responsibility and one reason to change.
+
+Open/closed principle
+	* All classes in ContentActionResults and JsonActionResults namespaces are closed for extension and open for modification.
+
+Liskov substitution principle
+	* The abstract classes JsonActionResult and ContentActionResult could be easily replaced by their children.
+
+Interface segregation principle
+	* The interfaces IActionResult and IResponseProvider are kept simple and small with only one method.
+
+Dependency inversion principle
+	* All classes take dependencies through their constructors.
