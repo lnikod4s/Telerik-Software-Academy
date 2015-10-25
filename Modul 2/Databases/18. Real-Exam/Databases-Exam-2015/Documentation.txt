@@ -1,0 +1,21 @@
+Connection string for "PetStore" database:
+	<add name="PetStore" providerName="System.Data.SqlClient"
+    connectionString="Data Source=.\SQLEXPRESS;Initial Catalog=PetStore;Integrated Security=True;MultipleActiveResultSets=True"/>
+
+Connection string for "SocialNetwork" database:
+	<add name="SocialNetwork" providerName="System.Data.SqlClient"
+    connectionString="Data Source=.\SQLEXPRESS;Initial Catalog=SocialNetwork;Integrated Security=True;MultipleActiveResultSets=True"/>
+
+Relationships for "PetStore" database: 
+	* Pets:Colors one-to-one
+	* Pets:Species one-to-one
+	* Species:Countries one-to-many
+	* Products:Species many-to-many or one-to-many
+	* Products:Categories one-to-many
+
+Relationships for "SocialNetwork" database: 
+	* Users:Posts many-to-many
+	* Users:Images one-to-many
+	* Friendships:Messages one-to-many
+	
+JSON Result files location: (fill in here)
