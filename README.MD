@@ -2,7 +2,7 @@
 
 <p align="center">
 <a href="https://www.youtube.com/watch?v=ni52h1LoL0w">
-<img src="https://github.com/lnikod4s/Telerik-Software-Academy/blob/master/Modul%201/Sources/telerik-logo.png"/>
+<img src="https://github.com/lnikod4s/Telerik-Software-Academy/blob/master/Sources/telerik-logo.png"/>
 </a>
 </p>
 
