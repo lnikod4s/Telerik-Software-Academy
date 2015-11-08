@@ -21,7 +21,7 @@
 | Week 4 | Lecture 8 | Automated Testing with Selenium WebDriver | 30.11.2015 | Anton Angelov |
 |        | Lecture 9 | Automated Testing with Telerik Test Studio | 02.12.2015 | Iliyan Panchev |
 |        | Exam Preparation 1 | Practical Preparation for Exam I | 04.12.2015 ||
-| Week 5 | Exam 1 | *++Exam I++* | 07.12.2015 ||
+| Week 5 | Exam 1 | **Exam I** | 07.12.2015 ||
 |        | Lecture 10 | Automated Testing with Telerik Testing Framework | 09.12.2015 | Georgi Darakchiev |
 |        | Bonus Lecture 1 | Additional topic - BDD with SpecFlow | 11.12.2015 | Georgi Darakchiev |
 | Week 6 | Lecture 11 | Build Test Automation Framework I | 14.12.2015 | Anton Angelov |
@@ -40,7 +40,7 @@
 | Week 8 | Lecture 15 | Automated Testing with Sikuli | 11.01.2015 | Neven Dinev |
 |        | Lecture 16 | Mobile testing  | 13.01.2015 | Miroslava Ivanova & Dimitar Topuzov |
 |        | Exam Preparation 2 | Practical Preparation for Exam II | 15.01.2016 ||
-| Week 9 | Exam 2 | *++Exam II++* | 18.01.2016 ||
+| Week 9 | Exam 2 | **Exam II** | 18.01.2016 ||
 |        | Lecture 17 | Performance Testing | 20.01.2016 | Snejina Lazarova & Dimo Mitev |
 |        | Workshop 3 | Mobile testing workshop	 | 22.01.2016 | Miroslava Ivanova, Dimitar Topuzov, Atanas Georgiev |
 | Week 10 | Lecture 18 | WebService Testing | 25.01.2016 | Snejina Lazarova & Dimo Mitev |
@@ -49,6 +49,6 @@
 | Week 11	 | Lecture 20 | Set up QA process | 01.02.2016 | Angel Tsvetkov |
 |        | Exam Preparation 3 | Practical Preparation for Exam III | 03.02.2016 ||
 |        | Teamwork | Final Teamwork | 05.02.2016 ||
-| Week 12 | Exam 3 | *++Exam III++* | 08.02.2016 ||
+| Week 12 | Exam 3 | **Exam III** | 08.02.2016 ||
 
 [Back to top &#8593;](#qa-track-2015-curriculum)
