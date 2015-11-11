@@ -175,3 +175,4 @@ node_modules/
 bower_components/
 typings/
 .vs
+Thumbs.db
