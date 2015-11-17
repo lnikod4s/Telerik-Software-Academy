@@ -36,7 +36,7 @@
 | Severity | High |
 
 * Prepare another bug report
-	* for the bug shown in this [video] (http://www.youtube.com/watch?v=xJg7k8QOGtM&feature=related)
+
 | BUG REPORT |   Excel 2010 Bug   |
 | ------------- | :-------------: |
 | Description | Copying an unordered list in a Word 2010 document and pasting it to Excel 2010 sheet, shows the bullet signs before the list items. By trying to replace the bullet sign with an empty character, the list items were shown in greek letters. |
@@ -44,7 +44,7 @@
 | Acceptance criteria | <ul><li>Copying list items from Word 2010 and pasting them to Excel 2010 without a bullet sign</li><li>Replacing the bullet sign in Excel 2010 with an empty character does not transform list items</li></ul> |
 | Priority | On Occasion |
 | Severity | Medium |
-	* for this sample defect: After logging into Gmail, it navigates to Google.com
+
 | BUG REPORT |   Gmail Navigation Bug  |
 | ------------- | :-------------: |
 | Description | After logging into Gmail application navigates to www.google.com |
