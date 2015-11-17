@@ -1,5 +1,4 @@
-# Homework
-## Incident Management
+# Incident Management Homework
 
 1.We have a painting program like Paint.NET and we have the following bugs
 *	Set Priority and Severity
