@@ -1,0 +1,1 @@
+echo ~ | "Get My Output.exe" > output.txt
