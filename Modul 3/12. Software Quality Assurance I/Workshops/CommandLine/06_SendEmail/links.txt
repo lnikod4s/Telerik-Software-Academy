@@ -1,1 +1,0 @@
-http://blog.frogslayer.com/sending-an-email-through-google-smtp-via-windows-command-line/
