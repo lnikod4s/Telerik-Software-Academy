@@ -1,0 +1,820 @@
+{
+  "__type": "ArtOfTest.WebAii.Design.Execution.RunResult",
+  "__value": {
+    "IsComplete": true,
+    "Name": "Flashback (SeleniumIntoTestStudio)",
+    "StartTime": "2015-12-03T16:18:41",
+    "EndTime": "2015-12-03T16:19:24.8828186Z",
+    "DataCollectors": {},
+    "TestResults": [
+      {
+        "__type": "ArtOfTest.WebAii.Design.Execution.TestResult",
+        "__value": {
+          "Browser": 1,
+          "ExeType": 5,
+          "SeparatorLineCharCount": 60,
+          "Message": "Overall Result: Pass\r\n------------------------------------------------------------\r\n'03-Dec-15 06:18:41 PM' - Executing test: 'SearchForJavaScriptItemsInAllSections', path: 'SearchForJavaScriptItemsInAllSections.tstest.'\r\n'03-Dec-15 06:18:41 PM' - Using .Net Runtime version: '4.0.30319.42000' for test execution. Build version is '2015.3.1015.0'.\r\n'03-Dec-15 06:18:41 PM' - Starting execution....\r\n------------------------------------------------------------\r\n------------------------------------------------------------\r\n'03-Dec-15 06:18:43 PM' - Using 'InternetExplorer' version '11.0' as default browser. \r\n'03-Dec-15 06:18:45 PM' - 'Pass' : 1. Navigate to : 'http://www.book.store.bg/'\r\n'03-Dec-15 06:18:46 PM' - 'Pass' : 2. Enter text 'JavaScript' in 'SrchstrText'\r\n'03-Dec-15 06:18:49 PM' - 'Pass' : 3. Click 'Submit'\r\n'03-Dec-15 06:18:49 PM' - 'Pass' : 4. Click 'JavaScriptBTag'\r\n'03-Dec-15 06:18:49 PM' - 'Pass' : 5. Verify 'TextContent' 'Contains' 'JavaScript' on 'JavaScriptBTag'\r\n------------------------------------------------------------\r\n'03-Dec-15 06:18:49 PM' - Overall Result: Pass\r\n'03-Dec-15 06:18:49 PM' - Duration: [0 min: 6 sec: 948 msec]\r\n------------------------------------------------------------\r\n'03-Dec-15 06:18:50 PM' - Test completed!\r\n",
+          "FailureException": null,
+          "Result": 0,
+          "TestId": "f3d99936-8873-47b1-905f-f46e4ed38995",
+          "TestName": "SearchForJavaScriptItemsInAllSections",
+          "TestPath": "SearchForJavaScriptItemsInAllSections.tstest",
+          "TestOwner": "",
+          "TestDescription": "",
+          "ProjectPath": "",
+          "StepResults": [
+            {
+              "__type": "ArtOfTest.WebAii.Design.AutomationStepResult",
+              "__value": {
+                "TestName": "SearchForJavaScriptItemsInAllSections",
+                "TestPath": "SearchForJavaScriptItemsInAllSections.tstest",
+                "TestId": "f3d99936-8873-47b1-905f-f46e4ed38995",
+                "TestStepIndex": 0,
+                "StepDescription": "Navigate to : 'http://www.book.store.bg/'",
+                "Exception": null,
+                "ResultType": 0,
+                "State": null,
+                "Order": 1,
+                "LogMessageOnError": "",
+                "UserComment": null,
+                "HashCode": 1347723234,
+                "IsManual": false,
+                "WasStepEnabled": false
+              }
+            },
+            {
+              "__type": "ArtOfTest.WebAii.Design.AutomationStepResult",
+              "__value": {
+                "TestName": "SearchForJavaScriptItemsInAllSections",
+                "TestPath": "SearchForJavaScriptItemsInAllSections.tstest",
+                "TestId": "f3d99936-8873-47b1-905f-f46e4ed38995",
+                "TestStepIndex": 1,
+                "StepDescription": "Enter text 'JavaScript' in 'SrchstrText'",
+                "Exception": null,
+                "ResultType": 0,
+                "State": null,
+                "Order": 2,
+                "LogMessageOnError": "",
+                "UserComment": null,
+                "HashCode": 1106498604,
+                "IsManual": false,
+                "WasStepEnabled": false
+              }
+            },
+            {
+              "__type": "ArtOfTest.WebAii.Design.AutomationStepResult",
+              "__value": {
+                "TestName": "SearchForJavaScriptItemsInAllSections",
+                "TestPath": "SearchForJavaScriptItemsInAllSections.tstest",
+                "TestId": "f3d99936-8873-47b1-905f-f46e4ed38995",
+                "TestStepIndex": 2,
+                "StepDescription": "Click 'Submit'",
+                "Exception": null,
+                "ResultType": 0,
+                "State": null,
+                "Order": 3,
+                "LogMessageOnError": "",
+                "UserComment": null,
+                "HashCode": 2087960562,
+                "IsManual": false,
+                "WasStepEnabled": false
+              }
+            },
+            {
+              "__type": "ArtOfTest.WebAii.Design.AutomationStepResult",
+              "__value": {
+                "TestName": "SearchForJavaScriptItemsInAllSections",
+                "TestPath": "SearchForJavaScriptItemsInAllSections.tstest",
+                "TestId": "f3d99936-8873-47b1-905f-f46e4ed38995",
+                "TestStepIndex": 3,
+                "StepDescription": "Click 'JavaScriptBTag'",
+                "Exception": null,
+                "ResultType": 0,
+                "State": null,
+                "Order": 4,
+                "LogMessageOnError": "",
+                "UserComment": null,
+                "HashCode": 2087960563,
+                "IsManual": false,
+                "WasStepEnabled": false
+              }
+            },
+            {
+              "__type": "ArtOfTest.WebAii.Design.AutomationStepResult",
+              "__value": {
+                "TestName": "SearchForJavaScriptItemsInAllSections",
+                "TestPath": "SearchForJavaScriptItemsInAllSections.tstest",
+                "TestId": "f3d99936-8873-47b1-905f-f46e4ed38995",
+                "TestStepIndex": 4,
+                "StepDescription": "Verify 'TextContent' 'Contains' 'JavaScript' on 'JavaScriptBTag'",
+                "Exception": null,
+                "ResultType": 0,
+                "State": null,
+                "Order": 5,
+                "LogMessageOnError": "",
+                "UserComment": null,
+                "HashCode": -1313506169,
+                "IsManual": false,
+                "WasStepEnabled": false
+              }
+            }
+          ],
+          "NotRunStepDescriptions": [],
+          "TotalPassedSteps": 5,
+          "ExecutingTestStepCount": 5,
+          "TotalNumberOfNotRunSteps": 0,
+          "IsDataDrivenResult": false,
+          "DataIterationResults": [],
+          "EndTime": "2015-12-03T16:18:49.9584041Z",
+          "StartTime": "2015-12-03T16:18:43.009687Z",
+          "ProfilerResultsPath": null,
+          "VersionGroupKey": "00000000-0000-0000-0000-000000000000",
+          "CommitedBy": null
+        }
+      },
+      {
+        "__type": "ArtOfTest.WebAii.Design.Execution.TestResult",
+        "__value": {
+          "Browser": 1,
+          "ExeType": 5,
+          "SeparatorLineCharCount": 60,
+          "Message": "Overall Result: Pass\r\n------------------------------------------------------------\r\n'03-Dec-15 06:18:51 PM' - Executing test: 'SearchForJavaScriptItemsInBooks', path: 'SearchForJavaScriptItemsInBooks.tstest.'\r\n'03-Dec-15 06:18:51 PM' - Using .Net Runtime version: '4.0.30319.42000' for test execution. Build version is '2015.3.1015.0'.\r\n'03-Dec-15 06:18:51 PM' - Starting execution....\r\n------------------------------------------------------------\r\n------------------------------------------------------------\r\n'03-Dec-15 06:18:52 PM' - Using 'InternetExplorer' version '11.0' as default browser. \r\n'03-Dec-15 06:18:55 PM' - 'Pass' : 1. Navigate to : 'http://www.book.store.bg/'\r\n'03-Dec-15 06:18:55 PM' - 'Pass' : 2. Enter text 'JavaScript' in 'SrchstrText'\r\n'03-Dec-15 06:18:56 PM' - 'Pass' : 3. Verify 'TableCell' is enabled\r\n'03-Dec-15 06:18:56 PM' - 'Pass' : 4. Check 'SinRadio' to be 'True'\r\n'03-Dec-15 06:18:59 PM' - 'Pass' : 5. Click 'Submit'\r\n'03-Dec-15 06:18:59 PM' - 'Pass' : 6. Verify 'TextContent' 'Contains' 'JavaScript' on 'JavaScriptBTag'\r\n------------------------------------------------------------\r\n'03-Dec-15 06:18:59 PM' - Overall Result: Pass\r\n'03-Dec-15 06:18:59 PM' - Duration: [0 min: 7 sec: 228 msec]\r\n------------------------------------------------------------\r\n'03-Dec-15 06:19:00 PM' - Test completed!\r\n",
+          "FailureException": null,
+          "Result": 0,
+          "TestId": "9b70f5a4-4408-450b-86dd-3943bba81cf6",
+          "TestName": "SearchForJavaScriptItemsInBooks",
+          "TestPath": "SearchForJavaScriptItemsInBooks.tstest",
+          "TestOwner": null,
+          "TestDescription": "",
+          "ProjectPath": "",
+          "StepResults": [
+            {
+              "__type": "ArtOfTest.WebAii.Design.AutomationStepResult",
+              "__value": {
+                "TestName": "SearchForJavaScriptItemsInBooks",
+                "TestPath": "SearchForJavaScriptItemsInBooks.tstest",
+                "TestId": "9b70f5a4-4408-450b-86dd-3943bba81cf6",
+                "TestStepIndex": 0,
+                "StepDescription": "Navigate to : 'http://www.book.store.bg/'",
+                "Exception": null,
+                "ResultType": 0,
+                "State": null,
+                "Order": 1,
+                "LogMessageOnError": "",
+                "UserComment": null,
+                "HashCode": 1347723234,
+                "IsManual": false,
+                "WasStepEnabled": false
+              }
+            },
+            {
+              "__type": "ArtOfTest.WebAii.Design.AutomationStepResult",
+              "__value": {
+                "TestName": "SearchForJavaScriptItemsInBooks",
+                "TestPath": "SearchForJavaScriptItemsInBooks.tstest",
+                "TestId": "9b70f5a4-4408-450b-86dd-3943bba81cf6",
+                "TestStepIndex": 1,
+                "StepDescription": "Enter text 'JavaScript' in 'SrchstrText'",
+                "Exception": null,
+                "ResultType": 0,
+                "State": null,
+                "Order": 2,
+                "LogMessageOnError": "",
+                "UserComment": null,
+                "HashCode": 1106498604,
+                "IsManual": false,
+                "WasStepEnabled": false
+              }
+            },
+            {
+              "__type": "ArtOfTest.WebAii.Design.AutomationStepResult",
+              "__value": {
+                "TestName": "SearchForJavaScriptItemsInBooks",
+                "TestPath": "SearchForJavaScriptItemsInBooks.tstest",
+                "TestId": "9b70f5a4-4408-450b-86dd-3943bba81cf6",
+                "TestStepIndex": 2,
+                "StepDescription": "Verify 'TableCell' is enabled",
+                "Exception": null,
+                "ResultType": 0,
+                "State": null,
+                "Order": 3,
+                "LogMessageOnError": "",
+                "UserComment": null,
+                "HashCode": -795681700,
+                "IsManual": false,
+                "WasStepEnabled": false
+              }
+            },
+            {
+              "__type": "ArtOfTest.WebAii.Design.AutomationStepResult",
+              "__value": {
+                "TestName": "SearchForJavaScriptItemsInBooks",
+                "TestPath": "SearchForJavaScriptItemsInBooks.tstest",
+                "TestId": "9b70f5a4-4408-450b-86dd-3943bba81cf6",
+                "TestStepIndex": 3,
+                "StepDescription": "Check 'SinRadio' to be 'True'",
+                "Exception": null,
+                "ResultType": 0,
+                "State": null,
+                "Order": 4,
+                "LogMessageOnError": "",
+                "UserComment": null,
+                "HashCode": -1094448602,
+                "IsManual": false,
+                "WasStepEnabled": false
+              }
+            },
+            {
+              "__type": "ArtOfTest.WebAii.Design.AutomationStepResult",
+              "__value": {
+                "TestName": "SearchForJavaScriptItemsInBooks",
+                "TestPath": "SearchForJavaScriptItemsInBooks.tstest",
+                "TestId": "9b70f5a4-4408-450b-86dd-3943bba81cf6",
+                "TestStepIndex": 4,
+                "StepDescription": "Click 'Submit'",
+                "Exception": null,
+                "ResultType": 0,
+                "State": null,
+                "Order": 5,
+                "LogMessageOnError": "",
+                "UserComment": null,
+                "HashCode": 2087960564,
+                "IsManual": false,
+                "WasStepEnabled": false
+              }
+            },
+            {
+              "__type": "ArtOfTest.WebAii.Design.AutomationStepResult",
+              "__value": {
+                "TestName": "SearchForJavaScriptItemsInBooks",
+                "TestPath": "SearchForJavaScriptItemsInBooks.tstest",
+                "TestId": "9b70f5a4-4408-450b-86dd-3943bba81cf6",
+                "TestStepIndex": 5,
+                "StepDescription": "Verify 'TextContent' 'Contains' 'JavaScript' on 'JavaScriptBTag'",
+                "Exception": null,
+                "ResultType": 0,
+                "State": null,
+                "Order": 6,
+                "LogMessageOnError": "",
+                "UserComment": null,
+                "HashCode": -1313506168,
+                "IsManual": false,
+                "WasStepEnabled": false
+              }
+            }
+          ],
+          "NotRunStepDescriptions": [],
+          "TotalPassedSteps": 6,
+          "ExecutingTestStepCount": 6,
+          "TotalNumberOfNotRunSteps": 0,
+          "IsDataDrivenResult": false,
+          "DataIterationResults": [],
+          "EndTime": "2015-12-03T16:18:59.7698293Z",
+          "StartTime": "2015-12-03T16:18:52.5416498Z",
+          "ProfilerResultsPath": null,
+          "VersionGroupKey": "00000000-0000-0000-0000-000000000000",
+          "CommitedBy": null
+        }
+      },
+      {
+        "__type": "ArtOfTest.WebAii.Design.Execution.TestResult",
+        "__value": {
+          "Browser": 1,
+          "ExeType": 5,
+          "SeparatorLineCharCount": 60,
+          "Message": "Overall Result: Pass\r\n------------------------------------------------------------\r\n'03-Dec-15 06:19:01 PM' - Executing test: 'SearchForMelanieDelonInAllSections', path: 'SearchForMelanieDelonInAllSections.tstest.'\r\n'03-Dec-15 06:19:01 PM' - Using .Net Runtime version: '4.0.30319.42000' for test execution. Build version is '2015.3.1015.0'.\r\n'03-Dec-15 06:19:01 PM' - Starting execution....\r\n------------------------------------------------------------\r\n------------------------------------------------------------\r\n'03-Dec-15 06:19:02 PM' - Using 'InternetExplorer' version '11.0' as default browser. \r\n'03-Dec-15 06:19:04 PM' - 'Pass' : 1. Navigate to : 'http://www.book.store.bg/'\r\n'03-Dec-15 06:19:05 PM' - 'Pass' : 2. Click 'ВсичкиРазделиLabelTag'\r\n'03-Dec-15 06:19:05 PM' - 'Pass' : 3. IF (Verify 'ВсичкиРазделиLabelTag' is enabled)\r\nLogical step encountered. Executing branch => IF (Verify 'ВсичкиРазделиLabelTag' is enabled):\r\n------------------------------------------------------------\r\nCondition Evaluation Details:\r\n\r\nParameters:\r\n-----------\r\nIsEnabled       = Expected:[True] , Actual:[True]\r\n\r\n------------------------------------------------------------\r\n------------------------------------------------------------\r\n'03-Dec-15 06:19:05 PM' - Using 'InternetExplorer' version '11.0' as default browser. \r\n\r\n'03-Dec-15 06:19:05 PM' - 'Pass' : 5. Enter text 'Melanie Delon' in 'SrchstrText'\r\n'03-Dec-15 06:19:08 PM' - 'Pass' : 6. Click 'Submit'\r\n'03-Dec-15 06:19:08 PM' - 'Pass' : 7. Verify 'TextContent' 'Contains' 'Melanie Delon' on 'MelanieDelonBTag'\r\n------------------------------------------------------------\r\n'03-Dec-15 06:19:08 PM' - Overall Result: Pass\r\n'03-Dec-15 06:19:08 PM' - Duration: [0 min: 5 sec: 720 msec]\r\n------------------------------------------------------------\r\n'03-Dec-15 06:19:08 PM' - Test completed!\r\n",
+          "FailureException": null,
+          "Result": 0,
+          "TestId": "1a8730c3-79e1-4f45-8a37-b41c27a7fd9f",
+          "TestName": "SearchForMelanieDelonInAllSections",
+          "TestPath": "SearchForMelanieDelonInAllSections.tstest",
+          "TestOwner": "",
+          "TestDescription": "",
+          "ProjectPath": "",
+          "StepResults": [
+            {
+              "__type": "ArtOfTest.WebAii.Design.AutomationStepResult",
+              "__value": {
+                "TestName": "SearchForMelanieDelonInAllSections",
+                "TestPath": "SearchForMelanieDelonInAllSections.tstest",
+                "TestId": "1a8730c3-79e1-4f45-8a37-b41c27a7fd9f",
+                "TestStepIndex": 0,
+                "StepDescription": "Navigate to : 'http://www.book.store.bg/'",
+                "Exception": null,
+                "ResultType": 0,
+                "State": null,
+                "Order": 1,
+                "LogMessageOnError": "",
+                "UserComment": null,
+                "HashCode": 1347723234,
+                "IsManual": false,
+                "WasStepEnabled": false
+              }
+            },
+            {
+              "__type": "ArtOfTest.WebAii.Design.AutomationStepResult",
+              "__value": {
+                "TestName": "SearchForMelanieDelonInAllSections",
+                "TestPath": "SearchForMelanieDelonInAllSections.tstest",
+                "TestId": "1a8730c3-79e1-4f45-8a37-b41c27a7fd9f",
+                "TestStepIndex": 1,
+                "StepDescription": "Click 'ВсичкиРазделиLabelTag'",
+                "Exception": null,
+                "ResultType": 0,
+                "State": null,
+                "Order": 2,
+                "LogMessageOnError": "",
+                "UserComment": null,
+                "HashCode": 2087960561,
+                "IsManual": false,
+                "WasStepEnabled": false
+              }
+            },
+            {
+              "__type": "ArtOfTest.WebAii.Design.Execution.LogicalStepResult",
+              "__value": {
+                "InnerResult": {
+                  "__type": "ArtOfTest.WebAii.Design.Execution.TestResult",
+                  "__value": {
+                    "Browser": 0,
+                    "ExeType": 5,
+                    "SeparatorLineCharCount": 60,
+                    "Message": "------------------------------------------------------------\r\n'03-Dec-15 06:19:05 PM' - Using 'InternetExplorer' version '11.0' as default browser. \r\n",
+                    "FailureException": null,
+                    "Result": 2,
+                    "TestId": "1a8730c3-79e1-4f45-8a37-b41c27a7fd9f",
+                    "TestName": "",
+                    "TestPath": null,
+                    "TestOwner": "",
+                    "TestDescription": "",
+                    "ProjectPath": "",
+                    "StepResults": [],
+                    "NotRunStepDescriptions": [],
+                    "TotalPassedSteps": 0,
+                    "ExecutingTestStepCount": 0,
+                    "TotalNumberOfNotRunSteps": 0,
+                    "IsDataDrivenResult": false,
+                    "DataIterationResults": [],
+                    "EndTime": "2015-12-03T16:19:05.3832371Z",
+                    "StartTime": "2015-12-03T16:19:05.3832371Z",
+                    "ProfilerResultsPath": null,
+                    "VersionGroupKey": "00000000-0000-0000-0000-000000000000",
+                    "CommitedBy": null
+                  }
+                },
+                "ChildResult": {
+                  "__type": "ArtOfTest.WebAii.Design.Execution.TestResult",
+                  "__value": {
+                    "Browser": 0,
+                    "ExeType": 5,
+                    "SeparatorLineCharCount": 60,
+                    "Message": "",
+                    "FailureException": null,
+                    "Result": 2,
+                    "TestId": "1a8730c3-79e1-4f45-8a37-b41c27a7fd9f",
+                    "TestName": "SearchForMelanieDelonInAllSections",
+                    "TestPath": "SearchForMelanieDelonInAllSections.tstest",
+                    "TestOwner": "",
+                    "TestDescription": "",
+                    "ProjectPath": "",
+                    "StepResults": [],
+                    "NotRunStepDescriptions": [
+                      "Navigate to : 'http://www.book.store.bg/'",
+                      "Click 'ВсичкиРазделиLabelTag'",
+                      "IF (Verify 'ВсичкиРазделиLabelTag' is enabled)",
+                      "Enter text 'Melanie Delon' in 'SrchstrText'",
+                      "Click 'Submit'",
+                      "Verify 'TextContent' 'Contains' 'Melanie Delon' on 'MelanieDelonBTag'"
+                    ],
+                    "TotalPassedSteps": 0,
+                    "ExecutingTestStepCount": 0,
+                    "TotalNumberOfNotRunSteps": 0,
+                    "IsDataDrivenResult": false,
+                    "DataIterationResults": [],
+                    "EndTime": "2015-12-03T16:19:05.3832371Z",
+                    "StartTime": "2015-12-03T16:19:05.3832371Z",
+                    "ProfilerResultsPath": null,
+                    "VersionGroupKey": "00000000-0000-0000-0000-000000000000",
+                    "CommitedBy": null
+                  }
+                },
+                "LogicDetails": "Condition Evaluation Details:\r\n\r\nParameters:\r\n-----------\r\nIsEnabled       = Expected:[True] , Actual:[True]\r\n",
+                "LoopIteration": 1,
+                "IsLoop": false,
+                "Exception": null,
+                "TestName": "SearchForMelanieDelonInAllSections",
+                "TestPath": "SearchForMelanieDelonInAllSections.tstest",
+                "TestId": "1a8730c3-79e1-4f45-8a37-b41c27a7fd9f",
+                "TestStepIndex": 2,
+                "StepDescription": "IF (Verify 'ВсичкиРазделиLabelTag' is enabled)",
+                "ResultType": 2,
+                "State": null,
+                "Order": 3,
+                "LogMessageOnError": "",
+                "UserComment": null,
+                "HashCode": -206396959,
+                "IsManual": false,
+                "WasStepEnabled": false
+              }
+            },
+            {
+              "__type": "ArtOfTest.WebAii.Design.AutomationStepResult",
+              "__value": {
+                "TestName": "SearchForMelanieDelonInAllSections",
+                "TestPath": "SearchForMelanieDelonInAllSections.tstest",
+                "TestId": "1a8730c3-79e1-4f45-8a37-b41c27a7fd9f",
+                "TestStepIndex": 3,
+                "StepDescription": "Enter text 'Melanie Delon' in 'SrchstrText'",
+                "Exception": null,
+                "ResultType": 0,
+                "State": null,
+                "Order": 5,
+                "LogMessageOnError": "",
+                "UserComment": null,
+                "HashCode": 1106498606,
+                "IsManual": false,
+                "WasStepEnabled": false
+              }
+            },
+            {
+              "__type": "ArtOfTest.WebAii.Design.AutomationStepResult",
+              "__value": {
+                "TestName": "SearchForMelanieDelonInAllSections",
+                "TestPath": "SearchForMelanieDelonInAllSections.tstest",
+                "TestId": "1a8730c3-79e1-4f45-8a37-b41c27a7fd9f",
+                "TestStepIndex": 4,
+                "StepDescription": "Click 'Submit'",
+                "Exception": null,
+                "ResultType": 0,
+                "State": null,
+                "Order": 6,
+                "LogMessageOnError": "",
+                "UserComment": null,
+                "HashCode": 2087960564,
+                "IsManual": false,
+                "WasStepEnabled": false
+              }
+            },
+            {
+              "__type": "ArtOfTest.WebAii.Design.AutomationStepResult",
+              "__value": {
+                "TestName": "SearchForMelanieDelonInAllSections",
+                "TestPath": "SearchForMelanieDelonInAllSections.tstest",
+                "TestId": "1a8730c3-79e1-4f45-8a37-b41c27a7fd9f",
+                "TestStepIndex": 5,
+                "StepDescription": "Verify 'TextContent' 'Contains' 'Melanie Delon' on 'MelanieDelonBTag'",
+                "Exception": null,
+                "ResultType": 0,
+                "State": null,
+                "Order": 7,
+                "LogMessageOnError": "",
+                "UserComment": null,
+                "HashCode": -1313506168,
+                "IsManual": false,
+                "WasStepEnabled": false
+              }
+            }
+          ],
+          "NotRunStepDescriptions": [],
+          "TotalPassedSteps": 6,
+          "ExecutingTestStepCount": 6,
+          "TotalNumberOfNotRunSteps": 0,
+          "IsDataDrivenResult": false,
+          "DataIterationResults": [],
+          "EndTime": "2015-12-03T16:19:08.1458203Z",
+          "StartTime": "2015-12-03T16:19:02.4252877Z",
+          "ProfilerResultsPath": null,
+          "VersionGroupKey": "00000000-0000-0000-0000-000000000000",
+          "CommitedBy": null
+        }
+      },
+      {
+        "__type": "ArtOfTest.WebAii.Design.Execution.TestResult",
+        "__value": {
+          "Browser": 1,
+          "ExeType": 5,
+          "SeparatorLineCharCount": 60,
+          "Message": "Overall Result: Pass\r\n------------------------------------------------------------\r\n'03-Dec-15 06:19:09 PM' - Executing test: 'StoreVariableAndVerifyBookTitle', path: 'StoreVariableAndVerifyBookTitle.tstest.'\r\n'03-Dec-15 06:19:09 PM' - Using .Net Runtime version: '4.0.30319.42000' for test execution. Build version is '2015.3.1015.0'.\r\n'03-Dec-15 06:19:09 PM' - Starting execution....\r\n'03-Dec-15 06:19:10 PM' - Detected custom code in test. Locating test assembly: Test-Studio-Homework.dll.\r\n'03-Dec-15 06:19:10 PM' - Assembly Found: C:\\TMP\\Test-Studio-Homework\\bin\\Test-Studio-Homework.dll\r\n'03-Dec-15 06:19:10 PM' - Loading code class: 'Test_Studio_Homework.StoreVariableAndVerifyBookTitle'.\r\n------------------------------------------------------------\r\n------------------------------------------------------------\r\n'03-Dec-15 06:19:10 PM' - Enabling Html Popup Tracker. Test expecting Popups.\r\n'03-Dec-15 06:19:10 PM' - Using 'InternetExplorer' version '11.0' as default browser. \r\n'03-Dec-15 06:19:13 PM' - 'Pass' : 1. Navigate to : 'http://www.book.store.bg/'\r\n'03-Dec-15 06:19:13 PM' - 'Pass' : 2. Enter text 'JavaScript' in 'SrchstrText'\r\n'03-Dec-15 06:19:13 PM' - 'Pass' : 3. Verify 'ВсичкиРазделиLabelTag' is enabled\r\n'03-Dec-15 06:19:14 PM' - 'Pass' : 4. Check 'SinRadio' to be 'True'\r\n'03-Dec-15 06:19:16 PM' - 'Pass' : 5. Click 'Submit'\r\n'03-Dec-15 06:19:16 PM' - 'Pass' : 6. Verify 'TextContent' 'Contains' 'JavaScript' on 'JavaScriptH3Tag'\r\n'03-Dec-15 06:19:18 PM' - 'Pass' : 7. [WebTest_CodedStep1] : Click 'JavaScriptH3Tag'\r\n'03-Dec-15 06:19:18 PM' - 'Pass' : 8. Extract 'TextContent' on 'JavaScriptBTag' into DataBindVariable $(firstBookTitle)\r\n'03-Dec-15 06:19:18 PM' - 'Pass' : 9. [StoreVariableAndVerifyBookTitle_CodedStep] : Wait for Exists 'ЩракнетеТукLink'\r\n'03-Dec-15 06:19:19 PM' - 'Pass' : 10. Click 'ЩракнетеТукLink'\r\n'03-Dec-15 06:19:20 PM' - 'Pass' : 11. Connect to pop-up window : 'http://www.book.store.bg/cgi-bin/pp-page.cgi?p=delivery_price&productid=61454'\r\n'03-Dec-15 06:19:20 PM' - 'Pass' : 12. Verify 'TextContent' 'Contains' '' on 'ЦенаЗаBTag' - DataDriven: [$(firstBookTitle)]\r\n'03-Dec-15 06:19:23 PM' - 'Pass' : 13. Close pop-up window : 'http://www.book.store.bg/cgi-bin/pp-page.cgi?p=delivery_price&productid=61454'\r\n------------------------------------------------------------\r\n'03-Dec-15 06:19:23 PM' - Overall Result: Pass\r\n'03-Dec-15 06:19:23 PM' - Duration: [0 min: 12 sec: 720 msec]\r\n------------------------------------------------------------\r\n'03-Dec-15 06:19:24 PM' - Test completed!\r\n",
+          "FailureException": null,
+          "Result": 0,
+          "TestId": "fe469038-ed49-49bd-9732-5a7afca7592a",
+          "TestName": "StoreVariableAndVerifyBookTitle",
+          "TestPath": "StoreVariableAndVerifyBookTitle.tstest",
+          "TestOwner": null,
+          "TestDescription": "",
+          "ProjectPath": "",
+          "StepResults": [
+            {
+              "__type": "ArtOfTest.WebAii.Design.AutomationStepResult",
+              "__value": {
+                "TestName": "StoreVariableAndVerifyBookTitle",
+                "TestPath": "StoreVariableAndVerifyBookTitle.tstest",
+                "TestId": "fe469038-ed49-49bd-9732-5a7afca7592a",
+                "TestStepIndex": 0,
+                "StepDescription": "Navigate to : 'http://www.book.store.bg/'",
+                "Exception": null,
+                "ResultType": 0,
+                "State": null,
+                "Order": 1,
+                "LogMessageOnError": "",
+                "UserComment": null,
+                "HashCode": 1347723234,
+                "IsManual": false,
+                "WasStepEnabled": false
+              }
+            },
+            {
+              "__type": "ArtOfTest.WebAii.Design.AutomationStepResult",
+              "__value": {
+                "TestName": "StoreVariableAndVerifyBookTitle",
+                "TestPath": "StoreVariableAndVerifyBookTitle.tstest",
+                "TestId": "fe469038-ed49-49bd-9732-5a7afca7592a",
+                "TestStepIndex": 1,
+                "StepDescription": "Enter text 'JavaScript' in 'SrchstrText'",
+                "Exception": null,
+                "ResultType": 0,
+                "State": null,
+                "Order": 2,
+                "LogMessageOnError": "",
+                "UserComment": null,
+                "HashCode": 1106498604,
+                "IsManual": false,
+                "WasStepEnabled": false
+              }
+            },
+            {
+              "__type": "ArtOfTest.WebAii.Design.AutomationStepResult",
+              "__value": {
+                "TestName": "StoreVariableAndVerifyBookTitle",
+                "TestPath": "StoreVariableAndVerifyBookTitle.tstest",
+                "TestId": "fe469038-ed49-49bd-9732-5a7afca7592a",
+                "TestStepIndex": 2,
+                "StepDescription": "Verify 'ВсичкиРазделиLabelTag' is enabled",
+                "Exception": null,
+                "ResultType": 0,
+                "State": null,
+                "Order": 3,
+                "LogMessageOnError": "",
+                "UserComment": null,
+                "HashCode": -795681700,
+                "IsManual": false,
+                "WasStepEnabled": false
+              }
+            },
+            {
+              "__type": "ArtOfTest.WebAii.Design.AutomationStepResult",
+              "__value": {
+                "TestName": "StoreVariableAndVerifyBookTitle",
+                "TestPath": "StoreVariableAndVerifyBookTitle.tstest",
+                "TestId": "fe469038-ed49-49bd-9732-5a7afca7592a",
+                "TestStepIndex": 3,
+                "StepDescription": "Check 'SinRadio' to be 'True'",
+                "Exception": null,
+                "ResultType": 0,
+                "State": null,
+                "Order": 4,
+                "LogMessageOnError": "",
+                "UserComment": null,
+                "HashCode": -1094448602,
+                "IsManual": false,
+                "WasStepEnabled": false
+              }
+            },
+            {
+              "__type": "ArtOfTest.WebAii.Design.AutomationStepResult",
+              "__value": {
+                "TestName": "StoreVariableAndVerifyBookTitle",
+                "TestPath": "StoreVariableAndVerifyBookTitle.tstest",
+                "TestId": "fe469038-ed49-49bd-9732-5a7afca7592a",
+                "TestStepIndex": 4,
+                "StepDescription": "Click 'Submit'",
+                "Exception": null,
+                "ResultType": 0,
+                "State": null,
+                "Order": 5,
+                "LogMessageOnError": "",
+                "UserComment": null,
+                "HashCode": 2087960564,
+                "IsManual": false,
+                "WasStepEnabled": false
+              }
+            },
+            {
+              "__type": "ArtOfTest.WebAii.Design.AutomationStepResult",
+              "__value": {
+                "TestName": "StoreVariableAndVerifyBookTitle",
+                "TestPath": "StoreVariableAndVerifyBookTitle.tstest",
+                "TestId": "fe469038-ed49-49bd-9732-5a7afca7592a",
+                "TestStepIndex": 5,
+                "StepDescription": "Verify 'TextContent' 'Contains' 'JavaScript' on 'JavaScriptH3Tag'",
+                "Exception": null,
+                "ResultType": 0,
+                "State": null,
+                "Order": 6,
+                "LogMessageOnError": "",
+                "UserComment": null,
+                "HashCode": -1313506168,
+                "IsManual": false,
+                "WasStepEnabled": false
+              }
+            },
+            {
+              "__type": "ArtOfTest.WebAii.Design.AutomationStepResult",
+              "__value": {
+                "TestName": "StoreVariableAndVerifyBookTitle",
+                "TestPath": "StoreVariableAndVerifyBookTitle.tstest",
+                "TestId": "fe469038-ed49-49bd-9732-5a7afca7592a",
+                "TestStepIndex": 6,
+                "StepDescription": "[WebTest_CodedStep1] : Click 'JavaScriptH3Tag'",
+                "Exception": null,
+                "ResultType": 0,
+                "State": null,
+                "Order": 7,
+                "LogMessageOnError": "",
+                "UserComment": null,
+                "HashCode": 2113398272,
+                "IsManual": false,
+                "WasStepEnabled": false
+              }
+            },
+            {
+              "__type": "ArtOfTest.WebAii.Design.AutomationStepResult",
+              "__value": {
+                "TestName": "StoreVariableAndVerifyBookTitle",
+                "TestPath": "StoreVariableAndVerifyBookTitle.tstest",
+                "TestId": "fe469038-ed49-49bd-9732-5a7afca7592a",
+                "TestStepIndex": 7,
+                "StepDescription": "Extract 'TextContent' on 'JavaScriptBTag' into DataBindVariable $(firstBookTitle)",
+                "Exception": null,
+                "ResultType": 0,
+                "State": null,
+                "Order": 8,
+                "LogMessageOnError": "",
+                "UserComment": null,
+                "HashCode": -1313506166,
+                "IsManual": false,
+                "WasStepEnabled": false
+              }
+            },
+            {
+              "__type": "ArtOfTest.WebAii.Design.AutomationStepResult",
+              "__value": {
+                "TestName": "StoreVariableAndVerifyBookTitle",
+                "TestPath": "StoreVariableAndVerifyBookTitle.tstest",
+                "TestId": "fe469038-ed49-49bd-9732-5a7afca7592a",
+                "TestStepIndex": 8,
+                "StepDescription": "[StoreVariableAndVerifyBookTitle_CodedStep] : Wait for Exists 'ЩракнетеТукLink'",
+                "Exception": null,
+                "ResultType": 0,
+                "State": null,
+                "Order": 9,
+                "LogMessageOnError": "",
+                "UserComment": null,
+                "HashCode": 2113398274,
+                "IsManual": false,
+                "WasStepEnabled": false
+              }
+            },
+            {
+              "__type": "ArtOfTest.WebAii.Design.AutomationStepResult",
+              "__value": {
+                "TestName": "StoreVariableAndVerifyBookTitle",
+                "TestPath": "StoreVariableAndVerifyBookTitle.tstest",
+                "TestId": "fe469038-ed49-49bd-9732-5a7afca7592a",
+                "TestStepIndex": 9,
+                "StepDescription": "Click 'ЩракнетеТукLink'",
+                "Exception": null,
+                "ResultType": 0,
+                "State": null,
+                "Order": 10,
+                "LogMessageOnError": "",
+                "UserComment": null,
+                "HashCode": 2087960569,
+                "IsManual": false,
+                "WasStepEnabled": false
+              }
+            },
+            {
+              "__type": "ArtOfTest.WebAii.Design.AutomationStepResult",
+              "__value": {
+                "TestName": "StoreVariableAndVerifyBookTitle",
+                "TestPath": "StoreVariableAndVerifyBookTitle.tstest",
+                "TestId": "fe469038-ed49-49bd-9732-5a7afca7592a",
+                "TestStepIndex": 10,
+                "StepDescription": "Connect to pop-up window : 'http://www.book.store.bg/cgi-bin/pp-page.cgi?p=delivery_price&productid=61454'",
+                "Exception": null,
+                "ResultType": 0,
+                "State": null,
+                "Order": 11,
+                "LogMessageOnError": "",
+                "UserComment": null,
+                "HashCode": 512605115,
+                "IsManual": false,
+                "WasStepEnabled": false
+              }
+            },
+            {
+              "__type": "ArtOfTest.WebAii.Design.AutomationStepResult",
+              "__value": {
+                "TestName": "StoreVariableAndVerifyBookTitle",
+                "TestPath": "StoreVariableAndVerifyBookTitle.tstest",
+                "TestId": "fe469038-ed49-49bd-9732-5a7afca7592a",
+                "TestStepIndex": 11,
+                "StepDescription": "Verify 'TextContent' 'Contains' '' on 'ЦенаЗаBTag' - DataDriven: [$(firstBookTitle)]",
+                "Exception": null,
+                "ResultType": 0,
+                "State": null,
+                "Order": 12,
+                "LogMessageOnError": "",
+                "UserComment": null,
+                "HashCode": -1313506162,
+                "IsManual": false,
+                "WasStepEnabled": false
+              }
+            },
+            {
+              "__type": "ArtOfTest.WebAii.Design.AutomationStepResult",
+              "__value": {
+                "TestName": "StoreVariableAndVerifyBookTitle",
+                "TestPath": "StoreVariableAndVerifyBookTitle.tstest",
+                "TestId": "fe469038-ed49-49bd-9732-5a7afca7592a",
+                "TestStepIndex": 12,
+                "StepDescription": "Close pop-up window : 'http://www.book.store.bg/cgi-bin/pp-page.cgi?p=delivery_price&productid=61454'",
+                "Exception": null,
+                "ResultType": 0,
+                "State": null,
+                "Order": 13,
+                "LogMessageOnError": "",
+                "UserComment": null,
+                "HashCode": 512605117,
+                "IsManual": false,
+                "WasStepEnabled": false
+              }
+            }
+          ],
+          "NotRunStepDescriptions": [],
+          "TotalPassedSteps": 13,
+          "ExecutingTestStepCount": 13,
+          "TotalNumberOfNotRunSteps": 0,
+          "IsDataDrivenResult": false,
+          "DataIterationResults": [],
+          "EndTime": "2015-12-03T16:19:23.6239389Z",
+          "StartTime": "2015-12-03T16:19:10.9032445Z",
+          "ProfilerResultsPath": null,
+          "VersionGroupKey": "00000000-0000-0000-0000-000000000000",
+          "CommitedBy": null
+        }
+      }
+    ],
+    "FileName": "Flashback (SeleniumIntoTestStudio) 130936331648868175",
+    "Id": "9f3a1239-b8ba-47e5-a0b2-1a7432006f6f",
+    "Machine": {
+      "__type": "ArtOfTest.WebAii.Design.Execution.Scheduling.Machine",
+      "__value": {
+        "Id": "00000000-0000-0000-0000-000000000000",
+        "NetworkName": "LYUDMIL-PC",
+        "OperatingSystem": "Windows 8",
+        "InstalledBrowsers": [
+          {
+            "__type": "ArtOfTest.WebAii.Design.Execution.Scheduling.BrowserInformation",
+            "__value": {
+              "Type": 1,
+              "Version": "9.11.10240.16384"
+            }
+          },
+          {
+            "__type": "ArtOfTest.WebAii.Design.Execution.Scheduling.BrowserInformation",
+            "__value": {
+              "Type": 2,
+              "Version": "42.0 (x86 en-US)"
+            }
+          },
+          {
+            "__type": "ArtOfTest.WebAii.Design.Execution.Scheduling.BrowserInformation",
+            "__value": {
+              "Type": 5,
+              "Version": "5.1.7"
+            }
+          },
+          {
+            "__type": "ArtOfTest.WebAii.Design.Execution.Scheduling.BrowserInformation",
+            "__value": {
+              "Type": 7,
+              "Version": ""
+            }
+          }
+        ],
+        "Status": 0,
+        "ServiceUri": null,
+        "DBState": 0,
+        "UserName": "Lyudmil"
+      }
+    },
+    "Messages": null,
+    "RunId": "9f3a1239-b8ba-47e5-a0b2-1a7432006f6f",
+    "Comment": null,
+    "TestListId": "975ef475-a3f3-48cd-8c15-2440c2101acf",
+    "IsManual": false,
+    "DispatchGroupId": "00000000-0000-0000-0000-000000000000"
+  }
+}

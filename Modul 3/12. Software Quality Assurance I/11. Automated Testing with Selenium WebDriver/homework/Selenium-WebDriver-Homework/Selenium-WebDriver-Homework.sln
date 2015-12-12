@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.23107.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RegistrationTelerikAcademyTests", "RegistrationTelerikAcademyTests\RegistrationTelerikAcademyTests.csproj", "{571EC497-CFC6-4CC5-A435-1D58A986FFE8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CreateReportWithValidIpAddresses", "CreateReportWithValidIpAddresses\CreateReportWithValidIpAddresses.csproj", "{10231AB2-77B9-4C62-8DC3-9406DDF46A17}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{571EC497-CFC6-4CC5-A435-1D58A986FFE8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{571EC497-CFC6-4CC5-A435-1D58A986FFE8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{571EC497-CFC6-4CC5-A435-1D58A986FFE8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{571EC497-CFC6-4CC5-A435-1D58A986FFE8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{10231AB2-77B9-4C62-8DC3-9406DDF46A17}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{10231AB2-77B9-4C62-8DC3-9406DDF46A17}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{10231AB2-77B9-4C62-8DC3-9406DDF46A17}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{10231AB2-77B9-4C62-8DC3-9406DDF46A17}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,110 @@
+{
+  "__type": "ArtOfTest.WebAii.Design.Execution.TestList",
+  "__value": {
+    "TestListId": "975ef475-a3f3-48cd-8c15-2440c2101acf",
+    "Id": "975ef475-a3f3-48cd-8c15-2440c2101acf",
+    "TestListName": "AutomatedTest (SeleniumToTestStudio)",
+    "CreationDate": "2015-12-03T18:18:33",
+    "OwnerName": null,
+    "Settings": {
+      "__type": "ArtOfTest.WebAii.Core.Settings",
+      "__value": {
+        "Web": {
+          "__type": "ArtOfTest.WebAii.Core.Settings+WebSettings",
+          "__value": {
+            "IsProfilingExecution": false,
+            "ExecutingBrowsers": [],
+            "UseMultiBrowserExecution": false,
+            "RecycleBrowser": false,
+            "AspNetDevServerPort": -1,
+            "LocalWebServer": 0,
+            "EnableUILessRequestViewing": false,
+            "WebAppPhysicalPath": "",
+            "DefaultBrowser": 1,
+            "EnableScriptLogging": false,
+            "BaseUrl": "",
+            "KillBrowserProcessOnClose": false,
+            "UseHttpProxy": false,
+            "EnableSilverlight": false,
+            "VerboseHttpProxy": false,
+            "SilverlightConnectTimeout": 60000,
+            "SilverlightApplicationPath": null
+          }
+        },
+        "Wpf": {
+          "__type": "ArtOfTest.WebAii.Core.Settings+WpfSettings",
+          "__value": {
+            "DefaultApplicationPath": null
+          }
+        },
+        "CreateLogFile": true,
+        "LogLocation": "C:\\WebAiiLog\\",
+        "QueryEventLogErrorsOnExit": false,
+        "LogAnnotations": false,
+        "SimulatedMouseMoveSpeed": 0.3,
+        "WaitCheckInterval": 500,
+        "ElementWaitTimeout": 30000,
+        "ExecuteCommandTimeout": 20000,
+        "ExecutionDelay": 0,
+        "UnexpectedDialogAction": 2,
+        "AnnotateExecution": false,
+        "AnnotationMode": 0,
+        "XMultiMgr": true,
+        "ClientReadyTimeout": 60000,
+        "DisableDialogMonitoring": false
+      }
+    },
+    "Tests": [
+      {
+        "__type": "ArtOfTest.WebAii.Design.Execution.TestInfo",
+        "__value": {
+          "Id": "f3d99936-8873-47b1-905f-f46e4ed38995",
+          "Path": "SearchForJavaScriptItemsInAllSections.tstest",
+          "PathType": 0
+        }
+      },
+      {
+        "__type": "ArtOfTest.WebAii.Design.Execution.TestInfo",
+        "__value": {
+          "Id": "9b70f5a4-4408-450b-86dd-3943bba81cf6",
+          "Path": "SearchForJavaScriptItemsInBooks.tstest",
+          "PathType": 0
+        }
+      },
+      {
+        "__type": "ArtOfTest.WebAii.Design.Execution.TestInfo",
+        "__value": {
+          "Id": "1a8730c3-79e1-4f45-8a37-b41c27a7fd9f",
+          "Path": "SearchForMelanieDelonInAllSections.tstest",
+          "PathType": 0
+        }
+      },
+      {
+        "__type": "ArtOfTest.WebAii.Design.Execution.TestInfo",
+        "__value": {
+          "Id": "fe469038-ed49-49bd-9732-5a7afca7592a",
+          "Path": "StoreVariableAndVerifyBookTitle.tstest",
+          "PathType": 0
+        }
+      },
+      {
+        "__type": "ArtOfTest.WebAii.Design.Execution.TestInfo",
+        "__value": {
+          "Id": "1729edb9-500b-4d09-b6be-b98c47214066",
+          "Path": "FillTelerikAcademySettings.tstest",
+          "PathType": 0
+        }
+      }
+    ],
+    "Filter": {
+      "__type": "ArtOfTest.WebAii.Design.Execution.Filter",
+      "__value": {
+        "Keys": [],
+        "Comparisons": [],
+        "Values": []
+      }
+    },
+    "ListType": 0,
+    "ProjectId": "c2bd69ce-c233-45f1-b260-4be5afdb52b9"
+  }
+}

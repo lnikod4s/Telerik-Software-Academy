@@ -1,0 +1,796 @@
+{
+  "__type": "ArtOfTest.WebAii.Design.ProjectModel.Test",
+  "__value": {
+    "DomStatesCounter": {},
+    "WebKitExecutionDelay": 0,
+    "ReuseAppWindow": 0,
+    "ProfilerResultsDirectory": null,
+    "ProfilerServerName": null,
+    "ProfilerBenchmarkResultsFilePath": null,
+    "ProfilerBenchmarkResultsId": "00000000-0000-0000-0000-000000000000",
+    "ProfilerConfigurationId": "00000000-0000-0000-0000-000000000000",
+    "ProfilerConfigurations": {},
+    "CurrentReferences": [
+      "System",
+      "System.Core",
+      "ArtOfTest.WebAii, Version=2015.3.1015.0, Culture=neutral, PublicKeyToken=4fd5f65be123776c",
+      "ArtOfTest.WebAii.Design, Version=2015.3.1015.0, Culture=neutral, PublicKeyToken=4fc62bbc3827ab1d",
+      "Telerik.WebAii.Controls.Html, Version=2015.3.1015.0, Culture=neutral, PublicKeyToken=528163f3e645de45",
+      "Telerik.WebAii.Controls.Xaml, Version=2015.3.1015.0, Culture=neutral, PublicKeyToken=528163f3e645de45",
+      "Telerik.WebAii.Controls.Xaml.Wpf, Version=2015.3.1015.0, Culture=neutral, PublicKeyToken=528163f3e645de45",
+      "Telerik.TestingFramework.Controls.KendoUI, Version=2015.3.1015.0, Culture=neutral, PublicKeyToken=528163f3e645de45"
+    ],
+    "Steps": {
+      "__type": "ArtOfTest.Common.Design.ProjectModel.AutomationStepList",
+      "__value": [
+        {
+          "__type": "ArtOfTest.WebAii.Design.ProjectModel.AutomationStep",
+          "__value": {
+            "Runtime ID": "35abb82e-a4a7-4e95-b328-b0f57e36e5f4",
+            "Description": "Clear Browser Cache",
+            "CustomDescription": null,
+            "Step": {
+              "__type": "ArtOfTest.WebAii.Design.IntrinsicTranslators.Descriptors.ClearCookiesActionDescriptor",
+              "__value": {
+                "ClearCookies": true,
+                "ClearTempFiles": true,
+                "ClearHistory": true,
+                "WaitOnElements": false,
+                "WaitOnElementsTimeout": 0,
+                "UseStepWaitOnElementsTimout": false,
+                "UsejQuery": false,
+                "UseBackupSearch": true,
+                "ClosesBrowser": false,
+                "AjaxTimeout": 0,
+                "Pause": 0,
+                "RunsAgainstVersion": "",
+                "Constraints": {
+                  "__type": "ArtOfTest.Common.Design.Extensibility.Descriptors.DescriptorConstraints",
+                  "__value": {
+                    "ConstraintValues": {}
+                  }
+                },
+                "Elements": {},
+                "StepType": 4,
+                "LogMessageOnFailure": "",
+                "EditorType": "",
+                "DataBindingExpressions": {}
+              }
+            },
+            "Enabled": true,
+            "Order": 1,
+            "Id": "",
+            "StepState": 0,
+            "ContinueOnFailure": false,
+            "StepImageKey": "SilverlightDemoskupxdwal.mbq",
+            "QcId": 0,
+            "QcVersionStamp": 0,
+            "Version": 200
+          }
+        },
+        {
+          "__type": "ArtOfTest.WebAii.Design.ProjectModel.AutomationStep",
+          "__value": {
+            "Runtime ID": "9f40884b-7bfc-4ef9-99ac-f09f57e649d1",
+            "Description": "Navigate to : 'http://demos.telerik.com/silverlight/#Gauge/Weather'",
+            "CustomDescription": null,
+            "Step": {
+              "__type": "ArtOfTest.WebAii.Design.IntrinsicTranslators.Descriptors.NavigateToActionDescriptor",
+              "__value": {
+                "UseDecodedUrl": true,
+                "NavigateURL": "http://demos.telerik.com/silverlight/#Gauge/Weather",
+                "BaseUrl": "",
+                "WaitOnElementsTimeout": 0,
+                "UseStepWaitOnElementsTimout": false,
+                "WaitOnElements": false,
+                "UsejQuery": false,
+                "UseBackupSearch": true,
+                "ClosesBrowser": false,
+                "AjaxTimeout": 0,
+                "Pause": 0,
+                "RunsAgainstVersion": "",
+                "Constraints": {
+                  "__type": "ArtOfTest.Common.Design.Extensibility.Descriptors.DescriptorConstraints",
+                  "__value": {
+                    "ConstraintValues": {}
+                  }
+                },
+                "Elements": {},
+                "StepType": 4,
+                "LogMessageOnFailure": "",
+                "EditorType": "",
+                "DataBindingExpressions": {}
+              }
+            },
+            "Enabled": true,
+            "Order": 2,
+            "Id": "",
+            "StepState": 0,
+            "ContinueOnFailure": false,
+            "StepImageKey": "SilverlightDemosnbjlaspa.fbh",
+            "QcId": 0,
+            "QcVersionStamp": 0,
+            "Version": 200
+          }
+        },
+        {
+          "__type": "ArtOfTest.WebAii.Design.ProjectModel.AutomationStep",
+          "__value": {
+            "Runtime ID": "311aa191-9ab9-4808-a1d3-2e6b74fea28c",
+            "Description": "Verify 'WeatherStationTextblock' text Same 'Weather Station'",
+            "CustomDescription": null,
+            "Step": {
+              "__type": "ArtOfTest.WebAii.Design.IntrinsicTranslators.Silverlight.Descriptors.TextBlockVerificationDescriptor",
+              "__value": {
+                "Comparison": "Same",
+                "Value": "Weather Station",
+                "Property": {
+                  "__type": "ArtOfTest.WebAii.Silverlight.AutomationProperty",
+                  "__value": {
+                    "Name": "Text",
+                    "Index": null,
+                    "TypeName": "System.String",
+                    "IsAttachedProperty": false,
+                    "AttachedPropertyOwner": null
+                  }
+                },
+                "Comparer": {
+                  "__type": "ArtOfTest.WebAii.Design.IntrinsicTranslators.Silverlight.Descriptors.StringComparer",
+                  "__value": {}
+                },
+                "TechnologyType": 6,
+                "WaitForNoMotion": true,
+                "WaitForNoMotionCheckInterval": 500,
+                "VirtualizingContainerOffset": 0.0,
+                "DataBindVariableName": null,
+                "Timeout": 30000,
+                "CheckInterval": 500,
+                "EnsureStateIsCurrent": false,
+                "Pause": 0,
+                "WaitOnElementsTimeout": 30000,
+                "UseStepWaitOnElementsTimout": false,
+                "WaitOnElements": true,
+                "RunsAgainstVersion": "",
+                "Constraints": {
+                  "__type": "ArtOfTest.Common.Design.Extensibility.Descriptors.DescriptorConstraints",
+                  "__value": {
+                    "ConstraintValues": {
+                      "RunsAgainstVersion": ""
+                    }
+                  }
+                },
+                "Elements": {
+                  "TargetKey1": {
+                    "__type": "ArtOfTest.Common.Design.Extensibility.Descriptors.ElementDescriptor",
+                    "__value": {
+                      "Name": "TargetKey1",
+                      "Region": null,
+                      "Page": {
+                        "__type": "ArtOfTest.WebAii.Design.ProjectModel.PageUri",
+                        "__value": {
+                          "Path": "http://demos.telerik.com/silverlight/",
+                          "Query": "",
+                          "BaseUrl": "",
+                          "EquivalentUrls": [],
+                          "Fragment": "#Gauge/Weather",
+                          "Title": "Telerik Gauge for Silverlight",
+                          "CompareMode": 2,
+                          "AlwaysUseTitleInCompare": false,
+                          "FriendlyName": "TelerikGaugeForSilverlight"
+                        }
+                      },
+                      "Frame": null,
+                      "FindInfo": null,
+                      "FindExpression": {
+                        "__type": "ArtOfTest.Common.Design.ProjectModel.Elements.FindExpressionElement",
+                        "__value": {
+                          "uniqueKey": "qMcQr6s8aHz2FD3O9pl6/94Oo5Y=",
+                          "NodeKind": 5,
+                          "TechnologyType": 2,
+                          "Name": "WeatherStationTextblock",
+                          "FindExpressions": [
+                            {
+                              "Key": 1,
+                              "Value": {
+                                "__type": "ArtOfTest.WebAii.Core.HtmlFindExpression",
+                                "__value": {
+                                  "Clauses": [
+                                    {
+                                      "__type": "ArtOfTest.WebAii.Core.HtmlFindClause",
+                                      "__value": {
+                                        "Clause": "id=silverlightControlHost"
+                                      }
+                                    },
+                                    {
+                                      "__type": "ArtOfTest.WebAii.Core.HtmlFindClause",
+                                      "__value": {
+                                        "Clause": "tagIndex=object:0"
+                                      }
+                                    }
+                                  ],
+                                  "Constraints": [],
+                                  "ChainStops": [
+                                    1
+                                  ]
+                                }
+                              }
+                            },
+                            {
+                              "Key": 2,
+                              "Value": {
+                                "__type": "ArtOfTest.WebAii.Silverlight.XamlFindExpression",
+                                "__value": {
+                                  "Clauses": [
+                                    {
+                                      "__type": "ArtOfTest.WebAii.Silverlight.XamlFindClause",
+                                      "__value": {
+                                        "Clause": "TextContent=Weather Station"
+                                      }
+                                    },
+                                    {
+                                      "__type": "ArtOfTest.WebAii.Silverlight.XamlFindClause",
+                                      "__value": {
+                                        "Clause": "XamlTag=textblock"
+                                      }
+                                    }
+                                  ],
+                                  "Constraints": [],
+                                  "ChainStops": []
+                                }
+                              }
+                            }
+                          ],
+                          "BackupSearchClause": "/mainpage[1]/grid[1]/frame[1]/contentpresenter[1]/singleexampleview[1]/grid[1]/examplecontentcontrol[1]/grid[1]/contentpresenter[1]/headeredcontentcontrol[1]/grid[1]/contentcontrol[1]/contentpresenter[1]/textblock[1]",
+                          "DataBindingExpressions": {}
+                        }
+                      },
+                      "HtmlControlType": "ArtOfTest.WebAii.Silverlight.UI.TextBlock",
+                      "IsIndependent": false,
+                      "DomStateKey": "",
+                      "TechnologyType": 2,
+                      "Version": 200
+                    }
+                  }
+                },
+                "StepType": 2,
+                "LogMessageOnFailure": "",
+                "EditorType": "",
+                "DataBindingExpressions": {}
+              }
+            },
+            "Enabled": true,
+            "Order": 3,
+            "Id": "",
+            "StepState": 0,
+            "ContinueOnFailure": false,
+            "StepImageKey": "SilverlightDemosidiuqdjq.k3r",
+            "QcId": 0,
+            "QcVersionStamp": 0,
+            "Version": 200
+          }
+        },
+        {
+          "__type": "ArtOfTest.WebAii.Design.ProjectModel.AutomationStep",
+          "__value": {
+            "Runtime ID": "939e057d-f473-492e-956e-c459e92624c1",
+            "Description": "Verify 'ControlNameTextblock' text Same 'Gauge'",
+            "CustomDescription": null,
+            "Step": {
+              "__type": "ArtOfTest.WebAii.Design.IntrinsicTranslators.Silverlight.Descriptors.TextBlockVerificationDescriptor",
+              "__value": {
+                "Comparison": "Same",
+                "Value": "Gauge",
+                "Property": {
+                  "__type": "ArtOfTest.WebAii.Silverlight.AutomationProperty",
+                  "__value": {
+                    "Name": "Text",
+                    "Index": null,
+                    "TypeName": "System.String",
+                    "IsAttachedProperty": false,
+                    "AttachedPropertyOwner": null
+                  }
+                },
+                "Comparer": {
+                  "__type": "ArtOfTest.WebAii.Design.IntrinsicTranslators.Silverlight.Descriptors.StringComparer",
+                  "__value": {}
+                },
+                "TechnologyType": 6,
+                "WaitForNoMotion": true,
+                "WaitForNoMotionCheckInterval": 500,
+                "VirtualizingContainerOffset": 0.0,
+                "DataBindVariableName": null,
+                "Timeout": 30000,
+                "CheckInterval": 500,
+                "EnsureStateIsCurrent": false,
+                "Pause": 0,
+                "WaitOnElementsTimeout": 30000,
+                "UseStepWaitOnElementsTimout": false,
+                "WaitOnElements": true,
+                "RunsAgainstVersion": "",
+                "Constraints": {
+                  "__type": "ArtOfTest.Common.Design.Extensibility.Descriptors.DescriptorConstraints",
+                  "__value": {
+                    "ConstraintValues": {
+                      "RunsAgainstVersion": ""
+                    }
+                  }
+                },
+                "Elements": {
+                  "TargetKey1": {
+                    "__type": "ArtOfTest.Common.Design.Extensibility.Descriptors.ElementDescriptor",
+                    "__value": {
+                      "Name": "TargetKey1",
+                      "Region": null,
+                      "Page": {
+                        "__type": "ArtOfTest.WebAii.Design.ProjectModel.PageUri",
+                        "__value": {
+                          "Path": "http://demos.telerik.com/silverlight/",
+                          "Query": "",
+                          "BaseUrl": "",
+                          "EquivalentUrls": [],
+                          "Fragment": "#Gauge/Weather",
+                          "Title": "Telerik Gauge for Silverlight",
+                          "CompareMode": 2,
+                          "AlwaysUseTitleInCompare": false,
+                          "FriendlyName": "TelerikGaugeForSilverlight"
+                        }
+                      },
+                      "Frame": null,
+                      "FindInfo": null,
+                      "FindExpression": {
+                        "__type": "ArtOfTest.Common.Design.ProjectModel.Elements.FindExpressionElement",
+                        "__value": {
+                          "uniqueKey": "5wweyM9+I/OJ3qkOfoSUjs/FGR4=",
+                          "NodeKind": 5,
+                          "TechnologyType": 2,
+                          "Name": "ControlNameTextblock",
+                          "FindExpressions": [
+                            {
+                              "Key": 1,
+                              "Value": {
+                                "__type": "ArtOfTest.WebAii.Core.HtmlFindExpression",
+                                "__value": {
+                                  "Clauses": [
+                                    {
+                                      "__type": "ArtOfTest.WebAii.Core.HtmlFindClause",
+                                      "__value": {
+                                        "Clause": "id=silverlightControlHost"
+                                      }
+                                    },
+                                    {
+                                      "__type": "ArtOfTest.WebAii.Core.HtmlFindClause",
+                                      "__value": {
+                                        "Clause": "tagIndex=object:0"
+                                      }
+                                    }
+                                  ],
+                                  "Constraints": [],
+                                  "ChainStops": [
+                                    1
+                                  ]
+                                }
+                              }
+                            },
+                            {
+                              "Key": 2,
+                              "Value": {
+                                "__type": "ArtOfTest.WebAii.Silverlight.XamlFindExpression",
+                                "__value": {
+                                  "Clauses": [
+                                    {
+                                      "__type": "ArtOfTest.WebAii.Silverlight.XamlFindClause",
+                                      "__value": {
+                                        "Clause": "AutomationId=ControlName"
+                                      }
+                                    },
+                                    {
+                                      "__type": "ArtOfTest.WebAii.Silverlight.XamlFindClause",
+                                      "__value": {
+                                        "Clause": "XamlTag=textblock"
+                                      }
+                                    }
+                                  ],
+                                  "Constraints": [],
+                                  "ChainStops": []
+                                }
+                              }
+                            }
+                          ],
+                          "BackupSearchClause": "/mainpage[1]/grid[1]/frame[1]/contentpresenter[1]/singleexampleview[1]/grid[1]/grid[2]/grid[1]/stackpanel[1]/textblock[1]",
+                          "DataBindingExpressions": {}
+                        }
+                      },
+                      "HtmlControlType": "ArtOfTest.WebAii.Silverlight.UI.TextBlock",
+                      "IsIndependent": false,
+                      "DomStateKey": "",
+                      "TechnologyType": 2,
+                      "Version": 200
+                    }
+                  }
+                },
+                "StepType": 2,
+                "LogMessageOnFailure": "",
+                "EditorType": "",
+                "DataBindingExpressions": {}
+              }
+            },
+            "Enabled": true,
+            "Order": 4,
+            "Id": "",
+            "StepState": 0,
+            "ContinueOnFailure": false,
+            "StepImageKey": "SilverlightDemosr1qxess0.qco",
+            "QcId": 0,
+            "QcVersionStamp": 0,
+            "Version": 200
+          }
+        },
+        {
+          "__type": "ArtOfTest.WebAii.Design.ProjectModel.AutomationStep",
+          "__value": {
+            "Runtime ID": "221ba828-c775-45b2-b85e-d5ec17a01c56",
+            "Description": "Verify 'ExampleNameTextblock' text Same 'Weather'",
+            "CustomDescription": null,
+            "Step": {
+              "__type": "ArtOfTest.WebAii.Design.IntrinsicTranslators.Silverlight.Descriptors.TextBlockVerificationDescriptor",
+              "__value": {
+                "Comparison": "Same",
+                "Value": "Weather",
+                "Property": {
+                  "__type": "ArtOfTest.WebAii.Silverlight.AutomationProperty",
+                  "__value": {
+                    "Name": "Text",
+                    "Index": null,
+                    "TypeName": "System.String",
+                    "IsAttachedProperty": false,
+                    "AttachedPropertyOwner": null
+                  }
+                },
+                "Comparer": {
+                  "__type": "ArtOfTest.WebAii.Design.IntrinsicTranslators.Silverlight.Descriptors.StringComparer",
+                  "__value": {}
+                },
+                "TechnologyType": 6,
+                "WaitForNoMotion": true,
+                "WaitForNoMotionCheckInterval": 500,
+                "VirtualizingContainerOffset": 0.0,
+                "DataBindVariableName": null,
+                "Timeout": 30000,
+                "CheckInterval": 500,
+                "EnsureStateIsCurrent": false,
+                "Pause": 0,
+                "WaitOnElementsTimeout": 30000,
+                "UseStepWaitOnElementsTimout": false,
+                "WaitOnElements": true,
+                "RunsAgainstVersion": "",
+                "Constraints": {
+                  "__type": "ArtOfTest.Common.Design.Extensibility.Descriptors.DescriptorConstraints",
+                  "__value": {
+                    "ConstraintValues": {
+                      "RunsAgainstVersion": ""
+                    }
+                  }
+                },
+                "Elements": {
+                  "TargetKey1": {
+                    "__type": "ArtOfTest.Common.Design.Extensibility.Descriptors.ElementDescriptor",
+                    "__value": {
+                      "Name": "TargetKey1",
+                      "Region": null,
+                      "Page": {
+                        "__type": "ArtOfTest.WebAii.Design.ProjectModel.PageUri",
+                        "__value": {
+                          "Path": "http://demos.telerik.com/silverlight/",
+                          "Query": "",
+                          "BaseUrl": "",
+                          "EquivalentUrls": [],
+                          "Fragment": "#Gauge/Weather",
+                          "Title": "Telerik Gauge for Silverlight",
+                          "CompareMode": 2,
+                          "AlwaysUseTitleInCompare": false,
+                          "FriendlyName": "TelerikGaugeForSilverlight"
+                        }
+                      },
+                      "Frame": null,
+                      "FindInfo": null,
+                      "FindExpression": {
+                        "__type": "ArtOfTest.Common.Design.ProjectModel.Elements.FindExpressionElement",
+                        "__value": {
+                          "uniqueKey": "l0IfZ4oYlQbS3+IPzTb+XfMufMg=",
+                          "NodeKind": 5,
+                          "TechnologyType": 2,
+                          "Name": "ExampleNameTextblock",
+                          "FindExpressions": [
+                            {
+                              "Key": 1,
+                              "Value": {
+                                "__type": "ArtOfTest.WebAii.Core.HtmlFindExpression",
+                                "__value": {
+                                  "Clauses": [
+                                    {
+                                      "__type": "ArtOfTest.WebAii.Core.HtmlFindClause",
+                                      "__value": {
+                                        "Clause": "id=silverlightControlHost"
+                                      }
+                                    },
+                                    {
+                                      "__type": "ArtOfTest.WebAii.Core.HtmlFindClause",
+                                      "__value": {
+                                        "Clause": "tagIndex=object:0"
+                                      }
+                                    }
+                                  ],
+                                  "Constraints": [],
+                                  "ChainStops": [
+                                    1
+                                  ]
+                                }
+                              }
+                            },
+                            {
+                              "Key": 2,
+                              "Value": {
+                                "__type": "ArtOfTest.WebAii.Silverlight.XamlFindExpression",
+                                "__value": {
+                                  "Clauses": [
+                                    {
+                                      "__type": "ArtOfTest.WebAii.Silverlight.XamlFindClause",
+                                      "__value": {
+                                        "Clause": "AutomationId=ExampleName"
+                                      }
+                                    },
+                                    {
+                                      "__type": "ArtOfTest.WebAii.Silverlight.XamlFindClause",
+                                      "__value": {
+                                        "Clause": "XamlTag=textblock"
+                                      }
+                                    }
+                                  ],
+                                  "Constraints": [],
+                                  "ChainStops": []
+                                }
+                              }
+                            }
+                          ],
+                          "BackupSearchClause": "/mainpage[1]/grid[1]/frame[1]/contentpresenter[1]/singleexampleview[1]/grid[1]/grid[2]/grid[1]/stackpanel[1]/textblock[2]",
+                          "DataBindingExpressions": {}
+                        }
+                      },
+                      "HtmlControlType": "ArtOfTest.WebAii.Silverlight.UI.TextBlock",
+                      "IsIndependent": false,
+                      "DomStateKey": "",
+                      "TechnologyType": 2,
+                      "Version": 200
+                    }
+                  }
+                },
+                "StepType": 2,
+                "LogMessageOnFailure": "",
+                "EditorType": "",
+                "DataBindingExpressions": {}
+              }
+            },
+            "Enabled": true,
+            "Order": 5,
+            "Id": "",
+            "StepState": 0,
+            "ContinueOnFailure": false,
+            "StepImageKey": "SilverlightDemosda1ja0w1.voh",
+            "QcId": 0,
+            "QcVersionStamp": 0,
+            "Version": 200
+          }
+        },
+        {
+          "__type": "ArtOfTest.WebAii.Design.ProjectModel.AutomationStep",
+          "__value": {
+            "Runtime ID": "8e923655-28d5-47c8-80de-48ee34d54fa0",
+            "Description": "Verify 'DEC082015Textblock' text Same 'DEC 08, 2015'",
+            "CustomDescription": null,
+            "Step": {
+              "__type": "ArtOfTest.WebAii.Design.IntrinsicTranslators.Silverlight.Descriptors.TextBlockVerificationDescriptor",
+              "__value": {
+                "Comparison": "Same",
+                "Value": "DEC 08, 2015",
+                "Property": {
+                  "__type": "ArtOfTest.WebAii.Silverlight.AutomationProperty",
+                  "__value": {
+                    "Name": "Text",
+                    "Index": null,
+                    "TypeName": "System.String",
+                    "IsAttachedProperty": false,
+                    "AttachedPropertyOwner": null
+                  }
+                },
+                "Comparer": {
+                  "__type": "ArtOfTest.WebAii.Design.IntrinsicTranslators.Silverlight.Descriptors.StringComparer",
+                  "__value": {}
+                },
+                "TechnologyType": 6,
+                "WaitForNoMotion": true,
+                "WaitForNoMotionCheckInterval": 500,
+                "VirtualizingContainerOffset": 0.0,
+                "DataBindVariableName": null,
+                "Timeout": 30000,
+                "CheckInterval": 500,
+                "EnsureStateIsCurrent": false,
+                "Pause": 0,
+                "WaitOnElementsTimeout": 30000,
+                "UseStepWaitOnElementsTimout": false,
+                "WaitOnElements": true,
+                "RunsAgainstVersion": "",
+                "Constraints": {
+                  "__type": "ArtOfTest.Common.Design.Extensibility.Descriptors.DescriptorConstraints",
+                  "__value": {
+                    "ConstraintValues": {
+                      "RunsAgainstVersion": ""
+                    }
+                  }
+                },
+                "Elements": {
+                  "TargetKey1": {
+                    "__type": "ArtOfTest.Common.Design.Extensibility.Descriptors.ElementDescriptor",
+                    "__value": {
+                      "Name": "TargetKey1",
+                      "Region": null,
+                      "Page": {
+                        "__type": "ArtOfTest.WebAii.Design.ProjectModel.PageUri",
+                        "__value": {
+                          "Path": "http://demos.telerik.com/silverlight/",
+                          "Query": "",
+                          "BaseUrl": "",
+                          "EquivalentUrls": [],
+                          "Fragment": "#Gauge/Weather",
+                          "Title": "Telerik Gauge for Silverlight",
+                          "CompareMode": 2,
+                          "AlwaysUseTitleInCompare": false,
+                          "FriendlyName": "TelerikGaugeForSilverlight"
+                        }
+                      },
+                      "Frame": null,
+                      "FindInfo": null,
+                      "FindExpression": {
+                        "__type": "ArtOfTest.Common.Design.ProjectModel.Elements.FindExpressionElement",
+                        "__value": {
+                          "uniqueKey": "SmNC8uTR+cf2fGY0Ht7Vgy5zz6Y=",
+                          "NodeKind": 5,
+                          "TechnologyType": 2,
+                          "Name": "DEC082015Textblock",
+                          "FindExpressions": [
+                            {
+                              "Key": 1,
+                              "Value": {
+                                "__type": "ArtOfTest.WebAii.Core.HtmlFindExpression",
+                                "__value": {
+                                  "Clauses": [
+                                    {
+                                      "__type": "ArtOfTest.WebAii.Core.HtmlFindClause",
+                                      "__value": {
+                                        "Clause": "id=silverlightControlHost"
+                                      }
+                                    },
+                                    {
+                                      "__type": "ArtOfTest.WebAii.Core.HtmlFindClause",
+                                      "__value": {
+                                        "Clause": "tagIndex=object:0"
+                                      }
+                                    }
+                                  ],
+                                  "Constraints": [],
+                                  "ChainStops": [
+                                    1
+                                  ]
+                                }
+                              }
+                            },
+                            {
+                              "Key": 2,
+                              "Value": {
+                                "__type": "ArtOfTest.WebAii.Silverlight.XamlFindExpression",
+                                "__value": {
+                                  "Clauses": [
+                                    {
+                                      "__type": "ArtOfTest.WebAii.Silverlight.XamlFindClause",
+                                      "__value": {
+                                        "Clause": "TextContent=DEC 08, 2015"
+                                      }
+                                    },
+                                    {
+                                      "__type": "ArtOfTest.WebAii.Silverlight.XamlFindClause",
+                                      "__value": {
+                                        "Clause": "XamlTag=textblock"
+                                      }
+                                    }
+                                  ],
+                                  "Constraints": [],
+                                  "ChainStops": []
+                                }
+                              }
+                            }
+                          ],
+                          "BackupSearchClause": "/mainpage[1]/grid[1]/frame[1]/contentpresenter[1]/singleexampleview[1]/grid[1]/examplecontentcontrol[1]/grid[1]/contentpresenter[1]/headeredcontentcontrol[1]/grid[1]/contentpresenter[1]/example[1]/grid[1]/grid[1]/grid[2]/stackpanel[2]/stackpanel[1]/textblock[2]",
+                          "DataBindingExpressions": {}
+                        }
+                      },
+                      "HtmlControlType": "ArtOfTest.WebAii.Silverlight.UI.TextBlock",
+                      "IsIndependent": false,
+                      "DomStateKey": "",
+                      "TechnologyType": 2,
+                      "Version": 200
+                    }
+                  }
+                },
+                "StepType": 2,
+                "LogMessageOnFailure": "",
+                "EditorType": "",
+                "DataBindingExpressions": {}
+              }
+            },
+            "Enabled": true,
+            "Order": 6,
+            "Id": "",
+            "StepState": 0,
+            "ContinueOnFailure": false,
+            "StepImageKey": "SilverlightDemosx5c5huc3.bab",
+            "QcId": 0,
+            "QcVersionStamp": 0,
+            "Version": 200
+          }
+        }
+      ]
+    },
+    "IndependentDescriptors": [],
+    "HtmlDescription": "",
+    "SilverlightEnabled": true,
+    "IsSilverlightApp": false,
+    "SilverlightAppWebUrl": "",
+    "SilverlightAppLocalDirectory": "",
+    "SilverlightAppRecordLocal": false,
+    "SilverlightAppOriginUri": null,
+    "WpfAppPath": null,
+    "UseDefaultWpfAppPath": false,
+    "TestAssembly": "Test-Studio-Homework.dll",
+    "TestAssemblyPath": "bin",
+    "TestClass": "",
+    "IsManual": false,
+    "ResourceFilePath": "SilverlightDemos.resx",
+    "HasCodeBehind": false,
+    "DataInfo": {
+      "__type": "ArtOfTest.Common.Design.Data.DataInfo",
+      "__value": {
+        "ConnectionString": "",
+        "DefaultToGrid": true,
+        "DataRange": "",
+        "LoadRecordsCount": null,
+        "DataTableName": "",
+        "DataProvider": "",
+        "DataEnabled": true,
+        "HasBuiltinGrid": false,
+        "DataType": 4,
+        "BuiltInData": null,
+        "BuiltInDocumentKey": null,
+        "TSQL": ""
+      }
+    },
+    "VSProperties": {},
+    "DeploymentItems": [],
+    "IsTestFragment": false,
+    "StopTestListOnFailure": false,
+    "InheritParentDataSource": false,
+    "BrowserType": 0,
+    "QcId": 0,
+    "QcFilePath": null,
+    "QcTestVersionStamp": 0,
+    "TestLinks": [],
+    "Description": "",
+    "Name": "SilverlightDemos",
+    "Owner": "",
+    "Path": "SilverlightDemos.tstest",
+    "Priority": 0,
+    "TestType": 0,
+    "UniqueId": "b7d9b688-0312-491e-a253-41847a9d6e42",
+    "Id": "b7d9b688-0312-491e-a253-41847a9d6e42",
+    "ProjectId": "c2bd69ce-c233-45f1-b260-4be5afdb52b9",
+    "Version": 200
+  }
+}
