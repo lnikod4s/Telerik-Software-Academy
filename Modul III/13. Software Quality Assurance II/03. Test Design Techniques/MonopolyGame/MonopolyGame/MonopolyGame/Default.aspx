@@ -7,7 +7,6 @@
     <title>Monopoly Game</title>
     <telerik:RadStyleSheetManager ID="RadStyleSheetManager1" runat="server" />
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-    <script src="https://raw.githubusercontent.com/wilq32/jqueryrotate/master/jQueryRotate.js"></script>
     <style type="text/css">
         h1
         {
